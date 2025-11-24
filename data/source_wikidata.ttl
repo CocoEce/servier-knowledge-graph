@@ -1,0 +1,25 @@
+@prefix ns1: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://www.wikidata.org/entity/Q18216> rdfs:label "acide acétylsalicylique"@fr ;
+    skos:altLabel "aspirine"@fr ;
+    ns1:P274 "C₉H₈O₄" .
+
+<http://www.wikidata.org/entity/Q186969> rdfs:label "ibuprofène"@fr ;
+    skos:altLabel "acide alpha-méthyl-4-(2-méthylpropyl)benzènéthanoïque"@fr,
+        "ibuprofen"@fr,
+        "ibuprofene"@fr,
+        "ibuprophène"@fr ;
+    ns1:P274 "C₁₃H₁₈O₂" .
+
+<http://www.wikidata.org/entity/Q19482> rdfs:label "Wimbledon Football Club"@fr ;
+    skos:altLabel "Athletic Football Club Wimbledon"@fr,
+        "Wimbledon F.C."@fr,
+        "Wimbledon FC"@fr .
+
+<http://www.wikidata.org/entity/Q57055> rdfs:label "paracétamol"@fr ;
+    ns1:P274 "C₈H₉NO₂" .
+
+<http://www.wikidata.org/entity/Q67060> rdfs:label "Granges-Paccot"@fr .
+

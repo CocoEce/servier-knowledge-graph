@@ -1,0 +1,23 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.obolibrary.org/obo/CHEBI_15365> a <http://purl.obolibrary.org/obo/CHEBI_24431> ;
+    rdfs:label "Aspirine"@en ;
+    dc:identifier "CHEBI:15365" .
+
+<http://purl.obolibrary.org/obo/CHEBI_39548> a <http://purl.obolibrary.org/obo/CHEBI_24431> ;
+    rdfs:label "Atorvastatine"@en ;
+    dc:identifier "CHEBI:39548" .
+
+<http://purl.obolibrary.org/obo/CHEBI_46195> a <http://purl.obolibrary.org/obo/CHEBI_24431> ;
+    rdfs:label "Paracetamol"@en ;
+    dc:identifier "CHEBI:46195" .
+
+<http://purl.obolibrary.org/obo/CHEBI_5855> a <http://purl.obolibrary.org/obo/CHEBI_24431> ;
+    rdfs:label "Ibuprofene"@en ;
+    dc:identifier "CHEBI:5855" .
+
+<http://purl.obolibrary.org/obo/CHEBI_6801> a <http://purl.obolibrary.org/obo/CHEBI_24431> ;
+    rdfs:label "Metformine"@en ;
+    dc:identifier "CHEBI:6801" .
+
