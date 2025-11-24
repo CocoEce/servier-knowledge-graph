@@ -1,0 +1,98 @@
+{
+  "agent": {
+    "name": "Knowledge Graph RAG - PFE Servier",
+    "model": "models/gemini-2.5-flash-preview-09-2025",
+    "description": "Agent RAG pour interroger le graphe de connaissances via SPARQL et Gemini"
+  },
+  
+  "prompts": {
+    "system_prompt": "Tu es un assistant expert spécialisé en ontologies et graphes de connaissances. Tu as accès à un graphe de connaissances contenant des données provenant de WikiData, PubChem et ChEBI, regroupant informations sur des entités, composés chimiques, propriétés et relations.",
+    
+    "answer_instruction": "Réponds à la question suivante en utilisant UNIQUEMENT les informations du graphe ci-dessous. Si l'information n'est pas disponible, dis-le clairement. Sois précis, concis et utilise un langage technique approprié.",
+    
+    "context_prefix": "Contexte du graphe de connaissances:",
+    
+    "tool_execution_message": "Sélection des outils appropriés et exécution...",
+    
+    "response_prefix": "Réponse basée sur le graphe:"
+  },
+  
+  "tools": {
+    "enabled_tools": [
+      "search_patient_complete_profile",
+      "get_diseases_and_treatments_for_patient",
+      "get_complete_disease_info",
+      "get_patients_with_disease",
+      "get_patients_taking_drug",
+      "search_by_symptom",
+      "get_all_patients",
+      "get_all_drugs",
+      "get_all_diseases",
+      "get_all_symptoms",
+      "get_all_relationships",
+      "get_everything_about_entity",
+      "get_treatments_for_disease",
+      "get_count_stats"
+    ],
+    
+    "tool_descriptions": {
+      "search_patient_complete_profile": "Récupère le profil COMPLET d'une entité (propriétés, relations)",
+      "get_diseases_and_treatments_for_patient": "Récupère les relations et traitements",
+      "get_complete_disease_info": "Récupère toutes les infos sur une entité (relations, propriétés)",
+      "get_patients_with_disease": "Récupère les entités liées par certaines relations",
+      "get_patients_taking_drug": "Récupère les entités utilisant/prenant certaines substances",
+      "search_by_symptom": "Recherche par attribut spécifique",
+      "get_all_patients": "Récupère toutes les entités avec leurs relations",
+      "get_all_drugs": "Récupère toutes les substances/composés",
+      "get_all_diseases": "Récupère toutes les classes/catégories",
+      "get_all_symptoms": "Récupère tous les attributs/propriétés",
+      "get_all_relationships": "Récupère toutes les relations du graphe",
+      "get_everything_about_entity": "Récupère TOUT ce qu'on sait sur une entité",
+      "get_treatments_for_disease": "Récupère les propriétés/attributs d'une entité",
+      "get_count_stats": "Récupère les statistiques globales du graphe"
+    }
+  },
+  
+  "tool_selection": {
+    "patterns": {
+      "entity_complet": {
+        "keywords": ["entité", "composé", "molécule", "substance", "qui", "quoi", "quel", "quelle"],
+        "tools": ["search_patient_complete_profile", "get_diseases_and_treatments_for_patient", "get_everything_about_entity"]
+      },
+      "classe_complet": {
+        "keywords": ["classe", "catégorie", "type", "propriété", "attribut", "info"],
+        "tools": ["get_complete_disease_info", "search_disease_by_name", "get_all_diseases"]
+      },
+      "relation": {
+        "keywords": ["relation", "lien", "connexion", "relie", "connecte", "associé"],
+        "tools": ["get_treatments_for_disease", "search_drug_by_name", "get_patients_taking_drug"]
+      },
+      "recherche": {
+        "keywords": ["cherche", "trouve", "recherche", "quelle", "lequel"],
+        "tools": ["search_by_symptom", "get_all_symptoms"]
+      },
+      "entite_avec": {
+        "keywords": ["avec", "ayant", "possédant", "contenant"],
+        "tools": ["get_patients_with_disease", "get_patients_taking_drug"]
+      },
+      "stats": {
+        "keywords": ["combien", "nombre", "count", "statistique", "stats", "total"],
+        "tools": ["get_count_stats"]
+      },
+      "relations_all": {
+        "keywords": ["relation", "connexion", "lien", "relie"],
+        "tools": ["get_all_relationships", "get_everything_about_entity"]
+      }
+    }
+  },
+  
+  "graphdb": {
+    "url": "http://localhost:7200",
+    "repository": "PFE-GraphDB"
+  },
+  
+  "logging": {
+    "enabled": true,
+    "level": "INFO"
+  }
+}

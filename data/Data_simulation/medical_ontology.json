@@ -1,0 +1,116 @@
+{
+  "_comment": "Converted from OWL to VOWL JSON format",
+  "header": {
+    "title": {
+      "en": "Medical Ontology"
+    },
+    "iri": "http://www.example.org/medical",
+    "version": "1.0",
+    "author": [],
+    "description": {
+      "en": "Medical Knowledge Graph Ontology"
+    },
+    "prefixes": {},
+    "baseIris": [
+      "http://www.w3.org/2002/07/owl#",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "namespace": [],
+  "class": [
+    {
+      "id": "http://www.example.org/medical#Disease",
+      "iri": "http://www.example.org/medical#Disease",
+      "baseIri": "http://www.example.org/medical#",
+      "label": {
+        "en": "Maladie"
+      },
+      "description": {
+        "en": "Une condition médicale ou pathologie"
+      },
+      "type": "owl:Class"
+    },
+    {
+      "id": "http://www.example.org/medical#Drug",
+      "iri": "http://www.example.org/medical#Drug",
+      "baseIri": "http://www.example.org/medical#",
+      "label": {
+        "en": "Médicament"
+      },
+      "description": {
+        "en": "Une substance utilisée pour traiter ou prévenir une maladie"
+      },
+      "type": "owl:Class"
+    },
+    {
+      "id": "http://www.example.org/medical#Symptom",
+      "iri": "http://www.example.org/medical#Symptom",
+      "baseIri": "http://www.example.org/medical#",
+      "label": {
+        "en": "Symptôme"
+      },
+      "description": {
+        "en": "Une manifestation d'une maladie"
+      },
+      "type": "owl:Class"
+    },
+    {
+      "id": "http://www.example.org/medical#Patient",
+      "iri": "http://www.example.org/medical#Patient",
+      "baseIri": "http://www.example.org/medical#",
+      "label": {
+        "en": "Patient"
+      },
+      "description": {
+        "en": "Une personne recevant des soins médicaux"
+      },
+      "type": "owl:Class"
+    }
+  ],
+  "property": [
+    {
+      "id": "http://www.example.org/medical#treats",
+      "iri": "http://www.example.org/medical#treats",
+      "label": {
+        "en": "traite"
+      },
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "http://www.example.org/medical#hasSymptom",
+      "iri": "http://www.example.org/medical#hasSymptom",
+      "label": {
+        "en": "a pour symptôme"
+      },
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "http://www.example.org/medical#sufferFrom",
+      "iri": "http://www.example.org/medical#sufferFrom",
+      "label": {
+        "en": "souffre de"
+      },
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "http://www.example.org/medical#takes",
+      "iri": "http://www.example.org/medical#takes",
+      "label": {
+        "en": "prend"
+      },
+      "type": "owl:ObjectProperty"
+    }
+  ],
+  "individual": [],
+  "metrics": {
+    "classCount": 4,
+    "datatypeCount": 0,
+    "objectPropertyCount": 4,
+    "datatypePropertyCount": 0,
+    "propertyCount": 0,
+    "nodeCount": 0
+  }
+}
