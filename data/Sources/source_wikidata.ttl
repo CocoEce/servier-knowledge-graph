@@ -1,21 +1,24 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
-<http://www.wikidata.org/entity/Q18216> rdfs:label "acide acétylsalicylique"@fr ;
+wd:Q18216 a wd:Item ;
+    rdfs:label "acide acétylsalicylique"@fr ;
     skos:altLabel "aspirine"@fr .
 
-<http://www.wikidata.org/entity/Q186969> rdfs:label "ibuprofène"@fr ;
+wd:Q186969 a wd:Item ;
+    rdfs:label "ibuprofène"@fr ;
     skos:altLabel "acide alpha-méthyl-4-(2-méthylpropyl)benzènéthanoïque"@fr,
         "ibuprofen"@fr,
         "ibuprofene"@fr,
         "ibuprophène"@fr .
 
-<http://www.wikidata.org/entity/Q19482> rdfs:label "Wimbledon Football Club"@fr ;
-    skos:altLabel "Athletic Football Club Wimbledon"@fr,
-        "Wimbledon F.C."@fr,
-        "Wimbledon FC"@fr .
+wd:Q19484 a wd:Item ;
+    rdfs:label "Metformine"@fr .
 
-<http://www.wikidata.org/entity/Q57055> rdfs:label "paracétamol"@fr .
+wd:Q57055 a wd:Item ;
+    rdfs:label "paracétamol"@fr .
 
-<http://www.wikidata.org/entity/Q67060> rdfs:label "Granges-Paccot"@fr .
+wd:Q668093 a wd:Item ;
+    rdfs:label "atorvastatine"@fr .
 
