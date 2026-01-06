@@ -1,23 +1,24 @@
 @prefix ns1: <http://example.org/> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID1983> a <http://semanticscience.org/resource/ChemicalCompound> ;
-    rdfs:label "Compound CID 1983" ;
+pubchem:CID1983 a <http://semanticscience.org/resource/ChemicalCompound> ;
+    rdfs:label "PubChem CID 1983" ;
     ns1:id "1983" .
 
-<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID2244> a <http://semanticscience.org/resource/ChemicalCompound> ;
-    rdfs:label "Compound CID 2244" ;
+pubchem:CID2244 a <http://semanticscience.org/resource/ChemicalCompound> ;
+    rdfs:label "PubChem CID 2244" ;
     ns1:id "2244" .
 
-<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID3672> a <http://semanticscience.org/resource/ChemicalCompound> ;
-    rdfs:label "Compound CID 3672" ;
+pubchem:CID3672 a <http://semanticscience.org/resource/ChemicalCompound> ;
+    rdfs:label "PubChem CID 3672" ;
     ns1:id "3672" .
 
-<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID4091> a <http://semanticscience.org/resource/ChemicalCompound> ;
-    rdfs:label "Compound CID 4091" ;
+pubchem:CID4091 a <http://semanticscience.org/resource/ChemicalCompound> ;
+    rdfs:label "PubChem CID 4091" ;
     ns1:id "4091" .
 
-<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID60823> a <http://semanticscience.org/resource/ChemicalCompound> ;
-    rdfs:label "Compound CID 60823" ;
+pubchem:CID60823 a <http://semanticscience.org/resource/ChemicalCompound> ;
+    rdfs:label "PubChem CID 60823" ;
     ns1:id "60823" .
 
