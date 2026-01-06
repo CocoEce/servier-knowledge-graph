@@ -58,44 +58,61 @@ class MongoToGraphDBSync:
         logger.info(f"GraphDB endpoint: {self.graphdb_update_endpoint}")
         logger.info(f"GraphDB repository: {self.graphdb_repo}")
     
-    def escape_rdf_value(self, value: str, is_uri: bool = False) -> str:
+    def escape_rdf_value(self, value: str, is_uri: bool = False, datatype: str = None, language: str = None) -> str:
         """
         Escape RDF values for N-Triples format.
         
         Args:
             value: The value to escape
             is_uri: Whether this is a URI (True) or literal (False)
+            datatype: Optional XSD datatype for literals (e.g., "http://www.w3.org/2001/XMLSchema#integer")
+            language: Optional language tag for literals (e.g., "en")
             
         Returns:
-            Escaped RDF value
+            Escaped RDF value in N-Triples format
         """
         if is_uri:
+            # URIs must be wrapped in angle brackets
             return f"<{value}>"
         else:
-            # Escape special characters in literals
+            # Escape special characters in literals first
             value = value.replace('\\', '\\\\')
             value = value.replace('"', '\\"')
             value = value.replace('\n', '\\n')
             value = value.replace('\r', '\\r')
             value = value.replace('\t', '\\t')
-            return f'"{value}"'
+            
+            # Build literal with optional language tag or datatype
+            if language:
+                return f'"{value}"@{language}'
+            elif datatype:
+                return f'"{value}"^^<{datatype}>'
+            else:
+                return f'"{value}"'
     
     def triple_to_ntriples(self, triple: Dict[str, Any]) -> str:
         """
         Convert a triple dictionary to N-Triples format.
+        Preserves RDF type information (URIs, typed literals, language tags).
         
         Args:
-            triple: Dictionary with 'subject', 'predicate', 'object', 'object_type'
+            triple: Dictionary with 'subject', 'predicate', 'object', 'object_type',
+                    'object_datatype' (optional), 'object_language' (optional)
             
         Returns:
             N-Triples format string
         """
+        # Subject is always a URI
         subject = self.escape_rdf_value(triple['subject'], is_uri=True)
+        # Predicate is always a URI
         predicate = self.escape_rdf_value(triple['predicate'], is_uri=True)
         
         # Check if object is URI or literal
         is_uri = triple.get('object_type') == 'uri'
-        obj = self.escape_rdf_value(triple['object'], is_uri=is_uri)
+        datatype = triple.get('object_datatype') if not is_uri else None
+        language = triple.get('object_language') if not is_uri else None
+        
+        obj = self.escape_rdf_value(triple['object'], is_uri=is_uri, datatype=datatype, language=language)
         
         return f"{subject} {predicate} {obj} ."
     

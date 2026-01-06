@@ -10,7 +10,7 @@ from typing import List, Dict, Any
 import logging
 import sys
 
-from rdflib import Graph
+from rdflib import Graph, URIRef, Literal, BNode
 from pymongo import MongoClient, errors
 from dotenv import load_dotenv
 
@@ -47,12 +47,13 @@ class TTLToMongoIngestion:
     def ttl_to_triples(self, ttl_file: str) -> List[Dict[str, Any]]:
         """
         Parse TTL file and convert to list of triples.
+        Preserves RDF types (URI, Literal with datatype, BNode).
         
         Args:
             ttl_file: Path to TTL file
             
         Returns:
-            List of dictionaries with subject, predicate, object
+            List of dictionaries with subject, predicate, object (with full type info)
         """
         triples = []
         
@@ -61,13 +62,21 @@ class TTLToMongoIngestion:
             graph.parse(ttl_file, format='turtle')
             
             for subject, predicate, obj in graph:
+                # Get full RDF representation
+                subject_str = str(subject)
+                predicate_str = str(predicate)
+                object_str = str(obj)
+                
                 triple = {
                     'source_file': Path(ttl_file).name,
-                    'subject': str(subject),
-                    'predicate': str(predicate),
-                    'object': str(obj),
+                    'subject': subject_str,
+                    'predicate': predicate_str,
+                    'object': object_str,
                     'subject_type': self._get_node_type(subject),
                     'object_type': self._get_node_type(obj),
+                    # Store original RDF representation for round-trip fidelity
+                    'object_datatype': self._get_datatype(obj),
+                    'object_language': self._get_language(obj),
                 }
                 triples.append(triple)
             
@@ -79,13 +88,31 @@ class TTLToMongoIngestion:
             return []
     
     def _get_node_type(self, node) -> str:
-        """Determine if node is URI, Literal, or Blank."""
-        if isinstance(node, str):
-            return 'literal'
-        elif hasattr(node, 'startswith'):  # URI
+        """Determine if node is URI, Literal, or Blank.
+        
+        Uses rdflib type information to correctly identify RDF node types.
+        """
+        if isinstance(node, URIRef):
             return 'uri'
-        else:
+        elif isinstance(node, Literal):
+            return 'literal'
+        elif isinstance(node, BNode):
             return 'blank'
+        else:
+            # Fallback for other types
+            return 'literal'
+    
+    def _get_datatype(self, node) -> str:
+        """Extract XSD datatype from Literal node."""
+        if isinstance(node, Literal) and node.datatype:
+            return str(node.datatype)
+        return None
+    
+    def _get_language(self, node) -> str:
+        """Extract language tag from Literal node."""
+        if isinstance(node, Literal) and node.language:
+            return node.language
+        return None
     
     def ingest_triples(self, triples: List[Dict[str, Any]]) -> int:
         """
