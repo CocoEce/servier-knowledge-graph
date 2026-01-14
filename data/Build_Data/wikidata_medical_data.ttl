@@ -1,0 +1,645 @@
+# Wikidata Medical Data - Knowledge Graph
+# Generated: 2026-01-14 16:09:14
+# Source: Wikidata SPARQL
+# Total entities: 44
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix schema: <http://schema.org/> .
+@prefix cheminf: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# aspirin (Q18216)
+wd:Q18216
+    rdf:type schema:Thing ;
+    rdfs:label "aspirin"@en ;
+    schema:description "medication used to treat pain and decrease the risk of heart disease"@en ;
+    skos:altLabel "acetylsalicylic acid"@en ;
+    skos:altLabel "ASA"@en ;
+    skos:altLabel "2-acetoxybenzenecarboxylic acid"@en ;
+    skos:altLabel "2-acetoxybenzoic acid"@en ;
+    skos:altLabel "2-carboxyphenyl acetate"@en ;
+    skos:altLabel "acetysalicylic acid"@en ;
+    skos:altLabel "o-(acetyloxy)benzoic acid"@en ;
+    skos:altLabel "o-acetoxybenzoic acid"@en ;
+    skos:altLabel "o-acetylsalicylic acid"@en ;
+    skos:altLabel "o-carboxyphenyl acetate"@en ;
+    skos:altLabel "salicylic acid acetate"@en ;
+    wdt:P274 "C₉H₈O₄" ;
+    wdt:P2067 "180.042"^^xsd:decimal ;
+    wdt:P235 "BSYNRYMUTXBXSQ-UHFFFAOYSA-N" .
+
+# metformin (Q19484)
+wd:Q19484
+    rdf:type schema:Thing ;
+    rdfs:label "metformin"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "1-carbamimidamido-N,N-dimethylmethanimidamide"@en ;
+    skos:altLabel "1,1-dimethyl biguanide"@en ;
+    skos:altLabel "1,1-dimethylbiguanide"@en ;
+    skos:altLabel "dimethylbiguanide"@en ;
+    skos:altLabel "DMBG"@en ;
+    skos:altLabel "LA-6023"@en ;
+    skos:altLabel "N,N-dimethylbiguanide"@en ;
+    skos:altLabel "N1,N1-dimethylbiguanide"@en ;
+    skos:altLabel "XLA399"@en ;
+    wdt:P274 "C₄H₁₁N₅" ;
+    wdt:P2067 "129.101445"^^xsd:decimal ;
+    wdt:P235 "XZWYZXLIPXDOLR-UHFFFAOYSA-N" .
+
+# paracetamol (Q57055)
+wd:Q57055
+    rdf:type schema:Thing ;
+    rdfs:label "paracetamol"@en ;
+    schema:description "chemical compound with antipyretic and pain relieving properties"@en ;
+    skos:altLabel "acetaminophen"@en ;
+    skos:altLabel "APAP"@en ;
+    skos:altLabel "4-acetamidophenol"@en ;
+    skos:altLabel "4'-hydroxyacetanilide"@en ;
+    skos:altLabel "acetaminofen4-(acetylamino)phenol"@en ;
+    skos:altLabel "L484"@en ;
+    skos:altLabel "N-(4-hydroxyphenyl)acetamide"@en ;
+    skos:altLabel "N-acetyl-p-aminophenol4-hydroxyacetanilide"@en ;
+    skos:altLabel "p-(acetylamino)phenol"@en ;
+    skos:altLabel "p-acetamidophenol"@en ;
+    skos:altLabel "p-acetaminophenol"@en ;
+    skos:altLabel "p-acetylaminophenol"@en ;
+    skos:altLabel "p-hydroxy-acetanilid"@en ;
+    skos:altLabel "p-hydroxyacetanilide"@en ;
+    skos:altLabel "p-hydroxyphenolacetamide"@en ;
+    wdt:P274 "C₈H₉NO₂" ;
+    wdt:P2067 "151.063"^^xsd:decimal ;
+    wdt:P235 "RZVAJINKPMORJF-UHFFFAOYSA-N" .
+
+# morphine (Q81225)
+wd:Q81225
+    rdf:type schema:Thing ;
+    rdfs:label "morphine"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "Morphine"@en ;
+    skos:altLabel "Morphium"@en ;
+    skos:altLabel "Morphia"@en ;
+    skos:altLabel "Morphin"@en ;
+    skos:altLabel "(-)-morphine"@en ;
+    skos:altLabel "(−)-morphine"@en ;
+    skos:altLabel "(5alpha,6alpha)-17-methyl-7,8-didehydro-4,5-epoxymorphinan-3,6-diol"@en ;
+    skos:altLabel "(5alpha,6alpha)-didehydro-4,5-epoxy-17-methylmorphinan-3,6-diol"@en ;
+    skos:altLabel "(5R,6S,9R,13S,14R)-4,5-epoxy-N-methyl-7-morphinen-3,6-diol"@en ;
+    skos:altLabel "(5α,6α)-17-methyl-7,8-didehydro-4,5-epoxymorphinan-3,6-diol"@en ;
+    skos:altLabel "(5α,6α)-didehydro-4,5-epoxy-17-methylmorphinan-3,6-diol"@en ;
+    skos:altLabel "(7R,7AS,12bs)-3-methyl-2,3,4,4a,7,7a-hexahydro-1H-4,12-methano[1]benzofuro[3,2-e]isoquinoline-7,9-diol"@en ;
+    skos:altLabel "anhydrous morphine"@en ;
+    skos:altLabel "morfina"@en ;
+    skos:altLabel "Morphinum"@en ;
+    skos:altLabel "morphium"@en ;
+    wdt:P274 "C₁₇H₁₉NO₃" ;
+    wdt:P2067 "285.136"^^xsd:decimal ;
+    wdt:P235 "BQJCRHHNABKAKU-KBQPJGBKSA-N" .
+
+# tenofovir disoproxil (Q155954)
+wd:Q155954
+    rdf:type schema:Thing ;
+    rdfs:label "tenofovir disoproxil"@en ;
+    schema:description "antiretroviral drug, used to treat or prevent HIV and hepatitis infections"@en ;
+    skos:altLabel "tenofovir anhydrous"@en ;
+    skos:altLabel "PMPA"@en ;
+    skos:altLabel "(R)-9-(2-phosphonomethoxypropyl)adenine"@en ;
+    skos:altLabel "(R)-PMPA"@en ;
+    skos:altLabel "Anh. tenofovir"@en ;
+    skos:altLabel "Anhydrous tenofovir"@en ;
+    skos:altLabel "GS-1278"@en ;
+    skos:altLabel "Tenofovir (anh.)"@en ;
+    skos:altLabel "Viread"@en ;
+    wdt:P274 "C₉H₁₄N₅O₄P" ;
+    wdt:P2067 "287.078"^^xsd:decimal ;
+    wdt:P235 "SGOIRFVFHAKUTI-ZCFIWIBFSA-N" .
+
+# West Side Highway (Q130424)
+wd:Q130424
+    rdf:type schema:Thing ;
+    rdfs:label "West Side Highway"@en ;
+    schema:description "highway in Manhattan"@en ;
+    skos:altLabel "Joe DiMaggio Highway"@en .
+
+# moment of inertia (Q165618)
+wd:Q165618
+    rdf:type schema:Thing ;
+    rdfs:label "moment of inertia"@en ;
+    schema:description "scalar measure of the rotational inertia with respect to a fixed axis of rotation"@en ;
+    skos:altLabel "angular mass"@en ;
+    skos:altLabel "mass moment of inertia"@en .
+
+# serotonin (Q167934)
+wd:Q167934
+    rdf:type schema:Thing ;
+    rdfs:label "serotonin"@en ;
+    schema:description "monoamine neurotransmitter"@en ;
+    skos:altLabel "Serotonin"@en ;
+    skos:altLabel "3-(2-Aminoethyl)-1H-indol-5-ol"@en ;
+    skos:altLabel "3-(2-Aminoethyl)indol-5-ol"@en ;
+    skos:altLabel "3-(2-azanylethyl)-1H-indol-5-ol"@en ;
+    skos:altLabel "3-(b-Aminoethyl)-5-hydroxyindole"@en ;
+    skos:altLabel "5-HTA"@en ;
+    skos:altLabel "5-Hydroxy-3-(b-aminoethyl)indole"@en ;
+    skos:altLabel "5-hydroxy-tryptamine"@en ;
+    skos:altLabel "5-Hydroxyltryptamine"@en ;
+    skos:altLabel "5-Hydroxytryptamine"@en ;
+    skos:altLabel "7-GTA"@en ;
+    skos:altLabel "Antemoqua"@en ;
+    skos:altLabel "Antemovis"@en ;
+    skos:altLabel "DS substance"@en ;
+    skos:altLabel "Enteramin"@en ;
+    skos:altLabel "Enteramine"@en ;
+    skos:altLabel "Hippophaine"@en ;
+    skos:altLabel "sérotonine"@en ;
+    skos:altLabel "thrombocytin"@en ;
+    skos:altLabel "thrombotonin"@en ;
+    wdt:P274 "C₁₀H₁₂N₂O" ;
+    wdt:P2067 "176.095"^^xsd:decimal ;
+    wdt:P235 "QZAYGJVTTNCVMB-UHFFFAOYSA-N" .
+
+# dopamine (Q170304)
+wd:Q170304
+    rdf:type schema:Thing ;
+    rdfs:label "dopamine"@en ;
+    schema:description "organic chemical that functions both as a hormone and a neurotransmitter"@en ;
+    skos:altLabel "Dopamine"@en ;
+    skos:altLabel "Dopamina"@en ;
+    skos:altLabel "2-(3,4-dihydroxyphenyl)ethylamine"@en ;
+    skos:altLabel "3-hydroxytyramine"@en ;
+    skos:altLabel "3-Hydroxytyramine"@en ;
+    skos:altLabel "3,4-Dihydroxyphenethylamine"@en ;
+    skos:altLabel "3,4-Dihydroxyphenylethylamine"@en ;
+    skos:altLabel "4-(2-aminoethyl)-1,2-benzenediol"@en ;
+    skos:altLabel "4-(2-Aminoethyl)-1,2-benzenediol"@en ;
+    skos:altLabel "4-(2-Aminoethyl)-Pyrocatechol"@en ;
+    skos:altLabel "4-(2-Aminoethyl)benzene-1,2-diol"@en ;
+    skos:altLabel "4-(2-aminoethyl)catechol"@en ;
+    skos:altLabel "4-(2-aminoethyl)pyrocatechol"@en ;
+    skos:altLabel "4-(2-azanylethyl)benzene-1,2-diol"@en ;
+    skos:altLabel "a-(3,4-Dihydroxyphenyl)-b-aminoethane"@en ;
+    skos:altLabel "alpha-(3,4-Dihydroxyphenyl)-beta-aminoethane"@en ;
+    skos:altLabel "Deoxyepinephrine"@en ;
+    skos:altLabel "Dopamin"@en ;
+    skos:altLabel "Dopaminum"@en ;
+    skos:altLabel "Dopastat"@en ;
+    skos:altLabel "Dophamine"@en ;
+    skos:altLabel "Dynatra"@en ;
+    skos:altLabel "Hydroxytyramin"@en ;
+    skos:altLabel "Hydroxytyramine"@en ;
+    skos:altLabel "Intropin"@en ;
+    skos:altLabel "Oxytyramine"@en ;
+    skos:altLabel "Revivan"@en ;
+    wdt:P274 "C₈H₁₁NO₂" ;
+    wdt:P2067 "153.079"^^xsd:decimal ;
+    wdt:P235 "VYFYYTLLBUKUHU-UHFFFAOYSA-N" .
+
+# weather station (Q190107)
+wd:Q190107
+    rdf:type schema:Thing ;
+    rdfs:label "weather station"@en ;
+    schema:description "set of sensors that record and provide physical measurements and meteorological parameters"@en ;
+    skos:altLabel "meteorological observatory"@en ;
+    skos:altLabel "bureau of meteorology"@en ;
+    skos:altLabel "bureau station"@en ;
+    skos:altLabel "meteorological bureau"@en ;
+    skos:altLabel "meteorological observation post"@en ;
+    skos:altLabel "meteorological station"@en .
+
+# norepinephrine (Q186242)
+wd:Q186242
+    rdf:type schema:Thing ;
+    rdfs:label "norepinephrine"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "Norepinephrine"@en ;
+    skos:altLabel "noradrenaline"@en ;
+    skos:altLabel "(-)-noradrenaline"@en ;
+    skos:altLabel "(-)-(R)-Norepinephrine"@en ;
+    skos:altLabel "(-)-alpha-(Aminomethyl)protocatechuyl alcohol"@en ;
+    skos:altLabel "(-)-arterenol"@en ;
+    skos:altLabel "(-)-Arterenol"@en ;
+    skos:altLabel "(-)-Noradrenaline"@en ;
+    skos:altLabel "(-)-norepinephrine"@en ;
+    skos:altLabel "(-)-Norepinephrine"@en ;
+    skos:altLabel "(R)-(-)-norepinephrine"@en ;
+    skos:altLabel "(R)-(-)-Norepinephrine"@en ;
+    skos:altLabel "(R)-4-(2-amino-1-hydroxyethyl)-1,2-benzenediol"@en ;
+    skos:altLabel "(R)-4-(2-amino-1-Hydroxyethyl)-1,2-benzenediol"@en ;
+    skos:altLabel "(R)-Noradrenaline"@en ;
+    skos:altLabel "(R)-norepinephrine"@en ;
+    skos:altLabel "(R)-Norepinephrine"@en ;
+    skos:altLabel "4-(2-Amino-1-hydroxyethyl)-1,2-benzenediol"@en ;
+    skos:altLabel "4-[(1R)-2-amino-1-hydroxy-ethyl]benzene-1,2-diol"@en ;
+    skos:altLabel "4-[(1R)-2-amino-1-hydroxy-ethyl]pyrocatechol"@en ;
+    skos:altLabel "4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol"@en ;
+    skos:altLabel "4-[(1R)-2-amino-1-hydroxyethyl]benzene-1,2-diol"@en ;
+    skos:altLabel "Adrenor"@en ;
+    skos:altLabel "Aktamin"@en ;
+    skos:altLabel "Arterenol"@en ;
+    skos:altLabel "L-2-Amino-1-(3,4-dihydroxyphenyl)ethanol"@en ;
+    skos:altLabel "L-3,4-Dihydroxyphenylethanolamine"@en ;
+    skos:altLabel "L-alpha-(Aminomethyl)-3,4-dihydroxybenzyl alcohol"@en ;
+    skos:altLabel "L-Arterenol"@en ;
+    skos:altLabel "L-noradrenaline"@en ;
+    skos:altLabel "L-Norepinephrine"@en ;
+    skos:altLabel "Levarterenol"@en ;
+    skos:altLabel "Levarterenol®"@en ;
+    skos:altLabel "Levoarterenol"@en ;
+    skos:altLabel "Levonor"@en ;
+    skos:altLabel "Levonoradrenaline"@en ;
+    skos:altLabel "Levonorepinephrine"@en ;
+    skos:altLabel "Levophed"@en ;
+    skos:altLabel "Nor-adrenaline"@en ;
+    skos:altLabel "Nor-Epirenan"@en ;
+    skos:altLabel "Noradrenalin"@en ;
+    skos:altLabel "Noradrenaline"@en ;
+    skos:altLabel "Norartrinal"@en ;
+    skos:altLabel "Norepinefrina"@en ;
+    skos:altLabel "Norepinephrinum"@en ;
+    skos:altLabel "Norepirenamine"@en ;
+    skos:altLabel "Sympathin E"@en ;
+    wdt:P274 "C₈H₁₁NO₃" ;
+    wdt:P2067 "169.073893212"^^xsd:decimal ;
+    wdt:P235 "SFLSHLFXELFNJZ-QMMMGPOBSA-N" .
+
+# mouflon (Q190294)
+wd:Q190294
+    rdf:type schema:Thing ;
+    rdfs:label "mouflon"@en ;
+    schema:description "species of mammal"@en ;
+    skos:altLabel "Ovis gmelini"@en .
+
+# D-methamphetamine (Q191924)
+wd:Q191924
+    rdf:type schema:Thing ;
+    rdfs:label "D-methamphetamine"@en ;
+    schema:description "central nervous system stimulant"@en ;
+    skos:altLabel "(+)-(S)-N-alpha-dimethylphenethylamine"@en ;
+    skos:altLabel "(+)-(S)-P-α-dimethylphenethylamine"@en ;
+    skos:altLabel "(alphaS)-N,alpha-dimethylbenzeneethanamine"@en ;
+    skos:altLabel "(S)-N,alpha-dimethylbenzeneethanamine"@en ;
+    skos:altLabel "(S)-N,α-dimethylbenzeneethanamine"@en ;
+    skos:altLabel "(αS)-N,α-dimethylbenzeneethanamine"@en ;
+    skos:altLabel "crystal meth"@en ;
+    skos:altLabel "d-1-phenyl-2-methylaminopropane"@en ;
+    skos:altLabel "d-deoxyephedrine"@en ;
+    skos:altLabel "d-desoxyephedrine"@en ;
+    skos:altLabel "d-meth"@en ;
+    skos:altLabel "d-N-methylamphetamine"@en ;
+    skos:altLabel "d-phenylisopropylmethylamine"@en ;
+    skos:altLabel "desoxyephedrine"@en ;
+    skos:altLabel "dextromethamphetamine"@en ;
+    skos:altLabel "metamfetamine"@en ;
+    skos:altLabel "methyl-beta-phenylisopropylamine"@en ;
+    skos:altLabel "methyl-β-phenylisopropylamine"@en ;
+    skos:altLabel "methylamphetamine"@en ;
+    skos:altLabel "N-methylamphetamine pito-1342"@en ;
+    skos:altLabel "S-methamphetamine"@en ;
+    skos:altLabel "chalk"@en ;
+    skos:altLabel "crank"@en ;
+    skos:altLabel "ice"@en ;
+    skos:altLabel "fast"@en ;
+    skos:altLabel "pure"@en ;
+    skos:altLabel "crystal"@en ;
+    skos:altLabel "glass"@en ;
+    skos:altLabel "base"@en ;
+    skos:altLabel "wax"@en ;
+    skos:altLabel "speed"@en ;
+    skos:altLabel "whiz"@en ;
+    skos:altLabel "tweak"@en ;
+    skos:altLabel "crypto"@en ;
+    skos:altLabel "meth"@en ;
+    skos:altLabel "methamphetamine"@en ;
+    wdt:P274 "C₁₀H₁₅N" ;
+    wdt:P2067 "149.12"^^xsd:decimal ;
+    wdt:P235 "MYWUZJCMWCOHBA-VIFPVBQESA-N" .
+
+# shock wave (Q190688)
+wd:Q190688
+    rdf:type schema:Thing ;
+    rdfs:label "shock wave"@en ;
+    schema:description "propagating disturbance"@en ;
+    skos:altLabel "shock"@en ;
+    skos:altLabel "Shock waves"@en ;
+    skos:altLabel "shockwave"@en .
+
+# Scarecrow (Q234960)
+wd:Q234960
+    rdf:type schema:Thing ;
+    rdfs:label "Scarecrow"@en ;
+    schema:description "Wikimedia disambiguation page"@en ;
+    skos:altLabel "Scare Crow"@en .
+
+# phenobarbital (Q407241)
+wd:Q407241
+    rdf:type schema:Thing ;
+    rdfs:label "phenobarbital"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "Phenobarbital"@en ;
+    skos:altLabel "phenobarbital sodium"@en ;
+    skos:altLabel "5-ethyl-5-phenyl-2,4,6(1H,3H,5H)-pyrimidinetrione"@en ;
+    skos:altLabel "5-Ethyl-5-phenyl-pyrimidine-2,4,6-trione"@en ;
+    skos:altLabel "5-Ethyl-5-phenylbarbituric acid"@en ;
+    skos:altLabel "5-ethyl-5-phenylpyrimidine-2,4,6(1H,3H,5H)-trione"@en ;
+    skos:altLabel "5-Phenyl-5-ethylbarbituric acid"@en ;
+    skos:altLabel "fenobarbital"@en ;
+    skos:altLabel "Luminal®"@en ;
+    skos:altLabel "Phenobarbitol"@en ;
+    skos:altLabel "Phenobarbitone"@en ;
+    skos:altLabel "Phenobarbituric Acid"@en ;
+    skos:altLabel "Phenylaethylbarbitursaeure"@en ;
+    skos:altLabel "phenylethylbarbiturate"@en ;
+    skos:altLabel "Phenylethylbarbiturate"@en ;
+    skos:altLabel "Phenylethylbarbituric Acid"@en ;
+    skos:altLabel "Phenylethylbarbitursaeure"@en ;
+    skos:altLabel "Phenylethylmalonylurea"@en ;
+    skos:altLabel "PHENYLETHYLMALONYLUREA"@en ;
+    wdt:P274 "C₁₂H₁₂N₂O₃" ;
+    wdt:P2067 "232.084792"^^xsd:decimal ;
+    wdt:P235 "DDBREPKUVSBGFI-UHFFFAOYSA-N" .
+
+# tramadol (Q407592)
+wd:Q407592
+    rdf:type schema:Thing ;
+    rdfs:label "tramadol"@en ;
+    schema:description "pharmaceutical drug"@en ;
+    skos:altLabel "2-[(dimethylamino)methyl]-1-(3-methoxyphenyl)cyclohexan-1-ol"@en ;
+    skos:altLabel "(+)-tramadol"@en ;
+    skos:altLabel "(+)-trans-2-(dimethylaminomethyl)-1-(m-methoxyphenyl)cyclohexanol"@en ;
+    skos:altLabel "(R,R)-tramadol"@en ;
+    wdt:P274 "C₁₆H₂₅NO₂" ;
+    wdt:P2067 "263.188529"^^xsd:decimal ;
+    wdt:P235 "TVYLLZQTGLZFBW-ZBFHGGJFSA-N" .
+
+# (RS)-warfarin (Q407431)
+wd:Q407431
+    rdf:type schema:Thing ;
+    rdfs:label "(RS)-warfarin"@en ;
+    schema:description "group of stereoisomers"@en ;
+    skos:altLabel "4-hydroxy-3-(3-oxo-1-phenylbutyl)coumarin"@en ;
+    wdt:P274 "C₁₉H₁₆O₄" ;
+    wdt:P2067 "308.104859"^^xsd:decimal ;
+    wdt:P235 "PJVWKTKQMONHTI-UHFFFAOYSA-N" .
+
+# oxaloacetic acid (Q408658)
+wd:Q408658
+    rdf:type schema:Thing ;
+    rdfs:label "oxaloacetic acid"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "OAA"@en ;
+    skos:altLabel "2-Ketosuccinic acid"@en ;
+    skos:altLabel "2-oxosuccinic acid"@en ;
+    skos:altLabel "3-carboxy-3-oxopropanoic acid"@en ;
+    skos:altLabel "a-Ketosuccinic acid"@en ;
+    skos:altLabel "alpha-Ketosuccinic acid"@en ;
+    skos:altLabel "ketosuccinic acid"@en ;
+    skos:altLabel "Oxaloethanoic acid"@en ;
+    wdt:P274 "C₄H₄O₅" ;
+    wdt:P2067 "132.005873"^^xsd:decimal ;
+    wdt:P235 "KHPXUQMNIQBQEV-UHFFFAOYSA-N" .
+
+# methyl mercaptan (Q409309)
+wd:Q409309
+    rdf:type schema:Thing ;
+    rdfs:label "methyl mercaptan"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "Methanethiol"@en ;
+    skos:altLabel "CH3SH"@en ;
+    skos:altLabel "Mercaptan methylique"@en ;
+    skos:altLabel "mercaptomethane"@en ;
+    skos:altLabel "Methanethiole"@en ;
+    skos:altLabel "Methanthiol"@en ;
+    skos:altLabel "Methvtiolo"@en ;
+    skos:altLabel "Methyl sulfhydrate"@en ;
+    skos:altLabel "Methyl thioalcohol"@en ;
+    skos:altLabel "Methylmercaptaan"@en ;
+    skos:altLabel "Metilmercaptano"@en ;
+    skos:altLabel "Thiomethane"@en ;
+    skos:altLabel "Thiomethanol"@en ;
+    skos:altLabel "thiomethyl alcohol"@en ;
+    wdt:P274 "CH₄S" ;
+    wdt:P2067 "48.003"^^xsd:decimal ;
+    wdt:P235 "LSDPWZHWYPCBBB-UHFFFAOYSA-N" .
+
+# prednisolone acetate (Q27108063)
+wd:Q27108063
+    rdf:type schema:Thing ;
+    rdfs:label "prednisolone acetate"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "Pricortin"@en ;
+    skos:altLabel "Prednisolone 21-acetate"@en ;
+    wdt:P274 "C₂₃H₃₀O₆" ;
+    wdt:P2067 "402.204"^^xsd:decimal ;
+    wdt:P235 "LRJOMUJRLNCICJ-JZYPGELDSA-N" .
+
+# methylprednisolone acetate (Q27107351)
+wd:Q27107351
+    rdf:type schema:Thing ;
+    rdfs:label "methylprednisolone acetate"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "Depo-medrol"@en ;
+    skos:altLabel "Methylprednisolone 21-acetate"@en ;
+    skos:altLabel "11beta,17,21-Trihydroxy-6alpha-methylpregna-1,4-diene-3,20-dione 21-acetate"@en ;
+    skos:altLabel "6alpha-Methylprednisolone 21-acetate"@en ;
+    skos:altLabel "6alpha-Methylprednisolone acetate"@en ;
+    skos:altLabel "Depo-Methylprednisolone acetate"@en ;
+    skos:altLabel "M-Predrol"@en ;
+    skos:altLabel "Methylprednisolone acetate"@en ;
+    wdt:P274 "C₂₄H₃₂O₆" ;
+    wdt:P2067 "416.22"^^xsd:decimal ;
+    wdt:P235 "PLBHSZGDDKCEHR-LFYFAGGJSA-N" .
+
+# emtricitabine (Q422604)
+wd:Q422604
+    rdf:type schema:Thing ;
+    rdfs:label "emtricitabine"@en ;
+    schema:description "antiretroviral drug used to treat HIV infection"@en ;
+    skos:altLabel "4-Amino-5-fluoro-1-((2R,5S)-2-hydroxymethyl-[1,3]oxathiolan-5-yl)-1H-pyrimidin-2-one"@en ;
+    skos:altLabel "5-fluoro-1-((2R,5S)-2-(hydroxymethyl)-1,3-oxathiolan-5-yl)cytosine"@en ;
+    skos:altLabel "524W91"@en ;
+    skos:altLabel "BW-524W91"@en ;
+    skos:altLabel "Coviracil"@en ;
+    skos:altLabel "Emtricitabin"@en ;
+    skos:altLabel "Emtricitabina"@en ;
+    skos:altLabel "Emtricitabinum"@en ;
+    skos:altLabel "Emtricitabine"@en ;
+    skos:altLabel "FTC"@en ;
+    skos:altLabel "Emtriva"@en ;
+    skos:altLabel "(−)-(2R,5S)-5-fluoro-1-[2-(hydroxymethyl)-1,3-oxathiolan-5-yl]cytosine"@en ;
+    skos:altLabel "(−)-2'-deoxy-5-fluoro-3'-thiacytidine"@en ;
+    skos:altLabel "(−)-cis-4-amino-5-fluoro-1-(2-hydroxymethyl-1,3-oxathiolan-5-yl)-(1H)-pyrimidin-2-one"@en ;
+    skos:altLabel "(−)-FTC"@en ;
+    skos:altLabel "(−)-β-2',3'-dideoxy-5-fluoro-3'-thiacytidine"@en ;
+    skos:altLabel "(2R-cis)-4-amino-5-fluoro-1-(2-(hydroxymethyl)-1,3-oxathiolan-5-yl)-2(1H)-pyrimidinone"@en ;
+    skos:altLabel "2'-deoxy-5-fluoro-3'thiacytidine"@en ;
+    skos:altLabel "4-amino-5-fluoro-1-((2R,5S)-2-(hydroxymethyl)-1,3-oxathiolan-5-yl)pyrimidin-2(1H)-one"@en ;
+    wdt:P274 "C₈H₁₀FN₃O₃S" ;
+    wdt:P2067 "247.043"^^xsd:decimal ;
+    wdt:P235 "XQSPYNMVSIKCOC-NTSWFWBYSA-N" .
+
+# yttrium(III) sulfide (Q415385)
+wd:Q415385
+    rdf:type schema:Thing ;
+    rdfs:label "yttrium(III) sulfide"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "Yttrium sulfide"@en ;
+    wdt:P274 "S₃Y₂" ;
+    wdt:P2067 "273.72791"^^xsd:decimal ;
+    wdt:P235 "BPMRLDMEAPSVQN-UHFFFAOYSA-N" .
+
+# caput mortuum (Q421089)
+wd:Q421089
+    rdf:type schema:Thing ;
+    rdfs:label "caput mortuum"@en ;
+    schema:description "in alchemy, residue from sublimation, symbolizing decline and decay, represented with a stylized human skull; specifically, byproduct from sulfuric acid manufacture, used as a purple pigment"@en ;
+    skos:altLabel "caput mortem"@en ;
+    skos:altLabel "caput mortum"@en ;
+    skos:altLabel "cardinal purple"@en .
+
+# CHKDSK (Q422202)
+wd:Q422202
+    rdf:type schema:Thing ;
+    rdfs:label "CHKDSK"@en ;
+    schema:description "system tool in DOS, OS/2 and Windows"@en ;
+    skos:altLabel "Check disk"@en ;
+    skos:altLabel "chkdsk"@en ;
+    skos:altLabel "Chkdsk"@en .
+
+# Lactotransferrin (Q410246)
+wd:Q410246
+    rdf:type schema:Thing ;
+    rdfs:label "Lactotransferrin"@en ;
+    schema:description "mammalian protein found in Homo sapiens"@en ;
+    skos:altLabel "LTF"@en ;
+    skos:altLabel "lactoferrin"@en ;
+    skos:altLabel "lactotransferrin"@en ;
+    skos:altLabel "epididymis luminal protein 110"@en ;
+    skos:altLabel "growth-inhibiting protein 12"@en ;
+    skos:altLabel "kaliocin-1"@en ;
+    skos:altLabel "lactoferroxin"@en ;
+    skos:altLabel "neutrophil lactoferrin"@en ;
+    skos:altLabel "talalactoferrin"@en .
+
+# losartan (Q410074)
+wd:Q410074
+    rdf:type schema:Thing ;
+    rdfs:label "losartan"@en ;
+    schema:description "chemical compound"@en ;
+    skos:altLabel "(2-butyl-4-chloro-1-{[2'-(1H-tetrazol-5-yl)biphenyl-4-yl]methyl}-1H-imidazol-5-yl)methanol"@en ;
+    skos:altLabel "2-n-butyl-4-chloro-5-hydroxymethyl-1-[(2'-(1H-tetrazol-5-yl)biphenyl-4-yl)methyl]imidazole"@en ;
+    skos:altLabel "DuP 753"@en ;
+    skos:altLabel "DuP 89"@en ;
+    skos:altLabel "MK-954"@en ;
+    wdt:P274 "C₂₂H₂₃ClN₆O" ;
+    wdt:P2067 "422.162"^^xsd:decimal ;
+    wdt:P235 "PSIFNNKUMBGKDQ-UHFFFAOYSA-N" .
+
+# Ilmenau (Q415560)
+wd:Q415560
+    rdf:type schema:Thing ;
+    rdfs:label "Ilmenau"@en ;
+    schema:description "Wikimedia disambiguation page"@en .
+
+# Fajr (Q419409)
+wd:Q419409
+    rdf:type schema:Thing ;
+    rdfs:label "Fajr"@en ;
+    schema:description "Wikimedia disambiguation page"@en .
+
+# Made in America (Q410076)
+wd:Q410076
+    rdf:type schema:Thing ;
+    rdfs:label "Made in America"@en ;
+    schema:description "Wikimedia disambiguation page"@en .
+
+# Chantal (Q407008)
+wd:Q407008
+    rdf:type schema:Thing ;
+    rdfs:label "Chantal"@en ;
+    schema:description "Wikimedia disambiguation page"@en .
+
+# Jod (Q407631)
+wd:Q407631
+    rdf:type schema:Thing ;
+    rdfs:label "Jod"@en ;
+    schema:description "Wikimedia disambiguation page"@en .
+
+# JBC (Q419443)
+wd:Q419443
+    rdf:type schema:Thing ;
+    rdfs:label "JBC"@en ;
+    schema:description "Wikimedia disambiguation page"@en .
+
+# TPN (Q422186)
+wd:Q422186
+    rdf:type schema:Thing ;
+    rdfs:label "TPN"@en ;
+    schema:description "Wikimedia disambiguation page"@en .
+
+# Ayla (Q407451)
+wd:Q407451
+    rdf:type schema:Thing ;
+    rdfs:label "Ayla"@en ;
+    schema:description "Currently \"Aqaba\", The Hashemite Kingdom of Jordan"@en .
+
+# Vallis Snellius (Q422224)
+wd:Q422224
+    rdf:type schema:Thing ;
+    rdfs:label "Vallis Snellius"@en ;
+    schema:description "valley"@en .
+
+# Zeitler (Q186126)
+wd:Q186126
+    rdf:type schema:Thing ;
+    rdfs:label "Zeitler"@en ;
+    schema:description "Wikimedia disambiguation page"@en .
+
+# Bercy (Q410372)
+wd:Q410372
+    rdf:type schema:Thing ;
+    rdfs:label "Bercy"@en ;
+    schema:description "Wikimedia disambiguation page"@en .
+
+# Akropolis IF (Q421059)
+wd:Q421059
+    rdf:type schema:Thing ;
+    rdfs:label "Akropolis IF"@en ;
+    schema:description "sports club in Stockholm, Sweden"@en .
+
+# Aeschines of Neapolis (Q409649)
+wd:Q409649
+    rdf:type schema:Thing ;
+    rdfs:label "Aeschines of Neapolis"@en ;
+    schema:description "2nd-century BC Greek philosopher"@en .
+
+# German Central Bone Marrow Donor Register (Q190430)
+wd:Q190430
+    rdf:type schema:Thing ;
+    rdfs:label "German Central Bone Marrow Donor Register"@en ;
+    schema:description "data organization in Ulm, Germany"@en .
+
+# chloroquine (Q422438)
+wd:Q422438
+    rdf:type schema:Thing ;
+    rdfs:label "chloroquine"@en ;
+    schema:description "group of stereoisomers"@en ;
+    skos:altLabel "(RS)-chloroquine"@en ;
+    skos:altLabel "7-chloro-4-{[4-(diethylamino)-1-methylbutyl]amino}quinolinium"@en ;
+    skos:altLabel "N(4)-(7-chloro-4-quinolinyl)-N(1),N(1)-diethyl-1,4-pentanediamine"@en ;
+    skos:altLabel "N4-(7-chloro-4-quinolinyl)-N1,N1-diethyl-1,4-pentanediamine"@en ;
+    wdt:P274 "C₁₈H₂₆ClN₃" ;
+    wdt:P2067 "319.18152551199995"^^xsd:decimal ;
+    wdt:P235 "WHTVZRBIWZFKQO-UHFFFAOYSA-N" .
+
+# monoclonal antibody (Q422248)
+wd:Q422248
+    rdf:type schema:Thing ;
+    rdfs:label "monoclonal antibody"@en ;
+    schema:description "monospecific antibody that is made by identical immune cells that are all clones of a unique parent cell"@en ;
+    skos:altLabel "Antibodies, Monoclonal"@en ;
+    skos:altLabel "monoclonal antibodies"@en ;
+    skos:altLabel "Monoclonal antibody"@en ;
+    skos:altLabel "Monoclonal Antibody"@en .

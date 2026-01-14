@@ -1,0 +1,961 @@
+{
+  "source": "Wikidata",
+  "fetch_date": "2026-01-14 15:32:21",
+  "entities": [
+    {
+      "id": "Q18216",
+      "uri": "http://www.wikidata.org/entity/Q18216",
+      "name": "aspirin",
+      "synonyms": [
+        "acetylsalicylic acid",
+        "ASA",
+        "2-acetoxybenzenecarboxylic acid",
+        "2-acetoxybenzoic acid",
+        "2-carboxyphenyl acetate",
+        "acetysalicylic acid",
+        "o-(acetyloxy)benzoic acid",
+        "o-acetoxybenzoic acid",
+        "o-acetylsalicylic acid",
+        "o-carboxyphenyl acetate",
+        "salicylic acid acetate"
+      ],
+      "description": "medication used to treat pain and decrease the risk of heart disease",
+      "chemical_properties": {
+        "formula": "C₉H₈O₄",
+        "mass": "180.042",
+        "inchi_key": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q19484",
+      "uri": "http://www.wikidata.org/entity/Q19484",
+      "name": "metformin",
+      "synonyms": [
+        "1-carbamimidamido-N,N-dimethylmethanimidamide",
+        "1,1-dimethyl biguanide",
+        "1,1-dimethylbiguanide",
+        "dimethylbiguanide",
+        "DMBG",
+        "LA-6023",
+        "N,N-dimethylbiguanide",
+        "N1,N1-dimethylbiguanide",
+        "XLA399"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "C₄H₁₁N₅",
+        "mass": "129.101445",
+        "inchi_key": "XZWYZXLIPXDOLR-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q57055",
+      "uri": "http://www.wikidata.org/entity/Q57055",
+      "name": "paracetamol",
+      "synonyms": [
+        "acetaminophen",
+        "APAP",
+        "4-acetamidophenol",
+        "4'-hydroxyacetanilide",
+        "acetaminofen4-(acetylamino)phenol",
+        "L484",
+        "N-(4-hydroxyphenyl)acetamide",
+        "N-acetyl-p-aminophenol4-hydroxyacetanilide",
+        "p-(acetylamino)phenol",
+        "p-acetamidophenol",
+        "p-acetaminophenol",
+        "p-acetylaminophenol",
+        "p-hydroxy-acetanilid",
+        "p-hydroxyacetanilide",
+        "p-hydroxyphenolacetamide"
+      ],
+      "description": "chemical compound with antipyretic and pain relieving properties",
+      "chemical_properties": {
+        "formula": "C₈H₉NO₂",
+        "mass": "151.063",
+        "inchi_key": "RZVAJINKPMORJF-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q81225",
+      "uri": "http://www.wikidata.org/entity/Q81225",
+      "name": "morphine",
+      "synonyms": [
+        "Morphine",
+        "Morphium",
+        "Morphia",
+        "Morphin",
+        "(-)-morphine",
+        "(−)-morphine",
+        "(5alpha,6alpha)-17-methyl-7,8-didehydro-4,5-epoxymorphinan-3,6-diol",
+        "(5alpha,6alpha)-didehydro-4,5-epoxy-17-methylmorphinan-3,6-diol",
+        "(5R,6S,9R,13S,14R)-4,5-epoxy-N-methyl-7-morphinen-3,6-diol",
+        "(5α,6α)-17-methyl-7,8-didehydro-4,5-epoxymorphinan-3,6-diol",
+        "(5α,6α)-didehydro-4,5-epoxy-17-methylmorphinan-3,6-diol",
+        "(7R,7AS,12bs)-3-methyl-2,3,4,4a,7,7a-hexahydro-1H-4,12-methano[1]benzofuro[3,2-e]isoquinoline-7,9-diol",
+        "anhydrous morphine",
+        "morfina",
+        "Morphinum",
+        "morphium"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "C₁₇H₁₉NO₃",
+        "mass": "285.136",
+        "inchi_key": "BQJCRHHNABKAKU-KBQPJGBKSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q155954",
+      "uri": "http://www.wikidata.org/entity/Q155954",
+      "name": "tenofovir disoproxil",
+      "synonyms": [
+        "tenofovir anhydrous",
+        "PMPA",
+        "(R)-9-(2-phosphonomethoxypropyl)adenine",
+        "(R)-PMPA",
+        "Anh. tenofovir",
+        "Anhydrous tenofovir",
+        "GS-1278",
+        "Tenofovir (anh.)",
+        "Viread"
+      ],
+      "description": "antiretroviral drug, used to treat or prevent HIV and hepatitis infections",
+      "chemical_properties": {
+        "formula": "C₉H₁₄N₅O₄P",
+        "mass": "287.078",
+        "inchi_key": "SGOIRFVFHAKUTI-ZCFIWIBFSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q130424",
+      "uri": "http://www.wikidata.org/entity/Q130424",
+      "name": "West Side Highway",
+      "synonyms": [
+        "Joe DiMaggio Highway"
+      ],
+      "description": "highway in Manhattan",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q165618",
+      "uri": "http://www.wikidata.org/entity/Q165618",
+      "name": "moment of inertia",
+      "synonyms": [
+        "angular mass",
+        "mass moment of inertia"
+      ],
+      "description": "scalar measure of the rotational inertia with respect to a fixed axis of rotation",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q167934",
+      "uri": "http://www.wikidata.org/entity/Q167934",
+      "name": "serotonin",
+      "synonyms": [
+        "Serotonin",
+        "3-(2-Aminoethyl)-1H-indol-5-ol",
+        "3-(2-Aminoethyl)indol-5-ol",
+        "3-(2-azanylethyl)-1H-indol-5-ol",
+        "3-(b-Aminoethyl)-5-hydroxyindole",
+        "5-HTA",
+        "5-Hydroxy-3-(b-aminoethyl)indole",
+        "5-hydroxy-tryptamine",
+        "5-Hydroxyltryptamine",
+        "5-Hydroxytryptamine",
+        "7-GTA",
+        "Antemoqua",
+        "Antemovis",
+        "DS substance",
+        "Enteramin",
+        "Enteramine",
+        "Hippophaine",
+        "sérotonine",
+        "thrombocytin",
+        "thrombotonin"
+      ],
+      "description": "monoamine neurotransmitter",
+      "chemical_properties": {
+        "formula": "C₁₀H₁₂N₂O",
+        "mass": "176.095",
+        "inchi_key": "QZAYGJVTTNCVMB-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q170304",
+      "uri": "http://www.wikidata.org/entity/Q170304",
+      "name": "dopamine",
+      "synonyms": [
+        "Dopamine",
+        "Dopamina",
+        "2-(3,4-dihydroxyphenyl)ethylamine",
+        "3-hydroxytyramine",
+        "3-Hydroxytyramine",
+        "3,4-Dihydroxyphenethylamine",
+        "3,4-Dihydroxyphenylethylamine",
+        "4-(2-aminoethyl)-1,2-benzenediol",
+        "4-(2-Aminoethyl)-1,2-benzenediol",
+        "4-(2-Aminoethyl)-Pyrocatechol",
+        "4-(2-Aminoethyl)benzene-1,2-diol",
+        "4-(2-aminoethyl)catechol",
+        "4-(2-aminoethyl)pyrocatechol",
+        "4-(2-azanylethyl)benzene-1,2-diol",
+        "a-(3,4-Dihydroxyphenyl)-b-aminoethane",
+        "alpha-(3,4-Dihydroxyphenyl)-beta-aminoethane",
+        "Deoxyepinephrine",
+        "Dopamin",
+        "Dopaminum",
+        "Dopastat",
+        "Dophamine",
+        "Dynatra",
+        "Hydroxytyramin",
+        "Hydroxytyramine",
+        "Intropin",
+        "Oxytyramine",
+        "Revivan"
+      ],
+      "description": "organic chemical that functions both as a hormone and a neurotransmitter",
+      "chemical_properties": {
+        "formula": "C₈H₁₁NO₂",
+        "mass": "153.079",
+        "inchi_key": "VYFYYTLLBUKUHU-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q190107",
+      "uri": "http://www.wikidata.org/entity/Q190107",
+      "name": "weather station",
+      "synonyms": [
+        "meteorological observatory",
+        "bureau of meteorology",
+        "bureau station",
+        "meteorological bureau",
+        "meteorological observation post",
+        "meteorological station"
+      ],
+      "description": "set of sensors that record and provide physical measurements and meteorological parameters",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q186242",
+      "uri": "http://www.wikidata.org/entity/Q186242",
+      "name": "norepinephrine",
+      "synonyms": [
+        "Norepinephrine",
+        "noradrenaline",
+        "(-)-noradrenaline",
+        "(-)-(R)-Norepinephrine",
+        "(-)-alpha-(Aminomethyl)protocatechuyl alcohol",
+        "(-)-arterenol",
+        "(-)-Arterenol",
+        "(-)-Noradrenaline",
+        "(-)-norepinephrine",
+        "(-)-Norepinephrine",
+        "(R)-(-)-norepinephrine",
+        "(R)-(-)-Norepinephrine",
+        "(R)-4-(2-amino-1-hydroxyethyl)-1,2-benzenediol",
+        "(R)-4-(2-amino-1-Hydroxyethyl)-1,2-benzenediol",
+        "(R)-Noradrenaline",
+        "(R)-norepinephrine",
+        "(R)-Norepinephrine",
+        "4-(2-Amino-1-hydroxyethyl)-1,2-benzenediol",
+        "4-[(1R)-2-amino-1-hydroxy-ethyl]benzene-1,2-diol",
+        "4-[(1R)-2-amino-1-hydroxy-ethyl]pyrocatechol",
+        "4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol",
+        "4-[(1R)-2-amino-1-hydroxyethyl]benzene-1,2-diol",
+        "Adrenor",
+        "Aktamin",
+        "Arterenol",
+        "L-2-Amino-1-(3,4-dihydroxyphenyl)ethanol",
+        "L-3,4-Dihydroxyphenylethanolamine",
+        "L-alpha-(Aminomethyl)-3,4-dihydroxybenzyl alcohol",
+        "L-Arterenol",
+        "L-noradrenaline",
+        "L-Norepinephrine",
+        "Levarterenol",
+        "Levarterenol®",
+        "Levoarterenol",
+        "Levonor",
+        "Levonoradrenaline",
+        "Levonorepinephrine",
+        "Levophed",
+        "Nor-adrenaline",
+        "Nor-Epirenan",
+        "Noradrenalin",
+        "Noradrenaline",
+        "Norartrinal",
+        "Norepinefrina",
+        "Norepinephrinum",
+        "Norepirenamine",
+        "Sympathin E"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "C₈H₁₁NO₃",
+        "mass": "169.073893212",
+        "inchi_key": "SFLSHLFXELFNJZ-QMMMGPOBSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q190294",
+      "uri": "http://www.wikidata.org/entity/Q190294",
+      "name": "mouflon",
+      "synonyms": [
+        "Ovis gmelini"
+      ],
+      "description": "species of mammal",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q191924",
+      "uri": "http://www.wikidata.org/entity/Q191924",
+      "name": "D-methamphetamine",
+      "synonyms": [
+        "(+)-(S)-N-alpha-dimethylphenethylamine",
+        "(+)-(S)-P-α-dimethylphenethylamine",
+        "(alphaS)-N,alpha-dimethylbenzeneethanamine",
+        "(S)-N,alpha-dimethylbenzeneethanamine",
+        "(S)-N,α-dimethylbenzeneethanamine",
+        "(αS)-N,α-dimethylbenzeneethanamine",
+        "crystal meth",
+        "d-1-phenyl-2-methylaminopropane",
+        "d-deoxyephedrine",
+        "d-desoxyephedrine",
+        "d-meth",
+        "d-N-methylamphetamine",
+        "d-phenylisopropylmethylamine",
+        "desoxyephedrine",
+        "dextromethamphetamine",
+        "metamfetamine",
+        "methyl-beta-phenylisopropylamine",
+        "methyl-β-phenylisopropylamine",
+        "methylamphetamine",
+        "N-methylamphetamine pito-1342",
+        "S-methamphetamine",
+        "chalk",
+        "crank",
+        "ice",
+        "fast",
+        "pure",
+        "crystal",
+        "glass",
+        "base",
+        "wax",
+        "speed",
+        "whiz",
+        "tweak",
+        "crypto",
+        "meth",
+        "methamphetamine"
+      ],
+      "description": "central nervous system stimulant",
+      "chemical_properties": {
+        "formula": "C₁₀H₁₅N",
+        "mass": "149.12",
+        "inchi_key": "MYWUZJCMWCOHBA-VIFPVBQESA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q190688",
+      "uri": "http://www.wikidata.org/entity/Q190688",
+      "name": "shock wave",
+      "synonyms": [
+        "shock",
+        "Shock waves",
+        "shockwave"
+      ],
+      "description": "propagating disturbance",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q234960",
+      "uri": "http://www.wikidata.org/entity/Q234960",
+      "name": "Scarecrow",
+      "synonyms": [
+        "Scare Crow"
+      ],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q407241",
+      "uri": "http://www.wikidata.org/entity/Q407241",
+      "name": "phenobarbital",
+      "synonyms": [
+        "Phenobarbital",
+        "phenobarbital sodium",
+        "5-ethyl-5-phenyl-2,4,6(1H,3H,5H)-pyrimidinetrione",
+        "5-Ethyl-5-phenyl-pyrimidine-2,4,6-trione",
+        "5-Ethyl-5-phenylbarbituric acid",
+        "5-ethyl-5-phenylpyrimidine-2,4,6(1H,3H,5H)-trione",
+        "5-Phenyl-5-ethylbarbituric acid",
+        "fenobarbital",
+        "Luminal®",
+        "Phenobarbitol",
+        "Phenobarbitone",
+        "Phenobarbituric Acid",
+        "Phenylaethylbarbitursaeure",
+        "phenylethylbarbiturate",
+        "Phenylethylbarbiturate",
+        "Phenylethylbarbituric Acid",
+        "Phenylethylbarbitursaeure",
+        "Phenylethylmalonylurea",
+        "PHENYLETHYLMALONYLUREA"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "C₁₂H₁₂N₂O₃",
+        "mass": "232.084792",
+        "inchi_key": "DDBREPKUVSBGFI-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q407592",
+      "uri": "http://www.wikidata.org/entity/Q407592",
+      "name": "tramadol",
+      "synonyms": [
+        "2-[(dimethylamino)methyl]-1-(3-methoxyphenyl)cyclohexan-1-ol",
+        "(+)-tramadol",
+        "(+)-trans-2-(dimethylaminomethyl)-1-(m-methoxyphenyl)cyclohexanol",
+        "(R,R)-tramadol"
+      ],
+      "description": "pharmaceutical drug",
+      "chemical_properties": {
+        "formula": "C₁₆H₂₅NO₂",
+        "mass": "263.188529",
+        "inchi_key": "TVYLLZQTGLZFBW-ZBFHGGJFSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q407431",
+      "uri": "http://www.wikidata.org/entity/Q407431",
+      "name": "(RS)-warfarin",
+      "synonyms": [
+        "4-hydroxy-3-(3-oxo-1-phenylbutyl)coumarin"
+      ],
+      "description": "group of stereoisomers",
+      "chemical_properties": {
+        "formula": "C₁₉H₁₆O₄",
+        "mass": "308.104859",
+        "inchi_key": "PJVWKTKQMONHTI-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q408658",
+      "uri": "http://www.wikidata.org/entity/Q408658",
+      "name": "oxaloacetic acid",
+      "synonyms": [
+        "OAA",
+        "2-Ketosuccinic acid",
+        "2-oxosuccinic acid",
+        "3-carboxy-3-oxopropanoic acid",
+        "a-Ketosuccinic acid",
+        "alpha-Ketosuccinic acid",
+        "ketosuccinic acid",
+        "Oxaloethanoic acid"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "C₄H₄O₅",
+        "mass": "132.005873",
+        "inchi_key": "KHPXUQMNIQBQEV-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q409309",
+      "uri": "http://www.wikidata.org/entity/Q409309",
+      "name": "methyl mercaptan",
+      "synonyms": [
+        "Methanethiol",
+        "CH3SH",
+        "Mercaptan methylique",
+        "mercaptomethane",
+        "Methanethiole",
+        "Methanthiol",
+        "Methvtiolo",
+        "Methyl sulfhydrate",
+        "Methyl thioalcohol",
+        "Methylmercaptaan",
+        "Metilmercaptano",
+        "Thiomethane",
+        "Thiomethanol",
+        "thiomethyl alcohol"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "CH₄S",
+        "mass": "48.003",
+        "inchi_key": "LSDPWZHWYPCBBB-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q27108063",
+      "uri": "http://www.wikidata.org/entity/Q27108063",
+      "name": "prednisolone acetate",
+      "synonyms": [
+        "Pricortin",
+        "Prednisolone 21-acetate"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "C₂₃H₃₀O₆",
+        "mass": "402.204",
+        "inchi_key": "LRJOMUJRLNCICJ-JZYPGELDSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q27107351",
+      "uri": "http://www.wikidata.org/entity/Q27107351",
+      "name": "methylprednisolone acetate",
+      "synonyms": [
+        "Depo-medrol",
+        "Methylprednisolone 21-acetate",
+        "11beta,17,21-Trihydroxy-6alpha-methylpregna-1,4-diene-3,20-dione 21-acetate",
+        "6alpha-Methylprednisolone 21-acetate",
+        "6alpha-Methylprednisolone acetate",
+        "Depo-Methylprednisolone acetate",
+        "M-Predrol",
+        "Methylprednisolone acetate"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "C₂₄H₃₂O₆",
+        "mass": "416.22",
+        "inchi_key": "PLBHSZGDDKCEHR-LFYFAGGJSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q422604",
+      "uri": "http://www.wikidata.org/entity/Q422604",
+      "name": "emtricitabine",
+      "synonyms": [
+        "4-Amino-5-fluoro-1-((2R,5S)-2-hydroxymethyl-[1,3]oxathiolan-5-yl)-1H-pyrimidin-2-one",
+        "5-fluoro-1-((2R,5S)-2-(hydroxymethyl)-1,3-oxathiolan-5-yl)cytosine",
+        "524W91",
+        "BW-524W91",
+        "Coviracil",
+        "Emtricitabin",
+        "Emtricitabina",
+        "Emtricitabinum",
+        "Emtricitabine",
+        "FTC",
+        "Emtriva",
+        "(−)-(2R,5S)-5-fluoro-1-[2-(hydroxymethyl)-1,3-oxathiolan-5-yl]cytosine",
+        "(−)-2'-deoxy-5-fluoro-3'-thiacytidine",
+        "(−)-cis-4-amino-5-fluoro-1-(2-hydroxymethyl-1,3-oxathiolan-5-yl)-(1H)-pyrimidin-2-one",
+        "(−)-FTC",
+        "(−)-β-2',3'-dideoxy-5-fluoro-3'-thiacytidine",
+        "(2R-cis)-4-amino-5-fluoro-1-(2-(hydroxymethyl)-1,3-oxathiolan-5-yl)-2(1H)-pyrimidinone",
+        "2'-deoxy-5-fluoro-3'thiacytidine",
+        "4-amino-5-fluoro-1-((2R,5S)-2-(hydroxymethyl)-1,3-oxathiolan-5-yl)pyrimidin-2(1H)-one"
+      ],
+      "description": "antiretroviral drug used to treat HIV infection",
+      "chemical_properties": {
+        "formula": "C₈H₁₀FN₃O₃S",
+        "mass": "247.043",
+        "inchi_key": "XQSPYNMVSIKCOC-NTSWFWBYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q415385",
+      "uri": "http://www.wikidata.org/entity/Q415385",
+      "name": "yttrium(III) sulfide",
+      "synonyms": [
+        "Yttrium sulfide"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "S₃Y₂",
+        "mass": "273.72791",
+        "inchi_key": "BPMRLDMEAPSVQN-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q421089",
+      "uri": "http://www.wikidata.org/entity/Q421089",
+      "name": "caput mortuum",
+      "synonyms": [
+        "caput mortem",
+        "caput mortum",
+        "cardinal purple"
+      ],
+      "description": "in alchemy, residue from sublimation, symbolizing decline and decay, represented with a stylized human skull; specifically, byproduct from sulfuric acid manufacture, used as a purple pigment",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q422202",
+      "uri": "http://www.wikidata.org/entity/Q422202",
+      "name": "CHKDSK",
+      "synonyms": [
+        "Check disk",
+        "chkdsk",
+        "Chkdsk"
+      ],
+      "description": "system tool in DOS, OS/2 and Windows",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q410246",
+      "uri": "http://www.wikidata.org/entity/Q410246",
+      "name": "Lactotransferrin",
+      "synonyms": [
+        "LTF",
+        "lactoferrin",
+        "lactotransferrin",
+        "epididymis luminal protein 110",
+        "growth-inhibiting protein 12",
+        "kaliocin-1",
+        "lactoferroxin",
+        "neutrophil lactoferrin",
+        "talalactoferrin"
+      ],
+      "description": "mammalian protein found in Homo sapiens",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q410074",
+      "uri": "http://www.wikidata.org/entity/Q410074",
+      "name": "losartan",
+      "synonyms": [
+        "(2-butyl-4-chloro-1-{[2'-(1H-tetrazol-5-yl)biphenyl-4-yl]methyl}-1H-imidazol-5-yl)methanol",
+        "2-n-butyl-4-chloro-5-hydroxymethyl-1-[(2'-(1H-tetrazol-5-yl)biphenyl-4-yl)methyl]imidazole",
+        "DuP 753",
+        "DuP 89",
+        "MK-954"
+      ],
+      "description": "chemical compound",
+      "chemical_properties": {
+        "formula": "C₂₂H₂₃ClN₆O",
+        "mass": "422.162",
+        "inchi_key": "PSIFNNKUMBGKDQ-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q415560",
+      "uri": "http://www.wikidata.org/entity/Q415560",
+      "name": "Ilmenau",
+      "synonyms": [],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q419409",
+      "uri": "http://www.wikidata.org/entity/Q419409",
+      "name": "Fajr",
+      "synonyms": [],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q410076",
+      "uri": "http://www.wikidata.org/entity/Q410076",
+      "name": "Made in America",
+      "synonyms": [],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q407008",
+      "uri": "http://www.wikidata.org/entity/Q407008",
+      "name": "Chantal",
+      "synonyms": [],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q407631",
+      "uri": "http://www.wikidata.org/entity/Q407631",
+      "name": "Jod",
+      "synonyms": [],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q419443",
+      "uri": "http://www.wikidata.org/entity/Q419443",
+      "name": "JBC",
+      "synonyms": [],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q422186",
+      "uri": "http://www.wikidata.org/entity/Q422186",
+      "name": "TPN",
+      "synonyms": [],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q407451",
+      "uri": "http://www.wikidata.org/entity/Q407451",
+      "name": "Ayla",
+      "synonyms": [],
+      "description": "Currently \"Aqaba\", The Hashemite Kingdom of Jordan",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q422224",
+      "uri": "http://www.wikidata.org/entity/Q422224",
+      "name": "Vallis Snellius",
+      "synonyms": [],
+      "description": "valley",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q186126",
+      "uri": "http://www.wikidata.org/entity/Q186126",
+      "name": "Zeitler",
+      "synonyms": [],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q410372",
+      "uri": "http://www.wikidata.org/entity/Q410372",
+      "name": "Bercy",
+      "synonyms": [],
+      "description": "Wikimedia disambiguation page",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q421059",
+      "uri": "http://www.wikidata.org/entity/Q421059",
+      "name": "Akropolis IF",
+      "synonyms": [],
+      "description": "sports club in Stockholm, Sweden",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q409649",
+      "uri": "http://www.wikidata.org/entity/Q409649",
+      "name": "Aeschines of Neapolis",
+      "synonyms": [],
+      "description": "2nd-century BC Greek philosopher",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q190430",
+      "uri": "http://www.wikidata.org/entity/Q190430",
+      "name": "German Central Bone Marrow Donor Register",
+      "synonyms": [],
+      "description": "data organization in Ulm, Germany",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q422438",
+      "uri": "http://www.wikidata.org/entity/Q422438",
+      "name": "chloroquine",
+      "synonyms": [
+        "(RS)-chloroquine",
+        "7-chloro-4-{[4-(diethylamino)-1-methylbutyl]amino}quinolinium",
+        "N(4)-(7-chloro-4-quinolinyl)-N(1),N(1)-diethyl-1,4-pentanediamine",
+        "N4-(7-chloro-4-quinolinyl)-N1,N1-diethyl-1,4-pentanediamine"
+      ],
+      "description": "group of stereoisomers",
+      "chemical_properties": {
+        "formula": "C₁₈H₂₆ClN₃",
+        "mass": "319.18152551199995",
+        "inchi_key": "WHTVZRBIWZFKQO-UHFFFAOYSA-N",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "Q422248",
+      "uri": "http://www.wikidata.org/entity/Q422248",
+      "name": "monoclonal antibody",
+      "synonyms": [
+        "Antibodies, Monoclonal",
+        "monoclonal antibodies",
+        "Monoclonal antibody",
+        "Monoclonal Antibody"
+      ],
+      "description": "monospecific antibody that is made by identical immune cells that are all clones of a unique parent cell",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    }
+  ],
+  "total_entities": 44
+}

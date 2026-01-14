@@ -1,0 +1,1097 @@
+{
+  "source": "ChEBI",
+  "fetch_date": "2026-01-14 15:25:47",
+  "total_entities": 51,
+  "entities": [
+    {
+      "id": "CHEBI:15365",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15365",
+      "name": "acetylsalicylic acid",
+      "synonyms": [
+        "Aspirin",
+        "Acetylsalicylic acid",
+        "2-Acetoxybenzenecarboxylic acid",
+        "Acetylsalicylate",
+        "2-acetoxybenzoic acid",
+        "salicylic acid acetate",
+        "<em>O</em>-acetylsalicylic acid",
+        "2-(ACETYLOXY)BENZOIC ACID",
+        "<em>o</em>-acetoxybenzoic acid",
+        "Azetylsalizylsäure",
+        "Acetylsalicylsäure",
+        "ASA",
+        "acide 2-(acétyloxy)benzoïque",
+        "<em>o</em>-carboxyphenyl acetate"
+      ],
+      "definition": "A member of the class of benzoic acids that is salicylic acid in which the hydrogen that is attached to the phenolic hydroxy group has been replaced by an acetoxy group. A non-steroidal anti-inflammatory drug with cyclooxygenase inhibitor activity.",
+      "chemical_properties": {
+        "formula": "C9H8O4",
+        "mass": "180.159",
+        "inchi_key": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+        "smiles": "CC(=O)Oc1ccccc1C(=O)O"
+      }
+    },
+    {
+      "id": "CHEBI:46195",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:46195",
+      "name": "paracetamol",
+      "synonyms": [
+        "<em>p</em>-acetamidophenol",
+        "4-acetamidophenol",
+        "Acetaminophen",
+        "<em>p</em>-hydroxyacetanilide",
+        "4'-hydroxyacetanilide",
+        "<em>p</em>-acetaminophenol",
+        "<em>p</em>-hydroxyphenolacetamide",
+        "acétaminophène",
+        "acetaminofén",
+        "APAP",
+        "<em>N</em>-acetyl-<em>p</em>-aminophenol",
+        "4-(Acetylamino)phenol",
+        "Acenol",
+        "Acetaminofen",
+        "p-Acetylaminophenol",
+        "Paracetamol"
+      ],
+      "definition": "A member of the class of phenols that is 4-aminophenol in which one of the hydrogens attached to the amino group has been replaced by an acetyl group.",
+      "chemical_properties": {
+        "formula": "C8H9NO2",
+        "mass": "151.165",
+        "inchi_key": "RZVAJINKPMORJF-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C8H9NO2/c1-6(10)9-7-2-4-8(11)5-3-7/h2-5,11H,1H3,(H,9,10)",
+        "smiles": "CC(=O)Nc1ccc(O)cc1"
+      }
+    },
+    {
+      "id": "CHEBI:5855",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:5855",
+      "name": "ibuprofen",
+      "synonyms": [
+        "Ibuprofen",
+        "(±)-2-(<em>p</em>-isobutylphenyl)propionic acid",
+        "(±)-α-methyl-4-(2-methylpropyl)benzeneacetic acid",
+        "(±)-<em>p</em>-isobutylhydratropic acid",
+        "(4-isobutylphenyl)-α-methylacetic acid",
+        "(<i>R</i><i>S</i>)-ibuprofen",
+        "4-isobutylhydratropic acid",
+        "2-(4-isobutylphenyl)propanoic acid",
+        "(±)-ibuprofen",
+        "α-(<em>p</em>-isobutylphenyl)propionic acid",
+        "α-(4-isobutylphenyl)propionic acid",
+        "Motrin"
+      ],
+      "definition": "A monocarboxylic acid that is propionic acid in which one of the hydrogens at position 2 is substituted by a 4-(2-methylpropyl)phenyl group.",
+      "chemical_properties": {
+        "formula": "C13H18O2",
+        "mass": "206.285",
+        "inchi_key": "HEFNNWSXXWATRW-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C13H18O2/c1-9(2)8-11-4-6-12(7-5-11)10(3)13(14)15/h4-7,9-10H,8H2,1-3H3,(H,14,15)",
+        "smiles": "CC(C)Cc1ccc(C(C)C(=O)O)cc1"
+      }
+    },
+    {
+      "id": "CHEBI:6801",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:6801",
+      "name": "metformin",
+      "synonyms": [
+        "<em>N</em>,<em>N</em>-dimethylimidodicarbonimidic diamide",
+        "1,1-dimethylbiguanide",
+        "<em>N</em><small><sup>1</small></sup>,<em>N</em><small><sup>1</small></sup>-dimethylbiguanide",
+        "<em>N</em>,<em>N</em>-dimethylbiguanide",
+        "dimethylbiguanide",
+        "LA-6023",
+        "<em>N</em>,<em>N</em>-dimethylguanylguanidine",
+        "dimethyldiguanide",
+        "<em>N</em>,<em>N</em>-dimethyldiguanide",
+        "LA 6023"
+      ],
+      "definition": "A member of the class of guanidines that is biguanide the carrying two methyl substituents at position 1.",
+      "chemical_properties": {
+        "formula": "C4H11N5",
+        "mass": "129.167",
+        "inchi_key": "XZWYZXLIPXDOLR-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C4H11N5/c1-9(2)4(7)8-3(5)6/h1-2H3,(H5,5,6,7,8)",
+        "smiles": "CN(C)C(=N)NC(=N)N"
+      }
+    },
+    {
+      "id": "CHEBI:39548",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39548",
+      "name": "atorvastatin",
+      "synonyms": [
+        "Atorvastatin",
+        "(R-(R*,R*))-2-(4-Fluorophenyl)-beta,delta-dihydroxy-5-(1-methylethyl)-3-phenyl-4-((phenylamino)carbonyl)-1H-pyrrole-1-heptanoic acid",
+        "7-[2-(4-FLUORO-PHENYL)-5-ISOPROPYL-3-PHENYL-4-PHENYLCARBAMOYL-PYRROL-1-YL]-3,5-DIHYDROXY-HEPTANOIC ACID"
+      ],
+      "definition": "A dihydroxy monocarboxylic acid that is a member of the drug class known as statins, used primarily for lowering blood cholesterol and for preventing cardiovascular diseases.",
+      "chemical_properties": {
+        "formula": "C33H35FN2O5",
+        "mass": "558.650",
+        "inchi_key": "XUKUURHRXDUEBC-KAYWLYCHSA-N",
+        "inchi": "InChI=1S/C33H35FN2O5/c1-21(2)31-30(33(41)35-25-11-7-4-8-12-25)29(22-9-5-3-6-10-22)32(23-13-15-24(34)16-14-23)36(31)18-17-26(37)19-27(38)20-28(39)40/h3-16,21,26-27,37-38H,17-20H2,1-2H3,(H,35,41)(H,39,40)/t26-,27-/m1/s1",
+        "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O"
+      }
+    },
+    {
+      "id": "CHEBI:2676",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:2676",
+      "name": "amoxicillin",
+      "synonyms": [
+        "Amoxicillin",
+        "Amoxicillin anhydrous",
+        "amoxycillin",
+        "(2<i>S</i>,5<i>R</i>,6<i>R</i>)-6-{[(2<i>R</i>)-2-amino-2-(4-hydroxyphenyl)acetyl]amino}-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid",
+        "<em>p</em>-hydroxyampicillin",
+        "α-amino-<em>p</em>-hydroxybenzylpenicillin",
+        "6-(<em>p</em>-hydroxy-α-aminophenylacetamido)penicillanic acid",
+        "AX",
+        "amoxycilin"
+      ],
+      "definition": "A penicillin in which the substituent at position 6 of the penam ring is a 2-amino-2-(4-hydroxyphenyl)acetamido group.",
+      "chemical_properties": {
+        "formula": "C16H19N3O5S",
+        "mass": "365.411",
+        "inchi_key": "LSQZJLSUYDQPKJ-NJBDSQKTSA-N",
+        "inchi": "InChI=1S/C16H19N3O5S/c1-16(2)11(15(23)24)19-13(22)10(14(19)25-16)18-12(21)9(17)7-3-5-8(20)6-4-7/h3-6,9-11,14,20H,17H2,1-2H3,(H,18,21)(H,23,24)/t9-,10-,11+,14-/m1/s1",
+        "smiles": "[H][C@]12SC(C)(C)[C@H](C(=O)O)N1C(=O)[C@H]2NC(=O)[C@H](N)c1ccc(O)cc1"
+      }
+    },
+    {
+      "id": "CHEBI:145810",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:145810",
+      "name": "insulin",
+      "synonyms": [],
+      "definition": "A peptide hormone which consists of two polypeptide chains, A- and B- chains which are linked together by disulfide bonds. The amino acid sequence of insulin varies across species and certain segments of the molecule are highly conserved. In most species, the A chain consists of 21 amino acids and the B chain consists of 30 amino acids. In mammals, insulin is synthesised in the pancreas within the β cells whereas in certain species of fish, the insulin-producing tissue is uniquely located in separate structures called Brockmann bodies.",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "CHEBI:18243",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18243",
+      "name": "dopamine",
+      "synonyms": [
+        "4-(2-Aminoethyl)-1,2-benzenediol",
+        "4-(2-Aminoethyl)benzene-1,2-diol",
+        "3,4-Dihydroxyphenethylamine",
+        "Dopamine",
+        "2-(3,4-Dihydroxyphenyl)ethylamine",
+        "4-(2-aminoethyl)catechol",
+        "4-(2-aminoethyl)pyrocatechol",
+        "2-(3,4-dihydroxyphenyl)ethylamine",
+        "4-(2-aminoethyl)-1,2-benzenediol",
+        "Hydroxytyramin",
+        "3-Hydroxytyramine",
+        "Deoxyepinephrine",
+        "4-(2-Aminoethyl)-1,2-benzenediol"
+      ],
+      "definition": "Catechol in which the hydrogen at position 4 is substituted by a 2-aminoethyl group.",
+      "chemical_properties": {
+        "formula": "C8H11NO2",
+        "mass": "153.181",
+        "inchi_key": "VYFYYTLLBUKUHU-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C8H11NO2/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,10-11H,3-4,9H2",
+        "smiles": "NCCc1ccc(O)c(O)c1"
+      }
+    },
+    {
+      "id": "CHEBI:28790",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28790",
+      "name": "serotonin",
+      "synonyms": [
+        "3-(2-Aminoethyl)-1H-indol-5-ol",
+        "Serotonin",
+        "5-Hydroxytryptamine",
+        "Enteramine",
+        "5-HT",
+        "thrombocytin",
+        "thrombotonin",
+        "sérotonine",
+        "SEROTONIN",
+        "3-(2-Aminoethyl)-1H-indol-5-ol"
+      ],
+      "definition": "A primary amino compound that is the 5-hydroxy derivative of tryptamine.",
+      "chemical_properties": {
+        "formula": "C10H12N2O",
+        "mass": "176.219",
+        "inchi_key": "QZAYGJVTTNCVMB-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C10H12N2O/c11-4-3-7-6-12-10-2-1-8(13)5-9(7)10/h1-2,5-6,12-13H,3-4,11H2",
+        "smiles": "NCCc1cnc2ccc(O)cc12"
+      }
+    },
+    {
+      "id": "CHEBI:33568",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33568",
+      "name": "adrenaline",
+      "synonyms": [
+        "(±)-epinephrine",
+        "(±)-adrenaline",
+        "<em>d</em><em>l</em>-adrenaline",
+        "2-(methylamino)-1-(3,4-dihydroxyphenyl)ethanol",
+        "epinephrine racemic",
+        "<em>rac</em>-adrenaline",
+        "racemic adrenaline"
+      ],
+      "definition": "A racemate comprising equimolar amounts of (<i>R</i>)-adrenaline and (<i>S</i>)-adrenaline.",
+      "chemical_properties": {
+        "formula": "C9H13NO3",
+        "mass": "183.207",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "CHEBI:17303",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17303",
+      "name": "morphine",
+      "synonyms": [
+        "Morphine",
+        "(−)-morphine",
+        "(5<i>R</i>,6<i>S</i>,9<i>R</i>,13<i>S</i>,14<i>R</i>)-4,5-epoxy-<em>N</em>-methyl-7-morphinen-3,6-diol",
+        "Morphia",
+        "morphium",
+        "(7R,7AS,12BS)-3-METHYL-2,3,4,4A,7,7A-HEXAHYDRO-1H-4,12-METHANO[1]BENZOFURO[3,2-E]ISOQUINOLINE-7,9-DIOL",
+        "morfina",
+        "Morphin",
+        "(5α,6α)-didehydro-4,5-epoxy-17-methylmorphinan-3,6-diol",
+        "morphinum",
+        "(5α,6α)-17-methyl-7,8-didehydro-4,5-epoxymorphinan-3,6-diol"
+      ],
+      "definition": "A morphinane alkaloid that is a highly potent opiate analgesic psychoactive drug. Morphine acts directly on the central nervous system (CNS) to relieve pain but has a high potential for addiction, with tolerance and both physical and psychological dependence developing rapidly. Morphine is the most abundant opiate found in <em>Papaver somniferum</em> (the opium poppy).",
+      "chemical_properties": {
+        "formula": "C17H19NO3",
+        "mass": "285.343",
+        "inchi_key": "BQJCRHHNABKAKU-KBQPJGBKSA-N",
+        "inchi": "InChI=1S/C17H19NO3/c1-18-7-6-17-10-3-5-13(20)16(17)21-15-12(19)4-2-9(14(15)17)8-11(10)18/h2-5,10-11,13,16,19-20H,6-8H2,1H3/t10-,11+,13-,16-,17-/m0/s1",
+        "smiles": "[H][C@@]12C=C[C@H](O)[C@@H]3Oc4c(O)ccc5c4[C@@]31CCN(C)[C@@H]2C5"
+      }
+    },
+    {
+      "id": "CHEBI:16714",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16714",
+      "name": "codeine",
+      "synonyms": [
+        "Codeine",
+        "methylmorphine",
+        "morphine 3-methyl ether",
+        "morphine monomethyl ether",
+        "morphine-3-methyl ether",
+        "<em>O</em><small><sup>3</small></sup>-methylmorphine",
+        "<em>l</em>-codeine",
+        "(5alpha,6alpha)-7,8-Didehydro-4,5-epoxy-3-methoxy-17-methylmorphinan-6-ol",
+        "7,8-didehydro-4,5α-epoxy-3-methoxy-17-methylmorphinan-6α-ol",
+        "codeine anhydrous",
+        "Codein",
+        "(−)-Codeine",
+        "(1S,13R,14S,17R)-10-methoxy-4-methyl-12-oxa-4-azapentacyclo[9.6.1.0<small><sup>1,13</small></sup>.0<small><sup>5,17</small></sup>.0<small><sup>7,18</small></sup>]octadeca-7(18),8,10,15-tetraen-14-ol"
+      ],
+      "definition": "A  morphinane alkaloid found in the opium poppy, <em>Papaver somniferum var. album</em>; has analgesic, anti-tussive and anti-diarrhoeal properties.",
+      "chemical_properties": {
+        "formula": "C18H21NO3",
+        "mass": "299.370",
+        "inchi_key": "OROGSEYTTFOCAN-DNJOTXNNSA-N",
+        "inchi": "InChI=1S/C18H21NO3/c1-19-8-7-18-11-4-5-13(20)17(18)22-16-14(21-2)6-3-10(15(16)18)9-12(11)19/h3-6,11-13,17,20H,7-9H2,1-2H3/t11-,12+,13-,17-,18-/m0/s1",
+        "smiles": "[H][C@@]12C=C[C@H](O)[C@@H]3Oc4c(OC)ccc5c4[C@@]31CCN(C)[C@@H]2C5"
+      }
+    },
+    {
+      "id": "CHEBI:10033",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:10033",
+      "name": "warfarin",
+      "synonyms": [
+        "Coumafene",
+        "Zoocoumarin",
+        "<em>rac</em>-1-(4'-hydroxy-3'-coumarinyl)-1-phenyl-3-butanone",
+        "<em>rac</em>-3-(1'-phenyl-2'-acetylethyl)-4-hydroxycoumarin",
+        "<em>rac</em>-3-(α-phenyl-β-acetylethyl)-4-hydroxycoumarin",
+        "<em>rac</em>-4-hydroxy-3-(3-oxo-1-phenylbutyl)coumarin",
+        "<em>rac</em>-3-(α-acetonylbenzyl)-4-hydroxycoumarin",
+        "<small>D</small><small>L</small>-3-(α-acetonylbenzyl)-4-hydroxycoumarin",
+        "<small>D</small><small>L</small>-warfarin",
+        "(<i>R</i><i>S</i>)-warfarin",
+        "<em>rac</em>-warfarin",
+        "<em>rac</em>-3-(acetonylbenzyl)-4-hydroxycoumarin",
+        "racemic warfarin",
+        "(±)-warfarin",
+        "4-hydroxy-3-[(1<i>R</i><i>S</i>)-3-oxo-1-phenylbutyl]-2<em>H</em>-1-benzopyran-2-one",
+        "4-hydroxy-3-[(1<i>R</i><i>S</i>)-3-oxo-1-phenylbutyl]-2<em>H</em>-chromen-2-one",
+        "4-hydroxy-3-[(1<i>R</i><i>S</i>)-3-oxo-1-phenylbutyl]coumarin"
+      ],
+      "definition": "A racemate comprising equal amounts of (<i>R</i>)- and (<i>S</i>)-warfarin. Extensively used as both an anticoagulant drug and as a pesticide against rats and mice.",
+      "chemical_properties": {
+        "formula": "C19H16O4",
+        "mass": "308.333",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "CHEBI:24505",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:24505",
+      "name": "heparins",
+      "synonyms": [],
+      "definition": null,
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "CHEBI:17334",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17334",
+      "name": "penicillin",
+      "synonyms": [
+        "Penicillin",
+        "penicillins"
+      ],
+      "definition": "Any member of the group of substituted penams containing two methyl substituents at position 2, a carboxylate substituent at position 3 and a carboxamido group at position 6.",
+      "chemical_properties": {
+        "formula": null,
+        "mass": null,
+        "inchi_key": null,
+        "inchi": "",
+        "smiles": "*C(=O)N[C@@H]1C(=O)N2[C@@H](C(=O)O)C(C)(C)S[C@]12[H]"
+      }
+    },
+    {
+      "id": "CHEBI:23066",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:23066",
+      "name": "cephalosporin",
+      "synonyms": [
+        "Cephalosporin",
+        "cephalosporins",
+        "cephalosphorins",
+        "cephalosphorin"
+      ],
+      "definition": "A class of β-lactam antibiotics differing from the penicillins in having a 6-membered, rather than a 5-membered, side ring.  Although cephalosporins are among the most commonly used antibiotics in the treatment of routine infections, and their use is increasing over time, they can cause a range of hypersensitivity reactions, from mild, delayed-onset cutaneous reactions to life-threatening anaphylaxis in patients with immunoglobulin E (IgE)-mediated allergy.",
+      "chemical_properties": {
+        "formula": "C7H5NO3SR2",
+        "mass": "183.185",
+        "inchi_key": null,
+        "inchi": "",
+        "smiles": "[1*][C@@H]1C(=O)N2C(C(=O)O)=C([2*])CS[C@]12[H]"
+      }
+    },
+    {
+      "id": "CHEBI:27902",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27902",
+      "name": "tetracycline",
+      "synonyms": [
+        "Tetracycline",
+        "(4S,4aS,5aS,12aS)-4-(Dimethylamino)-1,4,4a,5,5a,6,11,12a-octahydro-3,6,10,12,12a-pentahydroxy-6-methyl-1,11-dioxo-2-naphthacenecarboxamide",
+        "Deschlorobiomycin",
+        "Tsiklomitsin",
+        "Abramycin",
+        "Liquamycin",
+        "TETRACYCLINE",
+        "tétracycline",
+        "Tetracyclin",
+        "Tetrazyklin",
+        "Anhydrotetracycline"
+      ],
+      "definition": "A broad-spectrum polyketide antibiotic produced by the <em>Streptomyces genus</em> of actinobacteria.",
+      "chemical_properties": {
+        "formula": "C22H24N2O8",
+        "mass": "444.440",
+        "inchi_key": "OFVLGDICTFRJMM-WESIUVDSSA-N",
+        "inchi": "InChI=1S/C22H24N2O8/c1-21(31)8-5-4-6-11(25)12(8)16(26)13-9(21)7-10-15(24(2)3)17(27)14(20(23)30)19(29)22(10,32)18(13)28/h4-6,9-10,15,25,27-28,31-32H,7H2,1-3H3,(H2,23,30)/t9-,10-,15-,21+,22-/m0/s1",
+        "smiles": "[H][C@]12C[C@@]3([H])[C@H](N(C)C)C(O)=C(C(N)=O)C(=O)[C@@]3(O)C(O)=C1C(=O)c1c(O)cccc1[C@@]2(C)O"
+      }
+    },
+    {
+      "id": "CHEBI:42355",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:42355",
+      "name": "erythromycin A",
+      "synonyms": [
+        "Erythromycin",
+        "Erythromycin A",
+        "Abomacetin",
+        "Erythromycin C",
+        "ERYTHROMYCIN A",
+        "(3<i>R</i>,4<i>S</i>,5<i>S</i>,6<i>R</i>,7<i>R</i>,9<i>R</i>,11<i>R</i>,12<i>R</i>,13<i>S</i>,14<i>R</i>)-6-{[(2<i>S</i>,3<i>R</i>,4<i>S</i>,6<i>R</i>)-4-(dimethylamino)-3-hydroxy-6-methyltetrahydro-2<em>H</em>-pyran-2-yl]oxy}-14-ethyl-7,12,13-trihydroxy-4-{[(2<i>R</i>,4<i>R</i>,5<i>S</i>,6<i>S</i>)-5-hydroxy-4-methoxy-4,6-dimethyltetrahydro-2<em>H</em>-pyran-2-yl]oxy}-3,5,7,9,11,13-hexamethyloxacyclotetradecane-2,10-dione",
+        "3''-<em>O</em>-demethylerythromycin",
+        "Erythromycin",
+        "Erythromycin A",
+        "ERYTHROMYCIN",
+        "erthromycin"
+      ],
+      "definition": "An erythromycin that consists of erythronolide A having 2,6-dideoxy-3-<em>C</em>-methyl-3-<em>O</em>-methyl-α-<small>L</small>-<i>ribo</i>-hexopyranosyl and 3,4,6-trideoxy-3-(dimethylamino)-β-<small>D</small>-<i>xylo</i>-hexopyranosyl residues attahced at positions 4 and 6 respectively.",
+      "chemical_properties": {
+        "formula": "C37H67NO13",
+        "mass": "733.937",
+        "inchi_key": "ULGZDMOVFRHVEP-RWJQBGPGSA-N",
+        "inchi": "InChI=1S/C37H67NO13/c1-14-25-37(10,45)30(41)20(4)27(39)18(2)16-35(8,44)32(51-34-28(40)24(38(11)12)15-19(3)47-34)21(5)29(22(6)33(43)49-25)50-26-17-36(9,46-13)31(42)23(7)48-26/h18-26,28-32,34,40-42,44-45H,14-17H2,1-13H3/t18-,19-,20+,21+,22-,23+,24+,25-,26+,28-,29+,30-,31+,32-,34+,35-,36-,37-/m1/s1",
+        "smiles": "CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@H](N(C)C)[C@H]2O)[C@](C)(O)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@]1(C)O"
+      }
+    },
+    {
+      "id": "CHEBI:5118",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:5118",
+      "name": "fluoxetine",
+      "synonyms": [
+        "(±)-<em>N</em>-methyl-γ-(4-(trifluoromethyl)phenoxy)benzenepropanamine",
+        "(±)-<em>N</em>-methyl-3-phenyl-3-((α,α,α-trifluoro-<em>p</em>-tolyl)oxy)propylamine"
+      ],
+      "definition": "A racemate comprising equimolar amounts of (<i>R</i>)- and (<i>S</i>)-fluoxetine. A selective serotonin reuptake inhibitor (SSRI), it is used (generally as the hydrochloride salt) for the treatment of depression (and the depressive phase of bipolar disorder), bullimia nervosa, and obsessive-compulsive disorder.",
+      "chemical_properties": {
+        "formula": "C17H18F3NO",
+        "mass": "309.326",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "CHEBI:7815",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7815",
+      "name": "oxalosuccinic acid",
+      "synonyms": [
+        "Oxalosuccinate",
+        "Oxalosuccinic acid",
+        "Oxalbernsteinsäure",
+        "1-oxopropane-1,2,3-tricarboxylate"
+      ],
+      "definition": "A tricarboxylic acid consisting of 2-oxoglutaric acid having a further carboxy group at the 3-position. It is a substrate of the citric acid cycle.",
+      "chemical_properties": {
+        "formula": "C6H6O7",
+        "mass": "190.107",
+        "inchi_key": "UFSCUAXLTRFIDC-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C6H6O7/c7-3(8)1-2(5(10)11)4(9)6(12)13/h2H,1H2,(H,7,8)(H,10,11)(H,12,13)",
+        "smiles": "O=C(O)CC(C(=O)O)C(=O)C(=O)O"
+      }
+    },
+    {
+      "id": "CHEBI:15596",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15596",
+      "name": "sinapic acid (S)-malate ester",
+      "synonyms": [
+        "Sinapoyl-(S)-malate",
+        "Sinapoyl-(S)-malate"
+      ],
+      "definition": "The 4-<em>O</em>-(<i>S</i>)-malate derivative of sinapic acid.",
+      "chemical_properties": {
+        "formula": "C15H16O9",
+        "mass": "340.284",
+        "inchi_key": "SVOZVFTXNDIEBH-NWALNABHSA-N",
+        "inchi": "InChI=1S/C15H16O9/c1-22-10-5-8(3-4-12(17)18)6-11(23-2)14(10)24-15(21)9(16)7-13(19)20/h3-6,9,16H,7H2,1-2H3,(H,17,18)(H,19,20)/b4-3+/t9-/m0/s1",
+        "smiles": "COc1cc(/C=C/C(=O)O)cc(OC)c1OC(=O)[C@@H](O)CC(=O)O"
+      }
+    },
+    {
+      "id": "CHEBI:15871",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15871",
+      "name": "o-orsellinate depside",
+      "synonyms": [
+        "Orsellinate depside",
+        "Lecanoric acid",
+        "Lecanoric acid",
+        "2,4-Dihydroxy-6-methylbenzoic acid 4-carboxy-3-hydroxy-5-methylphenyl ester"
+      ],
+      "definition": null,
+      "chemical_properties": {
+        "formula": "C16H14O7",
+        "mass": "318.281",
+        "inchi_key": "HEMSJKZDHNSSEW-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C16H14O7/c1-7-3-9(17)5-11(18)14(7)16(22)23-10-4-8(2)13(15(20)21)12(19)6-10/h3-6,17-19H,1-2H3,(H,20,21)",
+        "smiles": "Cc1cc(OC(=O)c2c(C)cc(O)cc2O)cc(O)c1C(=O)O"
+      }
+    },
+    {
+      "id": "CHEBI:6377",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:6377",
+      "name": "lapachol",
+      "synonyms": [
+        "Lapachol",
+        "2-hydroxy-3-(3-methyl-2-buten-1-yl)-1,4-naphthalenedione",
+        "C.I. 75490",
+        "Bethabarra wood",
+        "C.I. natural yellow 16",
+        "2-hydroxy-3-(3-methyl-2-butenyl)-1,4-naphthoquinone",
+        "Ipe-tobacco wood",
+        "lapachol wood",
+        "Surinam greenheart wood",
+        "taiguic acid",
+        "Taigu wood",
+        "tecomin",
+        "greenhartin",
+        "2-hydroxy-3-(3-methyl-2-butenyl)-1,4-naphthalenedione",
+        "2-hydroxy-3-(3-methylbut-2-en-1-yl)-1,4-dihydronaphthalene-1,4-dione"
+      ],
+      "definition": "A hydroxy-1,4-naphthoquinone that is 1,4-naphthoquinone substituted by hydroxy and 3-methylbut-2-en-1-yl groups at positions 2 and 3, respectively. It is a natural compound that exhibits antibacterial and anticancer properties, first isolated in 1882 from the bark of <em>Tabebuia avellanedae</em>.",
+      "chemical_properties": {
+        "formula": "C15H14O3",
+        "mass": "242.274",
+        "inchi_key": "CIEYTVIYYGTCCI-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C15H14O3/c1-9(2)7-8-12-13(16)10-5-3-4-6-11(10)14(17)15(12)18/h3-7,18H,8H2,1-2H3",
+        "smiles": "CC(C)=CCC1=C(O)C(=O)c2ccccc2C1=O"
+      }
+    },
+    {
+      "id": "CHEBI:8776",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:8776",
+      "name": "ranitidine",
+      "synonyms": [],
+      "definition": "A member of the class of  furans used to treat  peptic ulcer disease (PUD) and gastroesophageal reflux disease.",
+      "chemical_properties": {
+        "formula": "C13H22N4O3S",
+        "mass": "314.411",
+        "inchi_key": "VMXUWOKSQNHOCA-UKTHLTGXSA-N",
+        "inchi": "InChI=1S/C13H22N4O3S/c1-14-13(9-17(18)19)15-6-7-21-10-12-5-4-11(20-12)8-16(2)3/h4-5,9,14-15H,6-8,10H2,1-3H3/b13-9+",
+        "smiles": "CN/C(=C\\[N+](=O)[O-])NCCSCc1ccc(CN(C)C)o1"
+      }
+    },
+    {
+      "id": "CHEBI:63623",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:63623",
+      "name": "succimer",
+      "synonyms": [
+        "meso-2,3-Dimercaptosuccinic acid",
+        "meso-Dimercaptosuccinic acid",
+        "DMSA",
+        "Dimercaptosuccinic acid",
+        "(R*,S*)-2,3-Dimercaptobutanedioic acid",
+        "<i>meso</i>-2,3-Dimercaptobernsteinsäure"
+      ],
+      "definition": "A sulfur-containing carboxylic acid that is succinic acid bearing two mercapto substituents at positions 2 and 3. A lead chelator used as an antedote to lead poisoning.",
+      "chemical_properties": {
+        "formula": "C4H6O4S2",
+        "mass": "182.222",
+        "inchi_key": "ACTRVOBWPAIOHC-XIXRPRMCSA-N",
+        "inchi": "InChI=1S/C4H6O4S2/c5-3(6)1(9)2(10)4(7)8/h1-2,9-10H,(H,5,6)(H,7,8)/t1-,2+",
+        "smiles": "O=C(O)[C@@H](S)[C@@H](S)C(=O)O"
+      }
+    },
+    {
+      "id": "CHEBI:8461",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:8461",
+      "name": "promethazine",
+      "synonyms": [
+        "Promethazine",
+        "10-(2-Dimethylaminopropyl)phenothiazine",
+        "<em>N</em>,<em>N</em>,α-trimethyl-10<em>H</em>-phenothiazine-10-ethanamine",
+        "10-[2-(dimethylamino)propyl]phenothiazine",
+        "(2-dimethylamino-2-methyl)ethyl-<em>N</em>-dibenzoparathiazine",
+        "proazamine",
+        "<em>N</em>-(2'-dimethylamino-2'-methyl)ethylphenothiazine"
+      ],
+      "definition": "A  tertiary amine that is a substituted phenothiazine in which the ring nitrogen at position 10 is attached to C-3 of an <em>N</em>,<em>N</em>-dimethylpropan-2-amine moiety.",
+      "chemical_properties": {
+        "formula": "C17H20N2S",
+        "mass": "284.428",
+        "inchi_key": "PWWVAXIEGOYWEE-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C17H20N2S/c1-13(18(2)3)12-19-14-8-4-6-10-16(14)20-17-11-7-5-9-15(17)19/h4-11,13H,12H2,1-3H3",
+        "smiles": "CC(CN1c2ccccc2Sc2ccccc21)N(C)C"
+      }
+    },
+    {
+      "id": "CHEBI:2618",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:2618",
+      "name": "amantadine",
+      "synonyms": [
+        "Amantadine",
+        "1-adamantylamine",
+        "1-aminoadamantane",
+        "tricyclo[3.3.1.1<small><sup>3,7</small></sup>]decan-1-ylamine",
+        "tricyclo[3.3.1.1<small><sup>3,7</small></sup>]decan-1-amine",
+        "tricyclo[3.3.1.1<small><sup>3,7</small></sup>]decane-1-amine",
+        "1-adamantanamine",
+        "Amantidine",
+        "Aminoadamantane"
+      ],
+      "definition": "A member of the class of  adamantanes that is used as an antiviral and  antiparkinson drug.",
+      "chemical_properties": {
+        "formula": "C10H17N",
+        "mass": "151.253",
+        "inchi_key": "DKNWSYNQZKUICI-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C10H17N/c11-10-4-7-1-8(5-10)3-9(2-7)6-10/h7-9H,1-6,11H2",
+        "smiles": "NC12CC3CC(CC(C3)C1)C2"
+      }
+    },
+    {
+      "id": "CHEBI:6541",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:6541",
+      "name": "losartan",
+      "synonyms": [
+        "Losartan",
+        "(2-butyl-4-chloro-1-{[2'-(1<em>H</em>-tetrazol-5-yl)biphenyl-4-yl]methyl}-1<em>H</em>-imidazol-5-yl)methanol",
+        "2-<em>n</em>-butyl-4-chloro-5-hydroxymethyl-1-[(2'-(1<em>H</em>-tetrazol-5-yl)biphenyl-4-yl)methyl]imidazole"
+      ],
+      "definition": "A biphenylyltetrazole where a 1,1'-biphenyl group is attached at the 5-position and has an additional trisubstituted imidazol-1-ylmethyl group at the 4'-position",
+      "chemical_properties": {
+        "formula": "C22H23ClN6O",
+        "mass": "422.920",
+        "inchi_key": "PSIFNNKUMBGKDQ-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C22H23ClN6O/c1-2-3-8-20-24-21(23)19(14-30)29(20)13-15-9-11-16(12-10-15)17-6-4-5-7-18(17)22-25-27-28-26-22/h4-7,9-12,30H,2-3,8,13-14H2,1H3,(H,25,26,27,28)",
+        "smiles": "CCCCc1nc(Cl)c(CO)n1Cc1ccc(-c2ccccc2-c2nnnn2)cc1"
+      }
+    },
+    {
+      "id": "CHEBI:4784",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4784",
+      "name": "enalapril",
+      "synonyms": [
+        "Enalapril",
+        "(S)-1-{(S)-2-[1-((S)-Ethoxycarbonyl)-3-phenyl-propylamino]-propionyl}-pyrrolidine-2-carboxylic acid",
+        "ENALAPRIL",
+        "(<i>S</i>)-1-(<em>N</em>-(1-(ethoxycarbonyl)-3-phenylpropyl)-<small>L</small>-alanyl)-<small>L</small>-proline",
+        "1-(<em>N</em>-((<i>S</i>)-1-carboxy-3-phenylpropyl)-<small>L</small>-alanyl)-<small>L</small>-proline 1'-ethyl ester"
+      ],
+      "definition": "A dicarboxylic acid monoester that is ethyl 4-phenylbutanoate in which a hydrogen α to the carboxy group is substituted by the amino group of <small>L</small>-alanyl-<small>L</small>-proline (<i>S</i>-configuration).",
+      "chemical_properties": {
+        "formula": "C20H28N2O5",
+        "mass": "376.453",
+        "inchi_key": "GBXSMTUPTTWBMN-XIRDDKMYSA-N",
+        "inchi": "InChI=1S/C20H28N2O5/c1-3-27-20(26)16(12-11-15-8-5-4-6-9-15)21-14(2)18(23)22-13-7-10-17(22)19(24)25/h4-6,8-9,14,16-17,21H,3,7,10-13H2,1-2H3,(H,24,25)/t14-,16-,17-/m0/s1",
+        "smiles": "CCOC(=O)[C@H](CCc1ccccc1)N[C@@H](C)C(=O)N1CCC[C@H]1C(=O)O"
+      }
+    },
+    {
+      "id": "CHEBI:27509",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27509",
+      "name": "cinchonine",
+      "synonyms": [
+        "Cinchonine",
+        "cinchonine",
+        "(+)-cinchonine",
+        "(8R,9S)-cinchonine",
+        "<small>D</small>-cinchonine",
+        "(<i>S</i>)-quinolin-4-yl-(5-vinyl-1-aza-bicyclo[2.2.2]oct-2-yl)-methanol",
+        "(9S)-Cinchonan-9-ol"
+      ],
+      "definition": "Cinchonan in which a hydrogen at position 9 is substituted by hydroxy (<i>S</i> configuration). It occurs in the bark of most varieties of <em>Cinchona</em> shrubs, and is frequently used for directing chirality in asymmetric synthesis.",
+      "chemical_properties": {
+        "formula": "C19H22N2O",
+        "mass": "294.398",
+        "inchi_key": "KMPWYEUPVWOPIM-QAMTZSDWSA-N",
+        "inchi": "InChI=1S/C19H22N2O/c1-2-13-12-21-10-8-14(13)11-18(21)19(22)16-7-9-20-17-6-4-3-5-15(16)17/h2-7,9,13-14,18-19,22H,1,8,10-12H2/t13-,14-,18+,19-/m0/s1",
+        "smiles": "[H][C@]1([C@@H](O)c2ccnc3ccccc23)C[C@@H]2CC[N@@]1C[C@@H]2C=C"
+      }
+    },
+    {
+      "id": "CHEBI:2549",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:2549",
+      "name": "albuterol",
+      "synonyms": [
+        "Proventil",
+        "Albuterol",
+        "Salbutamol"
+      ],
+      "definition": "A member of the class of phenylethanolamines that is 4-(2-amino-1-hydroxyethyl)-2-(hydroxymethyl)phenol having a <em>tert</em>-butyl group attached to the nirogen atom. It acts as a β-adrenergic agonist used in the treatment of asthma and chronic obstructive pulmonary disease (COPD).",
+      "chemical_properties": {
+        "formula": "C13H21NO3",
+        "mass": "239.315",
+        "inchi_key": "NDAUXUAQIAJITI-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C13H21NO3/c1-13(2,3)14-7-12(17)9-4-5-11(16)10(6-9)8-15/h4-6,12,14-17H,7-8H2,1-3H3",
+        "smiles": "CC(C)(C)NCC(O)c1ccc(O)c(CO)c1"
+      }
+    },
+    {
+      "id": "CHEBI:28177",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28177",
+      "name": "theophylline",
+      "synonyms": [
+        "Theophylline",
+        "1,3-Dimethylxanthine",
+        "THEOPHYLLINE",
+        "Theophyllin",
+        "1,3-dimethyl-7<em>H</em>-purine-2,6-dione",
+        "theophylline anhydrous",
+        "théophylline"
+      ],
+      "definition": "A dimethylxanthine having the two methyl groups located at positions 1 and 3. It is structurally similar to caffeine and is found in green and black tea.",
+      "chemical_properties": {
+        "formula": "C7H8N4O2",
+        "mass": "180.167",
+        "inchi_key": "ZFXYFBGIUFBOJW-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C7H8N4O2/c1-10-5-4(8-3-9-5)6(12)11(2)7(10)13/h3H,1-2H3,(H,8,9)",
+        "smiles": "Cn1c(=O)c2ncnc2n(C)c1=O"
+      }
+    },
+    {
+      "id": "CHEBI:8378",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:8378",
+      "name": "prednisolone",
+      "synonyms": [
+        "1,4-pregnadiene-11β,17α,21-triol-3,20-dione",
+        "1,4-pregnadiene-3,20-dione-11β,17α,21-triol",
+        "3,20-dioxo-11β,17α,21-trihydroxy-1,4-pregnadiene",
+        "metacortandralone",
+        "Δ<small><sup>1</small></sup>-dehydrocortisol",
+        "Δ<small><sup>1</small></sup>-hydrocortisone",
+        "Δ<small><sup>1</small></sup>-dehydrohydrocortisone",
+        "hydroretrocortine",
+        "(11β)-11,17,21-trihydroxypregna-1,4-diene-3,20-dione"
+      ],
+      "definition": "A glucocorticoid that is prednisone in which the oxo group at position 11 has been reduced to the corresponding β-hydroxy group. It is a drug metabolite of prednisone.",
+      "chemical_properties": {
+        "formula": "C21H28O5",
+        "mass": "360.450",
+        "inchi_key": "OIGNJSKKLXVSLS-VWUMJDOOSA-N",
+        "inchi": "InChI=1S/C21H28O5/c1-19-7-5-13(23)9-12(19)3-4-14-15-6-8-21(26,17(25)11-22)20(15,2)10-16(24)18(14)19/h5,7,9,14-16,18,22,24,26H,3-4,6,8,10-11H2,1-2H3/t14-,15-,16-,18+,19-,20-,21-/m0/s1",
+        "smiles": "[H][C@@]12CC[C@](O)(C(=O)CO)[C@@]1(C)C[C@H](O)[C@@]1([H])[C@@]2([H])CCC2=CC(=O)C=C[C@@]21C"
+      }
+    },
+    {
+      "id": "CHEBI:41879",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:41879",
+      "name": "dexamethasone",
+      "synonyms": [
+        "Dexamethasone",
+        "9α-fluoro-16α-methylprednisolone",
+        "16α-methyl-9α-fluoro-1-dehydrocortisol",
+        "1-dehydro-16α-methyl-9α-fluorohydrocortisone",
+        "(11β,16α)-9-fluoro-11,17,21-trihydroxy-16-methylpregna-1,4-diene-3,20-dione",
+        "fluormethylprednisolone"
+      ],
+      "definition": "A fluorinated steroid that is 9-fluoropregna-1,4-diene substituted by hydroxy groups at positions 11, 17 and 21, a methyl group at position 16 and oxo groups at positions 3 and 20. It is a synthetic member of the class of  glucocorticoids.",
+      "chemical_properties": {
+        "formula": "C22H29FO5",
+        "mass": "392.467",
+        "inchi_key": "UREBDLICKHMUKA-CXSFZGCWSA-N",
+        "inchi": "InChI=1S/C22H29FO5/c1-12-8-16-15-5-4-13-9-14(25)6-7-19(13,2)21(15,23)17(26)10-20(16,3)22(12,28)18(27)11-24/h6-7,9,12,15-17,24,26,28H,4-5,8,10-11H2,1-3H3/t12-,15+,16+,17+,19+,20+,21+,22+/m1/s1",
+        "smiles": "[H][C@@]12C[C@@H](C)[C@](O)(C(=O)CO)[C@@]1(C)C[C@H](O)[C@@]1(F)[C@@]2([H])CCC2=CC(=O)C=C[C@@]21C"
+      }
+    },
+    {
+      "id": "CHEBI:5754",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:5754",
+      "name": "homoferreirin",
+      "synonyms": [
+        "5,7-dihydroxy-2',4'-dimethoxyisoflavanone"
+      ],
+      "definition": "A dihydroxyflavanone that is flavanone substituted by hydroxy groups at positions 5 and 7 and methoxy groups at positions 2' and 4' respectively.",
+      "chemical_properties": {
+        "formula": "C17H16O6",
+        "mass": "316.309",
+        "inchi_key": "LMLDNMHDNFCNCW-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C17H16O6/c1-21-10-3-4-11(14(7-10)22-2)12-8-23-15-6-9(18)5-13(19)16(15)17(12)20/h3-7,12,18-19H,8H2,1-2H3",
+        "smiles": "COc1ccc(C2COc3cc(O)cc(O)c3C2=O)c(OC)c1"
+      }
+    },
+    {
+      "id": "CHEBI:47916",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:47916",
+      "name": "flavonoid",
+      "synonyms": [
+        "Flavonoid",
+        "2-aryl-1-benzopyrans",
+        "2-aryl-1-benzopyran",
+        "flavonoids"
+      ],
+      "definition": "Any member of the 'superclass' flavonoids whose skeleton is based on 1-benzopyran with an aryl substituent at position 2. The term was originally restricted to natural products, but is now also used to describe semi-synthetic and fully synthetic compounds.",
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "CHEBI:6690",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:6690",
+      "name": "Maprotiline",
+      "synonyms": [
+        "Maprotiline",
+        "maprotiline HCl",
+        "maprotiline hydrochloride"
+      ],
+      "definition": null,
+      "chemical_properties": {
+        "formula": "C20H23N",
+        "mass": "277.411",
+        "inchi_key": "QSLMDECMDJKHMQ-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C20H23N/c1-21-14-6-12-20-13-11-15(16-7-2-4-9-18(16)20)17-8-3-5-10-19(17)20/h2-5,7-10,15,21H,6,11-14H2,1H3",
+        "smiles": "CNCCCC12CCC(c3ccccc31)c1ccccc12"
+      }
+    },
+    {
+      "id": "CHEBI:2611",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:2611",
+      "name": "alprazolam",
+      "synonyms": [
+        "Alprazolam",
+        "Xanax",
+        "8-Chloro-1-methyl-6-phenyl-4H-s-triazolo(4,3-a)(1,4)benzodiazepine"
+      ],
+      "definition": "A member of the class of triazolobenzodiazepines that is 4<em>H</em>-[1,2,4]triazolo[4,3-<em>a</em>][1,4]benzodiazepine carrying methyl, phenyl and chloro substituents at positions 1, 6 and 8 respectively. Alprazolam is only found in individuals that have taken this drug.",
+      "chemical_properties": {
+        "formula": "C17H13ClN4",
+        "mass": "308.772",
+        "inchi_key": "VREFGVBLTWBCJP-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C17H13ClN4/c1-11-20-21-16-10-19-17(12-5-3-2-4-6-12)14-9-13(18)7-8-15(14)22(11)16/h2-9H,10H2,1H3",
+        "smiles": "Cc1nnc2n1-c1ccc(Cl)cc1C(c1ccccc1)=NC2"
+      }
+    },
+    {
+      "id": "CHEBI:3992",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:3992",
+      "name": "cyclic ketone",
+      "synonyms": [
+        "Cyclic ketone"
+      ],
+      "definition": null,
+      "chemical_properties": {
+        "formula": "N/A",
+        "mass": "N/A",
+        "inchi_key": "N/A",
+        "inchi": "N/A",
+        "smiles": "N/A"
+      }
+    },
+    {
+      "id": "CHEBI:8107",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:8107",
+      "name": "phenytoin",
+      "synonyms": [
+        "5,5-Diphenyl-imidazolidine-2,4-dione",
+        "5,5-diphenyltetrahydro-1H-2,4-imidazoledione",
+        "5,5-diphenylimidazolidine-2,4-dione",
+        "DILANTIN",
+        "PHENTYTOIN"
+      ],
+      "definition": "A imidazolidine-2,4-dione that consists of hydantoin bearing two phenyl substituents at position 5.",
+      "chemical_properties": {
+        "formula": "C15H12N2O2",
+        "mass": "252.273",
+        "inchi_key": "CXOFVDLJLONNDW-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C15H12N2O2/c18-13-15(17-14(19)16-13,11-7-3-1-4-8-11)12-9-5-2-6-10-12/h1-10H,(H2,16,17,18,19)",
+        "smiles": "O=C1NC(=O)C(c2ccccc2)(c2ccccc2)N1"
+      }
+    },
+    {
+      "id": "CHEBI:3387",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:3387",
+      "name": "carbamazepine",
+      "synonyms": [
+        "5-Carbamoyl-5H-dibenz(b,f)azepine",
+        "5-Carbamoyl-5H-dibenzo(b,f)azepine",
+        "5-Carbamyl-5H-dibenzo(b,f)azepine",
+        "5H-Dibenz(b,f)azepine-5-carboxamide",
+        "Carbamazepen",
+        "5-carbamoyl-5<em>H</em>-dibenz[b,f]azepine"
+      ],
+      "definition": "A dibenzoazepine that is 5<em>H</em>-dibenzo[<em>b</em>,<em>f</em>]azepine carrying a carbamoyl substituent at the azepine nitrogen, used as an anticonvulsant.",
+      "chemical_properties": {
+        "formula": "C15H12N2O",
+        "mass": "236.274",
+        "inchi_key": "FFGPTBGBLSHEPO-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C15H12N2O/c16-15(18)17-13-7-3-1-5-11(13)9-10-12-6-2-4-8-14(12)17/h1-10H,(H2,16,18)",
+        "smiles": "NC(=O)N1c2ccccc2C=Cc2ccccc21"
+      }
+    },
+    {
+      "id": "CHEBI:39867",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39867",
+      "name": "valproic acid",
+      "synonyms": [
+        "2-propylvaleric acid",
+        "4-heptanecarboxylic acid",
+        "di-<em>n</em>-propylacetic acid",
+        "2-PROPYL-PENTANOIC ACID",
+        "dipropylacetic acid",
+        "DPA",
+        "<em>n</em>-DPA",
+        "Valproinsäure",
+        "2-<em>n</em>-propyl-<em>n</em>-valeric acid",
+        "Di-<em>n</em>-propylessigsäure",
+        "2-propylpentanoic acid",
+        "VALPROIC ACID",
+        "VPA"
+      ],
+      "definition": "A branched-chain saturated fatty acid that comprises of a propyl substituent on a pentanoic acid stem.",
+      "chemical_properties": {
+        "formula": "C8H16O2",
+        "mass": "144.214",
+        "inchi_key": "NIJJYAXOARWZEE-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C8H16O2/c1-3-5-7(6-4-2)8(9)10/h7H,3-6H2,1-2H3,(H,9,10)",
+        "smiles": "CCCC(CCC)C(=O)O"
+      }
+    },
+    {
+      "id": "CHEBI:6445",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:6445",
+      "name": "Levorphanol tartrate",
+      "synonyms": [
+        "Levorphanol tartrate",
+        "Levo-Dromoran"
+      ],
+      "definition": null,
+      "chemical_properties": {
+        "formula": "C17H23NO.C4H6O6.2H2O",
+        "mass": "443.493",
+        "inchi_key": "UMZNDVASJKIQCB-QLFXFZCRSA-N",
+        "inchi": "InChI=1S/C17H23NO.C4H6O6.2H2O/c1-18-9-8-17-7-3-2-4-14(17)16(18)10-12-5-6-13(19)11-15(12)17;5-1(3(7)8)2(6)4(9)10;;/h5-6,11,14,16,19H,2-4,7-10H2,1H3;1-2,5-6H,(H,7,8)(H,9,10);2*1H2/t14-,16+,17+;1-,2-;;/m01../s1",
+        "smiles": "O.O.O=C(O)[C@H](O)[C@@H](O)C(=O)O.[H][C@@]12CCCC[C@@]13CCN(C)[C@@H]2Cc1ccc(O)cc13"
+      }
+    },
+    {
+      "id": "CHEBI:4903",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4903",
+      "name": "17alpha-ethynylestradiol",
+      "synonyms": [
+        "Ethynyl estradiol",
+        "17alpha-Ethinyl estradiol",
+        "Ethinyl estradiol",
+        "Ethinylestradiol",
+        "17-ethinyl-3,17-estradiol",
+        "17-ethinylestradiol",
+        "17-ethinyl-3,17-oestradiol",
+        "ethinyloestradiol"
+      ],
+      "definition": "A 3-hydroxy steroid that is estradiol substituted by a ethynyl group at position 17. It is a  xenoestrogen synthesized from estradiol and has been shown to exhibit high estrogenic potency on oral administration.",
+      "chemical_properties": {
+        "formula": "C20H24O2",
+        "mass": "296.410",
+        "inchi_key": "BFPYWIDHMRZLRN-SLHNCBLASA-N",
+        "inchi": "InChI=1S/C20H24O2/c1-3-20(22)11-9-18-17-6-4-13-12-14(21)5-7-15(13)16(17)8-10-19(18,20)2/h1,5,7,12,16-18,21-22H,4,6,8-11H2,2H3/t16-,17-,18+,19+,20+/m1/s1",
+        "smiles": "[H][C@@]12CC[C@@](O)(C#C)[C@@]1(C)CC[C@]1([H])c3ccc(O)cc3CC[C@@]21[H]"
+      }
+    },
+    {
+      "id": "CHEBI:9635",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:9635",
+      "name": "toremifene",
+      "synonyms": [],
+      "definition": null,
+      "chemical_properties": {
+        "formula": "C26H28ClNO",
+        "mass": "405.969",
+        "inchi_key": "XFCLJVABOIYOMF-QPLCGJKRSA-N",
+        "inchi": "InChI=1S/C26H28ClNO/c1-28(2)19-20-29-24-15-13-23(14-16-24)26(22-11-7-4-8-12-22)25(17-18-27)21-9-5-3-6-10-21/h3-16H,17-20H2,1-2H3/b26-25-",
+        "smiles": "CN(C)CCOc1ccc(/C(=C(/CCCl)c2ccccc2)c2ccccc2)cc1"
+      }
+    },
+    {
+      "id": "CHEBI:49713",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49713",
+      "name": "lithium(1+)",
+      "synonyms": [
+        "Li<small><sup>+</small></sup>",
+        "lithium cation",
+        "Lithium, ion (Li1+)",
+        "lithium, ion",
+        "LITHIUM ION"
+      ],
+      "definition": null,
+      "chemical_properties": {
+        "formula": "Li",
+        "mass": "6.941",
+        "inchi_key": "HBBGRARXTFLTSG-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/Li/q+1",
+        "smiles": "[Li+]"
+      }
+    },
+    {
+      "id": "CHEBI:5613",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:5613",
+      "name": "haloperidol",
+      "synonyms": [
+        "γ-(4-(<em>p</em>-chlorophenyl)-4-hydroxpiperidino)-<em>p</em>-fluorbutyrophenone",
+        "4'-fluoro-4-(4-(<em>p</em>-chlorophenyl)-4-hydroxypiperidinyl)butyrophenone",
+        "4'-fluoro-4-(4-hydroxy-4-(4'-chlorophenyl)piperidino)butyrophenone",
+        "4-(4-(<em>para</em>-chlorophenyl)-4-hydroxypiperidino)-4'-fluorobutyrophenone",
+        "1-(3-<em>p</em>-fluorobenzoylpropyl)-4-<em>p</em>-chlorophenyl-4-hydroxypiperidine",
+        "4-[4-(4-chlorophenyl)-4-hydroxy-1-piperidyl]-1-(4-fluorophenyl)-butan-1-one"
+      ],
+      "definition": "A compound composed of a central piperidine structure with hydroxy and <em>p</em>-chlorophenyl substituents at position 4 and an <em>N</em>-linked <em>p</em>-fluorobutyrophenone moiety.",
+      "chemical_properties": {
+        "formula": "C21H23ClFNO2",
+        "mass": "375.871",
+        "inchi_key": "LNEPOXFFQSENCJ-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C21H23ClFNO2/c22-18-7-5-17(6-8-18)21(26)11-14-24(15-12-21)13-1-2-20(25)16-3-9-19(23)10-4-16/h3-10,26H,1-2,11-15H2",
+        "smiles": "O=C(CCCN1CCC(O)(c2ccc(Cl)cc2)CC1)c1ccc(F)cc1"
+      }
+    },
+    {
+      "id": "CHEBI:135810",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:135810",
+      "name": "atrasentan",
+      "synonyms": [
+        "(2<i>R</i>, 3<i>R</i>, 4<i>S</i>)-4-(1,3-benzodioxol-5-yl)-1-[2-(dibutylamino)-2-oxoethyl]-2-(4-methoxyphenyl)-3-pyrrolidinecarboxylic acid",
+        "ABT-627",
+        "ABT 627",
+        "ABT627",
+        "(2<i>R</i>,3<i>R</i>,4<i>S</i>)-4-(1,3-benzodioxol-5-yl)-1-[2-(dibutylamino)-2-oxoethyl]-2-(4-methoxyphenyl)-3-pyrrolidinecarboxylic acid",
+        "A-147627",
+        "(+)-A-127722",
+        "(+)-A 127722",
+        "A 147627",
+        "(+)-A127722"
+      ],
+      "definition": "A member of the class of pyrrolidines that is pyrrolidine substituted by 2-(dibutylamino)-2-oxoethyl, 4-methoxyphenyl, carboxy, and 1,3-benzodioxol-5-yl groups at positions 1, 2, 3, and 4, respectively (the 2<i>R</i>,3<i>R</i>,4<i>S</i>-stereoisomer). It is an endothelin endothelin type A receptor antagonist used to reduce proteinuria in adults with primary immunoglobulin A nephropathy.",
+      "chemical_properties": {
+        "formula": "C29H38N2O6",
+        "mass": "510.631",
+        "inchi_key": "MOTJMGVDPWRKOC-QPVYNBJUSA-N",
+        "inchi": "InChI=1S/C29H38N2O6/c1-4-6-14-30(15-7-5-2)26(32)18-31-17-23(21-10-13-24-25(16-21)37-19-36-24)27(29(33)34)28(31)20-8-11-22(35-3)12-9-20/h8-13,16,23,27-28H,4-7,14-15,17-19H2,1-3H3,(H,33,34)/t23-,27-,28+/m1/s1",
+        "smiles": "[H][C@]1(c2ccc(OC)cc2)[C@H](C(=O)O)[C@@]([H])(c2ccc3c(c2)OCO3)CN1CC(=O)N(CCCC)CCCC"
+      }
+    },
+    {
+      "id": "CHEBI:7735",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7735",
+      "name": "olanzapine",
+      "synonyms": [
+        "Olanzapine"
+      ],
+      "definition": "A benzodiazepine that is 10<em>H</em>-thieno[2,3-<em>b</em>][1,5]benzodiazepine substituted by a methyl group at position 2 and a 4-methylpiperazin-1-yl group at position 4.",
+      "chemical_properties": {
+        "formula": "C17H20N4S",
+        "mass": "312.442",
+        "inchi_key": "KVWDHTXUZHCGIO-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C17H20N4S/c1-12-11-13-16(21-9-7-20(2)8-10-21)18-14-5-3-4-6-15(14)19-17(13)22-12/h3-6,11,19H,7-10H2,1-2H3",
+        "smiles": "Cc1cc2c(s1)Nc1ccccc1N=C2N1CCN(C)CC1"
+      }
+    },
+    {
+      "id": "CHEBI:8405",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:8405",
+      "name": "primaquine",
+      "synonyms": [
+        "Neo-Quipenyl",
+        "Primachin",
+        "Primaquin",
+        "6-Methoxy-8-(4-amino-1-methylbutylamino)quinoline",
+        "Primachinum",
+        "8-(4-Amino-1-methylbutylamino)-6-methoxyquinoline",
+        "8-((4-Amino-1-methylbutyl)amino)-6-methoxyquinoline"
+      ],
+      "definition": "An <em>N</em>-substituted diamine that is pentane-1,4-diamine substituted by a 6-methoxyquinolin-8-yl group at the N<small><sup>4</small></sup> position. It is a drug used in the treatment of malaria and <em>Pneumocystis</em> pneumonia.",
+      "chemical_properties": {
+        "formula": "C15H21N3O",
+        "mass": "259.353",
+        "inchi_key": "INDBQLZJXZLFIT-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C15H21N3O/c1-11(5-3-7-16)18-14-10-13(19-2)9-12-6-4-8-17-15(12)14/h4,6,8-11,18H,3,5,7,16H2,1-2H3",
+        "smiles": "COc1cc(NC(C)CCCN)c2ncccc2c1"
+      }
+    },
+    {
+      "id": "CHEBI:3766",
+      "uri": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:3766",
+      "name": "clozapine",
+      "synonyms": [
+        "Clozapine",
+        "Clozapin"
+      ],
+      "definition": "A benzodiazepine that is 5<em>H</em>-dibenzo[<em>b,e</em>][1,4]diazepine substituted by a chloro group at position 8 and a 4-methylpiperazin-1-yl group at position 11. It is a second generation antipsychotic used in the treatment of psychiatric disorders like  schizophrenia.",
+      "chemical_properties": {
+        "formula": "C18H19ClN4",
+        "mass": "326.831",
+        "inchi_key": "QZUDBNBUXVUHMW-UHFFFAOYSA-N",
+        "inchi": "InChI=1S/C18H19ClN4/c1-22-8-10-23(11-9-22)18-14-4-2-3-5-15(14)20-16-7-6-13(19)12-17(16)21-18/h2-7,12,20H,8-11H2,1H3",
+        "smiles": "CN1CCN(C2=Nc3cc(Cl)ccc3Nc3ccccc32)CC1"
+      }
+    }
+  ]
+}
