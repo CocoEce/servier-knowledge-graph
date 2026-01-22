@@ -1,0 +1,94 @@
+@prefix : <urn:webprotege:ontology:75584b1c-4072-4754-87de-8a723b68c177#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix pubchem: <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+@base <urn:webprotege:ontology:75584b1c-4072-4754-87de-8a723b68c177> .
+
+<urn:webprotege:ontology:75584b1c-4072-4754-87de-8a723b68c177>
+    rdf:type owl:Ontology .
+
+#################################################################
+# Annotation properties
+#################################################################
+
+skos:altLabel rdf:type owl:AnnotationProperty .
+skos:prefLabel rdf:type owl:AnnotationProperty .
+skos:exactMatch rdf:type owl:ObjectProperty .
+
+#################################################################
+# Classes
+#################################################################
+
+<http://webprotege.stanford.edu/R9LuOGlUe4X88gj5UkigsqB>
+    rdf:type owl:Class ;
+    rdfs:label "CanonicalChemical" .
+
+#################################################################
+# Individuals (PIVOTS CANONIQUES)
+#################################################################
+
+### Paracetamol
+<http://webprotege.stanford.edu/R9mabJMWCP2yyUAazaBMDBd>
+    rdf:type owl:NamedIndividual ,
+             <http://webprotege.stanford.edu/R9LuOGlUe4X88gj5UkigsqB> ;
+    rdfs:label "paracetamol_canonical" ;
+    skos:prefLabel "Paracetamol"@en ;
+    skos:altLabel "Paracétamol"@fr ,
+                  "paracétamol"@fr ;
+    skos:exactMatch chebi:46195 ,
+                    pubchem:4091 ,
+                    wd:Q57055 .
+
+### Metformin
+<http://webprotege.stanford.edu/RBhLMZC3FQfwaYauKJIZZrP>
+    rdf:type owl:NamedIndividual ,
+             <http://webprotege.stanford.edu/R9LuOGlUe4X88gj5UkigsqB> ;
+    rdfs:label "metformin_canonical" ;
+    skos:prefLabel "Metformin"@en ;
+    skos:altLabel "Metformine"@fr ;
+    skos:exactMatch chebi:6801 ,
+                    pubchem:3672 ,
+                    wd:Q19484 .
+
+### Aspirin
+<http://webprotege.stanford.edu/RCu79TTjLu3EcSSulQhpImk>
+    rdf:type owl:NamedIndividual ,
+             <http://webprotege.stanford.edu/R9LuOGlUe4X88gj5UkigsqB> ;
+    rdfs:label "aspirin_canonical" ;
+    skos:prefLabel "Aspirin"@en ;
+    skos:altLabel "Acetylsalicylic acid"@en ;
+    skos:exactMatch chebi:15365 ,
+                    pubchem:2244 ,
+                    wd:Q18216 .
+
+### Ibuprofen
+<http://webprotege.stanford.edu/RDe6MW6xx7PnHzw1037uosf>
+    rdf:type owl:NamedIndividual ,
+             <http://webprotege.stanford.edu/R9LuOGlUe4X88gj5UkigsqB> ;
+    rdfs:label "ibuprofen_canonical" ;
+    skos:prefLabel "Ibuprofen"@en ;
+    skos:altLabel "Ibuprofene"@fr ,
+                  "Ibuprofène"@fr ,
+                  "ibuprofen"@en ,
+                  "acide alpha-méthyl-4-(2-méthylpropyl)benzènéthanoïque"@fr ;
+    skos:exactMatch chebi:5855 ,
+                    pubchem:1983 ,
+                    wd:Q186969 .
+
+### Atorvastatin
+<http://webprotege.stanford.edu/RIC8NH5DLshow0hj7DeI3k>
+    rdf:type owl:NamedIndividual ,
+             <http://webprotege.stanford.edu/R9LuOGlUe4X88gj5UkigsqB> ;
+    rdfs:label "atorvastatin_canonical" ;
+    skos:prefLabel "Atorvastatin"@en ;
+    skos:altLabel "Atorvastatine"@fr ,
+                  "atorvastatine"@fr ;
+    skos:exactMatch chebi:39548 ,
+                    pubchem:60823 ,
+                    wd:Q668093 .
