@@ -1,0 +1,1032 @@
+{
+  "ontology": {
+    "iri": "http://example.org/animal-ontology-A",
+    "version": "1.0",
+    "name": "Animal Taxonomy Ontology A",
+    "description": "A comprehensive ontology of animal species with hierarchical classification"
+  },
+  "classes": [
+    {
+      "id": "ANIMAL_A:0000001",
+      "uri": "http://example.org/animal-ontology-A/Animal",
+      "label": "Animal",
+      "definition": "A living organism that feeds on organic matter, typically having specialized sense organs and nervous system",
+      "synonyms": ["Animalia", "Metazoa", "Fauna"],
+      "parent": null,
+      "attributes": {
+        "kingdom": "Animalia",
+        "type": "root_class"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000010",
+      "uri": "http://example.org/animal-ontology-A/Mammal",
+      "label": "Mammal",
+      "definition": "Warm-blooded vertebrate animal characterized by hair or fur and mammary glands",
+      "synonyms": ["Mammalia", "Mammalian"],
+      "parent": "ANIMAL_A:0000001",
+      "attributes": {
+        "class": "Mammalia",
+        "body_temperature": "warm-blooded",
+        "reproduction": "viviparous"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000011",
+      "uri": "http://example.org/animal-ontology-A/Carnivore",
+      "label": "Carnivore",
+      "definition": "Mammal that primarily feeds on flesh",
+      "synonyms": ["Carnivora", "Meat-eater", "Predatory Mammal"],
+      "parent": "ANIMAL_A:0000010",
+      "attributes": {
+        "order": "Carnivora",
+        "diet": "carnivorous"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000012",
+      "uri": "http://example.org/animal-ontology-A/Felidae",
+      "label": "Felidae",
+      "definition": "Family of carnivorous mammals commonly known as cats",
+      "synonyms": ["Cat Family", "Felines", "Cats"],
+      "parent": "ANIMAL_A:0000011",
+      "attributes": {
+        "family": "Felidae",
+        "characteristics": "retractable_claws"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000013",
+      "uri": "http://example.org/animal-ontology-A/Lion",
+      "label": "Lion",
+      "definition": "Large tawny-colored cat that lives in prides",
+      "synonyms": ["Panthera leo", "King of the Jungle", "African Lion"],
+      "parent": "ANIMAL_A:0000012",
+      "attributes": {
+        "species": "Panthera leo",
+        "habitat": "savanna",
+        "conservation_status": "vulnerable"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000014",
+      "uri": "http://example.org/animal-ontology-A/Tiger",
+      "label": "Tiger",
+      "definition": "Largest cat species with distinctive orange coat and black stripes",
+      "synonyms": ["Panthera tigris", "Bengal Tiger", "Striped Cat"],
+      "parent": "ANIMAL_A:0000012",
+      "attributes": {
+        "species": "Panthera tigris",
+        "habitat": "forest",
+        "conservation_status": "endangered"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000015",
+      "uri": "http://example.org/animal-ontology-A/Leopard",
+      "label": "Leopard",
+      "definition": "Large cat with spotted coat found in Africa and Asia",
+      "synonyms": ["Panthera pardus", "Spotted Cat", "Panther"],
+      "parent": "ANIMAL_A:0000012",
+      "attributes": {
+        "species": "Panthera pardus",
+        "habitat": "various",
+        "conservation_status": "vulnerable"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000016",
+      "uri": "http://example.org/animal-ontology-A/Cheetah",
+      "label": "Cheetah",
+      "definition": "Fastest land animal with distinctive black tear marks",
+      "synonyms": ["Acinonyx jubatus", "Hunting Leopard", "Speed Cat"],
+      "parent": "ANIMAL_A:0000012",
+      "attributes": {
+        "species": "Acinonyx jubatus",
+        "habitat": "grassland",
+        "max_speed": "120 km/h"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000017",
+      "uri": "http://example.org/animal-ontology-A/DomesticCat",
+      "label": "Domestic Cat",
+      "definition": "Small domesticated carnivorous mammal kept as pet",
+      "synonyms": ["Felis catus", "House Cat", "Pet Cat"],
+      "parent": "ANIMAL_A:0000012",
+      "attributes": {
+        "species": "Felis catus",
+        "habitat": "domestic",
+        "status": "domesticated"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000018",
+      "uri": "http://example.org/animal-ontology-A/Canidae",
+      "label": "Canidae",
+      "definition": "Family of carnivorous mammals including dogs, wolves, and foxes",
+      "synonyms": ["Dog Family", "Canines"],
+      "parent": "ANIMAL_A:0000011",
+      "attributes": {
+        "family": "Canidae"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000019",
+      "uri": "http://example.org/animal-ontology-A/Wolf",
+      "label": "Wolf",
+      "definition": "Large canine native to wilderness areas",
+      "synonyms": ["Canis lupus", "Gray Wolf", "Timber Wolf"],
+      "parent": "ANIMAL_A:0000018",
+      "attributes": {
+        "species": "Canis lupus",
+        "habitat": "forest",
+        "social": "pack animal"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000020",
+      "uri": "http://example.org/animal-ontology-A/Dog",
+      "label": "Dog",
+      "definition": "Domesticated carnivorous mammal descended from wolves",
+      "synonyms": ["Canis familiaris", "Domestic Dog", "Canine"],
+      "parent": "ANIMAL_A:0000018",
+      "attributes": {
+        "species": "Canis familiaris",
+        "habitat": "domestic",
+        "status": "domesticated"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000021",
+      "uri": "http://example.org/animal-ontology-A/Fox",
+      "label": "Fox",
+      "definition": "Small to medium-sized omnivorous mammal with bushy tail",
+      "synonyms": ["Vulpes", "Red Fox", "Kit Fox"],
+      "parent": "ANIMAL_A:0000018",
+      "attributes": {
+        "genus": "Vulpes",
+        "habitat": "various",
+        "diet": "omnivorous"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000022",
+      "uri": "http://example.org/animal-ontology-A/Ursidae",
+      "label": "Ursidae",
+      "definition": "Family of large carnivorous or omnivorous mammals known as bears",
+      "synonyms": ["Bear Family", "Bears"],
+      "parent": "ANIMAL_A:0000011",
+      "attributes": {
+        "family": "Ursidae"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000023",
+      "uri": "http://example.org/animal-ontology-A/BrownBear",
+      "label": "Brown Bear",
+      "definition": "Large bear species found across North America and Eurasia",
+      "synonyms": ["Ursus arctos", "Grizzly Bear", "Kodiak Bear"],
+      "parent": "ANIMAL_A:0000022",
+      "attributes": {
+        "species": "Ursus arctos",
+        "habitat": "forest",
+        "size": "large"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000024",
+      "uri": "http://example.org/animal-ontology-A/PolarBear",
+      "label": "Polar Bear",
+      "definition": "Large white bear native to Arctic regions",
+      "synonyms": ["Ursus maritimus", "Ice Bear", "Arctic Bear"],
+      "parent": "ANIMAL_A:0000022",
+      "attributes": {
+        "species": "Ursus maritimus",
+        "habitat": "arctic",
+        "conservation_status": "vulnerable"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000030",
+      "uri": "http://example.org/animal-ontology-A/Primate",
+      "label": "Primate",
+      "definition": "Mammal of an order that includes monkeys, apes, and humans",
+      "synonyms": ["Primates", "Simian"],
+      "parent": "ANIMAL_A:0000010",
+      "attributes": {
+        "order": "Primates"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000031",
+      "uri": "http://example.org/animal-ontology-A/Ape",
+      "label": "Ape",
+      "definition": "Large tailless primate including gorillas, chimpanzees, and orangutans",
+      "synonyms": ["Great Ape", "Hominoidea"],
+      "parent": "ANIMAL_A:0000030",
+      "attributes": {
+        "superfamily": "Hominoidea",
+        "tail": "absent"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000032",
+      "uri": "http://example.org/animal-ontology-A/Gorilla",
+      "label": "Gorilla",
+      "definition": "Largest living primate native to African forests",
+      "synonyms": ["Gorilla gorilla", "Mountain Gorilla", "Silverback"],
+      "parent": "ANIMAL_A:0000031",
+      "attributes": {
+        "genus": "Gorilla",
+        "habitat": "forest",
+        "conservation_status": "endangered"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000033",
+      "uri": "http://example.org/animal-ontology-A/Chimpanzee",
+      "label": "Chimpanzee",
+      "definition": "Great ape species native to Africa, closely related to humans",
+      "synonyms": ["Pan troglodytes", "Common Chimp", "Chimp"],
+      "parent": "ANIMAL_A:0000031",
+      "attributes": {
+        "species": "Pan troglodytes",
+        "habitat": "forest",
+        "intelligence": "high"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000034",
+      "uri": "http://example.org/animal-ontology-A/Orangutan",
+      "label": "Orangutan",
+      "definition": "Large arboreal ape with reddish-brown hair native to Indonesia",
+      "synonyms": ["Pongo", "Red Ape", "Man of the Forest"],
+      "parent": "ANIMAL_A:0000031",
+      "attributes": {
+        "genus": "Pongo",
+        "habitat": "rainforest",
+        "conservation_status": "critically_endangered"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000035",
+      "uri": "http://example.org/animal-ontology-A/Monkey",
+      "label": "Monkey",
+      "definition": "Primate with tails, generally smaller than apes",
+      "synonyms": ["Simian", "Cercopithecoidea"],
+      "parent": "ANIMAL_A:0000030",
+      "attributes": {
+        "tail": "present"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000040",
+      "uri": "http://example.org/animal-ontology-A/Rodent",
+      "label": "Rodent",
+      "definition": "Mammal characterized by continuously growing incisors",
+      "synonyms": ["Rodentia", "Gnawing Mammal"],
+      "parent": "ANIMAL_A:0000010",
+      "attributes": {
+        "order": "Rodentia",
+        "teeth": "continuously_growing_incisors"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000041",
+      "uri": "http://example.org/animal-ontology-A/Mouse",
+      "label": "Mouse",
+      "definition": "Small rodent with pointed snout and long tail",
+      "synonyms": ["Mus", "House Mouse", "Field Mouse"],
+      "parent": "ANIMAL_A:0000040",
+      "attributes": {
+        "genus": "Mus",
+        "size": "small"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000042",
+      "uri": "http://example.org/animal-ontology-A/Rat",
+      "label": "Rat",
+      "definition": "Medium-sized rodent with long tail",
+      "synonyms": ["Rattus", "Brown Rat", "Norway Rat"],
+      "parent": "ANIMAL_A:0000040",
+      "attributes": {
+        "genus": "Rattus",
+        "size": "medium"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000043",
+      "uri": "http://example.org/animal-ontology-A/Squirrel",
+      "label": "Squirrel",
+      "definition": "Arboreal rodent with bushy tail",
+      "synonyms": ["Sciurus", "Tree Squirrel", "Ground Squirrel"],
+      "parent": "ANIMAL_A:0000040",
+      "attributes": {
+        "family": "Sciuridae",
+        "habitat": "trees"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000050",
+      "uri": "http://example.org/animal-ontology-A/Cetacean",
+      "label": "Cetacean",
+      "definition": "Aquatic mammal including whales, dolphins, and porpoises",
+      "synonyms": ["Cetacea", "Marine Mammal", "Whale"],
+      "parent": "ANIMAL_A:0000010",
+      "attributes": {
+        "order": "Cetacea",
+        "habitat": "marine"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000051",
+      "uri": "http://example.org/animal-ontology-A/Dolphin",
+      "label": "Dolphin",
+      "definition": "Highly intelligent marine mammal with streamlined body",
+      "synonyms": ["Delphinidae", "Bottlenose Dolphin", "Porpoise"],
+      "parent": "ANIMAL_A:0000050",
+      "attributes": {
+        "family": "Delphinidae",
+        "intelligence": "high",
+        "echolocation": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000052",
+      "uri": "http://example.org/animal-ontology-A/Whale",
+      "label": "Whale",
+      "definition": "Large marine mammal with streamlined body",
+      "synonyms": ["Balaenopteridae", "Blue Whale", "Humpback Whale"],
+      "parent": "ANIMAL_A:0000050",
+      "attributes": {
+        "size": "very_large",
+        "habitat": "ocean"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000100",
+      "uri": "http://example.org/animal-ontology-A/Bird",
+      "label": "Bird",
+      "definition": "Warm-blooded vertebrate with feathers, wings, and beak",
+      "synonyms": ["Aves", "Avian", "Feathered Animal"],
+      "parent": "ANIMAL_A:0000001",
+      "attributes": {
+        "class": "Aves",
+        "body_covering": "feathers",
+        "reproduction": "oviparous"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000101",
+      "uri": "http://example.org/animal-ontology-A/RaptorBird",
+      "label": "Raptor",
+      "definition": "Bird of prey with strong talons and keen eyesight",
+      "synonyms": ["Bird of Prey", "Predatory Bird", "Raptor"],
+      "parent": "ANIMAL_A:0000100",
+      "attributes": {
+        "diet": "carnivorous",
+        "vision": "excellent"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000102",
+      "uri": "http://example.org/animal-ontology-A/Eagle",
+      "label": "Eagle",
+      "definition": "Large bird of prey with powerful build and heavy beak",
+      "synonyms": ["Aquila", "Bald Eagle", "Golden Eagle"],
+      "parent": "ANIMAL_A:0000101",
+      "attributes": {
+        "genus": "Aquila",
+        "wingspan": "large",
+        "habitat": "mountains"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000103",
+      "uri": "http://example.org/animal-ontology-A/Hawk",
+      "label": "Hawk",
+      "definition": "Medium-sized bird of prey with broad wings",
+      "synonyms": ["Accipiter", "Red-tailed Hawk", "Cooper's Hawk"],
+      "parent": "ANIMAL_A:0000101",
+      "attributes": {
+        "family": "Accipitridae",
+        "size": "medium"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000104",
+      "uri": "http://example.org/animal-ontology-A/Owl",
+      "label": "Owl",
+      "definition": "Nocturnal bird of prey with forward-facing eyes",
+      "synonyms": ["Strigiformes", "Barn Owl", "Screech Owl"],
+      "parent": "ANIMAL_A:0000101",
+      "attributes": {
+        "order": "Strigiformes",
+        "activity": "nocturnal",
+        "hearing": "excellent"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000110",
+      "uri": "http://example.org/animal-ontology-A/Waterfowl",
+      "label": "Waterfowl",
+      "definition": "Bird that lives on or near water",
+      "synonyms": ["Aquatic Bird", "Water Bird", "Anseriformes"],
+      "parent": "ANIMAL_A:0000100",
+      "attributes": {
+        "habitat": "aquatic"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000111",
+      "uri": "http://example.org/animal-ontology-A/Duck",
+      "label": "Duck",
+      "definition": "Waterfowl with webbed feet and broad flat beak",
+      "synonyms": ["Anas", "Mallard", "Domestic Duck"],
+      "parent": "ANIMAL_A:0000110",
+      "attributes": {
+        "family": "Anatidae",
+        "feet": "webbed"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000112",
+      "uri": "http://example.org/animal-ontology-A/Swan",
+      "label": "Swan",
+      "definition": "Large waterfowl with long neck and elegant appearance",
+      "synonyms": ["Cygnus", "Mute Swan", "Black Swan"],
+      "parent": "ANIMAL_A:0000110",
+      "attributes": {
+        "genus": "Cygnus",
+        "size": "large",
+        "neck": "long"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000113",
+      "uri": "http://example.org/animal-ontology-A/Goose",
+      "label": "Goose",
+      "definition": "Large waterfowl with long neck, intermediate between duck and swan",
+      "synonyms": ["Anser", "Canada Goose", "Greylag Goose"],
+      "parent": "ANIMAL_A:0000110",
+      "attributes": {
+        "genus": "Anser",
+        "size": "large"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000120",
+      "uri": "http://example.org/animal-ontology-A/Penguin",
+      "label": "Penguin",
+      "definition": "Flightless aquatic bird native to Southern Hemisphere",
+      "synonyms": ["Spheniscidae", "Emperor Penguin", "King Penguin"],
+      "parent": "ANIMAL_A:0000100",
+      "attributes": {
+        "family": "Spheniscidae",
+        "flight": "flightless",
+        "habitat": "antarctic"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000121",
+      "uri": "http://example.org/animal-ontology-A/Parrot",
+      "label": "Parrot",
+      "definition": "Colorful bird with curved beak and ability to mimic sounds",
+      "synonyms": ["Psittaciformes", "Macaw", "Cockatoo"],
+      "parent": "ANIMAL_A:0000100",
+      "attributes": {
+        "order": "Psittaciformes",
+        "intelligence": "high",
+        "vocalization": "mimicry"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000200",
+      "uri": "http://example.org/animal-ontology-A/Reptile",
+      "label": "Reptile",
+      "definition": "Cold-blooded vertebrate with scales or scutes",
+      "synonyms": ["Reptilia", "Reptilian"],
+      "parent": "ANIMAL_A:0000001",
+      "attributes": {
+        "class": "Reptilia",
+        "body_temperature": "cold-blooded",
+        "body_covering": "scales"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000201",
+      "uri": "http://example.org/animal-ontology-A/Snake",
+      "label": "Snake",
+      "definition": "Legless reptile with elongated body",
+      "synonyms": ["Serpentes", "Serpent", "Ophidian"],
+      "parent": "ANIMAL_A:0000200",
+      "attributes": {
+        "order": "Serpentes",
+        "limbs": "absent",
+        "locomotion": "serpentine"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000202",
+      "uri": "http://example.org/animal-ontology-A/Python",
+      "label": "Python",
+      "definition": "Large constricting snake found in Africa, Asia, and Australia",
+      "synonyms": ["Pythonidae", "Ball Python", "Reticulated Python"],
+      "parent": "ANIMAL_A:0000201",
+      "attributes": {
+        "family": "Pythonidae",
+        "hunting_method": "constriction"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000203",
+      "uri": "http://example.org/animal-ontology-A/Cobra",
+      "label": "Cobra",
+      "definition": "Venomous snake with ability to expand neck ribs into hood",
+      "synonyms": ["Naja", "King Cobra", "Hooded Snake"],
+      "parent": "ANIMAL_A:0000201",
+      "attributes": {
+        "genus": "Naja",
+        "venom": "yes",
+        "defensive_display": "hood"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000210",
+      "uri": "http://example.org/animal-ontology-A/Lizard",
+      "label": "Lizard",
+      "definition": "Reptile with four legs, external ear openings, and movable eyelids",
+      "synonyms": ["Lacertilia", "Saurian"],
+      "parent": "ANIMAL_A:0000200",
+      "attributes": {
+        "suborder": "Lacertilia",
+        "limbs": "four"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000211",
+      "uri": "http://example.org/animal-ontology-A/Iguana",
+      "label": "Iguana",
+      "definition": "Large herbivorous lizard native to tropical areas",
+      "synonyms": ["Iguanidae", "Green Iguana", "Rock Iguana"],
+      "parent": "ANIMAL_A:0000210",
+      "attributes": {
+        "family": "Iguanidae",
+        "diet": "herbivorous",
+        "habitat": "tropical"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000212",
+      "uri": "http://example.org/animal-ontology-A/Chameleon",
+      "label": "Chameleon",
+      "definition": "Lizard with ability to change color and independently moving eyes",
+      "synonyms": ["Chamaeleonidae", "Color-changing Lizard"],
+      "parent": "ANIMAL_A:0000210",
+      "attributes": {
+        "family": "Chamaeleonidae",
+        "color_change": "yes",
+        "eyes": "independently_mobile"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000220",
+      "uri": "http://example.org/animal-ontology-A/Turtle",
+      "label": "Turtle",
+      "definition": "Reptile with body enclosed in bony shell",
+      "synonyms": ["Testudines", "Tortoise", "Terrapin"],
+      "parent": "ANIMAL_A:0000200",
+      "attributes": {
+        "order": "Testudines",
+        "shell": "present"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000221",
+      "uri": "http://example.org/animal-ontology-A/SeaTurtle",
+      "label": "Sea Turtle",
+      "definition": "Marine turtle with flippers adapted for swimming",
+      "synonyms": ["Chelonioidea", "Green Turtle", "Loggerhead"],
+      "parent": "ANIMAL_A:0000220",
+      "attributes": {
+        "superfamily": "Chelonioidea",
+        "habitat": "marine",
+        "limbs": "flippers"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000222",
+      "uri": "http://example.org/animal-ontology-A/Crocodile",
+      "label": "Crocodile",
+      "definition": "Large aquatic reptile with powerful jaws and armored skin",
+      "synonyms": ["Crocodylus", "Nile Crocodile", "Saltwater Crocodile"],
+      "parent": "ANIMAL_A:0000200",
+      "attributes": {
+        "genus": "Crocodylus",
+        "habitat": "aquatic",
+        "size": "large"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000300",
+      "uri": "http://example.org/animal-ontology-A/Fish",
+      "label": "Fish",
+      "definition": "Aquatic vertebrate with gills and fins",
+      "synonyms": ["Pisces", "Aquatic Vertebrate"],
+      "parent": "ANIMAL_A:0000001",
+      "attributes": {
+        "habitat": "aquatic",
+        "respiration": "gills",
+        "locomotion": "fins"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000301",
+      "uri": "http://example.org/animal-ontology-A/Shark",
+      "label": "Shark",
+      "definition": "Cartilaginous fish with multiple gill slits",
+      "synonyms": ["Selachimorpha", "Predatory Fish", "Great White"],
+      "parent": "ANIMAL_A:0000300",
+      "attributes": {
+        "superorder": "Selachimorpha",
+        "skeleton": "cartilaginous",
+        "teeth": "multiple_rows"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000302",
+      "uri": "http://example.org/animal-ontology-A/Ray",
+      "label": "Ray",
+      "definition": "Cartilaginous fish with flattened body",
+      "synonyms": ["Rajiformes", "Stingray", "Manta Ray"],
+      "parent": "ANIMAL_A:0000300",
+      "attributes": {
+        "order": "Rajiformes",
+        "body_shape": "flattened"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000303",
+      "uri": "http://example.org/animal-ontology-A/Salmon",
+      "label": "Salmon",
+      "definition": "Migratory fish that spawns in freshwater",
+      "synonyms": ["Salmo", "Atlantic Salmon", "Pacific Salmon"],
+      "parent": "ANIMAL_A:0000300",
+      "attributes": {
+        "genus": "Salmo",
+        "migration": "anadromous",
+        "habitat": "freshwater_marine"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000304",
+      "uri": "http://example.org/animal-ontology-A/Tuna",
+      "label": "Tuna",
+      "definition": "Large fast-swimming marine fish",
+      "synonyms": ["Thunnus", "Bluefin Tuna", "Yellowfin Tuna"],
+      "parent": "ANIMAL_A:0000300",
+      "attributes": {
+        "genus": "Thunnus",
+        "speed": "fast",
+        "habitat": "pelagic"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000400",
+      "uri": "http://example.org/animal-ontology-A/Amphibian",
+      "label": "Amphibian",
+      "definition": "Cold-blooded vertebrate with aquatic larvae and terrestrial adult",
+      "synonyms": ["Amphibia", "Amphibious Animal"],
+      "parent": "ANIMAL_A:0000001",
+      "attributes": {
+        "class": "Amphibia",
+        "lifecycle": "metamorphosis",
+        "skin": "permeable"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000401",
+      "uri": "http://example.org/animal-ontology-A/Frog",
+      "label": "Frog",
+      "definition": "Tailless amphibian with long hind legs for jumping",
+      "synonyms": ["Anura", "Toad", "Tree Frog"],
+      "parent": "ANIMAL_A:0000400",
+      "attributes": {
+        "order": "Anura",
+        "tail": "absent",
+        "locomotion": "jumping"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000402",
+      "uri": "http://example.org/animal-ontology-A/Salamander",
+      "label": "Salamander",
+      "definition": "Amphibian with elongated body and tail",
+      "synonyms": ["Caudata", "Newt", "Fire Salamander"],
+      "parent": "ANIMAL_A:0000400",
+      "attributes": {
+        "order": "Caudata",
+        "tail": "present",
+        "body": "elongated"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000500",
+      "uri": "http://example.org/animal-ontology-A/Invertebrate",
+      "label": "Invertebrate",
+      "definition": "Animal without backbone or vertebral column",
+      "synonyms": ["Non-vertebrate", "Spineless Animal"],
+      "parent": "ANIMAL_A:0000001",
+      "attributes": {
+        "vertebral_column": "absent"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000501",
+      "uri": "http://example.org/animal-ontology-A/Insect",
+      "label": "Insect",
+      "definition": "Arthropod with three body segments and six legs",
+      "synonyms": ["Insecta", "Hexapod", "Bug"],
+      "parent": "ANIMAL_A:0000500",
+      "attributes": {
+        "class": "Insecta",
+        "body_segments": "three",
+        "legs": "six"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000502",
+      "uri": "http://example.org/animal-ontology-A/Butterfly",
+      "label": "Butterfly",
+      "definition": "Insect with large colorful wings and slender body",
+      "synonyms": ["Lepidoptera", "Papillon", "Flying Insect"],
+      "parent": "ANIMAL_A:0000501",
+      "attributes": {
+        "order": "Lepidoptera",
+        "wings": "scaled",
+        "lifecycle": "complete_metamorphosis"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000503",
+      "uri": "http://example.org/animal-ontology-A/Bee",
+      "label": "Bee",
+      "definition": "Flying insect known for pollination and honey production",
+      "synonyms": ["Apis", "Honeybee", "Bumblebee"],
+      "parent": "ANIMAL_A:0000501",
+      "attributes": {
+        "genus": "Apis",
+        "social": "colonial",
+        "role": "pollinator"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000504",
+      "uri": "http://example.org/animal-ontology-A/Ant",
+      "label": "Ant",
+      "definition": "Social insect living in organized colonies",
+      "synonyms": ["Formicidae", "Worker Ant", "Fire Ant"],
+      "parent": "ANIMAL_A:0000501",
+      "attributes": {
+        "family": "Formicidae",
+        "social": "eusocial",
+        "colony": "organized"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000505",
+      "uri": "http://example.org/animal-ontology-A/Beetle",
+      "label": "Beetle",
+      "definition": "Insect with hardened front wings forming protective cover",
+      "synonyms": ["Coleoptera", "Ladybug", "Scarab"],
+      "parent": "ANIMAL_A:0000501",
+      "attributes": {
+        "order": "Coleoptera",
+        "wings": "hardened_front"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000510",
+      "uri": "http://example.org/animal-ontology-A/Arachnid",
+      "label": "Arachnid",
+      "definition": "Arthropod with eight legs including spiders and scorpions",
+      "synonyms": ["Arachnida", "Eight-legged Arthropod"],
+      "parent": "ANIMAL_A:0000500",
+      "attributes": {
+        "class": "Arachnida",
+        "legs": "eight"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000511",
+      "uri": "http://example.org/animal-ontology-A/Spider",
+      "label": "Spider",
+      "definition": "Arachnid that spins webs to catch prey",
+      "synonyms": ["Araneae", "Web-spinner", "Tarantula"],
+      "parent": "ANIMAL_A:0000510",
+      "attributes": {
+        "order": "Araneae",
+        "web": "silk",
+        "venom": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000512",
+      "uri": "http://example.org/animal-ontology-A/Scorpion",
+      "label": "Scorpion",
+      "definition": "Arachnid with pincers and venomous stinger in tail",
+      "synonyms": ["Scorpiones", "Stinger", "Desert Scorpion"],
+      "parent": "ANIMAL_A:0000510",
+      "attributes": {
+        "order": "Scorpiones",
+        "tail": "venomous_stinger",
+        "pincers": "present"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000520",
+      "uri": "http://example.org/animal-ontology-A/Mollusk",
+      "label": "Mollusk",
+      "definition": "Soft-bodied invertebrate often with shell",
+      "synonyms": ["Mollusca", "Shellfish"],
+      "parent": "ANIMAL_A:0000500",
+      "attributes": {
+        "phylum": "Mollusca",
+        "body": "soft"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000521",
+      "uri": "http://example.org/animal-ontology-A/Octopus",
+      "label": "Octopus",
+      "definition": "Eight-armed marine mollusk with high intelligence",
+      "synonyms": ["Octopoda", "Eight-armed Cephalopod", "Devilfish"],
+      "parent": "ANIMAL_A:0000520",
+      "attributes": {
+        "order": "Octopoda",
+        "arms": "eight",
+        "intelligence": "high"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000522",
+      "uri": "http://example.org/animal-ontology-A/Squid",
+      "label": "Squid",
+      "definition": "Marine cephalopod with ten arms and torpedo-shaped body",
+      "synonyms": ["Teuthida", "Calamari", "Giant Squid"],
+      "parent": "ANIMAL_A:0000520",
+      "attributes": {
+        "order": "Teuthida",
+        "arms": "ten",
+        "body_shape": "torpedo"
+      }
+    },
+    {
+      "id": "ANIMAL_A:0000523",
+      "uri": "http://example.org/animal-ontology-A/Snail",
+      "label": "Snail",
+      "definition": "Gastropod mollusk with coiled shell",
+      "synonyms": ["Gastropoda", "Garden Snail", "Land Snail"],
+      "parent": "ANIMAL_A:0000520",
+      "attributes": {
+        "class": "Gastropoda",
+        "shell": "coiled",
+        "locomotion": "muscular_foot"
+      }
+    }
+  ],
+  "individuals": [
+    {
+      "id": "ANIMAL_A:IND_001",
+      "uri": "http://example.org/animal-ontology-A/individual/Simba",
+      "label": "Simba",
+      "type": "ANIMAL_A:0000013",
+      "definition": "Male lion residing in Serengeti National Park",
+      "attributes": {
+        "age": "8 years",
+        "gender": "male",
+        "weight": "190 kg",
+        "location": "Serengeti"
+      }
+    },
+    {
+      "id": "ANIMAL_A:IND_002",
+      "uri": "http://example.org/animal-ontology-A/individual/Nala",
+      "label": "Nala",
+      "type": "ANIMAL_A:0000013",
+      "definition": "Female lion residing in Serengeti National Park",
+      "attributes": {
+        "age": "7 years",
+        "gender": "female",
+        "weight": "130 kg",
+        "location": "Serengeti"
+      }
+    },
+    {
+      "id": "ANIMAL_A:IND_003",
+      "uri": "http://example.org/animal-ontology-A/individual/Stripe",
+      "label": "Stripe",
+      "type": "ANIMAL_A:0000014",
+      "definition": "Bengal tiger in wildlife sanctuary",
+      "attributes": {
+        "age": "5 years",
+        "gender": "male",
+        "subspecies": "Bengal",
+        "location": "India"
+      }
+    },
+    {
+      "id": "ANIMAL_A:IND_004",
+      "uri": "http://example.org/animal-ontology-A/individual/Flash",
+      "label": "Flash",
+      "type": "ANIMAL_A:0000016",
+      "definition": "Fastest recorded cheetah in Namibia",
+      "attributes": {
+        "age": "4 years",
+        "gender": "male",
+        "top_speed": "118 km/h",
+        "location": "Namibia"
+      }
+    },
+    {
+      "id": "ANIMAL_A:IND_005",
+      "uri": "http://example.org/animal-ontology-A/individual/Whiskers",
+      "label": "Whiskers",
+      "type": "ANIMAL_A:0000017",
+      "definition": "Domestic tabby cat",
+      "attributes": {
+        "age": "3 years",
+        "gender": "female",
+        "breed": "Tabby",
+        "color": "orange"
+      }
+    },
+    {
+      "id": "ANIMAL_A:IND_006",
+      "uri": "http://example.org/animal-ontology-A/individual/Grey",
+      "label": "Grey",
+      "type": "ANIMAL_A:0000019",
+      "definition": "Alpha male wolf in Yellowstone pack",
+      "attributes": {
+        "age": "6 years",
+        "gender": "male",
+        "pack": "Yellowstone",
+        "role": "alpha"
+      }
+    },
+    {
+      "id": "ANIMAL_A:IND_007",
+      "uri": "http://example.org/animal-ontology-A/individual/Buddy",
+      "label": "Buddy",
+      "type": "ANIMAL_A:0000020",
+      "definition": "Golden Retriever pet dog",
+      "attributes": {
+        "age": "4 years",
+        "gender": "male",
+        "breed": "Golden Retriever",
+        "trained": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_A:IND_008",
+      "uri": "http://example.org/animal-ontology-A/individual/Koko",
+      "label": "Koko",
+      "type": "ANIMAL_A:0000032",
+      "definition": "Mountain gorilla in conservation program",
+      "attributes": {
+        "age": "15 years",
+        "gender": "female",
+        "subspecies": "Mountain",
+        "conservation_program": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_A:IND_009",
+      "uri": "http://example.org/animal-ontology-A/individual/Flipper",
+      "label": "Flipper",
+      "type": "ANIMAL_A:0000051",
+      "definition": "Bottlenose dolphin in marine park",
+      "attributes": {
+        "age": "12 years",
+        "gender": "male",
+        "species": "Bottlenose",
+        "trained": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_A:IND_010",
+      "uri": "http://example.org/animal-ontology-A/individual/Skye",
+      "label": "Skye",
+      "type": "ANIMAL_A:0000102",
+      "definition": "Bald eagle in Alaska",
+      "attributes": {
+        "age": "9 years",
+        "gender": "female",
+        "species": "Bald Eagle",
+        "location": "Alaska"
+      }
+    }
+  ]
+}

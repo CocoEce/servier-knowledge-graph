@@ -1,0 +1,22 @@
+
+RAPPORT D'ALIGNEMENT DES TAXONOMIES ANIMALES
+============================================================
+
+1. Statistiques Générales
+   - Concepts totaux : 171
+   - TAXONOMY_A : 86
+   - TAXONOMY_B : 85
+   
+2. Alignements
+   - Clusters d'alignement : 11
+   - Concepts alignés : 33
+   - Taux d'alignement : 19.3%
+   - Taille moyenne cluster : 3.00
+   
+3. Méta-Ontologie
+   - Classes créées : 172
+   - Multi-héritage : 0 concepts (0.0%)
+   
+4. Embeddings
+   - Dimensions : 384
+   - Norme moyenne : 1.0000

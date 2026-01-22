@@ -1,0 +1,146 @@
+{
+  "ontology_iri": "http://example.org/taxonomy_A#",
+  "ontology_name": "taxonomy_A",
+  "classes": [
+    {
+      "name": "Animal",
+      "label": "Animal",
+      "definition": "Any living organism capable of voluntary movement",
+      "synonyms": ["Animalia", "Metazoa"],
+      "parent": null
+    },
+    {
+      "name": "Mammal",
+      "label": "Mammal",
+      "definition": "Warm-blooded vertebrate animal with hair or fur, females produce milk",
+      "synonyms": ["Mammalia"],
+      "parent": "Animal"
+    },
+    {
+      "name": "Carnivore",
+      "label": "Carnivore",
+      "definition": "Mammal that primarily eats meat",
+      "synonyms": ["Carnivora", "Meat-eater"],
+      "parent": "Mammal"
+    },
+    {
+      "name": "FelidaeFamily",
+      "label": "Felidae",
+      "definition": "Family of cat-like carnivorous mammals",
+      "synonyms": ["Cat family", "Felines"],
+      "parent": "Carnivore"
+    },
+    {
+      "name": "PantheraTiger",
+      "label": "Tiger",
+      "definition": "Large wild cat with orange fur and black stripes, native to Asia",
+      "synonyms": ["Bengal tiger", "Panthera tigris"],
+      "parent": "FelidaeFamily"
+    },
+    {
+      "name": "PantheraLion",
+      "label": "Lion",
+      "definition": "Large tawny-colored cat living in prides, mainly in Africa",
+      "synonyms": ["Panthera leo", "King of the jungle"],
+      "parent": "FelidaeFamily"
+    },
+    {
+      "name": "PantheraLeopard",
+      "label": "Leopard",
+      "definition": "Large spotted cat found in Africa and Asia",
+      "synonyms": ["Panther", "Panthera pardus"],
+      "parent": "FelidaeFamily"
+    },
+    {
+      "name": "FelisCatus",
+      "label": "Domestic Cat",
+      "definition": "Small domesticated carnivorous mammal, kept as a pet",
+      "synonyms": ["Felis catus", "House cat", "Kitty"],
+      "parent": "FelidaeFamily"
+    },
+    {
+      "name": "Cheetah",
+      "label": "Cheetah",
+      "definition": "Fastest land animal, with distinctive black tear marks",
+      "synonyms": ["Hunting leopard", "Acinonyx jubatus"],
+      "parent": "FelidaeFamily"
+    },
+    {
+      "name": "CanidaeFamily",
+      "label": "Canidae",
+      "definition": "Family of dog-like carnivorous mammals",
+      "synonyms": ["Canines", "Dog family"],
+      "parent": "Carnivore"
+    },
+    {
+      "name": "CanisLupus",
+      "label": "Wolf",
+      "definition": "Large wild canine living in packs, ancestor of domestic dogs",
+      "synonyms": ["Grey wolf", "Canis lupus", "Gray wolf"],
+      "parent": "CanidaeFamily"
+    },
+    {
+      "name": "CanisFamiliaris",
+      "label": "Domestic Dog",
+      "definition": "Domesticated subspecies of wolf, kept as a pet or working animal",
+      "synonyms": ["Canis familiaris", "Dog", "Canine companion"],
+      "parent": "CanidaeFamily"
+    },
+    {
+      "name": "VulpesVulpes",
+      "label": "Red Fox",
+      "definition": "Most widespread fox species with reddish fur",
+      "synonyms": ["Common fox", "Vulpes vulpes"],
+      "parent": "CanidaeFamily"
+    },
+    {
+      "name": "UrsidaeFamily",
+      "label": "Ursidae",
+      "definition": "Family of large omnivorous mammals",
+      "synonyms": ["Bear family", "Bears"],
+      "parent": "Carnivore"
+    },
+    {
+      "name": "UrsusArctos",
+      "label": "Brown Bear",
+      "definition": "Large bear species found across Eurasia and North America",
+      "synonyms": ["Grizzly bear", "Ursus arctos"],
+      "parent": "UrsidaeFamily"
+    },
+    {
+      "name": "UrsusMaritime",
+      "label": "Polar Bear",
+      "definition": "Large white bear adapted to Arctic environments",
+      "synonyms": ["Ursus maritimus", "Ice bear", "Sea bear"],
+      "parent": "UrsidaeFamily"
+    },
+    {
+      "name": "Herbivore",
+      "label": "Herbivore",
+      "definition": "Mammal that feeds exclusively on plants",
+      "synonyms": ["Plant-eater"],
+      "parent": "Mammal"
+    },
+    {
+      "name": "Proboscidea",
+      "label": "Proboscidea",
+      "definition": "Order of large herbivorous mammals with trunks",
+      "synonyms": ["Elephants"],
+      "parent": "Herbivore"
+    },
+    {
+      "name": "AfricanElephant",
+      "label": "African Elephant",
+      "definition": "Largest land animal native to Africa",
+      "synonyms": ["Loxodonta africana"],
+      "parent": "Proboscidea"
+    },
+    {
+      "name": "AsianElephant",
+      "label": "Asian Elephant",
+      "definition": "Smaller elephant species found in Asia",
+      "synonyms": ["Elephas maximus"],
+      "parent": "Proboscidea"
+    }
+  ]
+}

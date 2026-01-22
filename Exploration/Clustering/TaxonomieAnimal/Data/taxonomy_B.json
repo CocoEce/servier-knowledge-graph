@@ -1,0 +1,132 @@
+{
+  "ontology_iri": "http://example.org/taxonomy_B#",
+  "ontology_name": "taxonomy_B",
+  "classes": [
+    {
+      "name": "LivingBeing",
+      "label": "Living Being",
+      "definition": "Any organism with life",
+      "synonyms": ["Animal", "Life form", "Organism"],
+      "parent": null
+    },
+    {
+      "name": "Mammals",
+      "label": "Mammals",
+      "definition": "Vertebrate animals that nurse their young with milk",
+      "synonyms": ["Mammalia", "Mammalian"],
+      "parent": "LivingBeing"
+    },
+    {
+      "name": "MeatEater",
+      "label": "Carnivorous Mammal",
+      "definition": "Mammal adapted for hunting and eating meat",
+      "synonyms": ["Predator", "Carnivore", "Meat eater"],
+      "parent": "Mammals"
+    },
+    {
+      "name": "Cats",
+      "label": "Cats",
+      "definition": "Feline carnivores with retractable claws",
+      "synonyms": ["Felines", "Cat family", "Felidae"],
+      "parent": "MeatEater"
+    },
+    {
+      "name": "TigerSpecies",
+      "label": "Tigers",
+      "definition": "Largest wild cat with striped orange coat from Asia",
+      "synonyms": ["Tiger", "Panthera tigris", "Bengal tiger", "Big striped cat"],
+      "parent": "Cats"
+    },
+    {
+      "name": "LionSpecies",
+      "label": "Lions",
+      "definition": "Large social cat with mane (males), living in Africa",
+      "synonyms": ["Panthera leo", "African lion", "Lion", "King of the jungle"],
+      "parent": "Cats"
+    },
+    {
+      "name": "LeopardSpecies",
+      "label": "Leopards",
+      "definition": "Spotted big cat found in various habitats",
+      "synonyms": ["Leopard", "Spotted cat", "Panther", "Panthera pardus"],
+      "parent": "Cats"
+    },
+    {
+      "name": "HouseCat",
+      "label": "House Cat",
+      "definition": "Small domesticated feline commonly kept as pet",
+      "synonyms": ["Pet cat", "Felis catus", "Kitty", "Cat", "Domestic cat"],
+      "parent": "Cats"
+    },
+    {
+      "name": "CheetahSpecies",
+      "label": "Cheetahs",
+      "definition": "Fastest terrestrial animal with black tear stripes",
+      "synonyms": ["Speed cat", "Hunting leopard", "Acinonyx jubatus", "Cheetah"],
+      "parent": "Cats"
+    },
+    {
+      "name": "Dogs",
+      "label": "Dogs",
+      "definition": "Canine carnivores, highly social animals",
+      "synonyms": ["Canines", "Dog family", "Canidae"],
+      "parent": "MeatEater"
+    },
+    {
+      "name": "WolfSpecies",
+      "label": "Wolves",
+      "definition": "Wild canines living in packs, ancestor of dogs",
+      "synonyms": ["Grey wolf", "Canis lupus", "Wolf", "Wild dog", "Gray wolf"],
+      "parent": "Dogs"
+    },
+    {
+      "name": "DomesticDog",
+      "label": "Pet Dog",
+      "definition": "Domesticated canine, man's best friend",
+      "synonyms": ["Dog", "Domestic dog", "Canis familiaris", "Canine companion", "Canine"],
+      "parent": "Dogs"
+    },
+    {
+      "name": "Fox",
+      "label": "Foxes",
+      "definition": "Small to medium canines with bushy tails",
+      "synonyms": ["Red fox", "Fox", "Vulpes", "Common fox", "Vulpes vulpes"],
+      "parent": "Dogs"
+    },
+    {
+      "name": "Bears",
+      "label": "Bears",
+      "definition": "Large powerful omnivorous mammals",
+      "synonyms": ["Ursidae", "Bear family", "Ursine"],
+      "parent": "MeatEater"
+    },
+    {
+      "name": "PlantEater",
+      "label": "Herbivorous Mammal",
+      "definition": "Mammal that feeds on plants",
+      "synonyms": ["Herbivore", "Plant-eater"],
+      "parent": "Mammals"
+    },
+    {
+      "name": "Trunked",
+      "label": "Trunked Animals",
+      "definition": "Large mammals with long flexible trunks",
+      "synonyms": ["Elephants", "Proboscidea"],
+      "parent": "PlantEater"
+    },
+    {
+      "name": "AfricanTrunked",
+      "label": "African Trunked Animal",
+      "definition": "Largest land animal with trunk",
+      "synonyms": ["African Elephant", "Loxodonta africana"],
+      "parent": "Trunked"
+    },
+    {
+      "name": "AsianTrunked",
+      "label": "Asian Trunked Animal",
+      "definition": "Trunked animal from Asia",
+      "synonyms": ["Asian Elephant", "Elephas maximus"],
+      "parent": "Trunked"
+    }
+  ]
+}
