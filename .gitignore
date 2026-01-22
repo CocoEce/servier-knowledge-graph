@@ -205,3 +205,19 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# BERTMap anatomy dataset
+Exploration/Bertmap/anatomy-dataset/bertmap/
+
+# Large data files in Exploration/Clustering
+Exploration/Clustering/**/*.csv
+Exploration/Clustering/**/*.owl
+Exploration/Clustering/**/*.npy
+Exploration/Clustering/**/*.nt.gz
+
+# Large data files in Exploration/Bertmap
+Exploration/Bertmap/**/*.csv
+Exploration/Bertmap/**/*.owl
+Exploration/Bertmap/**/*.npy
+Exploration/Bertmap/**/*.nt.gz
+Exploration/Bertmap/**/*.rdf
