@@ -1,0 +1,72 @@
+classe_b_name,classe_b_label,classe_a_name,classe_a_label,probabilite,probabilite_pct
+AnimalOrganism,Animal Organism,Animal,Animal,0.23,23.0
+Mammalian,Mammalian,Mammal,Mammal,0.1,10.0
+CarnivorousMammal,Carnivorous Mammal,Carnivore,Carnivore,0.32,32.0
+FelidFamily,Felid Family,Felidae,Felidae,0.215,21.5
+AfricanLion,African Lion,Lion,Lion,0.175,17.5
+TigerSpecies,Tiger Species,Tiger,Tiger,0.27,27.0
+SpottedLeopard,Spotted Leopard,Leopard,Leopard,0.12,12.0
+FastCheetah,Fast Cheetah,Cheetah,Cheetah,0.285,28.499999999999996
+HouseCat,House Cat,DomesticCat,Domestic Cat,0.14,14.000000000000002
+CanidGroup,Canid Group,Canidae,Canidae,0.37,37.0
+GreyWolf,Grey Wolf,Wolf,Wolf,0.275,27.500000000000004
+DomesticDog,Domestic Dog,Dog,Dog,0.27,27.0
+RedFox,Red Fox,Fox,Fox,0.11,11.0
+BearFamily,Bear Family,Ursidae,Ursidae,0.305,30.5
+GrizzlyBear,Grizzly Bear,BrownBear,Brown Bear,0.18,18.0
+ArcticBear,Arctic Bear,PolarBear,Polar Bear,0.395,39.5
+PrimateOrder,Primate Order,Primate,Primate,0.285,28.499999999999996
+GreatApe,Great Ape,Ape,Ape,0.16,16.0
+MountainGorilla,Mountain Gorilla,Gorilla,Gorilla,0.25,25.0
+CommonChimpanzee,Common Chimpanzee,Chimpanzee,Chimpanzee,0.29,28.999999999999996
+BorneanOrangutan,Bornean Orangutan,Orangutan,Orangutan,0.275,27.500000000000004
+TailedMonkey,Tailed Monkey,Monkey,Monkey,0.345,34.5
+RodentOrder,Rodent Order,Rodent,Rodent,0.305,30.5
+SmallMouse,Small Mouse,Mouse,Mouse,0.33,33.0
+LargeRat,Large Rat,Rat,Rat,0.25,25.0
+TreeSquirrel,Tree Squirrel,Squirrel,Squirrel,0.195,19.5
+MarineMammal,Marine Mammal,Cetacean,Cetacean,0.145,14.499999999999998
+BottlenoseDolphin,Bottlenose Dolphin,Dolphin,Dolphin,0.255,25.5
+GiantWhale,Giant Whale,Whale,Whale,0.26,26.0
+AvianClass,Avian Class,Bird,Bird,0.345,34.5
+BirdOfPrey,Bird of Prey,RaptorBird,Raptor,0.18,18.0
+MajesticEagle,Majestic Eagle,Eagle,Eagle,0.16,16.0
+HuntingHawk,Hunting Hawk,Hawk,Hawk,0.235,23.5
+NightOwl,Night Owl,Owl,Owl,0.19,19.0
+AquaticBird,Aquatic Bird,Butterfly,Butterfly,0.14,14.000000000000002
+WildDuck,Wild Duck,Duck,Duck,0.32,32.0
+GracefulSwan,Graceful Swan,Swan,Swan,0.505,50.5
+MigratoryGoose,Migratory Goose,Goose,Goose,0.13,13.0
+FlightlessPenguin,Flightless Penguin,Penguin,Penguin,0.27,27.0
+TalkingParrot,Talking Parrot,Parrot,Parrot,0.275,27.500000000000004
+ReptilianClass,Reptilian Class,Reptile,Reptile,0.29,28.999999999999996
+Serpent,Serpent,Snake,Snake,0.25,25.0
+ConstrictorSnake,Constrictor Snake,Python,Python,0.16,16.0
+HoodedSnake,Hooded Snake,Cobra,Cobra,0.175,17.5
+ScaledLizard,Scaled Lizard,Lizard,Lizard,0.32,32.0
+GreenIguana,Green Iguana,Iguana,Iguana,0.295,29.5
+ColorChangingLizard,Color-Changing Lizard,Chameleon,Chameleon,0.335,33.5
+ShelledReptile,Shelled Reptile,Lizard,Lizard,0.085,8.5
+OceanTurtle,Ocean Turtle,SeaTurtle,Sea Turtle,0.18,18.0
+LargeCrocodile,Large Crocodile,Crocodile,Crocodile,0.445,44.5
+AquaticVertebrate,Aquatic Vertebrate,Fish,Fish,0.22,22.0
+PredatoryShark,Predatory Shark,Shark,Shark,0.22,22.0
+FlatRay,Flat Ray,Ray,Ray,0.3,30.0
+MigratingSalmon,Migrating Salmon,Salmon,Salmon,0.325,32.5
+SwiftTuna,Swift Tuna,Tuna,Tuna,0.19,19.0
+AmphibiousAnimal,Amphibious Animal,Amphibian,Amphibian,0.235,23.5
+LeapingFrog,Leaping Frog,Frog,Frog,0.45,45.0
+TailedNewt,Tailed Newt,Amphibian,Amphibian,0.15,15.0
+Spineless,Spineless,Invertebrate,Invertebrate,0.175,17.5
+SixLeggedArthropod,Six-Legged Arthropod,Insect,Insect,0.385,38.5
+WingedButterfly,Winged Butterfly,Butterfly,Butterfly,0.365,36.5
+HoneyBee,Honey Bee,Bee,Bee,0.345,34.5
+ColonyAnt,Colony Ant,Ant,Ant,0.45,45.0
+HardwingBeetle,Hardwing Beetle,Beetle,Beetle,0.175,17.5
+EightLeggedArthropod,Eight-Legged Arthropod,Insect,Insect,0.16,16.0
+WebSpider,Web Spider,Spider,Spider,0.36,36.0
+StingingScorpion,Stinging Scorpion,Scorpion,Scorpion,0.34,34.0
+SoftBodyMollusk,Soft-Body Mollusk,Mollusk,Mollusk,0.535,53.5
+EightArmedOctopus,Eight-Armed Octopus,Octopus,Octopus,0.205,20.5
+TenArmedSquid,Ten-Armed Squid,Squid,Squid,0.355,35.5
+SpiralSnail,Spiral Snail,Snail,Snail,0.355,35.5

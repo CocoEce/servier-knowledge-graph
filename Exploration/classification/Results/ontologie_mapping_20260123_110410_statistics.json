@@ -1,0 +1,27 @@
+{
+  "total_mappings": 71,
+  "probability_stats": {
+    "mean": 0.26316901408450705,
+    "median": 0.27,
+    "std": 0.09736760399372409,
+    "min": 0.085,
+    "max": 0.535
+  },
+  "similarity_stats": {
+    "mean": 0.26316901408450705,
+    "median": 0.27,
+    "std": 0.09736760399372409,
+    "min": 0.085,
+    "max": 0.535
+  },
+  "confidence_distribution": {
+    "high": 0,
+    "medium": 5,
+    "low": 66
+  },
+  "confidence_percentages": {
+    "high": 0.0,
+    "medium": 7.04,
+    "low": 92.96
+  }
+}

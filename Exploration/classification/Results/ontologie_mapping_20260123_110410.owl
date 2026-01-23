@@ -1,0 +1,1046 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/animal-mapping"
+         xmlns="http://example.org/animal-mapping#">
+
+<owl:Ontology rdf:about="http://example.org/animal-mapping"/>
+
+<owl:ObjectProperty rdf:about="#hasSourceClass"/>
+
+<owl:ObjectProperty rdf:about="#hasTargetClass"/>
+
+<owl:DatatypeProperty rdf:about="#hasSourceIRI">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasTargetIRI">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasSourceLabel">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasTargetLabel">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasSimilarityScore">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasProbability">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasConfidenceLevel">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasRank">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Mapping">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#mapping_AnimalOrganism_to_Animal_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/AnimalOrganism</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Animal</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Organism</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.23</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.23</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Organism → Animal (p=0.230)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Animal Organism from ontology B is classified to Animal from ontology A with a probability of 0.2300 (similarity score: 0.2300)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_Mammalian_to_Mammal_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/Mammalian</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Mammal</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mammalian</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mammal</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mammalian → Mammal (p=0.100)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Mammalian from ontology B is classified to Mammal from ontology A with a probability of 0.1000 (similarity score: 0.1000)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_CarnivorousMammal_to_Carnivore_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/CarnivorousMammal</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Carnivore</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carnivorous Mammal</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carnivore</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.32</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.32</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carnivorous Mammal → Carnivore (p=0.320)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Carnivorous Mammal from ontology B is classified to Carnivore from ontology A with a probability of 0.3200 (similarity score: 0.3200)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_FelidFamily_to_Felidae_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/FelidFamily</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Felidae</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felid Family</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felidae</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.215</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.215</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felid Family → Felidae (p=0.215)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Felid Family from ontology B is classified to Felidae from ontology A with a probability of 0.2150 (similarity score: 0.2150)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_AfricanLion_to_Lion_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/AfricanLion</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Lion</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">African Lion</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lion</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.175</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.175</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">African Lion → Lion (p=0.175)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: African Lion from ontology B is classified to Lion from ontology A with a probability of 0.1750 (similarity score: 0.1750)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_TigerSpecies_to_Tiger_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/TigerSpecies</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Tiger</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiger Species</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiger</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiger Species → Tiger (p=0.270)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Tiger Species from ontology B is classified to Tiger from ontology A with a probability of 0.2700 (similarity score: 0.2700)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_SpottedLeopard_to_Leopard_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/SpottedLeopard</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Leopard</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spotted Leopard</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leopard</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.12</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.12</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spotted Leopard → Leopard (p=0.120)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Spotted Leopard from ontology B is classified to Leopard from ontology A with a probability of 0.1200 (similarity score: 0.1200)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_FastCheetah_to_Cheetah_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/FastCheetah</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Cheetah</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fast Cheetah</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cheetah</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.285</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.285</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fast Cheetah → Cheetah (p=0.285)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Fast Cheetah from ontology B is classified to Cheetah from ontology A with a probability of 0.2850 (similarity score: 0.2850)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_HouseCat_to_DomesticCat_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/HouseCat</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/DomesticCat</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">House Cat</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domestic Cat</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.14</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.14</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">House Cat → Domestic Cat (p=0.140)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: House Cat from ontology B is classified to Domestic Cat from ontology A with a probability of 0.1400 (similarity score: 0.1400)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_CanidGroup_to_Canidae_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/CanidGroup</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Canidae</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canid Group</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canidae</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.37</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.37</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canid Group → Canidae (p=0.370)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Canid Group from ontology B is classified to Canidae from ontology A with a probability of 0.3700 (similarity score: 0.3700)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_GreyWolf_to_Wolf_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/GreyWolf</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Wolf</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grey Wolf</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wolf</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.275</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.275</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grey Wolf → Wolf (p=0.275)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Grey Wolf from ontology B is classified to Wolf from ontology A with a probability of 0.2750 (similarity score: 0.2750)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_DomesticDog_to_Dog_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/DomesticDog</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Dog</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domestic Dog</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domestic Dog → Dog (p=0.270)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Domestic Dog from ontology B is classified to Dog from ontology A with a probability of 0.2700 (similarity score: 0.2700)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_RedFox_to_Fox_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/RedFox</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Fox</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Fox</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fox</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.11</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.11</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Fox → Fox (p=0.110)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Red Fox from ontology B is classified to Fox from ontology A with a probability of 0.1100 (similarity score: 0.1100)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_BearFamily_to_Ursidae_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/BearFamily</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Ursidae</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bear Family</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ursidae</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.305</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.305</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bear Family → Ursidae (p=0.305)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Bear Family from ontology B is classified to Ursidae from ontology A with a probability of 0.3050 (similarity score: 0.3050)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_GrizzlyBear_to_BrownBear_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/GrizzlyBear</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/BrownBear</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grizzly Bear</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown Bear</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.18</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.18</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grizzly Bear → Brown Bear (p=0.180)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Grizzly Bear from ontology B is classified to Brown Bear from ontology A with a probability of 0.1800 (similarity score: 0.1800)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_ArcticBear_to_PolarBear_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/ArcticBear</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/PolarBear</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arctic Bear</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polar Bear</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.395</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.395</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arctic Bear → Polar Bear (p=0.395)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Arctic Bear from ontology B is classified to Polar Bear from ontology A with a probability of 0.3950 (similarity score: 0.3950)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_PrimateOrder_to_Primate_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/PrimateOrder</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Primate</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primate Order</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primate</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.285</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.285</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primate Order → Primate (p=0.285)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Primate Order from ontology B is classified to Primate from ontology A with a probability of 0.2850 (similarity score: 0.2850)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_GreatApe_to_Ape_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/GreatApe</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Ape</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Great Ape</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ape</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.16</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.16</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Great Ape → Ape (p=0.160)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Great Ape from ontology B is classified to Ape from ontology A with a probability of 0.1600 (similarity score: 0.1600)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_MountainGorilla_to_Gorilla_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/MountainGorilla</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Gorilla</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mountain Gorilla</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gorilla</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mountain Gorilla → Gorilla (p=0.250)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Mountain Gorilla from ontology B is classified to Gorilla from ontology A with a probability of 0.2500 (similarity score: 0.2500)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_CommonChimpanzee_to_Chimpanzee_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/CommonChimpanzee</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Chimpanzee</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Common Chimpanzee</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chimpanzee</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.29</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.29</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Common Chimpanzee → Chimpanzee (p=0.290)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Common Chimpanzee from ontology B is classified to Chimpanzee from ontology A with a probability of 0.2900 (similarity score: 0.2900)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_BorneanOrangutan_to_Orangutan_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/BorneanOrangutan</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Orangutan</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bornean Orangutan</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orangutan</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.275</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.275</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bornean Orangutan → Orangutan (p=0.275)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Bornean Orangutan from ontology B is classified to Orangutan from ontology A with a probability of 0.2750 (similarity score: 0.2750)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_TailedMonkey_to_Monkey_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/TailedMonkey</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Monkey</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailed Monkey</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monkey</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.345</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.345</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailed Monkey → Monkey (p=0.345)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Tailed Monkey from ontology B is classified to Monkey from ontology A with a probability of 0.3450 (similarity score: 0.3450)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_RodentOrder_to_Rodent_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/RodentOrder</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Rodent</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rodent Order</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rodent</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.305</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.305</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rodent Order → Rodent (p=0.305)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Rodent Order from ontology B is classified to Rodent from ontology A with a probability of 0.3050 (similarity score: 0.3050)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_SmallMouse_to_Mouse_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/SmallMouse</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Mouse</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small Mouse</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouse</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.33</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.33</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small Mouse → Mouse (p=0.330)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Small Mouse from ontology B is classified to Mouse from ontology A with a probability of 0.3300 (similarity score: 0.3300)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_LargeRat_to_Rat_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/LargeRat</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Rat</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large Rat</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rat</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large Rat → Rat (p=0.250)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Large Rat from ontology B is classified to Rat from ontology A with a probability of 0.2500 (similarity score: 0.2500)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_TreeSquirrel_to_Squirrel_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/TreeSquirrel</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Squirrel</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tree Squirrel</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Squirrel</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.195</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.195</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tree Squirrel → Squirrel (p=0.195)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Tree Squirrel from ontology B is classified to Squirrel from ontology A with a probability of 0.1950 (similarity score: 0.1950)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_MarineMammal_to_Cetacean_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/MarineMammal</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Cetacean</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marine Mammal</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cetacean</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.145</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.145</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marine Mammal → Cetacean (p=0.145)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Marine Mammal from ontology B is classified to Cetacean from ontology A with a probability of 0.1450 (similarity score: 0.1450)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_BottlenoseDolphin_to_Dolphin_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/BottlenoseDolphin</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Dolphin</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bottlenose Dolphin</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dolphin</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.255</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.255</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bottlenose Dolphin → Dolphin (p=0.255)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Bottlenose Dolphin from ontology B is classified to Dolphin from ontology A with a probability of 0.2550 (similarity score: 0.2550)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_GiantWhale_to_Whale_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/GiantWhale</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Whale</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giant Whale</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whale</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.26</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.26</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giant Whale → Whale (p=0.260)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Giant Whale from ontology B is classified to Whale from ontology A with a probability of 0.2600 (similarity score: 0.2600)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_AvianClass_to_Bird_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/AvianClass</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Bird</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avian Class</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bird</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.345</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.345</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avian Class → Bird (p=0.345)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Avian Class from ontology B is classified to Bird from ontology A with a probability of 0.3450 (similarity score: 0.3450)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_BirdOfPrey_to_RaptorBird_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/BirdOfPrey</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/RaptorBird</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bird of Prey</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raptor</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.18</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.18</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bird of Prey → Raptor (p=0.180)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Bird of Prey from ontology B is classified to Raptor from ontology A with a probability of 0.1800 (similarity score: 0.1800)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_MajesticEagle_to_Eagle_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/MajesticEagle</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Eagle</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Majestic Eagle</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eagle</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.16</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.16</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Majestic Eagle → Eagle (p=0.160)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Majestic Eagle from ontology B is classified to Eagle from ontology A with a probability of 0.1600 (similarity score: 0.1600)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_HuntingHawk_to_Hawk_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/HuntingHawk</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Hawk</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hunting Hawk</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hawk</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.235</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.235</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hunting Hawk → Hawk (p=0.235)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Hunting Hawk from ontology B is classified to Hawk from ontology A with a probability of 0.2350 (similarity score: 0.2350)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_NightOwl_to_Owl_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/NightOwl</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Owl</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Night Owl</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Owl</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.19</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.19</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Night Owl → Owl (p=0.190)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Night Owl from ontology B is classified to Owl from ontology A with a probability of 0.1900 (similarity score: 0.1900)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_AquaticBird_to_Butterfly_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/AquaticBird</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Butterfly</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aquatic Bird</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Butterfly</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.14</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.14</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aquatic Bird → Butterfly (p=0.140)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Aquatic Bird from ontology B is classified to Butterfly from ontology A with a probability of 0.1400 (similarity score: 0.1400)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_WildDuck_to_Duck_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/WildDuck</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Duck</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wild Duck</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duck</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.32</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.32</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wild Duck → Duck (p=0.320)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Wild Duck from ontology B is classified to Duck from ontology A with a probability of 0.3200 (similarity score: 0.3200)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_GracefulSwan_to_Swan_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/GracefulSwan</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Swan</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graceful Swan</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swan</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.505</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.505</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graceful Swan → Swan (p=0.505)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Graceful Swan from ontology B is classified to Swan from ontology A with a probability of 0.5050 (similarity score: 0.5050)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_MigratoryGoose_to_Goose_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/MigratoryGoose</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Goose</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Migratory Goose</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goose</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.13</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.13</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Migratory Goose → Goose (p=0.130)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Migratory Goose from ontology B is classified to Goose from ontology A with a probability of 0.1300 (similarity score: 0.1300)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_FlightlessPenguin_to_Penguin_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/FlightlessPenguin</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Penguin</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flightless Penguin</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penguin</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flightless Penguin → Penguin (p=0.270)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Flightless Penguin from ontology B is classified to Penguin from ontology A with a probability of 0.2700 (similarity score: 0.2700)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_TalkingParrot_to_Parrot_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/TalkingParrot</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Parrot</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Talking Parrot</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parrot</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.275</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.275</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Talking Parrot → Parrot (p=0.275)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Talking Parrot from ontology B is classified to Parrot from ontology A with a probability of 0.2750 (similarity score: 0.2750)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_ReptilianClass_to_Reptile_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/ReptilianClass</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Reptile</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reptilian Class</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reptile</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.29</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.29</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reptilian Class → Reptile (p=0.290)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Reptilian Class from ontology B is classified to Reptile from ontology A with a probability of 0.2900 (similarity score: 0.2900)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_Serpent_to_Snake_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/Serpent</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Snake</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serpent</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snake</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serpent → Snake (p=0.250)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Serpent from ontology B is classified to Snake from ontology A with a probability of 0.2500 (similarity score: 0.2500)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_ConstrictorSnake_to_Python_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/ConstrictorSnake</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Python</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Constrictor Snake</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.16</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.16</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Constrictor Snake → Python (p=0.160)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Constrictor Snake from ontology B is classified to Python from ontology A with a probability of 0.1600 (similarity score: 0.1600)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_HoodedSnake_to_Cobra_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/HoodedSnake</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Cobra</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hooded Snake</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobra</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.175</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.175</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hooded Snake → Cobra (p=0.175)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Hooded Snake from ontology B is classified to Cobra from ontology A with a probability of 0.1750 (similarity score: 0.1750)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_ScaledLizard_to_Lizard_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/ScaledLizard</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Lizard</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scaled Lizard</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lizard</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.32</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.32</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scaled Lizard → Lizard (p=0.320)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Scaled Lizard from ontology B is classified to Lizard from ontology A with a probability of 0.3200 (similarity score: 0.3200)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_GreenIguana_to_Iguana_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/GreenIguana</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Iguana</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Iguana</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iguana</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.295</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.295</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Iguana → Iguana (p=0.295)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Green Iguana from ontology B is classified to Iguana from ontology A with a probability of 0.2950 (similarity score: 0.2950)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_ColorChangingLizard_to_Chameleon_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/ColorChangingLizard</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Chameleon</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color-Changing Lizard</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chameleon</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.335</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.335</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color-Changing Lizard → Chameleon (p=0.335)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Color-Changing Lizard from ontology B is classified to Chameleon from ontology A with a probability of 0.3350 (similarity score: 0.3350)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_ShelledReptile_to_Lizard_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/ShelledReptile</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Lizard</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shelled Reptile</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lizard</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.085</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.085</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shelled Reptile → Lizard (p=0.085)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Shelled Reptile from ontology B is classified to Lizard from ontology A with a probability of 0.0850 (similarity score: 0.0850)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_OceanTurtle_to_SeaTurtle_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/OceanTurtle</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/SeaTurtle</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Turtle</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea Turtle</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.18</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.18</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Turtle → Sea Turtle (p=0.180)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Ocean Turtle from ontology B is classified to Sea Turtle from ontology A with a probability of 0.1800 (similarity score: 0.1800)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_LargeCrocodile_to_Crocodile_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/LargeCrocodile</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Crocodile</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large Crocodile</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crocodile</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.445</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.445</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large Crocodile → Crocodile (p=0.445)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Large Crocodile from ontology B is classified to Crocodile from ontology A with a probability of 0.4450 (similarity score: 0.4450)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_AquaticVertebrate_to_Fish_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/AquaticVertebrate</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Fish</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aquatic Vertebrate</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.22</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.22</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aquatic Vertebrate → Fish (p=0.220)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Aquatic Vertebrate from ontology B is classified to Fish from ontology A with a probability of 0.2200 (similarity score: 0.2200)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_PredatoryShark_to_Shark_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/PredatoryShark</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Shark</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predatory Shark</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shark</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.22</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.22</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predatory Shark → Shark (p=0.220)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Predatory Shark from ontology B is classified to Shark from ontology A with a probability of 0.2200 (similarity score: 0.2200)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_FlatRay_to_Ray_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/FlatRay</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Ray</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flat Ray</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ray</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flat Ray → Ray (p=0.300)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Flat Ray from ontology B is classified to Ray from ontology A with a probability of 0.3000 (similarity score: 0.3000)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_MigratingSalmon_to_Salmon_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/MigratingSalmon</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Salmon</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Migrating Salmon</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salmon</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.325</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.325</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Migrating Salmon → Salmon (p=0.325)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Migrating Salmon from ontology B is classified to Salmon from ontology A with a probability of 0.3250 (similarity score: 0.3250)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_SwiftTuna_to_Tuna_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/SwiftTuna</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Tuna</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swift Tuna</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tuna</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.19</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.19</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swift Tuna → Tuna (p=0.190)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Swift Tuna from ontology B is classified to Tuna from ontology A with a probability of 0.1900 (similarity score: 0.1900)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_AmphibiousAnimal_to_Amphibian_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/AmphibiousAnimal</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Amphibian</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amphibious Animal</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amphibian</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.235</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.235</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amphibious Animal → Amphibian (p=0.235)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Amphibious Animal from ontology B is classified to Amphibian from ontology A with a probability of 0.2350 (similarity score: 0.2350)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_LeapingFrog_to_Frog_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/LeapingFrog</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Frog</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leaping Frog</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frog</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.45</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.45</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leaping Frog → Frog (p=0.450)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Leaping Frog from ontology B is classified to Frog from ontology A with a probability of 0.4500 (similarity score: 0.4500)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_TailedNewt_to_Amphibian_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/TailedNewt</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Amphibian</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailed Newt</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amphibian</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.15</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.15</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tailed Newt → Amphibian (p=0.150)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Tailed Newt from ontology B is classified to Amphibian from ontology A with a probability of 0.1500 (similarity score: 0.1500)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_Spineless_to_Invertebrate_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/Spineless</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Invertebrate</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spineless</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Invertebrate</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.175</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.175</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spineless → Invertebrate (p=0.175)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Spineless from ontology B is classified to Invertebrate from ontology A with a probability of 0.1750 (similarity score: 0.1750)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_SixLeggedArthropod_to_Insect_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/SixLeggedArthropod</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Insect</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Six-Legged Arthropod</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insect</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.385</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.385</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Six-Legged Arthropod → Insect (p=0.385)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Six-Legged Arthropod from ontology B is classified to Insect from ontology A with a probability of 0.3850 (similarity score: 0.3850)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_WingedButterfly_to_Butterfly_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/WingedButterfly</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Butterfly</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Winged Butterfly</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Butterfly</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.365</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.365</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Winged Butterfly → Butterfly (p=0.365)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Winged Butterfly from ontology B is classified to Butterfly from ontology A with a probability of 0.3650 (similarity score: 0.3650)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_HoneyBee_to_Bee_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/HoneyBee</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Bee</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Honey Bee</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bee</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.345</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.345</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Honey Bee → Bee (p=0.345)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Honey Bee from ontology B is classified to Bee from ontology A with a probability of 0.3450 (similarity score: 0.3450)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_ColonyAnt_to_Ant_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/ColonyAnt</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Ant</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colony Ant</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ant</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.45</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.45</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colony Ant → Ant (p=0.450)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Colony Ant from ontology B is classified to Ant from ontology A with a probability of 0.4500 (similarity score: 0.4500)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_HardwingBeetle_to_Beetle_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/HardwingBeetle</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Beetle</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardwing Beetle</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beetle</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.175</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.175</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardwing Beetle → Beetle (p=0.175)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Hardwing Beetle from ontology B is classified to Beetle from ontology A with a probability of 0.1750 (similarity score: 0.1750)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_EightLeggedArthropod_to_Insect_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/EightLeggedArthropod</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Insect</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eight-Legged Arthropod</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insect</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.16</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.16</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eight-Legged Arthropod → Insect (p=0.160)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Eight-Legged Arthropod from ontology B is classified to Insect from ontology A with a probability of 0.1600 (similarity score: 0.1600)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_WebSpider_to_Spider_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/WebSpider</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Spider</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Spider</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spider</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.36</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.36</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Spider → Spider (p=0.360)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Web Spider from ontology B is classified to Spider from ontology A with a probability of 0.3600 (similarity score: 0.3600)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_StingingScorpion_to_Scorpion_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/StingingScorpion</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Scorpion</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stinging Scorpion</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scorpion</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.34</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.34</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stinging Scorpion → Scorpion (p=0.340)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Stinging Scorpion from ontology B is classified to Scorpion from ontology A with a probability of 0.3400 (similarity score: 0.3400)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_SoftBodyMollusk_to_Mollusk_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/SoftBodyMollusk</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Mollusk</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soft-Body Mollusk</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mollusk</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.535</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.535</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soft-Body Mollusk → Mollusk (p=0.535)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Soft-Body Mollusk from ontology B is classified to Mollusk from ontology A with a probability of 0.5350 (similarity score: 0.5350)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_EightArmedOctopus_to_Octopus_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/EightArmedOctopus</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Octopus</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eight-Armed Octopus</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Octopus</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.205</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.205</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eight-Armed Octopus → Octopus (p=0.205)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Eight-Armed Octopus from ontology B is classified to Octopus from ontology A with a probability of 0.2050 (similarity score: 0.2050)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_TenArmedSquid_to_Squid_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/TenArmedSquid</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Squid</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ten-Armed Squid</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Squid</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.355</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.355</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ten-Armed Squid → Squid (p=0.355)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Ten-Armed Squid from ontology B is classified to Squid from ontology A with a probability of 0.3550 (similarity score: 0.3550)</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mapping_SpiralSnail_to_Snail_rank1">
+  <rdf:type rdf:resource="#Mapping"/>
+  <hasSourceIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-taxonomy-B/SpiralSnail</hasSourceIRI>
+  <hasTargetIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://example.org/animal-ontology-A/Snail</hasTargetIRI>
+  <hasSourceLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spiral Snail</hasSourceLabel>
+  <hasTargetLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snail</hasTargetLabel>
+  <hasSimilarityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.355</hasSimilarityScore>
+  <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.355</hasProbability>
+  <hasRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRank>
+  <hasConfidenceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasConfidenceLevel>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spiral Snail → Snail (p=0.355)</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapping rank 1: Spiral Snail from ontology B is classified to Snail from ontology A with a probability of 0.3550 (similarity score: 0.3550)</rdfs:comment>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

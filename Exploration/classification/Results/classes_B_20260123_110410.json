@@ -1,0 +1,1105 @@
+[
+  {
+    "iri": "http://example.org/animal-taxonomy-B/AnimalOrganism",
+    "name": "AnimalOrganism",
+    "label": "Animal Organism",
+    "comments": [
+      "Living creature that consumes organic material and typically has mobility and sensory capabilities",
+      "kingdom: Animalia",
+      "type: base_class"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Thing"
+    ],
+    "full_description": "Animal Organism Living creature that consumes organic material and typically has mobility and sensory capabilities kingdom: Animalia type: base_class"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/Mammalian",
+    "name": "Mammalian",
+    "label": "Mammalian",
+    "comments": [
+      "Endothermic vertebrate distinguished by fur, mammary glands, and live birth",
+      "class: Mammalia",
+      "temperature_regulation: endothermic",
+      "offspring: live_birth"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AnimalOrganism"
+    ],
+    "full_description": "Mammalian Endothermic vertebrate distinguished by fur, mammary glands, and live birth class: Mammalia temperature_regulation: endothermic offspring: live_birth"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/CarnivorousMammal",
+    "name": "CarnivorousMammal",
+    "label": "Carnivorous Mammal",
+    "comments": [
+      "Flesh-eating mammal with adaptations for hunting",
+      "order: Carnivora",
+      "feeding_type: carnivorous"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mammalian"
+    ],
+    "full_description": "Carnivorous Mammal Flesh-eating mammal with adaptations for hunting order: Carnivora feeding_type: carnivorous"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/FelidFamily",
+    "name": "FelidFamily",
+    "label": "Felid Family",
+    "comments": [
+      "Carnivorous mammals of the cat family with retractable claws",
+      "family: Felidae",
+      "claw_type: retractable"
+    ],
+    "synonyms": [],
+    "parents": [
+      "CarnivorousMammal"
+    ],
+    "full_description": "Felid Family Carnivorous mammals of the cat family with retractable claws family: Felidae claw_type: retractable"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/AfricanLion",
+    "name": "AfricanLion",
+    "label": "African Lion",
+    "comments": [
+      "Large social cat with distinctive mane in males",
+      "species: Panthera leo",
+      "environment: grassland",
+      "status: vulnerable"
+    ],
+    "synonyms": [],
+    "parents": [
+      "FelidFamily"
+    ],
+    "full_description": "African Lion Large social cat with distinctive mane in males species: Panthera leo environment: grassland status: vulnerable"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/TigerSpecies",
+    "name": "TigerSpecies",
+    "label": "Tiger Species",
+    "comments": [
+      "Largest feline with orange fur and black striping pattern",
+      "species: Panthera tigris",
+      "environment: jungle",
+      "status: endangered"
+    ],
+    "synonyms": [],
+    "parents": [
+      "FelidFamily"
+    ],
+    "full_description": "Tiger Species Largest feline with orange fur and black striping pattern species: Panthera tigris environment: jungle status: endangered"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/SpottedLeopard",
+    "name": "SpottedLeopard",
+    "label": "Spotted Leopard",
+    "comments": [
+      "Solitary big cat with rosette-patterned coat",
+      "species: Panthera pardus",
+      "environment: diverse",
+      "status: vulnerable"
+    ],
+    "synonyms": [],
+    "parents": [
+      "FelidFamily"
+    ],
+    "full_description": "Spotted Leopard Solitary big cat with rosette-patterned coat species: Panthera pardus environment: diverse status: vulnerable"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/FastCheetah",
+    "name": "FastCheetah",
+    "label": "Fast Cheetah",
+    "comments": [
+      "Speediest terrestrial animal with characteristic tear streaks",
+      "species: Acinonyx jubatus",
+      "environment: open_plains",
+      "velocity: 120 km/h"
+    ],
+    "synonyms": [],
+    "parents": [
+      "FelidFamily"
+    ],
+    "full_description": "Fast Cheetah Speediest terrestrial animal with characteristic tear streaks species: Acinonyx jubatus environment: open_plains velocity: 120 km/h"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/HouseCat",
+    "name": "HouseCat",
+    "label": "House Cat",
+    "comments": [
+      "Small tamed feline commonly kept as companion animal",
+      "species: Felis catus",
+      "environment: human_dwelling",
+      "domestication: yes"
+    ],
+    "synonyms": [],
+    "parents": [
+      "FelidFamily"
+    ],
+    "full_description": "House Cat Small tamed feline commonly kept as companion animal species: Felis catus environment: human_dwelling domestication: yes"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/CanidGroup",
+    "name": "CanidGroup",
+    "label": "Canid Group",
+    "comments": [
+      "Family of carnivorous mammals including wolves, dogs, and foxes",
+      "family: Canidae"
+    ],
+    "synonyms": [],
+    "parents": [
+      "CarnivorousMammal"
+    ],
+    "full_description": "Canid Group Family of carnivorous mammals including wolves, dogs, and foxes family: Canidae"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/GreyWolf",
+    "name": "GreyWolf",
+    "label": "Grey Wolf",
+    "comments": [
+      "Large wild canid living in hierarchical packs",
+      "species: Canis lupus",
+      "environment: wilderness",
+      "behavior: pack_hunter"
+    ],
+    "synonyms": [],
+    "parents": [
+      "CanidGroup"
+    ],
+    "full_description": "Grey Wolf Large wild canid living in hierarchical packs species: Canis lupus environment: wilderness behavior: pack_hunter"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/DomesticDog",
+    "name": "DomesticDog",
+    "label": "Domestic Dog",
+    "comments": [
+      "Tamed canine descended from wolves, human companion",
+      "species: Canis familiaris",
+      "environment: domestic",
+      "domestication: yes"
+    ],
+    "synonyms": [],
+    "parents": [
+      "CanidGroup"
+    ],
+    "full_description": "Domestic Dog Tamed canine descended from wolves, human companion species: Canis familiaris environment: domestic domestication: yes"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/RedFox",
+    "name": "RedFox",
+    "label": "Red Fox",
+    "comments": [
+      "Small omnivorous canid with characteristic bushy tail",
+      "species: Vulpes vulpes",
+      "environment: adaptable",
+      "feeding: omnivorous"
+    ],
+    "synonyms": [],
+    "parents": [
+      "CanidGroup"
+    ],
+    "full_description": "Red Fox Small omnivorous canid with characteristic bushy tail species: Vulpes vulpes environment: adaptable feeding: omnivorous"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/BearFamily",
+    "name": "BearFamily",
+    "label": "Bear Family",
+    "comments": [
+      "Large carnivorous or omnivorous mammals with heavy build",
+      "family: Ursidae"
+    ],
+    "synonyms": [],
+    "parents": [
+      "CarnivorousMammal"
+    ],
+    "full_description": "Bear Family Large carnivorous or omnivorous mammals with heavy build family: Ursidae"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/GrizzlyBear",
+    "name": "GrizzlyBear",
+    "label": "Grizzly Bear",
+    "comments": [
+      "Large brown bear inhabiting North America and Eurasia",
+      "species: Ursus arctos",
+      "environment: temperate_forest",
+      "mass: large"
+    ],
+    "synonyms": [],
+    "parents": [
+      "BearFamily"
+    ],
+    "full_description": "Grizzly Bear Large brown bear inhabiting North America and Eurasia species: Ursus arctos environment: temperate_forest mass: large"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/ArcticBear",
+    "name": "ArcticBear",
+    "label": "Arctic Bear",
+    "comments": [
+      "Large white-furred bear adapted to polar environment",
+      "species: Ursus maritimus",
+      "environment: polar",
+      "status: vulnerable"
+    ],
+    "synonyms": [],
+    "parents": [
+      "BearFamily"
+    ],
+    "full_description": "Arctic Bear Large white-furred bear adapted to polar environment species: Ursus maritimus environment: polar status: vulnerable"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/PrimateOrder",
+    "name": "PrimateOrder",
+    "label": "Primate Order",
+    "comments": [
+      "Mammals including apes, monkeys, lemurs, and humans",
+      "order: Primates"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mammalian"
+    ],
+    "full_description": "Primate Order Mammals including apes, monkeys, lemurs, and humans order: Primates"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/GreatApe",
+    "name": "GreatApe",
+    "label": "Great Ape",
+    "comments": [
+      "Large tailless primates with advanced cognitive abilities",
+      "superfamily: Hominoidea",
+      "tail_present: no"
+    ],
+    "synonyms": [],
+    "parents": [
+      "PrimateOrder"
+    ],
+    "full_description": "Great Ape Large tailless primates with advanced cognitive abilities superfamily: Hominoidea tail_present: no"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/MountainGorilla",
+    "name": "MountainGorilla",
+    "label": "Mountain Gorilla",
+    "comments": [
+      "Largest primate species inhabiting African mountain forests",
+      "species: Gorilla beringei",
+      "environment: mountain_forest",
+      "status: endangered"
+    ],
+    "synonyms": [],
+    "parents": [
+      "GreatApe"
+    ],
+    "full_description": "Mountain Gorilla Largest primate species inhabiting African mountain forests species: Gorilla beringei environment: mountain_forest status: endangered"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/CommonChimpanzee",
+    "name": "CommonChimpanzee",
+    "label": "Common Chimpanzee",
+    "comments": [
+      "Highly intelligent ape closely related to humans",
+      "species: Pan troglodytes",
+      "environment: tropical_forest",
+      "cognition: advanced"
+    ],
+    "synonyms": [],
+    "parents": [
+      "GreatApe"
+    ],
+    "full_description": "Common Chimpanzee Highly intelligent ape closely related to humans species: Pan troglodytes environment: tropical_forest cognition: advanced"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/BorneanOrangutan",
+    "name": "BorneanOrangutan",
+    "label": "Bornean Orangutan",
+    "comments": [
+      "Large reddish arboreal ape from Southeast Asia",
+      "species: Pongo pygmaeus",
+      "environment: tropical_rainforest",
+      "status: critically_endangered"
+    ],
+    "synonyms": [],
+    "parents": [
+      "GreatApe"
+    ],
+    "full_description": "Bornean Orangutan Large reddish arboreal ape from Southeast Asia species: Pongo pygmaeus environment: tropical_rainforest status: critically_endangered"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/TailedMonkey",
+    "name": "TailedMonkey",
+    "label": "Tailed Monkey",
+    "comments": [
+      "Smaller primates characterized by presence of tail",
+      "tail_present: yes"
+    ],
+    "synonyms": [],
+    "parents": [
+      "PrimateOrder"
+    ],
+    "full_description": "Tailed Monkey Smaller primates characterized by presence of tail tail_present: yes"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/RodentOrder",
+    "name": "RodentOrder",
+    "label": "Rodent Order",
+    "comments": [
+      "Small mammal with chisel-like incisors that grow continuously",
+      "order: Rodentia",
+      "dentition: ever_growing_incisors"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mammalian"
+    ],
+    "full_description": "Rodent Order Small mammal with chisel-like incisors that grow continuously order: Rodentia dentition: ever_growing_incisors"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/SmallMouse",
+    "name": "SmallMouse",
+    "label": "Small Mouse",
+    "comments": [
+      "Tiny rodent with pointed nose and long slender tail",
+      "species: Mus musculus",
+      "body_size: tiny"
+    ],
+    "synonyms": [],
+    "parents": [
+      "RodentOrder"
+    ],
+    "full_description": "Small Mouse Tiny rodent with pointed nose and long slender tail species: Mus musculus body_size: tiny"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/LargeRat",
+    "name": "LargeRat",
+    "label": "Large Rat",
+    "comments": [
+      "Medium-sized rodent with robust body and scaly tail",
+      "species: Rattus norvegicus",
+      "body_size: moderate"
+    ],
+    "synonyms": [],
+    "parents": [
+      "RodentOrder"
+    ],
+    "full_description": "Large Rat Medium-sized rodent with robust body and scaly tail species: Rattus norvegicus body_size: moderate"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/TreeSquirrel",
+    "name": "TreeSquirrel",
+    "label": "Tree Squirrel",
+    "comments": [
+      "Bushy-tailed arboreal rodent with climbing abilities",
+      "family: Sciuridae",
+      "lifestyle: arboreal"
+    ],
+    "synonyms": [],
+    "parents": [
+      "RodentOrder"
+    ],
+    "full_description": "Tree Squirrel Bushy-tailed arboreal rodent with climbing abilities family: Sciuridae lifestyle: arboreal"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/MarineMammal",
+    "name": "MarineMammal",
+    "label": "Marine Mammal",
+    "comments": [
+      "Aquatic or semi-aquatic mammals including whales and dolphins",
+      "order: Cetacea",
+      "environment: aquatic"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mammalian"
+    ],
+    "full_description": "Marine Mammal Aquatic or semi-aquatic mammals including whales and dolphins order: Cetacea environment: aquatic"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/BottlenoseDolphin",
+    "name": "BottlenoseDolphin",
+    "label": "Bottlenose Dolphin",
+    "comments": [
+      "Smart marine mammal with distinctive bottle-shaped snout",
+      "genus: Tursiops",
+      "cognition: advanced",
+      "sonar: present"
+    ],
+    "synonyms": [],
+    "parents": [
+      "MarineMammal"
+    ],
+    "full_description": "Bottlenose Dolphin Smart marine mammal with distinctive bottle-shaped snout genus: Tursiops cognition: advanced sonar: present"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/GiantWhale",
+    "name": "GiantWhale",
+    "label": "Giant Whale",
+    "comments": [
+      "Enormous marine mammal, largest animals on Earth",
+      "body_size: enormous",
+      "environment: pelagic"
+    ],
+    "synonyms": [],
+    "parents": [
+      "MarineMammal"
+    ],
+    "full_description": "Giant Whale Enormous marine mammal, largest animals on Earth body_size: enormous environment: pelagic"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/AvianClass",
+    "name": "AvianClass",
+    "label": "Avian Class",
+    "comments": [
+      "Warm-blooded vertebrates with feathers, beaks, and wings",
+      "class: Aves",
+      "covering: feathers",
+      "egg_laying: yes"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AnimalOrganism"
+    ],
+    "full_description": "Avian Class Warm-blooded vertebrates with feathers, beaks, and wings class: Aves covering: feathers egg_laying: yes"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/BirdOfPrey",
+    "name": "BirdOfPrey",
+    "label": "Bird of Prey",
+    "comments": [
+      "Predatory bird with sharp talons and hooked beak",
+      "feeding: carnivorous",
+      "eyesight: exceptional"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AvianClass"
+    ],
+    "full_description": "Bird of Prey Predatory bird with sharp talons and hooked beak feeding: carnivorous eyesight: exceptional"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/MajesticEagle",
+    "name": "MajesticEagle",
+    "label": "Majestic Eagle",
+    "comments": [
+      "Large raptor with powerful build and impressive wingspan",
+      "species: Aquila chrysaetos",
+      "wing_span: extensive",
+      "environment: alpine"
+    ],
+    "synonyms": [],
+    "parents": [
+      "BirdOfPrey"
+    ],
+    "full_description": "Majestic Eagle Large raptor with powerful build and impressive wingspan species: Aquila chrysaetos wing_span: extensive environment: alpine"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/HuntingHawk",
+    "name": "HuntingHawk",
+    "label": "Hunting Hawk",
+    "comments": [
+      "Medium raptor with broad wings for soaring",
+      "family: Accipitridae",
+      "body_size: moderate"
+    ],
+    "synonyms": [],
+    "parents": [
+      "BirdOfPrey"
+    ],
+    "full_description": "Hunting Hawk Medium raptor with broad wings for soaring family: Accipitridae body_size: moderate"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/NightOwl",
+    "name": "NightOwl",
+    "label": "Night Owl",
+    "comments": [
+      "Nocturnal raptor with forward-facing eyes and silent flight",
+      "order: Strigiformes",
+      "hunting_time: night",
+      "audition: exceptional"
+    ],
+    "synonyms": [],
+    "parents": [
+      "BirdOfPrey"
+    ],
+    "full_description": "Night Owl Nocturnal raptor with forward-facing eyes and silent flight order: Strigiformes hunting_time: night audition: exceptional"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/AquaticBird",
+    "name": "AquaticBird",
+    "label": "Aquatic Bird",
+    "comments": [
+      "Bird species living in or near water environments",
+      "environment: water"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AvianClass"
+    ],
+    "full_description": "Aquatic Bird Bird species living in or near water environments environment: water"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/WildDuck",
+    "name": "WildDuck",
+    "label": "Wild Duck",
+    "comments": [
+      "Waterfowl with webbed feet and waterproof plumage",
+      "family: Anatidae",
+      "foot_structure: webbed"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AquaticBird"
+    ],
+    "full_description": "Wild Duck Waterfowl with webbed feet and waterproof plumage family: Anatidae foot_structure: webbed"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/GracefulSwan",
+    "name": "GracefulSwan",
+    "label": "Graceful Swan",
+    "comments": [
+      "Large waterfowl known for elegant long neck",
+      "genus: Cygnus",
+      "body_size: large",
+      "neck_length: extended"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AquaticBird"
+    ],
+    "full_description": "Graceful Swan Large waterfowl known for elegant long neck genus: Cygnus body_size: large neck_length: extended"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/MigratoryGoose",
+    "name": "MigratoryGoose",
+    "label": "Migratory Goose",
+    "comments": [
+      "Large waterfowl known for seasonal migration patterns",
+      "genus: Branta",
+      "body_size: large"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AquaticBird"
+    ],
+    "full_description": "Migratory Goose Large waterfowl known for seasonal migration patterns genus: Branta body_size: large"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/FlightlessPenguin",
+    "name": "FlightlessPenguin",
+    "label": "Flightless Penguin",
+    "comments": [
+      "Aquatic bird adapted for swimming in cold waters",
+      "family: Spheniscidae",
+      "flying_ability: none",
+      "environment: polar"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AvianClass"
+    ],
+    "full_description": "Flightless Penguin Aquatic bird adapted for swimming in cold waters family: Spheniscidae flying_ability: none environment: polar"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/TalkingParrot",
+    "name": "TalkingParrot",
+    "label": "Talking Parrot",
+    "comments": [
+      "Colorful bird capable of vocal mimicry",
+      "order: Psittaciformes",
+      "cognition: advanced",
+      "vocal_ability: imitation"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AvianClass"
+    ],
+    "full_description": "Talking Parrot Colorful bird capable of vocal mimicry order: Psittaciformes cognition: advanced vocal_ability: imitation"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/ReptilianClass",
+    "name": "ReptilianClass",
+    "label": "Reptilian Class",
+    "comments": [
+      "Cold-blooded vertebrate covered with scales or plates",
+      "class: Reptilia",
+      "thermoregulation: ectothermic",
+      "skin: scaly"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AnimalOrganism"
+    ],
+    "full_description": "Reptilian Class Cold-blooded vertebrate covered with scales or plates class: Reptilia thermoregulation: ectothermic skin: scaly"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/Serpent",
+    "name": "Serpent",
+    "label": "Serpent",
+    "comments": [
+      "Limbless elongated reptile with flexible body",
+      "order: Serpentes",
+      "legs: none",
+      "movement: slithering"
+    ],
+    "synonyms": [],
+    "parents": [
+      "ReptilianClass"
+    ],
+    "full_description": "Serpent Limbless elongated reptile with flexible body order: Serpentes legs: none movement: slithering"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/ConstrictorSnake",
+    "name": "ConstrictorSnake",
+    "label": "Constrictor Snake",
+    "comments": [
+      "Large non-venomous snake that kills by constriction",
+      "family: Pythonidae",
+      "killing_method: constriction"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Serpent"
+    ],
+    "full_description": "Constrictor Snake Large non-venomous snake that kills by constriction family: Pythonidae killing_method: constriction"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/HoodedSnake",
+    "name": "HoodedSnake",
+    "label": "Hooded Snake",
+    "comments": [
+      "Venomous snake capable of expanding neck hood",
+      "genus: Naja",
+      "toxin: present",
+      "threat_display: hood_expansion"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Serpent"
+    ],
+    "full_description": "Hooded Snake Venomous snake capable of expanding neck hood genus: Naja toxin: present threat_display: hood_expansion"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/ScaledLizard",
+    "name": "ScaledLizard",
+    "label": "Scaled Lizard",
+    "comments": [
+      "Four-limbed reptile with movable eyelids",
+      "suborder: Lacertilia",
+      "legs: four"
+    ],
+    "synonyms": [],
+    "parents": [
+      "ReptilianClass"
+    ],
+    "full_description": "Scaled Lizard Four-limbed reptile with movable eyelids suborder: Lacertilia legs: four"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/GreenIguana",
+    "name": "GreenIguana",
+    "label": "Green Iguana",
+    "comments": [
+      "Large plant-eating lizard from tropical regions",
+      "family: Iguanidae",
+      "feeding: herbivorous",
+      "climate: tropical"
+    ],
+    "synonyms": [],
+    "parents": [
+      "ScaledLizard"
+    ],
+    "full_description": "Green Iguana Large plant-eating lizard from tropical regions family: Iguanidae feeding: herbivorous climate: tropical"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/ColorChangingLizard",
+    "name": "ColorChangingLizard",
+    "label": "Color-Changing Lizard",
+    "comments": [
+      "Lizard with color-changing skin and rotating eyes",
+      "family: Chamaeleonidae",
+      "camouflage: active",
+      "vision: independent_eyes"
+    ],
+    "synonyms": [],
+    "parents": [
+      "ScaledLizard"
+    ],
+    "full_description": "Color-Changing Lizard Lizard with color-changing skin and rotating eyes family: Chamaeleonidae camouflage: active vision: independent_eyes"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/ShelledReptile",
+    "name": "ShelledReptile",
+    "label": "Shelled Reptile",
+    "comments": [
+      "Reptile protected by hard bony carapace",
+      "order: Testudines",
+      "protective_shell: yes"
+    ],
+    "synonyms": [],
+    "parents": [
+      "ReptilianClass"
+    ],
+    "full_description": "Shelled Reptile Reptile protected by hard bony carapace order: Testudines protective_shell: yes"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/OceanTurtle",
+    "name": "OceanTurtle",
+    "label": "Ocean Turtle",
+    "comments": [
+      "Marine reptile with paddle-like flippers",
+      "superfamily: Chelonioidea",
+      "environment: oceanic",
+      "appendages: paddle_flippers"
+    ],
+    "synonyms": [],
+    "parents": [
+      "ShelledReptile"
+    ],
+    "full_description": "Ocean Turtle Marine reptile with paddle-like flippers superfamily: Chelonioidea environment: oceanic appendages: paddle_flippers"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/LargeCrocodile",
+    "name": "LargeCrocodile",
+    "label": "Large Crocodile",
+    "comments": [
+      "Massive semi-aquatic reptile with powerful bite",
+      "genus: Crocodylus",
+      "lifestyle: semi_aquatic",
+      "body_size: massive"
+    ],
+    "synonyms": [],
+    "parents": [
+      "ReptilianClass"
+    ],
+    "full_description": "Large Crocodile Massive semi-aquatic reptile with powerful bite genus: Crocodylus lifestyle: semi_aquatic body_size: massive"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/AquaticVertebrate",
+    "name": "AquaticVertebrate",
+    "label": "Aquatic Vertebrate",
+    "comments": [
+      "Water-dwelling vertebrate with gills and fins for swimming",
+      "environment: water",
+      "breathing: gills",
+      "movement: fins"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AnimalOrganism"
+    ],
+    "full_description": "Aquatic Vertebrate Water-dwelling vertebrate with gills and fins for swimming environment: water breathing: gills movement: fins"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/PredatoryShark",
+    "name": "PredatoryShark",
+    "label": "Predatory Shark",
+    "comments": [
+      "Cartilaginous fish with multiple rows of teeth",
+      "superorder: Selachimorpha",
+      "skeleton_type: cartilage",
+      "dentition: replaceable_teeth"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AquaticVertebrate"
+    ],
+    "full_description": "Predatory Shark Cartilaginous fish with multiple rows of teeth superorder: Selachimorpha skeleton_type: cartilage dentition: replaceable_teeth"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/FlatRay",
+    "name": "FlatRay",
+    "label": "Flat Ray",
+    "comments": [
+      "Cartilaginous fish with dorsoventrally flattened body",
+      "superorder: Batoidea",
+      "morphology: dorsoventrally_flat"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AquaticVertebrate"
+    ],
+    "full_description": "Flat Ray Cartilaginous fish with dorsoventrally flattened body superorder: Batoidea morphology: dorsoventrally_flat"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/MigratingSalmon",
+    "name": "MigratingSalmon",
+    "label": "Migrating Salmon",
+    "comments": [
+      "Anadromous fish that returns to freshwater to reproduce",
+      "species: Salmo salar",
+      "life_cycle: anadromous",
+      "spawning: freshwater"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AquaticVertebrate"
+    ],
+    "full_description": "Migrating Salmon Anadromous fish that returns to freshwater to reproduce species: Salmo salar life_cycle: anadromous spawning: freshwater"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/SwiftTuna",
+    "name": "SwiftTuna",
+    "label": "Swift Tuna",
+    "comments": [
+      "Large pelagic fish known for speed and endurance",
+      "genus: Thunnus",
+      "velocity: rapid",
+      "zone: open_ocean"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AquaticVertebrate"
+    ],
+    "full_description": "Swift Tuna Large pelagic fish known for speed and endurance genus: Thunnus velocity: rapid zone: open_ocean"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/AmphibiousAnimal",
+    "name": "AmphibiousAnimal",
+    "label": "Amphibious Animal",
+    "comments": [
+      "Cold-blooded vertebrate living both in water and on land",
+      "class: Amphibia",
+      "development: metamorphic",
+      "skin_type: moist"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AnimalOrganism"
+    ],
+    "full_description": "Amphibious Animal Cold-blooded vertebrate living both in water and on land class: Amphibia development: metamorphic skin_type: moist"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/LeapingFrog",
+    "name": "LeapingFrog",
+    "label": "Leaping Frog",
+    "comments": [
+      "Tailless amphibian with powerful jumping legs",
+      "order: Anura",
+      "tail_adult: none",
+      "movement: leaping"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AmphibiousAnimal"
+    ],
+    "full_description": "Leaping Frog Tailless amphibian with powerful jumping legs order: Anura tail_adult: none movement: leaping"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/TailedNewt",
+    "name": "TailedNewt",
+    "label": "Tailed Newt",
+    "comments": [
+      "Amphibian with slender body and permanent tail",
+      "order: Caudata",
+      "tail_adult: present",
+      "form: elongate"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AmphibiousAnimal"
+    ],
+    "full_description": "Tailed Newt Amphibian with slender body and permanent tail order: Caudata tail_adult: present form: elongate"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/Spineless",
+    "name": "Spineless",
+    "label": "Spineless",
+    "comments": [
+      "Animal lacking vertebral column or internal skeleton",
+      "backbone: none"
+    ],
+    "synonyms": [],
+    "parents": [
+      "AnimalOrganism"
+    ],
+    "full_description": "Spineless Animal lacking vertebral column or internal skeleton backbone: none"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/SixLeggedArthropod",
+    "name": "SixLeggedArthropod",
+    "label": "Six-Legged Arthropod",
+    "comments": [
+      "Arthropod with segmented body and six legs",
+      "class: Insecta",
+      "body_parts: three_segments",
+      "leg_count: six"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Spineless"
+    ],
+    "full_description": "Six-Legged Arthropod Arthropod with segmented body and six legs class: Insecta body_parts: three_segments leg_count: six"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/WingedButterfly",
+    "name": "WingedButterfly",
+    "label": "Winged Butterfly",
+    "comments": [
+      "Flying insect with colorful patterned wings",
+      "order: Lepidoptera",
+      "wing_covering: scales",
+      "metamorphosis: complete"
+    ],
+    "synonyms": [],
+    "parents": [
+      "SixLeggedArthropod"
+    ],
+    "full_description": "Winged Butterfly Flying insect with colorful patterned wings order: Lepidoptera wing_covering: scales metamorphosis: complete"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/HoneyBee",
+    "name": "HoneyBee",
+    "label": "Honey Bee",
+    "comments": [
+      "Social flying insect that produces honey and pollinates",
+      "species: Apis mellifera",
+      "organization: eusocial",
+      "function: pollination"
+    ],
+    "synonyms": [],
+    "parents": [
+      "SixLeggedArthropod"
+    ],
+    "full_description": "Honey Bee Social flying insect that produces honey and pollinates species: Apis mellifera organization: eusocial function: pollination"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/ColonyAnt",
+    "name": "ColonyAnt",
+    "label": "Colony Ant",
+    "comments": [
+      "Eusocial insect living in structured colonies",
+      "family: Formicidae",
+      "organization: colonial",
+      "structure: hierarchical"
+    ],
+    "synonyms": [],
+    "parents": [
+      "SixLeggedArthropod"
+    ],
+    "full_description": "Colony Ant Eusocial insect living in structured colonies family: Formicidae organization: colonial structure: hierarchical"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/HardwingBeetle",
+    "name": "HardwingBeetle",
+    "label": "Hardwing Beetle",
+    "comments": [
+      "Insect with hardened forewings protecting membranous hindwings",
+      "order: Coleoptera",
+      "forewing: sclerotized"
+    ],
+    "synonyms": [],
+    "parents": [
+      "SixLeggedArthropod"
+    ],
+    "full_description": "Hardwing Beetle Insect with hardened forewings protecting membranous hindwings order: Coleoptera forewing: sclerotized"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/EightLeggedArthropod",
+    "name": "EightLeggedArthropod",
+    "label": "Eight-Legged Arthropod",
+    "comments": [
+      "Arthropod with four pairs of legs",
+      "class: Arachnida",
+      "leg_count: eight"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Spineless"
+    ],
+    "full_description": "Eight-Legged Arthropod Arthropod with four pairs of legs class: Arachnida leg_count: eight"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/WebSpider",
+    "name": "WebSpider",
+    "label": "Web Spider",
+    "comments": [
+      "Arachnid producing silk webs for prey capture",
+      "order: Araneae",
+      "silk_production: yes",
+      "toxin: present"
+    ],
+    "synonyms": [],
+    "parents": [
+      "EightLeggedArthropod"
+    ],
+    "full_description": "Web Spider Arachnid producing silk webs for prey capture order: Araneae silk_production: yes toxin: present"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/StingingScorpion",
+    "name": "StingingScorpion",
+    "label": "Stinging Scorpion",
+    "comments": [
+      "Arachnid with segmented tail bearing venomous sting",
+      "order: Scorpiones",
+      "appendage: venomous_telson",
+      "claws: yes"
+    ],
+    "synonyms": [],
+    "parents": [
+      "EightLeggedArthropod"
+    ],
+    "full_description": "Stinging Scorpion Arachnid with segmented tail bearing venomous sting order: Scorpiones appendage: venomous_telson claws: yes"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/SoftBodyMollusk",
+    "name": "SoftBodyMollusk",
+    "label": "Soft-Body Mollusk",
+    "comments": [
+      "Invertebrate with soft unsegmented body, often with shell",
+      "phylum: Mollusca",
+      "body_texture: soft"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Spineless"
+    ],
+    "full_description": "Soft-Body Mollusk Invertebrate with soft unsegmented body, often with shell phylum: Mollusca body_texture: soft"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/EightArmedOctopus",
+    "name": "EightArmedOctopus",
+    "label": "Eight-Armed Octopus",
+    "comments": [
+      "Marine cephalopod with eight flexible tentacles",
+      "order: Octopoda",
+      "tentacles: eight",
+      "cognition: advanced"
+    ],
+    "synonyms": [],
+    "parents": [
+      "SoftBodyMollusk"
+    ],
+    "full_description": "Eight-Armed Octopus Marine cephalopod with eight flexible tentacles order: Octopoda tentacles: eight cognition: advanced"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/TenArmedSquid",
+    "name": "TenArmedSquid",
+    "label": "Ten-Armed Squid",
+    "comments": [
+      "Marine cephalopod with elongated body and ten appendages",
+      "order: Teuthida",
+      "tentacles: ten",
+      "body_type: streamlined"
+    ],
+    "synonyms": [],
+    "parents": [
+      "SoftBodyMollusk"
+    ],
+    "full_description": "Ten-Armed Squid Marine cephalopod with elongated body and ten appendages order: Teuthida tentacles: ten body_type: streamlined"
+  },
+  {
+    "iri": "http://example.org/animal-taxonomy-B/SpiralSnail",
+    "name": "SpiralSnail",
+    "label": "Spiral Snail",
+    "comments": [
+      "Gastropod with spiral coiled protective shell",
+      "class: Gastropoda",
+      "shell_form: spiral",
+      "movement: gliding"
+    ],
+    "synonyms": [],
+    "parents": [
+      "SoftBodyMollusk"
+    ],
+    "full_description": "Spiral Snail Gastropod with spiral coiled protective shell class: Gastropoda shell_form: spiral movement: gliding"
+  }
+]

@@ -1,0 +1,1105 @@
+[
+  {
+    "iri": "http://example.org/animal-ontology-A/Animal",
+    "name": "Animal",
+    "label": "Animal",
+    "comments": [
+      "A living organism that feeds on organic matter, typically having specialized sense organs and nervous system",
+      "kingdom: Animalia",
+      "type: root_class"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Thing"
+    ],
+    "full_description": "Animal A living organism that feeds on organic matter, typically having specialized sense organs and nervous system kingdom: Animalia type: root_class"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Mammal",
+    "name": "Mammal",
+    "label": "Mammal",
+    "comments": [
+      "Warm-blooded vertebrate animal characterized by hair or fur and mammary glands",
+      "class: Mammalia",
+      "body_temperature: warm-blooded",
+      "reproduction: viviparous"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Animal"
+    ],
+    "full_description": "Mammal Warm-blooded vertebrate animal characterized by hair or fur and mammary glands class: Mammalia body_temperature: warm-blooded reproduction: viviparous"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Carnivore",
+    "name": "Carnivore",
+    "label": "Carnivore",
+    "comments": [
+      "Mammal that primarily feeds on flesh",
+      "order: Carnivora",
+      "diet: carnivorous"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mammal"
+    ],
+    "full_description": "Carnivore Mammal that primarily feeds on flesh order: Carnivora diet: carnivorous"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Felidae",
+    "name": "Felidae",
+    "label": "Felidae",
+    "comments": [
+      "Family of carnivorous mammals commonly known as cats",
+      "family: Felidae",
+      "characteristics: retractable_claws"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Carnivore"
+    ],
+    "full_description": "Felidae Family of carnivorous mammals commonly known as cats family: Felidae characteristics: retractable_claws"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Lion",
+    "name": "Lion",
+    "label": "Lion",
+    "comments": [
+      "Large tawny-colored cat that lives in prides",
+      "species: Panthera leo",
+      "habitat: savanna",
+      "conservation_status: vulnerable"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Felidae"
+    ],
+    "full_description": "Lion Large tawny-colored cat that lives in prides species: Panthera leo habitat: savanna conservation_status: vulnerable"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Tiger",
+    "name": "Tiger",
+    "label": "Tiger",
+    "comments": [
+      "Largest cat species with distinctive orange coat and black stripes",
+      "species: Panthera tigris",
+      "habitat: forest",
+      "conservation_status: endangered"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Felidae"
+    ],
+    "full_description": "Tiger Largest cat species with distinctive orange coat and black stripes species: Panthera tigris habitat: forest conservation_status: endangered"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Leopard",
+    "name": "Leopard",
+    "label": "Leopard",
+    "comments": [
+      "Large cat with spotted coat found in Africa and Asia",
+      "species: Panthera pardus",
+      "habitat: various",
+      "conservation_status: vulnerable"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Felidae"
+    ],
+    "full_description": "Leopard Large cat with spotted coat found in Africa and Asia species: Panthera pardus habitat: various conservation_status: vulnerable"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Cheetah",
+    "name": "Cheetah",
+    "label": "Cheetah",
+    "comments": [
+      "Fastest land animal with distinctive black tear marks",
+      "species: Acinonyx jubatus",
+      "habitat: grassland",
+      "max_speed: 120 km/h"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Felidae"
+    ],
+    "full_description": "Cheetah Fastest land animal with distinctive black tear marks species: Acinonyx jubatus habitat: grassland max_speed: 120 km/h"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/DomesticCat",
+    "name": "DomesticCat",
+    "label": "Domestic Cat",
+    "comments": [
+      "Small domesticated carnivorous mammal kept as pet",
+      "species: Felis catus",
+      "habitat: domestic",
+      "status: domesticated"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Felidae"
+    ],
+    "full_description": "Domestic Cat Small domesticated carnivorous mammal kept as pet species: Felis catus habitat: domestic status: domesticated"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Canidae",
+    "name": "Canidae",
+    "label": "Canidae",
+    "comments": [
+      "Family of carnivorous mammals including dogs, wolves, and foxes",
+      "family: Canidae"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Carnivore"
+    ],
+    "full_description": "Canidae Family of carnivorous mammals including dogs, wolves, and foxes family: Canidae"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Wolf",
+    "name": "Wolf",
+    "label": "Wolf",
+    "comments": [
+      "Large canine native to wilderness areas",
+      "species: Canis lupus",
+      "habitat: forest",
+      "social: pack animal"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Canidae"
+    ],
+    "full_description": "Wolf Large canine native to wilderness areas species: Canis lupus habitat: forest social: pack animal"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Dog",
+    "name": "Dog",
+    "label": "Dog",
+    "comments": [
+      "Domesticated carnivorous mammal descended from wolves",
+      "species: Canis familiaris",
+      "habitat: domestic",
+      "status: domesticated"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Canidae"
+    ],
+    "full_description": "Dog Domesticated carnivorous mammal descended from wolves species: Canis familiaris habitat: domestic status: domesticated"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Fox",
+    "name": "Fox",
+    "label": "Fox",
+    "comments": [
+      "Small to medium-sized omnivorous mammal with bushy tail",
+      "genus: Vulpes",
+      "habitat: various",
+      "diet: omnivorous"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Canidae"
+    ],
+    "full_description": "Fox Small to medium-sized omnivorous mammal with bushy tail genus: Vulpes habitat: various diet: omnivorous"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Ursidae",
+    "name": "Ursidae",
+    "label": "Ursidae",
+    "comments": [
+      "Family of large carnivorous or omnivorous mammals known as bears",
+      "family: Ursidae"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Carnivore"
+    ],
+    "full_description": "Ursidae Family of large carnivorous or omnivorous mammals known as bears family: Ursidae"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/BrownBear",
+    "name": "BrownBear",
+    "label": "Brown Bear",
+    "comments": [
+      "Large bear species found across North America and Eurasia",
+      "species: Ursus arctos",
+      "habitat: forest",
+      "size: large"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Ursidae"
+    ],
+    "full_description": "Brown Bear Large bear species found across North America and Eurasia species: Ursus arctos habitat: forest size: large"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/PolarBear",
+    "name": "PolarBear",
+    "label": "Polar Bear",
+    "comments": [
+      "Large white bear native to Arctic regions",
+      "species: Ursus maritimus",
+      "habitat: arctic",
+      "conservation_status: vulnerable"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Ursidae"
+    ],
+    "full_description": "Polar Bear Large white bear native to Arctic regions species: Ursus maritimus habitat: arctic conservation_status: vulnerable"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Primate",
+    "name": "Primate",
+    "label": "Primate",
+    "comments": [
+      "Mammal of an order that includes monkeys, apes, and humans",
+      "order: Primates"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mammal"
+    ],
+    "full_description": "Primate Mammal of an order that includes monkeys, apes, and humans order: Primates"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Ape",
+    "name": "Ape",
+    "label": "Ape",
+    "comments": [
+      "Large tailless primate including gorillas, chimpanzees, and orangutans",
+      "superfamily: Hominoidea",
+      "tail: absent"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Primate"
+    ],
+    "full_description": "Ape Large tailless primate including gorillas, chimpanzees, and orangutans superfamily: Hominoidea tail: absent"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Gorilla",
+    "name": "Gorilla",
+    "label": "Gorilla",
+    "comments": [
+      "Largest living primate native to African forests",
+      "genus: Gorilla",
+      "habitat: forest",
+      "conservation_status: endangered"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Ape"
+    ],
+    "full_description": "Gorilla Largest living primate native to African forests genus: Gorilla habitat: forest conservation_status: endangered"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Chimpanzee",
+    "name": "Chimpanzee",
+    "label": "Chimpanzee",
+    "comments": [
+      "Great ape species native to Africa, closely related to humans",
+      "species: Pan troglodytes",
+      "habitat: forest",
+      "intelligence: high"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Ape"
+    ],
+    "full_description": "Chimpanzee Great ape species native to Africa, closely related to humans species: Pan troglodytes habitat: forest intelligence: high"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Orangutan",
+    "name": "Orangutan",
+    "label": "Orangutan",
+    "comments": [
+      "Large arboreal ape with reddish-brown hair native to Indonesia",
+      "genus: Pongo",
+      "habitat: rainforest",
+      "conservation_status: critically_endangered"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Ape"
+    ],
+    "full_description": "Orangutan Large arboreal ape with reddish-brown hair native to Indonesia genus: Pongo habitat: rainforest conservation_status: critically_endangered"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Monkey",
+    "name": "Monkey",
+    "label": "Monkey",
+    "comments": [
+      "Primate with tails, generally smaller than apes",
+      "tail: present"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Primate"
+    ],
+    "full_description": "Monkey Primate with tails, generally smaller than apes tail: present"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Rodent",
+    "name": "Rodent",
+    "label": "Rodent",
+    "comments": [
+      "Mammal characterized by continuously growing incisors",
+      "order: Rodentia",
+      "teeth: continuously_growing_incisors"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mammal"
+    ],
+    "full_description": "Rodent Mammal characterized by continuously growing incisors order: Rodentia teeth: continuously_growing_incisors"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Mouse",
+    "name": "Mouse",
+    "label": "Mouse",
+    "comments": [
+      "Small rodent with pointed snout and long tail",
+      "genus: Mus",
+      "size: small"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Rodent"
+    ],
+    "full_description": "Mouse Small rodent with pointed snout and long tail genus: Mus size: small"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Rat",
+    "name": "Rat",
+    "label": "Rat",
+    "comments": [
+      "Medium-sized rodent with long tail",
+      "genus: Rattus",
+      "size: medium"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Rodent"
+    ],
+    "full_description": "Rat Medium-sized rodent with long tail genus: Rattus size: medium"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Squirrel",
+    "name": "Squirrel",
+    "label": "Squirrel",
+    "comments": [
+      "Arboreal rodent with bushy tail",
+      "family: Sciuridae",
+      "habitat: trees"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Rodent"
+    ],
+    "full_description": "Squirrel Arboreal rodent with bushy tail family: Sciuridae habitat: trees"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Cetacean",
+    "name": "Cetacean",
+    "label": "Cetacean",
+    "comments": [
+      "Aquatic mammal including whales, dolphins, and porpoises",
+      "order: Cetacea",
+      "habitat: marine"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mammal"
+    ],
+    "full_description": "Cetacean Aquatic mammal including whales, dolphins, and porpoises order: Cetacea habitat: marine"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Dolphin",
+    "name": "Dolphin",
+    "label": "Dolphin",
+    "comments": [
+      "Highly intelligent marine mammal with streamlined body",
+      "family: Delphinidae",
+      "intelligence: high",
+      "echolocation: yes"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Cetacean"
+    ],
+    "full_description": "Dolphin Highly intelligent marine mammal with streamlined body family: Delphinidae intelligence: high echolocation: yes"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Whale",
+    "name": "Whale",
+    "label": "Whale",
+    "comments": [
+      "Large marine mammal with streamlined body",
+      "size: very_large",
+      "habitat: ocean"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Cetacean"
+    ],
+    "full_description": "Whale Large marine mammal with streamlined body size: very_large habitat: ocean"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Bird",
+    "name": "Bird",
+    "label": "Bird",
+    "comments": [
+      "Warm-blooded vertebrate with feathers, wings, and beak",
+      "class: Aves",
+      "body_covering: feathers",
+      "reproduction: oviparous"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Animal"
+    ],
+    "full_description": "Bird Warm-blooded vertebrate with feathers, wings, and beak class: Aves body_covering: feathers reproduction: oviparous"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/RaptorBird",
+    "name": "RaptorBird",
+    "label": "Raptor",
+    "comments": [
+      "Bird of prey with strong talons and keen eyesight",
+      "diet: carnivorous",
+      "vision: excellent"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Bird"
+    ],
+    "full_description": "Raptor Bird of prey with strong talons and keen eyesight diet: carnivorous vision: excellent"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Eagle",
+    "name": "Eagle",
+    "label": "Eagle",
+    "comments": [
+      "Large bird of prey with powerful build and heavy beak",
+      "genus: Aquila",
+      "wingspan: large",
+      "habitat: mountains"
+    ],
+    "synonyms": [],
+    "parents": [
+      "RaptorBird"
+    ],
+    "full_description": "Eagle Large bird of prey with powerful build and heavy beak genus: Aquila wingspan: large habitat: mountains"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Hawk",
+    "name": "Hawk",
+    "label": "Hawk",
+    "comments": [
+      "Medium-sized bird of prey with broad wings",
+      "family: Accipitridae",
+      "size: medium"
+    ],
+    "synonyms": [],
+    "parents": [
+      "RaptorBird"
+    ],
+    "full_description": "Hawk Medium-sized bird of prey with broad wings family: Accipitridae size: medium"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Owl",
+    "name": "Owl",
+    "label": "Owl",
+    "comments": [
+      "Nocturnal bird of prey with forward-facing eyes",
+      "order: Strigiformes",
+      "activity: nocturnal",
+      "hearing: excellent"
+    ],
+    "synonyms": [],
+    "parents": [
+      "RaptorBird"
+    ],
+    "full_description": "Owl Nocturnal bird of prey with forward-facing eyes order: Strigiformes activity: nocturnal hearing: excellent"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Waterfowl",
+    "name": "Waterfowl",
+    "label": "Waterfowl",
+    "comments": [
+      "Bird that lives on or near water",
+      "habitat: aquatic"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Bird"
+    ],
+    "full_description": "Waterfowl Bird that lives on or near water habitat: aquatic"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Duck",
+    "name": "Duck",
+    "label": "Duck",
+    "comments": [
+      "Waterfowl with webbed feet and broad flat beak",
+      "family: Anatidae",
+      "feet: webbed"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Waterfowl"
+    ],
+    "full_description": "Duck Waterfowl with webbed feet and broad flat beak family: Anatidae feet: webbed"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Swan",
+    "name": "Swan",
+    "label": "Swan",
+    "comments": [
+      "Large waterfowl with long neck and elegant appearance",
+      "genus: Cygnus",
+      "size: large",
+      "neck: long"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Waterfowl"
+    ],
+    "full_description": "Swan Large waterfowl with long neck and elegant appearance genus: Cygnus size: large neck: long"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Goose",
+    "name": "Goose",
+    "label": "Goose",
+    "comments": [
+      "Large waterfowl with long neck, intermediate between duck and swan",
+      "genus: Anser",
+      "size: large"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Waterfowl"
+    ],
+    "full_description": "Goose Large waterfowl with long neck, intermediate between duck and swan genus: Anser size: large"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Penguin",
+    "name": "Penguin",
+    "label": "Penguin",
+    "comments": [
+      "Flightless aquatic bird native to Southern Hemisphere",
+      "family: Spheniscidae",
+      "flight: flightless",
+      "habitat: antarctic"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Bird"
+    ],
+    "full_description": "Penguin Flightless aquatic bird native to Southern Hemisphere family: Spheniscidae flight: flightless habitat: antarctic"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Parrot",
+    "name": "Parrot",
+    "label": "Parrot",
+    "comments": [
+      "Colorful bird with curved beak and ability to mimic sounds",
+      "order: Psittaciformes",
+      "intelligence: high",
+      "vocalization: mimicry"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Bird"
+    ],
+    "full_description": "Parrot Colorful bird with curved beak and ability to mimic sounds order: Psittaciformes intelligence: high vocalization: mimicry"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Reptile",
+    "name": "Reptile",
+    "label": "Reptile",
+    "comments": [
+      "Cold-blooded vertebrate with scales or scutes",
+      "class: Reptilia",
+      "body_temperature: cold-blooded",
+      "body_covering: scales"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Animal"
+    ],
+    "full_description": "Reptile Cold-blooded vertebrate with scales or scutes class: Reptilia body_temperature: cold-blooded body_covering: scales"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Snake",
+    "name": "Snake",
+    "label": "Snake",
+    "comments": [
+      "Legless reptile with elongated body",
+      "order: Serpentes",
+      "limbs: absent",
+      "locomotion: serpentine"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Reptile"
+    ],
+    "full_description": "Snake Legless reptile with elongated body order: Serpentes limbs: absent locomotion: serpentine"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Python",
+    "name": "Python",
+    "label": "Python",
+    "comments": [
+      "Large constricting snake found in Africa, Asia, and Australia",
+      "family: Pythonidae",
+      "hunting_method: constriction"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Snake"
+    ],
+    "full_description": "Python Large constricting snake found in Africa, Asia, and Australia family: Pythonidae hunting_method: constriction"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Cobra",
+    "name": "Cobra",
+    "label": "Cobra",
+    "comments": [
+      "Venomous snake with ability to expand neck ribs into hood",
+      "genus: Naja",
+      "venom: yes",
+      "defensive_display: hood"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Snake"
+    ],
+    "full_description": "Cobra Venomous snake with ability to expand neck ribs into hood genus: Naja venom: yes defensive_display: hood"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Lizard",
+    "name": "Lizard",
+    "label": "Lizard",
+    "comments": [
+      "Reptile with four legs, external ear openings, and movable eyelids",
+      "suborder: Lacertilia",
+      "limbs: four"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Reptile"
+    ],
+    "full_description": "Lizard Reptile with four legs, external ear openings, and movable eyelids suborder: Lacertilia limbs: four"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Iguana",
+    "name": "Iguana",
+    "label": "Iguana",
+    "comments": [
+      "Large herbivorous lizard native to tropical areas",
+      "family: Iguanidae",
+      "diet: herbivorous",
+      "habitat: tropical"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Lizard"
+    ],
+    "full_description": "Iguana Large herbivorous lizard native to tropical areas family: Iguanidae diet: herbivorous habitat: tropical"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Chameleon",
+    "name": "Chameleon",
+    "label": "Chameleon",
+    "comments": [
+      "Lizard with ability to change color and independently moving eyes",
+      "family: Chamaeleonidae",
+      "color_change: yes",
+      "eyes: independently_mobile"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Lizard"
+    ],
+    "full_description": "Chameleon Lizard with ability to change color and independently moving eyes family: Chamaeleonidae color_change: yes eyes: independently_mobile"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Turtle",
+    "name": "Turtle",
+    "label": "Turtle",
+    "comments": [
+      "Reptile with body enclosed in bony shell",
+      "order: Testudines",
+      "shell: present"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Reptile"
+    ],
+    "full_description": "Turtle Reptile with body enclosed in bony shell order: Testudines shell: present"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/SeaTurtle",
+    "name": "SeaTurtle",
+    "label": "Sea Turtle",
+    "comments": [
+      "Marine turtle with flippers adapted for swimming",
+      "superfamily: Chelonioidea",
+      "habitat: marine",
+      "limbs: flippers"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Turtle"
+    ],
+    "full_description": "Sea Turtle Marine turtle with flippers adapted for swimming superfamily: Chelonioidea habitat: marine limbs: flippers"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Crocodile",
+    "name": "Crocodile",
+    "label": "Crocodile",
+    "comments": [
+      "Large aquatic reptile with powerful jaws and armored skin",
+      "genus: Crocodylus",
+      "habitat: aquatic",
+      "size: large"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Reptile"
+    ],
+    "full_description": "Crocodile Large aquatic reptile with powerful jaws and armored skin genus: Crocodylus habitat: aquatic size: large"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Fish",
+    "name": "Fish",
+    "label": "Fish",
+    "comments": [
+      "Aquatic vertebrate with gills and fins",
+      "habitat: aquatic",
+      "respiration: gills",
+      "locomotion: fins"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Animal"
+    ],
+    "full_description": "Fish Aquatic vertebrate with gills and fins habitat: aquatic respiration: gills locomotion: fins"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Shark",
+    "name": "Shark",
+    "label": "Shark",
+    "comments": [
+      "Cartilaginous fish with multiple gill slits",
+      "superorder: Selachimorpha",
+      "skeleton: cartilaginous",
+      "teeth: multiple_rows"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Fish"
+    ],
+    "full_description": "Shark Cartilaginous fish with multiple gill slits superorder: Selachimorpha skeleton: cartilaginous teeth: multiple_rows"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Ray",
+    "name": "Ray",
+    "label": "Ray",
+    "comments": [
+      "Cartilaginous fish with flattened body",
+      "order: Rajiformes",
+      "body_shape: flattened"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Fish"
+    ],
+    "full_description": "Ray Cartilaginous fish with flattened body order: Rajiformes body_shape: flattened"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Salmon",
+    "name": "Salmon",
+    "label": "Salmon",
+    "comments": [
+      "Migratory fish that spawns in freshwater",
+      "genus: Salmo",
+      "migration: anadromous",
+      "habitat: freshwater_marine"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Fish"
+    ],
+    "full_description": "Salmon Migratory fish that spawns in freshwater genus: Salmo migration: anadromous habitat: freshwater_marine"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Tuna",
+    "name": "Tuna",
+    "label": "Tuna",
+    "comments": [
+      "Large fast-swimming marine fish",
+      "genus: Thunnus",
+      "speed: fast",
+      "habitat: pelagic"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Fish"
+    ],
+    "full_description": "Tuna Large fast-swimming marine fish genus: Thunnus speed: fast habitat: pelagic"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Amphibian",
+    "name": "Amphibian",
+    "label": "Amphibian",
+    "comments": [
+      "Cold-blooded vertebrate with aquatic larvae and terrestrial adult",
+      "class: Amphibia",
+      "lifecycle: metamorphosis",
+      "skin: permeable"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Animal"
+    ],
+    "full_description": "Amphibian Cold-blooded vertebrate with aquatic larvae and terrestrial adult class: Amphibia lifecycle: metamorphosis skin: permeable"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Frog",
+    "name": "Frog",
+    "label": "Frog",
+    "comments": [
+      "Tailless amphibian with long hind legs for jumping",
+      "order: Anura",
+      "tail: absent",
+      "locomotion: jumping"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Amphibian"
+    ],
+    "full_description": "Frog Tailless amphibian with long hind legs for jumping order: Anura tail: absent locomotion: jumping"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Salamander",
+    "name": "Salamander",
+    "label": "Salamander",
+    "comments": [
+      "Amphibian with elongated body and tail",
+      "order: Caudata",
+      "tail: present",
+      "body: elongated"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Amphibian"
+    ],
+    "full_description": "Salamander Amphibian with elongated body and tail order: Caudata tail: present body: elongated"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Invertebrate",
+    "name": "Invertebrate",
+    "label": "Invertebrate",
+    "comments": [
+      "Animal without backbone or vertebral column",
+      "vertebral_column: absent"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Animal"
+    ],
+    "full_description": "Invertebrate Animal without backbone or vertebral column vertebral_column: absent"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Insect",
+    "name": "Insect",
+    "label": "Insect",
+    "comments": [
+      "Arthropod with three body segments and six legs",
+      "class: Insecta",
+      "body_segments: three",
+      "legs: six"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Invertebrate"
+    ],
+    "full_description": "Insect Arthropod with three body segments and six legs class: Insecta body_segments: three legs: six"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Butterfly",
+    "name": "Butterfly",
+    "label": "Butterfly",
+    "comments": [
+      "Insect with large colorful wings and slender body",
+      "order: Lepidoptera",
+      "wings: scaled",
+      "lifecycle: complete_metamorphosis"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Insect"
+    ],
+    "full_description": "Butterfly Insect with large colorful wings and slender body order: Lepidoptera wings: scaled lifecycle: complete_metamorphosis"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Bee",
+    "name": "Bee",
+    "label": "Bee",
+    "comments": [
+      "Flying insect known for pollination and honey production",
+      "genus: Apis",
+      "social: colonial",
+      "role: pollinator"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Insect"
+    ],
+    "full_description": "Bee Flying insect known for pollination and honey production genus: Apis social: colonial role: pollinator"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Ant",
+    "name": "Ant",
+    "label": "Ant",
+    "comments": [
+      "Social insect living in organized colonies",
+      "family: Formicidae",
+      "social: eusocial",
+      "colony: organized"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Insect"
+    ],
+    "full_description": "Ant Social insect living in organized colonies family: Formicidae social: eusocial colony: organized"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Beetle",
+    "name": "Beetle",
+    "label": "Beetle",
+    "comments": [
+      "Insect with hardened front wings forming protective cover",
+      "order: Coleoptera",
+      "wings: hardened_front"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Insect"
+    ],
+    "full_description": "Beetle Insect with hardened front wings forming protective cover order: Coleoptera wings: hardened_front"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Arachnid",
+    "name": "Arachnid",
+    "label": "Arachnid",
+    "comments": [
+      "Arthropod with eight legs including spiders and scorpions",
+      "class: Arachnida",
+      "legs: eight"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Invertebrate"
+    ],
+    "full_description": "Arachnid Arthropod with eight legs including spiders and scorpions class: Arachnida legs: eight"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Spider",
+    "name": "Spider",
+    "label": "Spider",
+    "comments": [
+      "Arachnid that spins webs to catch prey",
+      "order: Araneae",
+      "web: silk",
+      "venom: yes"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Arachnid"
+    ],
+    "full_description": "Spider Arachnid that spins webs to catch prey order: Araneae web: silk venom: yes"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Scorpion",
+    "name": "Scorpion",
+    "label": "Scorpion",
+    "comments": [
+      "Arachnid with pincers and venomous stinger in tail",
+      "order: Scorpiones",
+      "tail: venomous_stinger",
+      "pincers: present"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Arachnid"
+    ],
+    "full_description": "Scorpion Arachnid with pincers and venomous stinger in tail order: Scorpiones tail: venomous_stinger pincers: present"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Mollusk",
+    "name": "Mollusk",
+    "label": "Mollusk",
+    "comments": [
+      "Soft-bodied invertebrate often with shell",
+      "phylum: Mollusca",
+      "body: soft"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Invertebrate"
+    ],
+    "full_description": "Mollusk Soft-bodied invertebrate often with shell phylum: Mollusca body: soft"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Octopus",
+    "name": "Octopus",
+    "label": "Octopus",
+    "comments": [
+      "Eight-armed marine mollusk with high intelligence",
+      "order: Octopoda",
+      "arms: eight",
+      "intelligence: high"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mollusk"
+    ],
+    "full_description": "Octopus Eight-armed marine mollusk with high intelligence order: Octopoda arms: eight intelligence: high"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Squid",
+    "name": "Squid",
+    "label": "Squid",
+    "comments": [
+      "Marine cephalopod with ten arms and torpedo-shaped body",
+      "order: Teuthida",
+      "arms: ten",
+      "body_shape: torpedo"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mollusk"
+    ],
+    "full_description": "Squid Marine cephalopod with ten arms and torpedo-shaped body order: Teuthida arms: ten body_shape: torpedo"
+  },
+  {
+    "iri": "http://example.org/animal-ontology-A/Snail",
+    "name": "Snail",
+    "label": "Snail",
+    "comments": [
+      "Gastropod mollusk with coiled shell",
+      "class: Gastropoda",
+      "shell: coiled",
+      "locomotion: muscular_foot"
+    ],
+    "synonyms": [],
+    "parents": [
+      "Mollusk"
+    ],
+    "full_description": "Snail Gastropod mollusk with coiled shell class: Gastropoda shell: coiled locomotion: muscular_foot"
+  }
+]
