@@ -1,0 +1,3552 @@
+[
+  {
+    "class_b_name": "AnimalOrganism",
+    "class_b_label": "Animal Organism",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/AnimalOrganism",
+    "class_b_description": "Animal Organism Living creature that consumes organic material and typically has mobility and sensory capabilities kingdom: Animalia type: base_class",
+    "top_matches": [
+      {
+        "class_a_name": "Animal",
+        "class_a_label": "Animal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Animal",
+        "similarity_score": 0.23,
+        "probability": 0.23
+      },
+      {
+        "class_a_name": "Salmon",
+        "class_a_label": "Salmon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Salmon",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Bird",
+        "class_a_label": "Bird",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bird",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Ray",
+        "class_a_label": "Ray",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ray",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Animal",
+      "class_a_label": "Animal",
+      "class_a_iri": "http://example.org/animal-ontology-A/Animal",
+      "similarity_score": 0.23,
+      "probability": 0.23
+    }
+  },
+  {
+    "class_b_name": "Mammalian",
+    "class_b_label": "Mammalian",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/Mammalian",
+    "class_b_description": "Mammalian Endothermic vertebrate distinguished by fur, mammary glands, and live birth class: Mammalia temperature_regulation: endothermic offspring: live_birth",
+    "top_matches": [
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.1,
+        "probability": 0.1
+      },
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Wolf",
+        "class_a_label": "Wolf",
+        "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Rodent",
+        "class_a_label": "Rodent",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rodent",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Chameleon",
+        "class_a_label": "Chameleon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Mammal",
+      "class_a_label": "Mammal",
+      "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+      "similarity_score": 0.1,
+      "probability": 0.1
+    }
+  },
+  {
+    "class_b_name": "CarnivorousMammal",
+    "class_b_label": "Carnivorous Mammal",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/CarnivorousMammal",
+    "class_b_description": "Carnivorous Mammal Flesh-eating mammal with adaptations for hunting order: Carnivora feeding_type: carnivorous",
+    "top_matches": [
+      {
+        "class_a_name": "Carnivore",
+        "class_a_label": "Carnivore",
+        "class_a_iri": "http://example.org/animal-ontology-A/Carnivore",
+        "similarity_score": 0.32,
+        "probability": 0.32
+      },
+      {
+        "class_a_name": "Eagle",
+        "class_a_label": "Eagle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Eagle",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Tuna",
+        "class_a_label": "Tuna",
+        "class_a_iri": "http://example.org/animal-ontology-A/Tuna",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Animal",
+        "class_a_label": "Animal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Animal",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      },
+      {
+        "class_a_name": "Orangutan",
+        "class_a_label": "Orangutan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Orangutan",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Carnivore",
+      "class_a_label": "Carnivore",
+      "class_a_iri": "http://example.org/animal-ontology-A/Carnivore",
+      "similarity_score": 0.32,
+      "probability": 0.32
+    }
+  },
+  {
+    "class_b_name": "FelidFamily",
+    "class_b_label": "Felid Family",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/FelidFamily",
+    "class_b_description": "Felid Family Carnivorous mammals of the cat family with retractable claws family: Felidae claw_type: retractable",
+    "top_matches": [
+      {
+        "class_a_name": "Felidae",
+        "class_a_label": "Felidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Felidae",
+        "similarity_score": 0.215,
+        "probability": 0.215
+      },
+      {
+        "class_a_name": "DomesticCat",
+        "class_a_label": "Domestic Cat",
+        "class_a_iri": "http://example.org/animal-ontology-A/DomesticCat",
+        "similarity_score": 0.14,
+        "probability": 0.14
+      },
+      {
+        "class_a_name": "Carnivore",
+        "class_a_label": "Carnivore",
+        "class_a_iri": "http://example.org/animal-ontology-A/Carnivore",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Canidae",
+        "class_a_label": "Canidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Canidae",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Felidae",
+      "class_a_label": "Felidae",
+      "class_a_iri": "http://example.org/animal-ontology-A/Felidae",
+      "similarity_score": 0.215,
+      "probability": 0.215
+    }
+  },
+  {
+    "class_b_name": "AfricanLion",
+    "class_b_label": "African Lion",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/AfricanLion",
+    "class_b_description": "African Lion Large social cat with distinctive mane in males species: Panthera leo environment: grassland status: vulnerable",
+    "top_matches": [
+      {
+        "class_a_name": "Lion",
+        "class_a_label": "Lion",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lion",
+        "similarity_score": 0.175,
+        "probability": 0.175
+      },
+      {
+        "class_a_name": "Leopard",
+        "class_a_label": "Leopard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Leopard",
+        "similarity_score": 0.085,
+        "probability": 0.085
+      },
+      {
+        "class_a_name": "Wolf",
+        "class_a_label": "Wolf",
+        "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Crocodile",
+        "class_a_label": "Crocodile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Crocodile",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "DomesticCat",
+        "class_a_label": "Domestic Cat",
+        "class_a_iri": "http://example.org/animal-ontology-A/DomesticCat",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Lion",
+      "class_a_label": "Lion",
+      "class_a_iri": "http://example.org/animal-ontology-A/Lion",
+      "similarity_score": 0.175,
+      "probability": 0.175
+    }
+  },
+  {
+    "class_b_name": "TigerSpecies",
+    "class_b_label": "Tiger Species",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/TigerSpecies",
+    "class_b_description": "Tiger Species Largest feline with orange fur and black striping pattern species: Panthera tigris environment: jungle status: endangered",
+    "top_matches": [
+      {
+        "class_a_name": "Tiger",
+        "class_a_label": "Tiger",
+        "class_a_iri": "http://example.org/animal-ontology-A/Tiger",
+        "similarity_score": 0.27,
+        "probability": 0.27
+      },
+      {
+        "class_a_name": "Chameleon",
+        "class_a_label": "Chameleon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Wolf",
+        "class_a_label": "Wolf",
+        "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Felidae",
+        "class_a_label": "Felidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Felidae",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Lion",
+        "class_a_label": "Lion",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lion",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Tiger",
+      "class_a_label": "Tiger",
+      "class_a_iri": "http://example.org/animal-ontology-A/Tiger",
+      "similarity_score": 0.27,
+      "probability": 0.27
+    }
+  },
+  {
+    "class_b_name": "SpottedLeopard",
+    "class_b_label": "Spotted Leopard",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/SpottedLeopard",
+    "class_b_description": "Spotted Leopard Solitary big cat with rosette-patterned coat species: Panthera pardus environment: diverse status: vulnerable",
+    "top_matches": [
+      {
+        "class_a_name": "Leopard",
+        "class_a_label": "Leopard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Leopard",
+        "similarity_score": 0.12,
+        "probability": 0.12
+      },
+      {
+        "class_a_name": "Chameleon",
+        "class_a_label": "Chameleon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+        "similarity_score": 0.09,
+        "probability": 0.09
+      },
+      {
+        "class_a_name": "Goose",
+        "class_a_label": "Goose",
+        "class_a_iri": "http://example.org/animal-ontology-A/Goose",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Rodent",
+        "class_a_label": "Rodent",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rodent",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Turtle",
+        "class_a_label": "Turtle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Turtle",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Leopard",
+      "class_a_label": "Leopard",
+      "class_a_iri": "http://example.org/animal-ontology-A/Leopard",
+      "similarity_score": 0.12,
+      "probability": 0.12
+    }
+  },
+  {
+    "class_b_name": "FastCheetah",
+    "class_b_label": "Fast Cheetah",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/FastCheetah",
+    "class_b_description": "Fast Cheetah Speediest terrestrial animal with characteristic tear streaks species: Acinonyx jubatus environment: open_plains velocity: 120 km/h",
+    "top_matches": [
+      {
+        "class_a_name": "Cheetah",
+        "class_a_label": "Cheetah",
+        "class_a_iri": "http://example.org/animal-ontology-A/Cheetah",
+        "similarity_score": 0.285,
+        "probability": 0.285
+      },
+      {
+        "class_a_name": "Waterfowl",
+        "class_a_label": "Waterfowl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Waterfowl",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Ursidae",
+        "class_a_label": "Ursidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ursidae",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Rodent",
+        "class_a_label": "Rodent",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rodent",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      },
+      {
+        "class_a_name": "Shark",
+        "class_a_label": "Shark",
+        "class_a_iri": "http://example.org/animal-ontology-A/Shark",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Cheetah",
+      "class_a_label": "Cheetah",
+      "class_a_iri": "http://example.org/animal-ontology-A/Cheetah",
+      "similarity_score": 0.285,
+      "probability": 0.285
+    }
+  },
+  {
+    "class_b_name": "HouseCat",
+    "class_b_label": "House Cat",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/HouseCat",
+    "class_b_description": "House Cat Small tamed feline commonly kept as companion animal species: Felis catus environment: human_dwelling domestication: yes",
+    "top_matches": [
+      {
+        "class_a_name": "DomesticCat",
+        "class_a_label": "Domestic Cat",
+        "class_a_iri": "http://example.org/animal-ontology-A/DomesticCat",
+        "similarity_score": 0.14,
+        "probability": 0.14
+      },
+      {
+        "class_a_name": "Felidae",
+        "class_a_label": "Felidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Felidae",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Chameleon",
+        "class_a_label": "Chameleon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Lion",
+        "class_a_label": "Lion",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lion",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Dog",
+        "class_a_label": "Dog",
+        "class_a_iri": "http://example.org/animal-ontology-A/Dog",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      }
+    ],
+    "best_match": {
+      "class_a_name": "DomesticCat",
+      "class_a_label": "Domestic Cat",
+      "class_a_iri": "http://example.org/animal-ontology-A/DomesticCat",
+      "similarity_score": 0.14,
+      "probability": 0.14
+    }
+  },
+  {
+    "class_b_name": "CanidGroup",
+    "class_b_label": "Canid Group",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/CanidGroup",
+    "class_b_description": "Canid Group Family of carnivorous mammals including wolves, dogs, and foxes family: Canidae",
+    "top_matches": [
+      {
+        "class_a_name": "Canidae",
+        "class_a_label": "Canidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Canidae",
+        "similarity_score": 0.37,
+        "probability": 0.37
+      },
+      {
+        "class_a_name": "Dog",
+        "class_a_label": "Dog",
+        "class_a_iri": "http://example.org/animal-ontology-A/Dog",
+        "similarity_score": 0.085,
+        "probability": 0.085
+      },
+      {
+        "class_a_name": "Squirrel",
+        "class_a_label": "Squirrel",
+        "class_a_iri": "http://example.org/animal-ontology-A/Squirrel",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Fox",
+        "class_a_label": "Fox",
+        "class_a_iri": "http://example.org/animal-ontology-A/Fox",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Primate",
+        "class_a_label": "Primate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Canidae",
+      "class_a_label": "Canidae",
+      "class_a_iri": "http://example.org/animal-ontology-A/Canidae",
+      "similarity_score": 0.37,
+      "probability": 0.37
+    }
+  },
+  {
+    "class_b_name": "GreyWolf",
+    "class_b_label": "Grey Wolf",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/GreyWolf",
+    "class_b_description": "Grey Wolf Large wild canid living in hierarchical packs species: Canis lupus environment: wilderness behavior: pack_hunter",
+    "top_matches": [
+      {
+        "class_a_name": "Wolf",
+        "class_a_label": "Wolf",
+        "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+        "similarity_score": 0.275,
+        "probability": 0.275
+      },
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.095,
+        "probability": 0.095
+      },
+      {
+        "class_a_name": "Ant",
+        "class_a_label": "Ant",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ant",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Penguin",
+        "class_a_label": "Penguin",
+        "class_a_iri": "http://example.org/animal-ontology-A/Penguin",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Salmon",
+        "class_a_label": "Salmon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Salmon",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Wolf",
+      "class_a_label": "Wolf",
+      "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+      "similarity_score": 0.275,
+      "probability": 0.275
+    }
+  },
+  {
+    "class_b_name": "DomesticDog",
+    "class_b_label": "Domestic Dog",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/DomesticDog",
+    "class_b_description": "Domestic Dog Tamed canine descended from wolves, human companion species: Canis familiaris environment: domestic domestication: yes",
+    "top_matches": [
+      {
+        "class_a_name": "Dog",
+        "class_a_label": "Dog",
+        "class_a_iri": "http://example.org/animal-ontology-A/Dog",
+        "similarity_score": 0.27,
+        "probability": 0.27
+      },
+      {
+        "class_a_name": "Wolf",
+        "class_a_label": "Wolf",
+        "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+        "similarity_score": 0.13,
+        "probability": 0.13
+      },
+      {
+        "class_a_name": "DomesticCat",
+        "class_a_label": "Domestic Cat",
+        "class_a_iri": "http://example.org/animal-ontology-A/DomesticCat",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Animal",
+        "class_a_label": "Animal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Animal",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Canidae",
+        "class_a_label": "Canidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Canidae",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Dog",
+      "class_a_label": "Dog",
+      "class_a_iri": "http://example.org/animal-ontology-A/Dog",
+      "similarity_score": 0.27,
+      "probability": 0.27
+    }
+  },
+  {
+    "class_b_name": "RedFox",
+    "class_b_label": "Red Fox",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/RedFox",
+    "class_b_description": "Red Fox Small omnivorous canid with characteristic bushy tail species: Vulpes vulpes environment: adaptable feeding: omnivorous",
+    "top_matches": [
+      {
+        "class_a_name": "Fox",
+        "class_a_label": "Fox",
+        "class_a_iri": "http://example.org/animal-ontology-A/Fox",
+        "similarity_score": 0.11,
+        "probability": 0.11
+      },
+      {
+        "class_a_name": "Canidae",
+        "class_a_label": "Canidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Canidae",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.07,
+        "probability": 0.07
+      },
+      {
+        "class_a_name": "Wolf",
+        "class_a_label": "Wolf",
+        "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Lizard",
+        "class_a_label": "Lizard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Fox",
+      "class_a_label": "Fox",
+      "class_a_iri": "http://example.org/animal-ontology-A/Fox",
+      "similarity_score": 0.11,
+      "probability": 0.11
+    }
+  },
+  {
+    "class_b_name": "BearFamily",
+    "class_b_label": "Bear Family",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/BearFamily",
+    "class_b_description": "Bear Family Large carnivorous or omnivorous mammals with heavy build family: Ursidae",
+    "top_matches": [
+      {
+        "class_a_name": "Ursidae",
+        "class_a_label": "Ursidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ursidae",
+        "similarity_score": 0.305,
+        "probability": 0.305
+      },
+      {
+        "class_a_name": "Snail",
+        "class_a_label": "Snail",
+        "class_a_iri": "http://example.org/animal-ontology-A/Snail",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Rodent",
+        "class_a_label": "Rodent",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rodent",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Dog",
+        "class_a_label": "Dog",
+        "class_a_iri": "http://example.org/animal-ontology-A/Dog",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Iguana",
+        "class_a_label": "Iguana",
+        "class_a_iri": "http://example.org/animal-ontology-A/Iguana",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Ursidae",
+      "class_a_label": "Ursidae",
+      "class_a_iri": "http://example.org/animal-ontology-A/Ursidae",
+      "similarity_score": 0.305,
+      "probability": 0.305
+    }
+  },
+  {
+    "class_b_name": "GrizzlyBear",
+    "class_b_label": "Grizzly Bear",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/GrizzlyBear",
+    "class_b_description": "Grizzly Bear Large brown bear inhabiting North America and Eurasia species: Ursus arctos environment: temperate_forest mass: large",
+    "top_matches": [
+      {
+        "class_a_name": "BrownBear",
+        "class_a_label": "Brown Bear",
+        "class_a_iri": "http://example.org/animal-ontology-A/BrownBear",
+        "similarity_score": 0.18,
+        "probability": 0.18
+      },
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.105,
+        "probability": 0.105
+      },
+      {
+        "class_a_name": "Wolf",
+        "class_a_label": "Wolf",
+        "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Felidae",
+        "class_a_label": "Felidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Felidae",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Lion",
+        "class_a_label": "Lion",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lion",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "BrownBear",
+      "class_a_label": "Brown Bear",
+      "class_a_iri": "http://example.org/animal-ontology-A/BrownBear",
+      "similarity_score": 0.18,
+      "probability": 0.18
+    }
+  },
+  {
+    "class_b_name": "ArcticBear",
+    "class_b_label": "Arctic Bear",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/ArcticBear",
+    "class_b_description": "Arctic Bear Large white-furred bear adapted to polar environment species: Ursus maritimus environment: polar status: vulnerable",
+    "top_matches": [
+      {
+        "class_a_name": "PolarBear",
+        "class_a_label": "Polar Bear",
+        "class_a_iri": "http://example.org/animal-ontology-A/PolarBear",
+        "similarity_score": 0.395,
+        "probability": 0.395
+      },
+      {
+        "class_a_name": "Reptile",
+        "class_a_label": "Reptile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Reptile",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "BrownBear",
+        "class_a_label": "Brown Bear",
+        "class_a_iri": "http://example.org/animal-ontology-A/BrownBear",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Crocodile",
+        "class_a_label": "Crocodile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Crocodile",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Waterfowl",
+        "class_a_label": "Waterfowl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Waterfowl",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "PolarBear",
+      "class_a_label": "Polar Bear",
+      "class_a_iri": "http://example.org/animal-ontology-A/PolarBear",
+      "similarity_score": 0.395,
+      "probability": 0.395
+    }
+  },
+  {
+    "class_b_name": "PrimateOrder",
+    "class_b_label": "Primate Order",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/PrimateOrder",
+    "class_b_description": "Primate Order Mammals including apes, monkeys, lemurs, and humans order: Primates",
+    "top_matches": [
+      {
+        "class_a_name": "Primate",
+        "class_a_label": "Primate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+        "similarity_score": 0.285,
+        "probability": 0.285
+      },
+      {
+        "class_a_name": "Chimpanzee",
+        "class_a_label": "Chimpanzee",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chimpanzee",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Chameleon",
+        "class_a_label": "Chameleon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Amphibian",
+        "class_a_label": "Amphibian",
+        "class_a_iri": "http://example.org/animal-ontology-A/Amphibian",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Ape",
+        "class_a_label": "Ape",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ape",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Primate",
+      "class_a_label": "Primate",
+      "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+      "similarity_score": 0.285,
+      "probability": 0.285
+    }
+  },
+  {
+    "class_b_name": "GreatApe",
+    "class_b_label": "Great Ape",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/GreatApe",
+    "class_b_description": "Great Ape Large tailless primates with advanced cognitive abilities superfamily: Hominoidea tail_present: no",
+    "top_matches": [
+      {
+        "class_a_name": "Ape",
+        "class_a_label": "Ape",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ape",
+        "similarity_score": 0.16,
+        "probability": 0.16
+      },
+      {
+        "class_a_name": "Primate",
+        "class_a_label": "Primate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Monkey",
+        "class_a_label": "Monkey",
+        "class_a_iri": "http://example.org/animal-ontology-A/Monkey",
+        "similarity_score": 0.07,
+        "probability": 0.07
+      },
+      {
+        "class_a_name": "Chimpanzee",
+        "class_a_label": "Chimpanzee",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chimpanzee",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Rat",
+        "class_a_label": "Rat",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rat",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Ape",
+      "class_a_label": "Ape",
+      "class_a_iri": "http://example.org/animal-ontology-A/Ape",
+      "similarity_score": 0.16,
+      "probability": 0.16
+    }
+  },
+  {
+    "class_b_name": "MountainGorilla",
+    "class_b_label": "Mountain Gorilla",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/MountainGorilla",
+    "class_b_description": "Mountain Gorilla Largest primate species inhabiting African mountain forests species: Gorilla beringei environment: mountain_forest status: endangered",
+    "top_matches": [
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.25,
+        "probability": 0.25
+      },
+      {
+        "class_a_name": "Primate",
+        "class_a_label": "Primate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+        "similarity_score": 0.14,
+        "probability": 0.14
+      },
+      {
+        "class_a_name": "Wolf",
+        "class_a_label": "Wolf",
+        "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Chimpanzee",
+        "class_a_label": "Chimpanzee",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chimpanzee",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Ape",
+        "class_a_label": "Ape",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ape",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Gorilla",
+      "class_a_label": "Gorilla",
+      "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+      "similarity_score": 0.25,
+      "probability": 0.25
+    }
+  },
+  {
+    "class_b_name": "CommonChimpanzee",
+    "class_b_label": "Common Chimpanzee",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/CommonChimpanzee",
+    "class_b_description": "Common Chimpanzee Highly intelligent ape closely related to humans species: Pan troglodytes environment: tropical_forest cognition: advanced",
+    "top_matches": [
+      {
+        "class_a_name": "Chimpanzee",
+        "class_a_label": "Chimpanzee",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chimpanzee",
+        "similarity_score": 0.29,
+        "probability": 0.29
+      },
+      {
+        "class_a_name": "Ape",
+        "class_a_label": "Ape",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ape",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Primate",
+        "class_a_label": "Primate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Beetle",
+        "class_a_label": "Beetle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Beetle",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Shark",
+        "class_a_label": "Shark",
+        "class_a_iri": "http://example.org/animal-ontology-A/Shark",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Chimpanzee",
+      "class_a_label": "Chimpanzee",
+      "class_a_iri": "http://example.org/animal-ontology-A/Chimpanzee",
+      "similarity_score": 0.29,
+      "probability": 0.29
+    }
+  },
+  {
+    "class_b_name": "BorneanOrangutan",
+    "class_b_label": "Bornean Orangutan",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/BorneanOrangutan",
+    "class_b_description": "Bornean Orangutan Large reddish arboreal ape from Southeast Asia species: Pongo pygmaeus environment: tropical_rainforest status: critically_endangered",
+    "top_matches": [
+      {
+        "class_a_name": "Orangutan",
+        "class_a_label": "Orangutan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Orangutan",
+        "similarity_score": 0.275,
+        "probability": 0.275
+      },
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Snail",
+        "class_a_label": "Snail",
+        "class_a_iri": "http://example.org/animal-ontology-A/Snail",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Salamander",
+        "class_a_label": "Salamander",
+        "class_a_iri": "http://example.org/animal-ontology-A/Salamander",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Ape",
+        "class_a_label": "Ape",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ape",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Orangutan",
+      "class_a_label": "Orangutan",
+      "class_a_iri": "http://example.org/animal-ontology-A/Orangutan",
+      "similarity_score": 0.275,
+      "probability": 0.275
+    }
+  },
+  {
+    "class_b_name": "TailedMonkey",
+    "class_b_label": "Tailed Monkey",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/TailedMonkey",
+    "class_b_description": "Tailed Monkey Smaller primates characterized by presence of tail tail_present: yes",
+    "top_matches": [
+      {
+        "class_a_name": "Monkey",
+        "class_a_label": "Monkey",
+        "class_a_iri": "http://example.org/animal-ontology-A/Monkey",
+        "similarity_score": 0.345,
+        "probability": 0.345
+      },
+      {
+        "class_a_name": "Ape",
+        "class_a_label": "Ape",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ape",
+        "similarity_score": 0.105,
+        "probability": 0.105
+      },
+      {
+        "class_a_name": "Primate",
+        "class_a_label": "Primate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Squirrel",
+        "class_a_label": "Squirrel",
+        "class_a_iri": "http://example.org/animal-ontology-A/Squirrel",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Rat",
+        "class_a_label": "Rat",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rat",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Monkey",
+      "class_a_label": "Monkey",
+      "class_a_iri": "http://example.org/animal-ontology-A/Monkey",
+      "similarity_score": 0.345,
+      "probability": 0.345
+    }
+  },
+  {
+    "class_b_name": "RodentOrder",
+    "class_b_label": "Rodent Order",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/RodentOrder",
+    "class_b_description": "Rodent Order Small mammal with chisel-like incisors that grow continuously order: Rodentia dentition: ever_growing_incisors",
+    "top_matches": [
+      {
+        "class_a_name": "Rodent",
+        "class_a_label": "Rodent",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rodent",
+        "similarity_score": 0.305,
+        "probability": 0.305
+      },
+      {
+        "class_a_name": "Primate",
+        "class_a_label": "Primate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Orangutan",
+        "class_a_label": "Orangutan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Orangutan",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Dog",
+        "class_a_label": "Dog",
+        "class_a_iri": "http://example.org/animal-ontology-A/Dog",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Mouse",
+        "class_a_label": "Mouse",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mouse",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Rodent",
+      "class_a_label": "Rodent",
+      "class_a_iri": "http://example.org/animal-ontology-A/Rodent",
+      "similarity_score": 0.305,
+      "probability": 0.305
+    }
+  },
+  {
+    "class_b_name": "SmallMouse",
+    "class_b_label": "Small Mouse",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/SmallMouse",
+    "class_b_description": "Small Mouse Tiny rodent with pointed nose and long slender tail species: Mus musculus body_size: tiny",
+    "top_matches": [
+      {
+        "class_a_name": "Mouse",
+        "class_a_label": "Mouse",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mouse",
+        "similarity_score": 0.33,
+        "probability": 0.33
+      },
+      {
+        "class_a_name": "Rat",
+        "class_a_label": "Rat",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rat",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Iguana",
+        "class_a_label": "Iguana",
+        "class_a_iri": "http://example.org/animal-ontology-A/Iguana",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Monkey",
+        "class_a_label": "Monkey",
+        "class_a_iri": "http://example.org/animal-ontology-A/Monkey",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Rodent",
+        "class_a_label": "Rodent",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rodent",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Mouse",
+      "class_a_label": "Mouse",
+      "class_a_iri": "http://example.org/animal-ontology-A/Mouse",
+      "similarity_score": 0.33,
+      "probability": 0.33
+    }
+  },
+  {
+    "class_b_name": "LargeRat",
+    "class_b_label": "Large Rat",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/LargeRat",
+    "class_b_description": "Large Rat Medium-sized rodent with robust body and scaly tail species: Rattus norvegicus body_size: moderate",
+    "top_matches": [
+      {
+        "class_a_name": "Rat",
+        "class_a_label": "Rat",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rat",
+        "similarity_score": 0.25,
+        "probability": 0.25
+      },
+      {
+        "class_a_name": "Squirrel",
+        "class_a_label": "Squirrel",
+        "class_a_iri": "http://example.org/animal-ontology-A/Squirrel",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Iguana",
+        "class_a_label": "Iguana",
+        "class_a_iri": "http://example.org/animal-ontology-A/Iguana",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Animal",
+        "class_a_label": "Animal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Animal",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Swan",
+        "class_a_label": "Swan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Rat",
+      "class_a_label": "Rat",
+      "class_a_iri": "http://example.org/animal-ontology-A/Rat",
+      "similarity_score": 0.25,
+      "probability": 0.25
+    }
+  },
+  {
+    "class_b_name": "TreeSquirrel",
+    "class_b_label": "Tree Squirrel",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/TreeSquirrel",
+    "class_b_description": "Tree Squirrel Bushy-tailed arboreal rodent with climbing abilities family: Sciuridae lifestyle: arboreal",
+    "top_matches": [
+      {
+        "class_a_name": "Squirrel",
+        "class_a_label": "Squirrel",
+        "class_a_iri": "http://example.org/animal-ontology-A/Squirrel",
+        "similarity_score": 0.195,
+        "probability": 0.195
+      },
+      {
+        "class_a_name": "Whale",
+        "class_a_label": "Whale",
+        "class_a_iri": "http://example.org/animal-ontology-A/Whale",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Rat",
+        "class_a_label": "Rat",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rat",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Carnivore",
+        "class_a_label": "Carnivore",
+        "class_a_iri": "http://example.org/animal-ontology-A/Carnivore",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Primate",
+        "class_a_label": "Primate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Squirrel",
+      "class_a_label": "Squirrel",
+      "class_a_iri": "http://example.org/animal-ontology-A/Squirrel",
+      "similarity_score": 0.195,
+      "probability": 0.195
+    }
+  },
+  {
+    "class_b_name": "MarineMammal",
+    "class_b_label": "Marine Mammal",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/MarineMammal",
+    "class_b_description": "Marine Mammal Aquatic or semi-aquatic mammals including whales and dolphins order: Cetacea environment: aquatic",
+    "top_matches": [
+      {
+        "class_a_name": "Cetacean",
+        "class_a_label": "Cetacean",
+        "class_a_iri": "http://example.org/animal-ontology-A/Cetacean",
+        "similarity_score": 0.145,
+        "probability": 0.145
+      },
+      {
+        "class_a_name": "Whale",
+        "class_a_label": "Whale",
+        "class_a_iri": "http://example.org/animal-ontology-A/Whale",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Eagle",
+        "class_a_label": "Eagle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Eagle",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Mollusk",
+        "class_a_label": "Mollusk",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mollusk",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Dolphin",
+        "class_a_label": "Dolphin",
+        "class_a_iri": "http://example.org/animal-ontology-A/Dolphin",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Cetacean",
+      "class_a_label": "Cetacean",
+      "class_a_iri": "http://example.org/animal-ontology-A/Cetacean",
+      "similarity_score": 0.145,
+      "probability": 0.145
+    }
+  },
+  {
+    "class_b_name": "BottlenoseDolphin",
+    "class_b_label": "Bottlenose Dolphin",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/BottlenoseDolphin",
+    "class_b_description": "Bottlenose Dolphin Smart marine mammal with distinctive bottle-shaped snout genus: Tursiops cognition: advanced sonar: present",
+    "top_matches": [
+      {
+        "class_a_name": "Dolphin",
+        "class_a_label": "Dolphin",
+        "class_a_iri": "http://example.org/animal-ontology-A/Dolphin",
+        "similarity_score": 0.255,
+        "probability": 0.255
+      },
+      {
+        "class_a_name": "Cetacean",
+        "class_a_label": "Cetacean",
+        "class_a_iri": "http://example.org/animal-ontology-A/Cetacean",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Monkey",
+        "class_a_label": "Monkey",
+        "class_a_iri": "http://example.org/animal-ontology-A/Monkey",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Whale",
+        "class_a_label": "Whale",
+        "class_a_iri": "http://example.org/animal-ontology-A/Whale",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Mouse",
+        "class_a_label": "Mouse",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mouse",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Dolphin",
+      "class_a_label": "Dolphin",
+      "class_a_iri": "http://example.org/animal-ontology-A/Dolphin",
+      "similarity_score": 0.255,
+      "probability": 0.255
+    }
+  },
+  {
+    "class_b_name": "GiantWhale",
+    "class_b_label": "Giant Whale",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/GiantWhale",
+    "class_b_description": "Giant Whale Enormous marine mammal, largest animals on Earth body_size: enormous environment: pelagic",
+    "top_matches": [
+      {
+        "class_a_name": "Whale",
+        "class_a_label": "Whale",
+        "class_a_iri": "http://example.org/animal-ontology-A/Whale",
+        "similarity_score": 0.26,
+        "probability": 0.26
+      },
+      {
+        "class_a_name": "Monkey",
+        "class_a_label": "Monkey",
+        "class_a_iri": "http://example.org/animal-ontology-A/Monkey",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Cetacean",
+        "class_a_label": "Cetacean",
+        "class_a_iri": "http://example.org/animal-ontology-A/Cetacean",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Whale",
+      "class_a_label": "Whale",
+      "class_a_iri": "http://example.org/animal-ontology-A/Whale",
+      "similarity_score": 0.26,
+      "probability": 0.26
+    }
+  },
+  {
+    "class_b_name": "AvianClass",
+    "class_b_label": "Avian Class",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/AvianClass",
+    "class_b_description": "Avian Class Warm-blooded vertebrates with feathers, beaks, and wings class: Aves covering: feathers egg_laying: yes",
+    "top_matches": [
+      {
+        "class_a_name": "Bird",
+        "class_a_label": "Bird",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bird",
+        "similarity_score": 0.345,
+        "probability": 0.345
+      },
+      {
+        "class_a_name": "Eagle",
+        "class_a_label": "Eagle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Eagle",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Owl",
+        "class_a_label": "Owl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Owl",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Orangutan",
+        "class_a_label": "Orangutan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Orangutan",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Animal",
+        "class_a_label": "Animal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Animal",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Bird",
+      "class_a_label": "Bird",
+      "class_a_iri": "http://example.org/animal-ontology-A/Bird",
+      "similarity_score": 0.345,
+      "probability": 0.345
+    }
+  },
+  {
+    "class_b_name": "BirdOfPrey",
+    "class_b_label": "Bird of Prey",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/BirdOfPrey",
+    "class_b_description": "Bird of Prey Predatory bird with sharp talons and hooked beak feeding: carnivorous eyesight: exceptional",
+    "top_matches": [
+      {
+        "class_a_name": "RaptorBird",
+        "class_a_label": "Raptor",
+        "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+        "similarity_score": 0.18,
+        "probability": 0.18
+      },
+      {
+        "class_a_name": "Eagle",
+        "class_a_label": "Eagle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Eagle",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Lizard",
+        "class_a_label": "Lizard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Owl",
+        "class_a_label": "Owl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Owl",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Bird",
+        "class_a_label": "Bird",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bird",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "RaptorBird",
+      "class_a_label": "Raptor",
+      "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+      "similarity_score": 0.18,
+      "probability": 0.18
+    }
+  },
+  {
+    "class_b_name": "MajesticEagle",
+    "class_b_label": "Majestic Eagle",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/MajesticEagle",
+    "class_b_description": "Majestic Eagle Large raptor with powerful build and impressive wingspan species: Aquila chrysaetos wing_span: extensive environment: alpine",
+    "top_matches": [
+      {
+        "class_a_name": "Eagle",
+        "class_a_label": "Eagle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Eagle",
+        "similarity_score": 0.16,
+        "probability": 0.16
+      },
+      {
+        "class_a_name": "RaptorBird",
+        "class_a_label": "Raptor",
+        "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+        "similarity_score": 0.07,
+        "probability": 0.07
+      },
+      {
+        "class_a_name": "PolarBear",
+        "class_a_label": "Polar Bear",
+        "class_a_iri": "http://example.org/animal-ontology-A/PolarBear",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Hawk",
+        "class_a_label": "Hawk",
+        "class_a_iri": "http://example.org/animal-ontology-A/Hawk",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Felidae",
+        "class_a_label": "Felidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Felidae",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Eagle",
+      "class_a_label": "Eagle",
+      "class_a_iri": "http://example.org/animal-ontology-A/Eagle",
+      "similarity_score": 0.16,
+      "probability": 0.16
+    }
+  },
+  {
+    "class_b_name": "HuntingHawk",
+    "class_b_label": "Hunting Hawk",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/HuntingHawk",
+    "class_b_description": "Hunting Hawk Medium raptor with broad wings for soaring family: Accipitridae body_size: moderate",
+    "top_matches": [
+      {
+        "class_a_name": "Hawk",
+        "class_a_label": "Hawk",
+        "class_a_iri": "http://example.org/animal-ontology-A/Hawk",
+        "similarity_score": 0.235,
+        "probability": 0.235
+      },
+      {
+        "class_a_name": "RaptorBird",
+        "class_a_label": "Raptor",
+        "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+        "similarity_score": 0.07,
+        "probability": 0.07
+      },
+      {
+        "class_a_name": "Eagle",
+        "class_a_label": "Eagle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Eagle",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Primate",
+        "class_a_label": "Primate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Primate",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "BrownBear",
+        "class_a_label": "Brown Bear",
+        "class_a_iri": "http://example.org/animal-ontology-A/BrownBear",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Hawk",
+      "class_a_label": "Hawk",
+      "class_a_iri": "http://example.org/animal-ontology-A/Hawk",
+      "similarity_score": 0.235,
+      "probability": 0.235
+    }
+  },
+  {
+    "class_b_name": "NightOwl",
+    "class_b_label": "Night Owl",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/NightOwl",
+    "class_b_description": "Night Owl Nocturnal raptor with forward-facing eyes and silent flight order: Strigiformes hunting_time: night audition: exceptional",
+    "top_matches": [
+      {
+        "class_a_name": "Owl",
+        "class_a_label": "Owl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Owl",
+        "similarity_score": 0.19,
+        "probability": 0.19
+      },
+      {
+        "class_a_name": "RaptorBird",
+        "class_a_label": "Raptor",
+        "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Ray",
+        "class_a_label": "Ray",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ray",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Mouse",
+        "class_a_label": "Mouse",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mouse",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Owl",
+      "class_a_label": "Owl",
+      "class_a_iri": "http://example.org/animal-ontology-A/Owl",
+      "similarity_score": 0.19,
+      "probability": 0.19
+    }
+  },
+  {
+    "class_b_name": "AquaticBird",
+    "class_b_label": "Aquatic Bird",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/AquaticBird",
+    "class_b_description": "Aquatic Bird Bird species living in or near water environments environment: water",
+    "top_matches": [
+      {
+        "class_a_name": "Butterfly",
+        "class_a_label": "Butterfly",
+        "class_a_iri": "http://example.org/animal-ontology-A/Butterfly",
+        "similarity_score": 0.14,
+        "probability": 0.14
+      },
+      {
+        "class_a_name": "Waterfowl",
+        "class_a_label": "Waterfowl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Waterfowl",
+        "similarity_score": 0.135,
+        "probability": 0.135
+      },
+      {
+        "class_a_name": "Penguin",
+        "class_a_label": "Penguin",
+        "class_a_iri": "http://example.org/animal-ontology-A/Penguin",
+        "similarity_score": 0.095,
+        "probability": 0.095
+      },
+      {
+        "class_a_name": "Parrot",
+        "class_a_label": "Parrot",
+        "class_a_iri": "http://example.org/animal-ontology-A/Parrot",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Duck",
+        "class_a_label": "Duck",
+        "class_a_iri": "http://example.org/animal-ontology-A/Duck",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Butterfly",
+      "class_a_label": "Butterfly",
+      "class_a_iri": "http://example.org/animal-ontology-A/Butterfly",
+      "similarity_score": 0.14,
+      "probability": 0.14
+    }
+  },
+  {
+    "class_b_name": "WildDuck",
+    "class_b_label": "Wild Duck",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/WildDuck",
+    "class_b_description": "Wild Duck Waterfowl with webbed feet and waterproof plumage family: Anatidae foot_structure: webbed",
+    "top_matches": [
+      {
+        "class_a_name": "Duck",
+        "class_a_label": "Duck",
+        "class_a_iri": "http://example.org/animal-ontology-A/Duck",
+        "similarity_score": 0.32,
+        "probability": 0.32
+      },
+      {
+        "class_a_name": "Goose",
+        "class_a_label": "Goose",
+        "class_a_iri": "http://example.org/animal-ontology-A/Goose",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Waterfowl",
+        "class_a_label": "Waterfowl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Waterfowl",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "SeaTurtle",
+        "class_a_label": "Sea Turtle",
+        "class_a_iri": "http://example.org/animal-ontology-A/SeaTurtle",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Penguin",
+        "class_a_label": "Penguin",
+        "class_a_iri": "http://example.org/animal-ontology-A/Penguin",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Duck",
+      "class_a_label": "Duck",
+      "class_a_iri": "http://example.org/animal-ontology-A/Duck",
+      "similarity_score": 0.32,
+      "probability": 0.32
+    }
+  },
+  {
+    "class_b_name": "GracefulSwan",
+    "class_b_label": "Graceful Swan",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/GracefulSwan",
+    "class_b_description": "Graceful Swan Large waterfowl known for elegant long neck genus: Cygnus body_size: large neck_length: extended",
+    "top_matches": [
+      {
+        "class_a_name": "Swan",
+        "class_a_label": "Swan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+        "similarity_score": 0.505,
+        "probability": 0.505
+      },
+      {
+        "class_a_name": "Goose",
+        "class_a_label": "Goose",
+        "class_a_iri": "http://example.org/animal-ontology-A/Goose",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Eagle",
+        "class_a_label": "Eagle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Eagle",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Hawk",
+        "class_a_label": "Hawk",
+        "class_a_iri": "http://example.org/animal-ontology-A/Hawk",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Ursidae",
+        "class_a_label": "Ursidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ursidae",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Swan",
+      "class_a_label": "Swan",
+      "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+      "similarity_score": 0.505,
+      "probability": 0.505
+    }
+  },
+  {
+    "class_b_name": "MigratoryGoose",
+    "class_b_label": "Migratory Goose",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/MigratoryGoose",
+    "class_b_description": "Migratory Goose Large waterfowl known for seasonal migration patterns genus: Branta body_size: large",
+    "top_matches": [
+      {
+        "class_a_name": "Goose",
+        "class_a_label": "Goose",
+        "class_a_iri": "http://example.org/animal-ontology-A/Goose",
+        "similarity_score": 0.13,
+        "probability": 0.13
+      },
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.085,
+        "probability": 0.085
+      },
+      {
+        "class_a_name": "Rat",
+        "class_a_label": "Rat",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rat",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Swan",
+        "class_a_label": "Swan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Waterfowl",
+        "class_a_label": "Waterfowl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Waterfowl",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Goose",
+      "class_a_label": "Goose",
+      "class_a_iri": "http://example.org/animal-ontology-A/Goose",
+      "similarity_score": 0.13,
+      "probability": 0.13
+    }
+  },
+  {
+    "class_b_name": "FlightlessPenguin",
+    "class_b_label": "Flightless Penguin",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/FlightlessPenguin",
+    "class_b_description": "Flightless Penguin Aquatic bird adapted for swimming in cold waters family: Spheniscidae flying_ability: none environment: polar",
+    "top_matches": [
+      {
+        "class_a_name": "Penguin",
+        "class_a_label": "Penguin",
+        "class_a_iri": "http://example.org/animal-ontology-A/Penguin",
+        "similarity_score": 0.27,
+        "probability": 0.27
+      },
+      {
+        "class_a_name": "Swan",
+        "class_a_label": "Swan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "PolarBear",
+        "class_a_label": "Polar Bear",
+        "class_a_iri": "http://example.org/animal-ontology-A/PolarBear",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Waterfowl",
+        "class_a_label": "Waterfowl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Waterfowl",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Bird",
+        "class_a_label": "Bird",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bird",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Penguin",
+      "class_a_label": "Penguin",
+      "class_a_iri": "http://example.org/animal-ontology-A/Penguin",
+      "similarity_score": 0.27,
+      "probability": 0.27
+    }
+  },
+  {
+    "class_b_name": "TalkingParrot",
+    "class_b_label": "Talking Parrot",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/TalkingParrot",
+    "class_b_description": "Talking Parrot Colorful bird capable of vocal mimicry order: Psittaciformes cognition: advanced vocal_ability: imitation",
+    "top_matches": [
+      {
+        "class_a_name": "Parrot",
+        "class_a_label": "Parrot",
+        "class_a_iri": "http://example.org/animal-ontology-A/Parrot",
+        "similarity_score": 0.275,
+        "probability": 0.275
+      },
+      {
+        "class_a_name": "Bird",
+        "class_a_label": "Bird",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bird",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Owl",
+        "class_a_label": "Owl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Owl",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Waterfowl",
+        "class_a_label": "Waterfowl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Waterfowl",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Hawk",
+        "class_a_label": "Hawk",
+        "class_a_iri": "http://example.org/animal-ontology-A/Hawk",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Parrot",
+      "class_a_label": "Parrot",
+      "class_a_iri": "http://example.org/animal-ontology-A/Parrot",
+      "similarity_score": 0.275,
+      "probability": 0.275
+    }
+  },
+  {
+    "class_b_name": "ReptilianClass",
+    "class_b_label": "Reptilian Class",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/ReptilianClass",
+    "class_b_description": "Reptilian Class Cold-blooded vertebrate covered with scales or plates class: Reptilia thermoregulation: ectothermic skin: scaly",
+    "top_matches": [
+      {
+        "class_a_name": "Reptile",
+        "class_a_label": "Reptile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Reptile",
+        "similarity_score": 0.29,
+        "probability": 0.29
+      },
+      {
+        "class_a_name": "Amphibian",
+        "class_a_label": "Amphibian",
+        "class_a_iri": "http://example.org/animal-ontology-A/Amphibian",
+        "similarity_score": 0.085,
+        "probability": 0.085
+      },
+      {
+        "class_a_name": "Bird",
+        "class_a_label": "Bird",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bird",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Wolf",
+        "class_a_label": "Wolf",
+        "class_a_iri": "http://example.org/animal-ontology-A/Wolf",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Reptile",
+      "class_a_label": "Reptile",
+      "class_a_iri": "http://example.org/animal-ontology-A/Reptile",
+      "similarity_score": 0.29,
+      "probability": 0.29
+    }
+  },
+  {
+    "class_b_name": "Serpent",
+    "class_b_label": "Serpent",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/Serpent",
+    "class_b_description": "Serpent Limbless elongated reptile with flexible body order: Serpentes legs: none movement: slithering",
+    "top_matches": [
+      {
+        "class_a_name": "Snake",
+        "class_a_label": "Snake",
+        "class_a_iri": "http://example.org/animal-ontology-A/Snake",
+        "similarity_score": 0.25,
+        "probability": 0.25
+      },
+      {
+        "class_a_name": "Lizard",
+        "class_a_label": "Lizard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+        "similarity_score": 0.11,
+        "probability": 0.11
+      },
+      {
+        "class_a_name": "Arachnid",
+        "class_a_label": "Arachnid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Arachnid",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Spider",
+        "class_a_label": "Spider",
+        "class_a_iri": "http://example.org/animal-ontology-A/Spider",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Snake",
+      "class_a_label": "Snake",
+      "class_a_iri": "http://example.org/animal-ontology-A/Snake",
+      "similarity_score": 0.25,
+      "probability": 0.25
+    }
+  },
+  {
+    "class_b_name": "ConstrictorSnake",
+    "class_b_label": "Constrictor Snake",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/ConstrictorSnake",
+    "class_b_description": "Constrictor Snake Large non-venomous snake that kills by constriction family: Pythonidae killing_method: constriction",
+    "top_matches": [
+      {
+        "class_a_name": "Python",
+        "class_a_label": "Python",
+        "class_a_iri": "http://example.org/animal-ontology-A/Python",
+        "similarity_score": 0.16,
+        "probability": 0.16
+      },
+      {
+        "class_a_name": "Snake",
+        "class_a_label": "Snake",
+        "class_a_iri": "http://example.org/animal-ontology-A/Snake",
+        "similarity_score": 0.13,
+        "probability": 0.13
+      },
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Invertebrate",
+        "class_a_label": "Invertebrate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Invertebrate",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Squid",
+        "class_a_label": "Squid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Squid",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Python",
+      "class_a_label": "Python",
+      "class_a_iri": "http://example.org/animal-ontology-A/Python",
+      "similarity_score": 0.16,
+      "probability": 0.16
+    }
+  },
+  {
+    "class_b_name": "HoodedSnake",
+    "class_b_label": "Hooded Snake",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/HoodedSnake",
+    "class_b_description": "Hooded Snake Venomous snake capable of expanding neck hood genus: Naja toxin: present threat_display: hood_expansion",
+    "top_matches": [
+      {
+        "class_a_name": "Cobra",
+        "class_a_label": "Cobra",
+        "class_a_iri": "http://example.org/animal-ontology-A/Cobra",
+        "similarity_score": 0.175,
+        "probability": 0.175
+      },
+      {
+        "class_a_name": "Python",
+        "class_a_label": "Python",
+        "class_a_iri": "http://example.org/animal-ontology-A/Python",
+        "similarity_score": 0.07,
+        "probability": 0.07
+      },
+      {
+        "class_a_name": "Spider",
+        "class_a_label": "Spider",
+        "class_a_iri": "http://example.org/animal-ontology-A/Spider",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Lizard",
+        "class_a_label": "Lizard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Cobra",
+      "class_a_label": "Cobra",
+      "class_a_iri": "http://example.org/animal-ontology-A/Cobra",
+      "similarity_score": 0.175,
+      "probability": 0.175
+    }
+  },
+  {
+    "class_b_name": "ScaledLizard",
+    "class_b_label": "Scaled Lizard",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/ScaledLizard",
+    "class_b_description": "Scaled Lizard Four-limbed reptile with movable eyelids suborder: Lacertilia legs: four",
+    "top_matches": [
+      {
+        "class_a_name": "Lizard",
+        "class_a_label": "Lizard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+        "similarity_score": 0.32,
+        "probability": 0.32
+      },
+      {
+        "class_a_name": "Snake",
+        "class_a_label": "Snake",
+        "class_a_iri": "http://example.org/animal-ontology-A/Snake",
+        "similarity_score": 0.07,
+        "probability": 0.07
+      },
+      {
+        "class_a_name": "Ursidae",
+        "class_a_label": "Ursidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ursidae",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Scorpion",
+        "class_a_label": "Scorpion",
+        "class_a_iri": "http://example.org/animal-ontology-A/Scorpion",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Ray",
+        "class_a_label": "Ray",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ray",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Lizard",
+      "class_a_label": "Lizard",
+      "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+      "similarity_score": 0.32,
+      "probability": 0.32
+    }
+  },
+  {
+    "class_b_name": "GreenIguana",
+    "class_b_label": "Green Iguana",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/GreenIguana",
+    "class_b_description": "Green Iguana Large plant-eating lizard from tropical regions family: Iguanidae feeding: herbivorous climate: tropical",
+    "top_matches": [
+      {
+        "class_a_name": "Iguana",
+        "class_a_label": "Iguana",
+        "class_a_iri": "http://example.org/animal-ontology-A/Iguana",
+        "similarity_score": 0.295,
+        "probability": 0.295
+      },
+      {
+        "class_a_name": "Chameleon",
+        "class_a_label": "Chameleon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+        "similarity_score": 0.07,
+        "probability": 0.07
+      },
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "RaptorBird",
+        "class_a_label": "Raptor",
+        "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Carnivore",
+        "class_a_label": "Carnivore",
+        "class_a_iri": "http://example.org/animal-ontology-A/Carnivore",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Iguana",
+      "class_a_label": "Iguana",
+      "class_a_iri": "http://example.org/animal-ontology-A/Iguana",
+      "similarity_score": 0.295,
+      "probability": 0.295
+    }
+  },
+  {
+    "class_b_name": "ColorChangingLizard",
+    "class_b_label": "Color-Changing Lizard",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/ColorChangingLizard",
+    "class_b_description": "Color-Changing Lizard Lizard with color-changing skin and rotating eyes family: Chamaeleonidae camouflage: active vision: independent_eyes",
+    "top_matches": [
+      {
+        "class_a_name": "Chameleon",
+        "class_a_label": "Chameleon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+        "similarity_score": 0.335,
+        "probability": 0.335
+      },
+      {
+        "class_a_name": "Lizard",
+        "class_a_label": "Lizard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Ant",
+        "class_a_label": "Ant",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ant",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "RaptorBird",
+        "class_a_label": "Raptor",
+        "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Arachnid",
+        "class_a_label": "Arachnid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Arachnid",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Chameleon",
+      "class_a_label": "Chameleon",
+      "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+      "similarity_score": 0.335,
+      "probability": 0.335
+    }
+  },
+  {
+    "class_b_name": "ShelledReptile",
+    "class_b_label": "Shelled Reptile",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/ShelledReptile",
+    "class_b_description": "Shelled Reptile Reptile protected by hard bony carapace order: Testudines protective_shell: yes",
+    "top_matches": [
+      {
+        "class_a_name": "Lizard",
+        "class_a_label": "Lizard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+        "similarity_score": 0.085,
+        "probability": 0.085
+      },
+      {
+        "class_a_name": "Felidae",
+        "class_a_label": "Felidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Felidae",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Turtle",
+        "class_a_label": "Turtle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Turtle",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Ant",
+        "class_a_label": "Ant",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ant",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "RaptorBird",
+        "class_a_label": "Raptor",
+        "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Lizard",
+      "class_a_label": "Lizard",
+      "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+      "similarity_score": 0.085,
+      "probability": 0.085
+    }
+  },
+  {
+    "class_b_name": "OceanTurtle",
+    "class_b_label": "Ocean Turtle",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/OceanTurtle",
+    "class_b_description": "Ocean Turtle Marine reptile with paddle-like flippers superfamily: Chelonioidea environment: oceanic appendages: paddle_flippers",
+    "top_matches": [
+      {
+        "class_a_name": "SeaTurtle",
+        "class_a_label": "Sea Turtle",
+        "class_a_iri": "http://example.org/animal-ontology-A/SeaTurtle",
+        "similarity_score": 0.18,
+        "probability": 0.18
+      },
+      {
+        "class_a_name": "Squid",
+        "class_a_label": "Squid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Squid",
+        "similarity_score": 0.105,
+        "probability": 0.105
+      },
+      {
+        "class_a_name": "Turtle",
+        "class_a_label": "Turtle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Turtle",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Cheetah",
+        "class_a_label": "Cheetah",
+        "class_a_iri": "http://example.org/animal-ontology-A/Cheetah",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Reptile",
+        "class_a_label": "Reptile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Reptile",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "SeaTurtle",
+      "class_a_label": "Sea Turtle",
+      "class_a_iri": "http://example.org/animal-ontology-A/SeaTurtle",
+      "similarity_score": 0.18,
+      "probability": 0.18
+    }
+  },
+  {
+    "class_b_name": "LargeCrocodile",
+    "class_b_label": "Large Crocodile",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/LargeCrocodile",
+    "class_b_description": "Large Crocodile Massive semi-aquatic reptile with powerful bite genus: Crocodylus lifestyle: semi_aquatic body_size: massive",
+    "top_matches": [
+      {
+        "class_a_name": "Crocodile",
+        "class_a_label": "Crocodile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Crocodile",
+        "similarity_score": 0.445,
+        "probability": 0.445
+      },
+      {
+        "class_a_name": "Reptile",
+        "class_a_label": "Reptile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Reptile",
+        "similarity_score": 0.12,
+        "probability": 0.12
+      },
+      {
+        "class_a_name": "Whale",
+        "class_a_label": "Whale",
+        "class_a_iri": "http://example.org/animal-ontology-A/Whale",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "RaptorBird",
+        "class_a_label": "Raptor",
+        "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Octopus",
+        "class_a_label": "Octopus",
+        "class_a_iri": "http://example.org/animal-ontology-A/Octopus",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Crocodile",
+      "class_a_label": "Crocodile",
+      "class_a_iri": "http://example.org/animal-ontology-A/Crocodile",
+      "similarity_score": 0.445,
+      "probability": 0.445
+    }
+  },
+  {
+    "class_b_name": "AquaticVertebrate",
+    "class_b_label": "Aquatic Vertebrate",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/AquaticVertebrate",
+    "class_b_description": "Aquatic Vertebrate Water-dwelling vertebrate with gills and fins for swimming environment: water breathing: gills movement: fins",
+    "top_matches": [
+      {
+        "class_a_name": "Fish",
+        "class_a_label": "Fish",
+        "class_a_iri": "http://example.org/animal-ontology-A/Fish",
+        "similarity_score": 0.22,
+        "probability": 0.22
+      },
+      {
+        "class_a_name": "Shark",
+        "class_a_label": "Shark",
+        "class_a_iri": "http://example.org/animal-ontology-A/Shark",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Waterfowl",
+        "class_a_label": "Waterfowl",
+        "class_a_iri": "http://example.org/animal-ontology-A/Waterfowl",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Salmon",
+        "class_a_label": "Salmon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Salmon",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Tuna",
+        "class_a_label": "Tuna",
+        "class_a_iri": "http://example.org/animal-ontology-A/Tuna",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Fish",
+      "class_a_label": "Fish",
+      "class_a_iri": "http://example.org/animal-ontology-A/Fish",
+      "similarity_score": 0.22,
+      "probability": 0.22
+    }
+  },
+  {
+    "class_b_name": "PredatoryShark",
+    "class_b_label": "Predatory Shark",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/PredatoryShark",
+    "class_b_description": "Predatory Shark Cartilaginous fish with multiple rows of teeth superorder: Selachimorpha skeleton_type: cartilage dentition: replaceable_teeth",
+    "top_matches": [
+      {
+        "class_a_name": "Shark",
+        "class_a_label": "Shark",
+        "class_a_iri": "http://example.org/animal-ontology-A/Shark",
+        "similarity_score": 0.22,
+        "probability": 0.22
+      },
+      {
+        "class_a_name": "Animal",
+        "class_a_label": "Animal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Animal",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Mollusk",
+        "class_a_label": "Mollusk",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mollusk",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Swan",
+        "class_a_label": "Swan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Fish",
+        "class_a_label": "Fish",
+        "class_a_iri": "http://example.org/animal-ontology-A/Fish",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Shark",
+      "class_a_label": "Shark",
+      "class_a_iri": "http://example.org/animal-ontology-A/Shark",
+      "similarity_score": 0.22,
+      "probability": 0.22
+    }
+  },
+  {
+    "class_b_name": "FlatRay",
+    "class_b_label": "Flat Ray",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/FlatRay",
+    "class_b_description": "Flat Ray Cartilaginous fish with dorsoventrally flattened body superorder: Batoidea morphology: dorsoventrally_flat",
+    "top_matches": [
+      {
+        "class_a_name": "Ray",
+        "class_a_label": "Ray",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ray",
+        "similarity_score": 0.3,
+        "probability": 0.3
+      },
+      {
+        "class_a_name": "Shark",
+        "class_a_label": "Shark",
+        "class_a_iri": "http://example.org/animal-ontology-A/Shark",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Hawk",
+        "class_a_label": "Hawk",
+        "class_a_iri": "http://example.org/animal-ontology-A/Hawk",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Chameleon",
+        "class_a_label": "Chameleon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Ray",
+      "class_a_label": "Ray",
+      "class_a_iri": "http://example.org/animal-ontology-A/Ray",
+      "similarity_score": 0.3,
+      "probability": 0.3
+    }
+  },
+  {
+    "class_b_name": "MigratingSalmon",
+    "class_b_label": "Migrating Salmon",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/MigratingSalmon",
+    "class_b_description": "Migrating Salmon Anadromous fish that returns to freshwater to reproduce species: Salmo salar life_cycle: anadromous spawning: freshwater",
+    "top_matches": [
+      {
+        "class_a_name": "Salmon",
+        "class_a_label": "Salmon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Salmon",
+        "similarity_score": 0.325,
+        "probability": 0.325
+      },
+      {
+        "class_a_name": "Salamander",
+        "class_a_label": "Salamander",
+        "class_a_iri": "http://example.org/animal-ontology-A/Salamander",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Ray",
+        "class_a_label": "Ray",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ray",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Invertebrate",
+        "class_a_label": "Invertebrate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Invertebrate",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Amphibian",
+        "class_a_label": "Amphibian",
+        "class_a_iri": "http://example.org/animal-ontology-A/Amphibian",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Salmon",
+      "class_a_label": "Salmon",
+      "class_a_iri": "http://example.org/animal-ontology-A/Salmon",
+      "similarity_score": 0.325,
+      "probability": 0.325
+    }
+  },
+  {
+    "class_b_name": "SwiftTuna",
+    "class_b_label": "Swift Tuna",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/SwiftTuna",
+    "class_b_description": "Swift Tuna Large pelagic fish known for speed and endurance genus: Thunnus velocity: rapid zone: open_ocean",
+    "top_matches": [
+      {
+        "class_a_name": "Tuna",
+        "class_a_label": "Tuna",
+        "class_a_iri": "http://example.org/animal-ontology-A/Tuna",
+        "similarity_score": 0.19,
+        "probability": 0.19
+      },
+      {
+        "class_a_name": "Dolphin",
+        "class_a_label": "Dolphin",
+        "class_a_iri": "http://example.org/animal-ontology-A/Dolphin",
+        "similarity_score": 0.105,
+        "probability": 0.105
+      },
+      {
+        "class_a_name": "Fish",
+        "class_a_label": "Fish",
+        "class_a_iri": "http://example.org/animal-ontology-A/Fish",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "SeaTurtle",
+        "class_a_label": "Sea Turtle",
+        "class_a_iri": "http://example.org/animal-ontology-A/SeaTurtle",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Tuna",
+      "class_a_label": "Tuna",
+      "class_a_iri": "http://example.org/animal-ontology-A/Tuna",
+      "similarity_score": 0.19,
+      "probability": 0.19
+    }
+  },
+  {
+    "class_b_name": "AmphibiousAnimal",
+    "class_b_label": "Amphibious Animal",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/AmphibiousAnimal",
+    "class_b_description": "Amphibious Animal Cold-blooded vertebrate living both in water and on land class: Amphibia development: metamorphic skin_type: moist",
+    "top_matches": [
+      {
+        "class_a_name": "Amphibian",
+        "class_a_label": "Amphibian",
+        "class_a_iri": "http://example.org/animal-ontology-A/Amphibian",
+        "similarity_score": 0.235,
+        "probability": 0.235
+      },
+      {
+        "class_a_name": "Mammal",
+        "class_a_label": "Mammal",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mammal",
+        "similarity_score": 0.1,
+        "probability": 0.1
+      },
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Reptile",
+        "class_a_label": "Reptile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Reptile",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Cheetah",
+        "class_a_label": "Cheetah",
+        "class_a_iri": "http://example.org/animal-ontology-A/Cheetah",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Amphibian",
+      "class_a_label": "Amphibian",
+      "class_a_iri": "http://example.org/animal-ontology-A/Amphibian",
+      "similarity_score": 0.235,
+      "probability": 0.235
+    }
+  },
+  {
+    "class_b_name": "LeapingFrog",
+    "class_b_label": "Leaping Frog",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/LeapingFrog",
+    "class_b_description": "Leaping Frog Tailless amphibian with powerful jumping legs order: Anura tail_adult: none movement: leaping",
+    "top_matches": [
+      {
+        "class_a_name": "Frog",
+        "class_a_label": "Frog",
+        "class_a_iri": "http://example.org/animal-ontology-A/Frog",
+        "similarity_score": 0.45,
+        "probability": 0.45
+      },
+      {
+        "class_a_name": "Fish",
+        "class_a_label": "Fish",
+        "class_a_iri": "http://example.org/animal-ontology-A/Fish",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Snake",
+        "class_a_label": "Snake",
+        "class_a_iri": "http://example.org/animal-ontology-A/Snake",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Orangutan",
+        "class_a_label": "Orangutan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Orangutan",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      },
+      {
+        "class_a_name": "Ant",
+        "class_a_label": "Ant",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ant",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Frog",
+      "class_a_label": "Frog",
+      "class_a_iri": "http://example.org/animal-ontology-A/Frog",
+      "similarity_score": 0.45,
+      "probability": 0.45
+    }
+  },
+  {
+    "class_b_name": "TailedNewt",
+    "class_b_label": "Tailed Newt",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/TailedNewt",
+    "class_b_description": "Tailed Newt Amphibian with slender body and permanent tail order: Caudata tail_adult: present form: elongate",
+    "top_matches": [
+      {
+        "class_a_name": "Amphibian",
+        "class_a_label": "Amphibian",
+        "class_a_iri": "http://example.org/animal-ontology-A/Amphibian",
+        "similarity_score": 0.15,
+        "probability": 0.15
+      },
+      {
+        "class_a_name": "Swan",
+        "class_a_label": "Swan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+        "similarity_score": 0.065,
+        "probability": 0.065
+      },
+      {
+        "class_a_name": "Snake",
+        "class_a_label": "Snake",
+        "class_a_iri": "http://example.org/animal-ontology-A/Snake",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Salamander",
+        "class_a_label": "Salamander",
+        "class_a_iri": "http://example.org/animal-ontology-A/Salamander",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Ape",
+        "class_a_label": "Ape",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ape",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Amphibian",
+      "class_a_label": "Amphibian",
+      "class_a_iri": "http://example.org/animal-ontology-A/Amphibian",
+      "similarity_score": 0.15,
+      "probability": 0.15
+    }
+  },
+  {
+    "class_b_name": "Spineless",
+    "class_b_label": "Spineless",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/Spineless",
+    "class_b_description": "Spineless Animal lacking vertebral column or internal skeleton backbone: none",
+    "top_matches": [
+      {
+        "class_a_name": "Invertebrate",
+        "class_a_label": "Invertebrate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Invertebrate",
+        "similarity_score": 0.175,
+        "probability": 0.175
+      },
+      {
+        "class_a_name": "Octopus",
+        "class_a_label": "Octopus",
+        "class_a_iri": "http://example.org/animal-ontology-A/Octopus",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Scorpion",
+        "class_a_label": "Scorpion",
+        "class_a_iri": "http://example.org/animal-ontology-A/Scorpion",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Swan",
+        "class_a_label": "Swan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Bird",
+        "class_a_label": "Bird",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bird",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Invertebrate",
+      "class_a_label": "Invertebrate",
+      "class_a_iri": "http://example.org/animal-ontology-A/Invertebrate",
+      "similarity_score": 0.175,
+      "probability": 0.175
+    }
+  },
+  {
+    "class_b_name": "SixLeggedArthropod",
+    "class_b_label": "Six-Legged Arthropod",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/SixLeggedArthropod",
+    "class_b_description": "Six-Legged Arthropod Arthropod with segmented body and six legs class: Insecta body_parts: three_segments leg_count: six",
+    "top_matches": [
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.385,
+        "probability": 0.385
+      },
+      {
+        "class_a_name": "Amphibian",
+        "class_a_label": "Amphibian",
+        "class_a_iri": "http://example.org/animal-ontology-A/Amphibian",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Bee",
+        "class_a_label": "Bee",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bee",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Butterfly",
+        "class_a_label": "Butterfly",
+        "class_a_iri": "http://example.org/animal-ontology-A/Butterfly",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Insect",
+      "class_a_label": "Insect",
+      "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+      "similarity_score": 0.385,
+      "probability": 0.385
+    }
+  },
+  {
+    "class_b_name": "WingedButterfly",
+    "class_b_label": "Winged Butterfly",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/WingedButterfly",
+    "class_b_description": "Winged Butterfly Flying insect with colorful patterned wings order: Lepidoptera wing_covering: scales metamorphosis: complete",
+    "top_matches": [
+      {
+        "class_a_name": "Butterfly",
+        "class_a_label": "Butterfly",
+        "class_a_iri": "http://example.org/animal-ontology-A/Butterfly",
+        "similarity_score": 0.365,
+        "probability": 0.365
+      },
+      {
+        "class_a_name": "Beetle",
+        "class_a_label": "Beetle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Beetle",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Felidae",
+        "class_a_label": "Felidae",
+        "class_a_iri": "http://example.org/animal-ontology-A/Felidae",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Bee",
+        "class_a_label": "Bee",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bee",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Ant",
+        "class_a_label": "Ant",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ant",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Butterfly",
+      "class_a_label": "Butterfly",
+      "class_a_iri": "http://example.org/animal-ontology-A/Butterfly",
+      "similarity_score": 0.365,
+      "probability": 0.365
+    }
+  },
+  {
+    "class_b_name": "HoneyBee",
+    "class_b_label": "Honey Bee",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/HoneyBee",
+    "class_b_description": "Honey Bee Social flying insect that produces honey and pollinates species: Apis mellifera organization: eusocial function: pollination",
+    "top_matches": [
+      {
+        "class_a_name": "Bee",
+        "class_a_label": "Bee",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bee",
+        "similarity_score": 0.345,
+        "probability": 0.345
+      },
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Ant",
+        "class_a_label": "Ant",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ant",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      },
+      {
+        "class_a_name": "Beetle",
+        "class_a_label": "Beetle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Beetle",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Butterfly",
+        "class_a_label": "Butterfly",
+        "class_a_iri": "http://example.org/animal-ontology-A/Butterfly",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Bee",
+      "class_a_label": "Bee",
+      "class_a_iri": "http://example.org/animal-ontology-A/Bee",
+      "similarity_score": 0.345,
+      "probability": 0.345
+    }
+  },
+  {
+    "class_b_name": "ColonyAnt",
+    "class_b_label": "Colony Ant",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/ColonyAnt",
+    "class_b_description": "Colony Ant Eusocial insect living in structured colonies family: Formicidae organization: colonial structure: hierarchical",
+    "top_matches": [
+      {
+        "class_a_name": "Ant",
+        "class_a_label": "Ant",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ant",
+        "similarity_score": 0.45,
+        "probability": 0.45
+      },
+      {
+        "class_a_name": "Chameleon",
+        "class_a_label": "Chameleon",
+        "class_a_iri": "http://example.org/animal-ontology-A/Chameleon",
+        "similarity_score": 0.11,
+        "probability": 0.11
+      },
+      {
+        "class_a_name": "Bee",
+        "class_a_label": "Bee",
+        "class_a_iri": "http://example.org/animal-ontology-A/Bee",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      },
+      {
+        "class_a_name": "Beetle",
+        "class_a_label": "Beetle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Beetle",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      },
+      {
+        "class_a_name": "Rodent",
+        "class_a_label": "Rodent",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rodent",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Ant",
+      "class_a_label": "Ant",
+      "class_a_iri": "http://example.org/animal-ontology-A/Ant",
+      "similarity_score": 0.45,
+      "probability": 0.45
+    }
+  },
+  {
+    "class_b_name": "HardwingBeetle",
+    "class_b_label": "Hardwing Beetle",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/HardwingBeetle",
+    "class_b_description": "Hardwing Beetle Insect with hardened forewings protecting membranous hindwings order: Coleoptera forewing: sclerotized",
+    "top_matches": [
+      {
+        "class_a_name": "Beetle",
+        "class_a_label": "Beetle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Beetle",
+        "similarity_score": 0.175,
+        "probability": 0.175
+      },
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.13,
+        "probability": 0.13
+      },
+      {
+        "class_a_name": "Butterfly",
+        "class_a_label": "Butterfly",
+        "class_a_iri": "http://example.org/animal-ontology-A/Butterfly",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Arachnid",
+        "class_a_label": "Arachnid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Arachnid",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Swan",
+        "class_a_label": "Swan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Beetle",
+      "class_a_label": "Beetle",
+      "class_a_iri": "http://example.org/animal-ontology-A/Beetle",
+      "similarity_score": 0.175,
+      "probability": 0.175
+    }
+  },
+  {
+    "class_b_name": "EightLeggedArthropod",
+    "class_b_label": "Eight-Legged Arthropod",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/EightLeggedArthropod",
+    "class_b_description": "Eight-Legged Arthropod Arthropod with four pairs of legs class: Arachnida leg_count: eight",
+    "top_matches": [
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.16,
+        "probability": 0.16
+      },
+      {
+        "class_a_name": "Arachnid",
+        "class_a_label": "Arachnid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Arachnid",
+        "similarity_score": 0.155,
+        "probability": 0.155
+      },
+      {
+        "class_a_name": "Scorpion",
+        "class_a_label": "Scorpion",
+        "class_a_iri": "http://example.org/animal-ontology-A/Scorpion",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "PolarBear",
+        "class_a_label": "Polar Bear",
+        "class_a_iri": "http://example.org/animal-ontology-A/PolarBear",
+        "similarity_score": 0.05,
+        "probability": 0.05
+      },
+      {
+        "class_a_name": "Gorilla",
+        "class_a_label": "Gorilla",
+        "class_a_iri": "http://example.org/animal-ontology-A/Gorilla",
+        "similarity_score": 0.045,
+        "probability": 0.045
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Insect",
+      "class_a_label": "Insect",
+      "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+      "similarity_score": 0.16,
+      "probability": 0.16
+    }
+  },
+  {
+    "class_b_name": "WebSpider",
+    "class_b_label": "Web Spider",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/WebSpider",
+    "class_b_description": "Web Spider Arachnid producing silk webs for prey capture order: Araneae silk_production: yes toxin: present",
+    "top_matches": [
+      {
+        "class_a_name": "Spider",
+        "class_a_label": "Spider",
+        "class_a_iri": "http://example.org/animal-ontology-A/Spider",
+        "similarity_score": 0.36,
+        "probability": 0.36
+      },
+      {
+        "class_a_name": "Arachnid",
+        "class_a_label": "Arachnid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Arachnid",
+        "similarity_score": 0.095,
+        "probability": 0.095
+      },
+      {
+        "class_a_name": "Dog",
+        "class_a_label": "Dog",
+        "class_a_iri": "http://example.org/animal-ontology-A/Dog",
+        "similarity_score": 0.035,
+        "probability": 0.035
+      },
+      {
+        "class_a_name": "Crocodile",
+        "class_a_label": "Crocodile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Crocodile",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      },
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Spider",
+      "class_a_label": "Spider",
+      "class_a_iri": "http://example.org/animal-ontology-A/Spider",
+      "similarity_score": 0.36,
+      "probability": 0.36
+    }
+  },
+  {
+    "class_b_name": "StingingScorpion",
+    "class_b_label": "Stinging Scorpion",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/StingingScorpion",
+    "class_b_description": "Stinging Scorpion Arachnid with segmented tail bearing venomous sting order: Scorpiones appendage: venomous_telson claws: yes",
+    "top_matches": [
+      {
+        "class_a_name": "Scorpion",
+        "class_a_label": "Scorpion",
+        "class_a_iri": "http://example.org/animal-ontology-A/Scorpion",
+        "similarity_score": 0.34,
+        "probability": 0.34
+      },
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.085,
+        "probability": 0.085
+      },
+      {
+        "class_a_name": "Invertebrate",
+        "class_a_label": "Invertebrate",
+        "class_a_iri": "http://example.org/animal-ontology-A/Invertebrate",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Beetle",
+        "class_a_label": "Beetle",
+        "class_a_iri": "http://example.org/animal-ontology-A/Beetle",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Snake",
+        "class_a_label": "Snake",
+        "class_a_iri": "http://example.org/animal-ontology-A/Snake",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Scorpion",
+      "class_a_label": "Scorpion",
+      "class_a_iri": "http://example.org/animal-ontology-A/Scorpion",
+      "similarity_score": 0.34,
+      "probability": 0.34
+    }
+  },
+  {
+    "class_b_name": "SoftBodyMollusk",
+    "class_b_label": "Soft-Body Mollusk",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/SoftBodyMollusk",
+    "class_b_description": "Soft-Body Mollusk Invertebrate with soft unsegmented body, often with shell phylum: Mollusca body_texture: soft",
+    "top_matches": [
+      {
+        "class_a_name": "Mollusk",
+        "class_a_label": "Mollusk",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mollusk",
+        "similarity_score": 0.535,
+        "probability": 0.535
+      },
+      {
+        "class_a_name": "Ant",
+        "class_a_label": "Ant",
+        "class_a_iri": "http://example.org/animal-ontology-A/Ant",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      },
+      {
+        "class_a_name": "RaptorBird",
+        "class_a_label": "Raptor",
+        "class_a_iri": "http://example.org/animal-ontology-A/RaptorBird",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      },
+      {
+        "class_a_name": "Squid",
+        "class_a_label": "Squid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Squid",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      },
+      {
+        "class_a_name": "Python",
+        "class_a_label": "Python",
+        "class_a_iri": "http://example.org/animal-ontology-A/Python",
+        "similarity_score": 0.02,
+        "probability": 0.02
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Mollusk",
+      "class_a_label": "Mollusk",
+      "class_a_iri": "http://example.org/animal-ontology-A/Mollusk",
+      "similarity_score": 0.535,
+      "probability": 0.535
+    }
+  },
+  {
+    "class_b_name": "EightArmedOctopus",
+    "class_b_label": "Eight-Armed Octopus",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/EightArmedOctopus",
+    "class_b_description": "Eight-Armed Octopus Marine cephalopod with eight flexible tentacles order: Octopoda tentacles: eight cognition: advanced",
+    "top_matches": [
+      {
+        "class_a_name": "Octopus",
+        "class_a_label": "Octopus",
+        "class_a_iri": "http://example.org/animal-ontology-A/Octopus",
+        "similarity_score": 0.205,
+        "probability": 0.205
+      },
+      {
+        "class_a_name": "Squid",
+        "class_a_label": "Squid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Squid",
+        "similarity_score": 0.18,
+        "probability": 0.18
+      },
+      {
+        "class_a_name": "Crocodile",
+        "class_a_label": "Crocodile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Crocodile",
+        "similarity_score": 0.055,
+        "probability": 0.055
+      },
+      {
+        "class_a_name": "Lizard",
+        "class_a_label": "Lizard",
+        "class_a_iri": "http://example.org/animal-ontology-A/Lizard",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      },
+      {
+        "class_a_name": "Arachnid",
+        "class_a_label": "Arachnid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Arachnid",
+        "similarity_score": 0.025,
+        "probability": 0.025
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Octopus",
+      "class_a_label": "Octopus",
+      "class_a_iri": "http://example.org/animal-ontology-A/Octopus",
+      "similarity_score": 0.205,
+      "probability": 0.205
+    }
+  },
+  {
+    "class_b_name": "TenArmedSquid",
+    "class_b_label": "Ten-Armed Squid",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/TenArmedSquid",
+    "class_b_description": "Ten-Armed Squid Marine cephalopod with elongated body and ten appendages order: Teuthida tentacles: ten body_type: streamlined",
+    "top_matches": [
+      {
+        "class_a_name": "Squid",
+        "class_a_label": "Squid",
+        "class_a_iri": "http://example.org/animal-ontology-A/Squid",
+        "similarity_score": 0.355,
+        "probability": 0.355
+      },
+      {
+        "class_a_name": "Crocodile",
+        "class_a_label": "Crocodile",
+        "class_a_iri": "http://example.org/animal-ontology-A/Crocodile",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Octopus",
+        "class_a_label": "Octopus",
+        "class_a_iri": "http://example.org/animal-ontology-A/Octopus",
+        "similarity_score": 0.075,
+        "probability": 0.075
+      },
+      {
+        "class_a_name": "Amphibian",
+        "class_a_label": "Amphibian",
+        "class_a_iri": "http://example.org/animal-ontology-A/Amphibian",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Swan",
+        "class_a_label": "Swan",
+        "class_a_iri": "http://example.org/animal-ontology-A/Swan",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Squid",
+      "class_a_label": "Squid",
+      "class_a_iri": "http://example.org/animal-ontology-A/Squid",
+      "similarity_score": 0.355,
+      "probability": 0.355
+    }
+  },
+  {
+    "class_b_name": "SpiralSnail",
+    "class_b_label": "Spiral Snail",
+    "class_b_iri": "http://example.org/animal-taxonomy-B/SpiralSnail",
+    "class_b_description": "Spiral Snail Gastropod with spiral coiled protective shell class: Gastropoda shell_form: spiral movement: gliding",
+    "top_matches": [
+      {
+        "class_a_name": "Snail",
+        "class_a_label": "Snail",
+        "class_a_iri": "http://example.org/animal-ontology-A/Snail",
+        "similarity_score": 0.355,
+        "probability": 0.355
+      },
+      {
+        "class_a_name": "Insect",
+        "class_a_label": "Insect",
+        "class_a_iri": "http://example.org/animal-ontology-A/Insect",
+        "similarity_score": 0.08,
+        "probability": 0.08
+      },
+      {
+        "class_a_name": "Rat",
+        "class_a_label": "Rat",
+        "class_a_iri": "http://example.org/animal-ontology-A/Rat",
+        "similarity_score": 0.06,
+        "probability": 0.06
+      },
+      {
+        "class_a_name": "Mollusk",
+        "class_a_label": "Mollusk",
+        "class_a_iri": "http://example.org/animal-ontology-A/Mollusk",
+        "similarity_score": 0.04,
+        "probability": 0.04
+      },
+      {
+        "class_a_name": "Cheetah",
+        "class_a_label": "Cheetah",
+        "class_a_iri": "http://example.org/animal-ontology-A/Cheetah",
+        "similarity_score": 0.03,
+        "probability": 0.03
+      }
+    ],
+    "best_match": {
+      "class_a_name": "Snail",
+      "class_a_label": "Snail",
+      "class_a_iri": "http://example.org/animal-ontology-A/Snail",
+      "similarity_score": 0.355,
+      "probability": 0.355
+    }
+  }
+]
