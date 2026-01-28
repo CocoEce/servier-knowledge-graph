@@ -83,10 +83,6 @@ with st.sidebar:
     
     st.divider()
     
-    if st.button("🔄 Recharger l'agent", use_container_width=True, help="Force le rechargement avec la nouvelle configuration"):
-        st.cache_resource.clear()
-        st.rerun()
-    
     if st.button("🗑️ Effacer l'historique", use_container_width=True):
         st.session_state.history = []
         st.rerun()
