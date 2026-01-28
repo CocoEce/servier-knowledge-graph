@@ -1,0 +1,113 @@
+{
+  "agent": {
+    "name": "Knowledge Graph RAG Agent",
+    "description": "Agent RAG pour interroger le knowledge graph d'ontologies alignées",
+    "model": "models/gemini-2.5-flash-preview-09-2025",
+    "temperature": 0.7
+  },
+  "graphdb": {
+    "graph_uri": "http://pfe.ece.fr/knowledge_graph"
+  },
+  "tools": {
+    "enabled_tools": [
+      "get_all_classes",
+      "search_concept",
+      "get_concept_info",
+      "find_equivalences",
+      "get_relationships",
+      "get_graph_stats",
+      "search_by_parent"
+    ],
+    "tool_descriptions": {
+      "get_all_classes": "Récupère toutes les classes de l'ontologie",
+      "search_concept": "Recherche un concept spécifique par son nom ou label",
+      "get_concept_info": "Récupère toutes les informations sur un concept spécifique",
+      "find_equivalences": "Trouve les équivalences (owl:sameAs, skos:closeMatch) pour un concept",
+      "get_relationships": "Trouve les relations entre deux concepts",
+      "get_graph_stats": "Récupère des statistiques sur le knowledge graph",
+      "search_by_parent": "Trouve tous les sous-concepts d'un concept parent"
+    }
+  },
+  "question_patterns": {
+    "relationship": {
+      "keywords": ["lien", "relation", "entre", "connecte", "lie"],
+      "tool": "get_relationships",
+      "requires_concepts": 2,
+      "priority": 10,
+      "examples": [
+        "Quel est le lien entre Canis lupus et Wolf ?",
+        "Y a-t-il une relation entre Dog et Canis familiaris ?"
+      ]
+    },
+    "equivalence": {
+      "keywords": ["équivalent", "équivalence", "même", "égal", "identique", "correspond", "sameAs"],
+      "tool": "find_equivalences",
+      "requires_concepts": 1,
+      "priority": 9,
+      "examples": [
+        "Trouve les équivalents de Canis lupus",
+        "Quels sont les concepts identiques à Wolf ?"
+      ]
+    },
+    "search_info": {
+      "keywords": ["info", "information", "attribut", "propriété", "caractéristique", "donne", "toute", "toutes", "disponible"],
+      "tool": "search_concept",
+      "requires_concepts": 1,
+      "priority": 8,
+      "examples": [
+        "Donne-moi des informations sur Canis lupus",
+        "Quels sont les attributs de Lion ?",
+        "Liste tous les attributs de Tiger"
+      ]
+    },
+    "list_all": {
+      "keywords": ["liste toutes les classes", "liste tous les concepts", "quelles sont toutes"],
+      "tool": "get_all_classes",
+      "requires_concepts": 0,
+      "priority": 5,
+      "examples": [
+        "Quelles sont toutes les classes ?",
+        "Liste-moi les concepts disponibles"
+      ]
+    },
+    "children": {
+      "keywords": ["sous-classe", "enfant", "dérive", "hérite", "descendants"],
+      "tool": "search_by_parent",
+      "requires_concepts": 1,
+      "priority": 7,
+      "examples": [
+        "Quelles sont les sous-classes de Mammalia ?",
+        "Liste les descendants de Carnivora"
+      ]
+    },
+    "stats": {
+      "keywords": ["statistique", "combien", "nombre", "total", "compte"],
+      "tool": "get_graph_stats",
+      "requires_concepts": 0,
+      "priority": 6,
+      "examples": [
+        "Combien de classes dans le knowledge graph ?",
+        "Statistiques du graphe"
+      ]
+    }
+  },
+  "demo_questions": [
+    "Quels sont tous les synonymes de Lion ?",
+    "Donne toutes les informations disponibles sur Tiger",
+    "Quelles sont les caractéristiques de Leopard ?",
+    "Trouve les équivalences pour Cheetah",
+    "Liste tous les attributs de Carnivore",
+    "Cherche les informations complètes sur Felidae"
+  ],
+  "prompts": {
+    "system_prompt": "Tu es un assistant expert en ontologies et knowledge graphs. Tu réponds aux questions en te basant uniquement sur les données récupérées du knowledge graph.",
+    "no_data_message": "Aucune information ou relation n'a été trouvée dans le knowledge graph pour cette question.",
+    "instructions": [
+      "Si les données contiennent des informations pertinentes, réponds de manière claire et structurée",
+      "Si les données montrent 'Aucune donnée trouvée', indique clairement qu'aucune information ou relation n'a été trouvée",
+      "Si tu vois des équivalences (owl:sameAs, skos:closeMatch), explique ces liens clairement",
+      "Reste factuel et base ta réponse uniquement sur les données fournies",
+      "Réponds en français"
+    ]
+  }
+}

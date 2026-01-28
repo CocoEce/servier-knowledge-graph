@@ -20,7 +20,7 @@ GRAPHDB_REPOSITORY = os.getenv('GRAPHDB_REPOSITORY')
 GRAPHDB_USERNAME = os.getenv('GRAPHDB_USERNAME')
 GRAPHDB_PASSWORD = os.getenv('GRAPHDB_PASSWORD')
 
-GRAPH_URI = "http://pfe.ece.fr/graph_origin"
+GRAPH_URI = "http://pfe.ece.fr/knowledge_graph"
 
 
 def clear_graph(session, repo_url):
