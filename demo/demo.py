@@ -196,11 +196,12 @@ Exemples:
     
     print_header("🚀 DÉMONSTRATION - PIPELINE D'ALIGNEMENT D'ONTOLOGIES")
     
-    print("Cette démonstration v l'ontologie B (embeddings BERT → MongoDB)")
-    print("  3. Alignement sémantique (ontologie A vs B via action et filtrage)")
+    print("Cette démonstration va exécuter les étapes suivantes:")
+    print("  1. Mapping des ontologies (OWL → CSV)")
     print("  2. Vectorisation des ontologies (embeddings BERT)")
     print("  3. Alignement sémantique (recherche vectorielle)")
     print("  4. Validation interactive et fusion")
+    print("  5. Chargement dans GraphDB")
     
     input("\nAppuyez sur Entrée pour commencer...")
     
@@ -242,6 +243,29 @@ Exemples:
         # Étape 4: Interface interactive (toujours exécutée)
         run_step("Interface interactive", step_interactive_alignment)
         
+        # Demander confirmation pour charger dans GraphDB
+        ask_continue("Chargement dans GraphDB")
+        
+        # Étape 5: Chargement dans GraphDB
+        print_step(5, 5, "CHARGEMENT DANS GRAPHDB")
+        
+        merged_owl = project_root / "alignement" / "merged" / "merged_ontology.owl"
+        
+        if not merged_owl.exists():
+            print("⚠️  Ontologie merged non trouvée. Étape de chargement ignorée.")
+        else:
+            print("Chargement de l'ontologie merged dans GraphDB...")
+            print(f"→ Fichier: {merged_owl.relative_to(project_root)}\n")
+            
+            subprocess.run([
+                sys.executable,
+                str(project_root / "graphdb" / "load_merged_ontology.py")
+            ], cwd=str(project_root), check=True)
+            
+            print("\n✓ Ontologie chargée dans GraphDB")
+            print("  • Repository: PFE-GraphDB")
+            print("  • Named graph: http://pfe.ece.fr/knowledge_graph")
+        
         # Résumé final
         print_header("✅ DÉMONSTRATION TERMINÉE AVEC SUCCÈS")
         
@@ -249,6 +273,11 @@ Exemples:
         print(f"  • CSV: {project_root / 'data' / 'csv'}")
         print(f"  • Résultats d'alignement: {project_root / 'alignement' / 'results'}")
         print(f"  • Ontologie fusionnée: {project_root / 'alignement' / 'merged'}")
+        print(f"  • GraphDB: http://localhost:7200 (Repository: PFE-GraphDB)")
+        
+        print("\n🚀 Étapes suivantes suggérées:")
+        print("  1. Visualiser l'ontologie merged dans GraphDB")
+        print("  2. Tester le RAG avec: cd rag && streamlit run streamlit_app.py")
         
     except KeyboardInterrupt:
         print("\n\n⚠️  Démonstration interrompue par l'utilisateur")

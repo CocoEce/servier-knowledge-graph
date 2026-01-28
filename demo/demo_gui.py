@@ -32,7 +32,8 @@ class DemoGUI(tk.Tk):
             1: "pending",  # pending, running, success, error
             2: "pending",
             3: "pending",
-            4: "pending"
+            4: "pending",
+            5: "pending"
         }
         
         # Queue pour les logs
@@ -102,7 +103,8 @@ class DemoGUI(tk.Tk):
             (1, "Mapping OWL → CSV", "Extraction des classes et propriétés", "#3498db"),
             (2, "Vectorisation", "Génération des embeddings BERT", "#27ae60"),
             (3, "Alignement Sémantique", "Recherche de correspondances", "#e67e22"),
-            (4, "Validation Interactive", "Fusion des ontologies", "#e74c3c")
+            (4, "Validation Interactive", "Fusion des ontologies", "#e74c3c"),
+            (5, "Chargement GraphDB", "Import dans le knowledge graph", "#9b59b6")
         ]
         
         for step_num, title, desc, color in steps:
@@ -251,7 +253,7 @@ class DemoGUI(tk.Tk):
         self.log("DÉBUT DE LA PIPELINE COMPLÈTE", "INFO")
         self.log("="*80, "INFO")
         
-        for step_num in [1, 2, 3, 4]:
+        for step_num in [1, 2, 3, 4, 5]:
             self._execute_step(step_num)
             
             if self.step_status[step_num] == "error":
@@ -284,7 +286,8 @@ class DemoGUI(tk.Tk):
             1: ("Étape 1: Mapping OWL → CSV", self._run_mapping),
             2: ("Étape 2: Vectorisation", self._run_vectorize),
             3: ("Étape 3: Alignement sémantique", self._run_matching),
-            4: ("Étape 4: Validation interactive", self._run_interactive)
+            4: ("Étape 4: Validation interactive", self._run_interactive),
+            5: ("Étape 5: Chargement GraphDB", self._run_graphdb_load)
         }
         
         step_name, step_func = steps_config[step_num]
@@ -356,6 +359,20 @@ class DemoGUI(tk.Tk):
             sys.executable,
             str(project_root / "alignement" / "scripts" / "align_ontology_interactive.py")
         ])
+    
+    def _run_graphdb_load(self):
+        """Charge l'ontologie merged dans GraphDB."""
+        merged_owl = project_root / "alignement" / "merged" / "merged_ontology.owl"
+        
+        if not merged_owl.exists():
+            raise FileNotFoundError("Ontologie merged non trouvée. Exécutez d'abord l'étape 4.")
+        
+        self.log(f"Chargement de {merged_owl.name} dans GraphDB...", "INFO")
+        self._run_command([
+            sys.executable,
+            str(project_root / "graphdb" / "load_merged_ontology.py")
+        ])
+        self.log("✓ Ontologie chargée - Repository: PFE-GraphDB", "SUCCESS")
     
     def quit_app(self):
         """Quitte l'application."""

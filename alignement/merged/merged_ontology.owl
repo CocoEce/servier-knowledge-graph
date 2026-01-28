@@ -4,330 +4,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/DomesticCat">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Domestic Cat</rdfs:label>
-    <merged:sourceA_label>Domestic Cat</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/DomesticCat</merged:sourceA_uri>
-    <merged:sourceA_definition>Small domesticated carnivorous mammal kept as pet</merged:sourceA_definition>
-    <merged:sourceB_label>House Cat</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/HouseCat</merged:sourceB_uri>
-    <merged:sourceB_definition>Small tamed feline commonly kept as companion animal</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9076837301254272</merged:similarity_score>
-    <merged:synonym>Domestic Cat</merged:synonym>
-    <merged:synonym>Felis catus</merged:synonym>
-    <merged:synonym>House Cat</merged:synonym>
-    <merged:synonym>Pet Cat</merged:synonym>
-    <merged:synonym>Pet Feline</merged:synonym>
-    <merged:attributesA>species: Felis catus, habitat: domestic, status: domesticated</merged:attributesA>
-    <merged:attributesB>{'species': 'Felis catus', 'environment': 'human_dwelling', 'domestication': 'yes'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Felidae"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/PolarBear">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Polar Bear</rdfs:label>
-    <merged:sourceA_label>Polar Bear</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/PolarBear</merged:sourceA_uri>
-    <merged:sourceA_definition>Large white bear native to Arctic regions</merged:sourceA_definition>
-    <merged:sourceB_label>Arctic Bear</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ArcticBear</merged:sourceB_uri>
-    <merged:sourceB_definition>Large white-furred bear adapted to polar environment</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9362232685089111</merged:similarity_score>
-    <merged:synonym>Arctic Bear</merged:synonym>
-    <merged:synonym>Ice Bear</merged:synonym>
-    <merged:synonym>Polar Bear</merged:synonym>
-    <merged:synonym>Ursus maritimus</merged:synonym>
-    <merged:synonym>White Bear</merged:synonym>
-    <merged:attributesA>species: Ursus maritimus, habitat: arctic, conservation_status: vulnerable</merged:attributesA>
-    <merged:attributesB>{'species': 'Ursus maritimus', 'environment': 'polar', 'status': 'vulnerable'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ursidae"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Tiger">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Tiger</rdfs:label>
-    <merged:sourceA_label>Tiger</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Tiger</merged:sourceA_uri>
-    <merged:sourceA_definition>Largest cat species with distinctive orange coat and black stripes</merged:sourceA_definition>
-    <merged:sourceB_label>Tiger Species</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TigerSpecies</merged:sourceB_uri>
-    <merged:sourceB_definition>Largest feline with orange fur and black striping pattern</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9519696235656738</merged:similarity_score>
-    <merged:synonym>Bengal Tiger</merged:synonym>
-    <merged:synonym>Panthera tigris</merged:synonym>
-    <merged:synonym>Striped Cat</merged:synonym>
-    <merged:synonym>Striped Predator</merged:synonym>
-    <merged:synonym>Tiger</merged:synonym>
-    <merged:attributesA>species: Panthera tigris, habitat: forest, conservation_status: endangered</merged:attributesA>
-    <merged:attributesB>{'species': 'Panthera tigris', 'environment': 'jungle', 'status': 'endangered'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Felidae"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Cetacean">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Cetacean</rdfs:label>
-    <merged:sourceA_label>Cetacean</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Cetacean</merged:sourceA_uri>
-    <merged:sourceA_definition>Aquatic mammal including whales, dolphins, and porpoises</merged:sourceA_definition>
-    <merged:sourceB_label>Marine Mammal</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/MarineMammal</merged:sourceB_uri>
-    <merged:sourceB_definition>Aquatic or semi-aquatic mammals including whales and dolphins</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9161049127578735</merged:similarity_score>
-    <merged:synonym>Cetacea</merged:synonym>
-    <merged:synonym>Cetacean</merged:synonym>
-    <merged:synonym>Marine Mammal</merged:synonym>
-    <merged:synonym>Sea Mammal</merged:synonym>
-    <merged:synonym>Whale</merged:synonym>
-    <merged:attributesA>order: Cetacea, habitat: marine</merged:attributesA>
-    <merged:attributesB>{'order': 'Cetacea', 'environment': 'aquatic'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mammal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Ursidae">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Ursidae</rdfs:label>
-    <merged:sourceA_label>Ursidae</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Ursidae</merged:sourceA_uri>
-    <merged:sourceA_definition>Family of large carnivorous or omnivorous mammals known as bears</merged:sourceA_definition>
-    <merged:sourceB_label>Bear Family</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/BearFamily</merged:sourceB_uri>
-    <merged:sourceB_definition>Large carnivorous or omnivorous mammals with heavy build</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8524945974349976</merged:similarity_score>
-    <merged:synonym>Bear Family</merged:synonym>
-    <merged:synonym>Bears</merged:synonym>
-    <merged:synonym>Ursidae</merged:synonym>
-    <merged:synonym>Ursine</merged:synonym>
-    <merged:attributesA>family: Ursidae</merged:attributesA>
-    <merged:attributesB>{'family': 'Ursidae'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Carnivore"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Spider">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Spider</rdfs:label>
-    <merged:sourceA_label>Spider</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Spider</merged:sourceA_uri>
-    <merged:sourceA_definition>Arachnid that spins webs to catch prey</merged:sourceA_definition>
-    <merged:sourceB_label>Web Spider</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/WebSpider</merged:sourceB_uri>
-    <merged:sourceB_definition>Arachnid producing silk webs for prey capture</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9241541624069214</merged:similarity_score>
-    <merged:synonym>Araneae</merged:synonym>
-    <merged:synonym>Araneus</merged:synonym>
-    <merged:synonym>Spider</merged:synonym>
-    <merged:synonym>Tarantula</merged:synonym>
-    <merged:synonym>Web-spinner</merged:synonym>
-    <merged:attributesA>order: Araneae, web: silk, venom: yes</merged:attributesA>
-    <merged:attributesB>{'order': 'Araneae', 'silk_production': 'yes', 'toxin': 'present'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Arachnid"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Salamander">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Salamander</rdfs:label>
-    <merged:sourceA_label>Salamander</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Salamander</merged:sourceA_uri>
-    <merged:sourceA_definition>Amphibian with elongated body and tail</merged:sourceA_definition>
-    <merged:sourceB_label>Tailed Newt</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TailedNewt</merged:sourceB_uri>
-    <merged:sourceB_definition>Amphibian with slender body and permanent tail</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9154001474380493</merged:similarity_score>
-    <merged:synonym>Caudata</merged:synonym>
-    <merged:synonym>Fire Salamander</merged:synonym>
-    <merged:synonym>Newt</merged:synonym>
-    <merged:synonym>Salamander</merged:synonym>
-    <merged:attributesA>order: Caudata, tail: present, body: elongated</merged:attributesA>
-    <merged:attributesB>{'order': 'Caudata', 'tail_adult': 'present', 'form': 'elongate'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Amphibian"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Shark">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Shark</rdfs:label>
-    <merged:sourceA_label>Shark</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Shark</merged:sourceA_uri>
-    <merged:sourceA_definition>Cartilaginous fish with multiple gill slits</merged:sourceA_definition>
-    <merged:sourceB_label>Predatory Shark</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/PredatoryShark</merged:sourceB_uri>
-    <merged:sourceB_definition>Cartilaginous fish with multiple rows of teeth</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9053242206573486</merged:similarity_score>
-    <merged:synonym>Apex Predator</merged:synonym>
-    <merged:synonym>Great White</merged:synonym>
-    <merged:synonym>Predatory Fish</merged:synonym>
-    <merged:synonym>Selachimorpha</merged:synonym>
-    <merged:synonym>Shark</merged:synonym>
-    <merged:attributesA>superorder: Selachimorpha, skeleton: cartilaginous, teeth: multiple_rows</merged:attributesA>
-    <merged:attributesB>{'superorder': 'Selachimorpha', 'skeleton_type': 'cartilage', 'dentition': 'replaceable_teeth'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Fish"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Swan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Swan</rdfs:label>
-    <merged:sourceA_label>Swan</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Swan</merged:sourceA_uri>
-    <merged:sourceA_definition>Large waterfowl with long neck and elegant appearance</merged:sourceA_definition>
-    <merged:sourceB_label>Graceful Swan</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/GracefulSwan</merged:sourceB_uri>
-    <merged:sourceB_definition>Large waterfowl known for elegant long neck</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9677115678787231</merged:similarity_score>
-    <merged:synonym>Black Swan</merged:synonym>
-    <merged:synonym>Cygnus</merged:synonym>
-    <merged:synonym>Cygnus olor</merged:synonym>
-    <merged:synonym>Mute Swan</merged:synonym>
-    <merged:synonym>Swan</merged:synonym>
-    <merged:synonym>Whooper Swan</merged:synonym>
-    <merged:attributesA>genus: Cygnus, size: large, neck: long</merged:attributesA>
-    <merged:attributesB>{'genus': 'Cygnus', 'body_size': 'large', 'neck_length': 'extended'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Waterfowl"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Leopard">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Leopard</rdfs:label>
-    <merged:sourceA_label>Leopard</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Leopard</merged:sourceA_uri>
-    <merged:sourceA_definition>Large cat with spotted coat found in Africa and Asia</merged:sourceA_definition>
-    <merged:sourceB_label>Spotted Leopard</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SpottedLeopard</merged:sourceB_uri>
-    <merged:sourceB_definition>Solitary big cat with rosette-patterned coat</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9195773601531982</merged:similarity_score>
-    <merged:synonym>Black Panther</merged:synonym>
-    <merged:synonym>Leopard</merged:synonym>
-    <merged:synonym>Panther</merged:synonym>
-    <merged:synonym>Panthera pardus</merged:synonym>
-    <merged:synonym>Spotted Cat</merged:synonym>
-    <merged:attributesA>species: Panthera pardus, habitat: various, conservation_status: vulnerable</merged:attributesA>
-    <merged:attributesB>{'species': 'Panthera pardus', 'environment': 'diverse', 'status': 'vulnerable'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Felidae"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Ray">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Ray</rdfs:label>
-    <merged:sourceA_label>Ray</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Ray</merged:sourceA_uri>
-    <merged:sourceA_definition>Cartilaginous fish with flattened body</merged:sourceA_definition>
-    <merged:sourceB_label>Flat Ray</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/FlatRay</merged:sourceB_uri>
-    <merged:sourceB_definition>Cartilaginous fish with dorsoventrally flattened body</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9779236316680908</merged:similarity_score>
-    <merged:synonym>Batoidea</merged:synonym>
-    <merged:synonym>Manta Ray</merged:synonym>
-    <merged:synonym>Rajiformes</merged:synonym>
-    <merged:synonym>Ray</merged:synonym>
-    <merged:synonym>Skate</merged:synonym>
-    <merged:synonym>Stingray</merged:synonym>
-    <merged:attributesA>order: Rajiformes, body_shape: flattened</merged:attributesA>
-    <merged:attributesB>{'superorder': 'Batoidea', 'morphology': 'dorsoventrally_flat'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Fish"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Tuna">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Tuna</rdfs:label>
-    <merged:sourceA_label>Tuna</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Tuna</merged:sourceA_uri>
-    <merged:sourceA_definition>Large fast-swimming marine fish</merged:sourceA_definition>
-    <merged:sourceB_label>Swift Tuna</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SwiftTuna</merged:sourceB_uri>
-    <merged:sourceB_definition>Large pelagic fish known for speed and endurance</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9171943068504333</merged:similarity_score>
-    <merged:synonym>Bluefin</merged:synonym>
-    <merged:synonym>Bluefin Tuna</merged:synonym>
-    <merged:synonym>Thunnus</merged:synonym>
-    <merged:synonym>Tuna</merged:synonym>
-    <merged:synonym>Yellowfin Tuna</merged:synonym>
-    <merged:attributesA>genus: Thunnus, speed: fast, habitat: pelagic</merged:attributesA>
-    <merged:attributesB>{'genus': 'Thunnus', 'velocity': 'rapid', 'zone': 'open_ocean'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Fish"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Orangutan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Orangutan</rdfs:label>
-    <merged:sourceA_label>Orangutan</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Orangutan</merged:sourceA_uri>
-    <merged:sourceA_definition>Large arboreal ape with reddish-brown hair native to Indonesia</merged:sourceA_definition>
-    <merged:sourceB_label>Bornean Orangutan</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/BorneanOrangutan</merged:sourceB_uri>
-    <merged:sourceB_definition>Large reddish arboreal ape from Southeast Asia</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9379526972770691</merged:similarity_score>
-    <merged:synonym>Forest Man</merged:synonym>
-    <merged:synonym>Man of the Forest</merged:synonym>
-    <merged:synonym>Orangutan</merged:synonym>
-    <merged:synonym>Pongo</merged:synonym>
-    <merged:synonym>Pongo pygmaeus</merged:synonym>
-    <merged:synonym>Red Ape</merged:synonym>
-    <merged:attributesA>genus: Pongo, habitat: rainforest, conservation_status: critically_endangered</merged:attributesA>
-    <merged:attributesB>{'species': 'Pongo pygmaeus', 'environment': 'tropical_rainforest', 'status': 'critically_endangered'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ape"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Beetle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Beetle</rdfs:label>
-    <merged:sourceA_label>Beetle</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Beetle</merged:sourceA_uri>
-    <merged:sourceA_definition>Insect with hardened front wings forming protective cover</merged:sourceA_definition>
-    <merged:sourceB_label>Hardwing Beetle</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/HardwingBeetle</merged:sourceB_uri>
-    <merged:sourceB_definition>Insect with hardened forewings protecting membranous hindwings</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.855646014213562</merged:similarity_score>
-    <merged:synonym>Beetle</merged:synonym>
-    <merged:synonym>Bug</merged:synonym>
-    <merged:synonym>Coleoptera</merged:synonym>
-    <merged:synonym>Ladybug</merged:synonym>
-    <merged:synonym>Scarab</merged:synonym>
-    <merged:attributesA>order: Coleoptera, wings: hardened_front</merged:attributesA>
-    <merged:attributesB>{'order': 'Coleoptera', 'forewing': 'sclerotized'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Insect"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Waterfowl">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Waterfowl</rdfs:label>
-    <merged:sourceA_label>Waterfowl</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Waterfowl</merged:sourceA_uri>
-    <merged:sourceA_definition>Bird that lives on or near water</merged:sourceA_definition>
-    <merged:sourceB_label>Aquatic Bird</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AquaticBird</merged:sourceB_uri>
-    <merged:sourceB_definition>Bird species living in or near water environments</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9093246459960938</merged:similarity_score>
-    <merged:synonym>Anseriformes</merged:synonym>
-    <merged:synonym>Aquatic Bird</merged:synonym>
-    <merged:synonym>Swimming Bird</merged:synonym>
-    <merged:synonym>Water Bird</merged:synonym>
-    <merged:synonym>Waterfowl</merged:synonym>
-    <merged:attributesA>habitat: aquatic</merged:attributesA>
-    <merged:attributesB>{'environment': 'water'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Bird"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Crocodile">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Crocodile</rdfs:label>
-    <merged:sourceA_label>Crocodile</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Crocodile</merged:sourceA_uri>
-    <merged:sourceA_definition>Large aquatic reptile with powerful jaws and armored skin</merged:sourceA_definition>
-    <merged:sourceB_label>Large Crocodile</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/LargeCrocodile</merged:sourceB_uri>
-    <merged:sourceB_definition>Massive semi-aquatic reptile with powerful bite</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9409694075584412</merged:similarity_score>
-    <merged:synonym>Croc</merged:synonym>
-    <merged:synonym>Crocodile</merged:synonym>
-    <merged:synonym>Crocodylus</merged:synonym>
-    <merged:synonym>Nile Crocodile</merged:synonym>
-    <merged:synonym>Saltwater Crocodile</merged:synonym>
-    <merged:attributesA>genus: Crocodylus, habitat: aquatic, size: large</merged:attributesA>
-    <merged:attributesB>{'genus': 'Crocodylus', 'lifestyle': 'semi_aquatic', 'body_size': 'massive'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Reptile"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/RaptorBird">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Raptor</rdfs:label>
-    <merged:sourceA_label>Raptor</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/RaptorBird</merged:sourceA_uri>
-    <merged:sourceA_definition>Bird of prey with strong talons and keen eyesight</merged:sourceA_definition>
-    <merged:sourceB_label>Bird of Prey</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/BirdOfPrey</merged:sourceB_uri>
-    <merged:sourceB_definition>Predatory bird with sharp talons and hooked beak</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9030573964118958</merged:similarity_score>
-    <merged:synonym>Bird of Prey</merged:synonym>
-    <merged:synonym>Hunter Bird</merged:synonym>
-    <merged:synonym>Predatory Avian</merged:synonym>
-    <merged:synonym>Predatory Bird</merged:synonym>
-    <merged:synonym>Raptor</merged:synonym>
-    <merged:attributesA>diet: carnivorous, vision: excellent</merged:attributesA>
-    <merged:attributesB>{'feeding': 'carnivorous', 'eyesight': 'exceptional'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Bird"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Cobra">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label>Cobra</rdfs:label>
@@ -345,467 +21,6 @@
     <merged:synonym>Naja naja</merged:synonym>
     <merged:attributesA>genus: Naja, venom: yes, defensive_display: hood</merged:attributesA>
     <merged:attributesB>{'genus': 'Naja', 'toxin': 'present', 'threat_display': 'hood_expansion'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Snake"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Duck">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Duck</rdfs:label>
-    <merged:sourceA_label>Duck</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Duck</merged:sourceA_uri>
-    <merged:sourceA_definition>Waterfowl with webbed feet and broad flat beak</merged:sourceA_definition>
-    <merged:sourceB_label>Wild Duck</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/WildDuck</merged:sourceB_uri>
-    <merged:sourceB_definition>Waterfowl with webbed feet and waterproof plumage</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9440187215805054</merged:similarity_score>
-    <merged:synonym>Anas</merged:synonym>
-    <merged:synonym>Anas platyrhynchos</merged:synonym>
-    <merged:synonym>Domestic Duck</merged:synonym>
-    <merged:synonym>Duck</merged:synonym>
-    <merged:synonym>Mallard</merged:synonym>
-    <merged:synonym>Mallard Duck</merged:synonym>
-    <merged:attributesA>family: Anatidae, feet: webbed</merged:attributesA>
-    <merged:attributesB>{'family': 'Anatidae', 'foot_structure': 'webbed'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Waterfowl"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Salmon">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Salmon</rdfs:label>
-    <merged:sourceA_label>Salmon</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Salmon</merged:sourceA_uri>
-    <merged:sourceA_definition>Migratory fish that spawns in freshwater</merged:sourceA_definition>
-    <merged:sourceB_label>Migrating Salmon</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/MigratingSalmon</merged:sourceB_uri>
-    <merged:sourceB_definition>Anadromous fish that returns to freshwater to reproduce</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9346178770065308</merged:similarity_score>
-    <merged:synonym>Atlantic Salmon</merged:synonym>
-    <merged:synonym>Pacific Salmon</merged:synonym>
-    <merged:synonym>Salmo</merged:synonym>
-    <merged:synonym>Salmo salar</merged:synonym>
-    <merged:synonym>Salmon</merged:synonym>
-    <merged:attributesA>genus: Salmo, migration: anadromous, habitat: freshwater_marine</merged:attributesA>
-    <merged:attributesB>{'species': 'Salmo salar', 'life_cycle': 'anadromous', 'spawning': 'freshwater'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Fish"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Reptile">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Reptile</rdfs:label>
-    <merged:sourceA_label>Reptile</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Reptile</merged:sourceA_uri>
-    <merged:sourceA_definition>Cold-blooded vertebrate with scales or scutes</merged:sourceA_definition>
-    <merged:sourceB_label>Reptilian Class</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ReptilianClass</merged:sourceB_uri>
-    <merged:sourceB_definition>Cold-blooded vertebrate covered with scales or plates</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9020708203315735</merged:similarity_score>
-    <merged:synonym>Reptile</merged:synonym>
-    <merged:synonym>Reptilia</merged:synonym>
-    <merged:synonym>Reptilian</merged:synonym>
-    <merged:synonym>Scaled Vertebrate</merged:synonym>
-    <merged:attributesA>class: Reptilia, body_temperature: cold-blooded, body_covering: scales</merged:attributesA>
-    <merged:attributesB>{'class': 'Reptilia', 'thermoregulation': 'ectothermic', 'skin': 'scaly'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Animal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Animal</rdfs:label>
-    <merged:sourceA_label>Animal</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Animal</merged:sourceA_uri>
-    <merged:sourceA_definition>A living organism that feeds on organic matter, typically having specialized sense organs and nervous system</merged:sourceA_definition>
-    <merged:sourceB_label>Animal Organism</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AnimalOrganism</merged:sourceB_uri>
-    <merged:sourceB_definition>Living creature that consumes organic material and typically has mobility and sensory capabilities</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8988699913024902</merged:similarity_score>
-    <merged:synonym>Animalia</merged:synonym>
-    <merged:synonym>Beast</merged:synonym>
-    <merged:synonym>Creature</merged:synonym>
-    <merged:synonym>Fauna</merged:synonym>
-    <merged:synonym>Living Animal</merged:synonym>
-    <merged:synonym>Metazoa</merged:synonym>
-    <merged:attributesA>kingdom: Animalia, type: root_class</merged:attributesA>
-    <merged:attributesB>{'kingdom': 'Animalia', 'type': 'base_class'}</merged:attributesB>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Amphibian">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Amphibian</rdfs:label>
-    <merged:sourceA_label>Amphibian</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Amphibian</merged:sourceA_uri>
-    <merged:sourceA_definition>Cold-blooded vertebrate with aquatic larvae and terrestrial adult</merged:sourceA_definition>
-    <merged:sourceB_label>Amphibious Animal</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AmphibiousAnimal</merged:sourceB_uri>
-    <merged:sourceB_definition>Cold-blooded vertebrate living both in water and on land</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8741782903671265</merged:similarity_score>
-    <merged:synonym>Amphibia</merged:synonym>
-    <merged:synonym>Amphibian</merged:synonym>
-    <merged:synonym>Amphibious Animal</merged:synonym>
-    <merged:synonym>Dual-habitat Animal</merged:synonym>
-    <merged:attributesA>class: Amphibia, lifecycle: metamorphosis, skin: permeable</merged:attributesA>
-    <merged:attributesB>{'class': 'Amphibia', 'development': 'metamorphic', 'skin_type': 'moist'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Frog">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Frog</rdfs:label>
-    <merged:sourceA_label>Frog</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Frog</merged:sourceA_uri>
-    <merged:sourceA_definition>Tailless amphibian with long hind legs for jumping</merged:sourceA_definition>
-    <merged:sourceB_label>Leaping Frog</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/LeapingFrog</merged:sourceB_uri>
-    <merged:sourceB_definition>Tailless amphibian with powerful jumping legs</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9726971387863159</merged:similarity_score>
-    <merged:synonym>Anura</merged:synonym>
-    <merged:synonym>Frog</merged:synonym>
-    <merged:synonym>Ranidae</merged:synonym>
-    <merged:synonym>Toad</merged:synonym>
-    <merged:synonym>Tree Frog</merged:synonym>
-    <merged:attributesA>order: Anura, tail: absent, locomotion: jumping</merged:attributesA>
-    <merged:attributesB>{'order': 'Anura', 'tail_adult': 'none', 'movement': 'leaping'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Amphibian"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Cheetah">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Cheetah</rdfs:label>
-    <merged:sourceA_label>Cheetah</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Cheetah</merged:sourceA_uri>
-    <merged:sourceA_definition>Fastest land animal with distinctive black tear marks</merged:sourceA_definition>
-    <merged:sourceB_label>Fast Cheetah</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/FastCheetah</merged:sourceB_uri>
-    <merged:sourceB_definition>Speediest terrestrial animal with characteristic tear streaks</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9231740236282349</merged:similarity_score>
-    <merged:synonym>Acinonyx jubatus</merged:synonym>
-    <merged:synonym>Cheetah</merged:synonym>
-    <merged:synonym>Hunting Leopard</merged:synonym>
-    <merged:synonym>Speed Cat</merged:synonym>
-    <merged:synonym>Sprint Cat</merged:synonym>
-    <merged:attributesA>species: Acinonyx jubatus, habitat: grassland, max_speed: 120 km/h</merged:attributesA>
-    <merged:attributesB>{'species': 'Acinonyx jubatus', 'environment': 'open_plains', 'velocity': '120 km/h'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Felidae"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Invertebrate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Invertebrate</rdfs:label>
-    <merged:sourceA_label>Invertebrate</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Invertebrate</merged:sourceA_uri>
-    <merged:sourceA_definition>Animal without backbone or vertebral column</merged:sourceA_definition>
-    <merged:sourceB_label>Spineless</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/Spineless</merged:sourceB_uri>
-    <merged:sourceB_definition>Animal lacking vertebral column or internal skeleton</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8972427845001221</merged:similarity_score>
-    <merged:synonym>Backboneless</merged:synonym>
-    <merged:synonym>Invertebrate</merged:synonym>
-    <merged:synonym>Non-vertebrate</merged:synonym>
-    <merged:synonym>Spineless Animal</merged:synonym>
-    <merged:attributesA>vertebral_column: absent</merged:attributesA>
-    <merged:attributesB>{'backbone': 'none'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Mammal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Mammal</rdfs:label>
-    <merged:sourceA_label>Mammal</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Mammal</merged:sourceA_uri>
-    <merged:sourceA_definition>Warm-blooded vertebrate animal characterized by hair or fur and mammary glands</merged:sourceA_definition>
-    <merged:sourceB_label>Mammalian</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/Mammalian</merged:sourceB_uri>
-    <merged:sourceB_definition>Endothermic vertebrate distinguished by fur, mammary glands, and live birth</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8766601085662842</merged:similarity_score>
-    <merged:synonym>Mammal Class</merged:synonym>
-    <merged:synonym>Mammalia</merged:synonym>
-    <merged:synonym>Mammalian</merged:synonym>
-    <merged:synonym>Warm-blooded Animal</merged:synonym>
-    <merged:attributesA>class: Mammalia, body_temperature: warm-blooded, reproduction: viviparous</merged:attributesA>
-    <merged:attributesB>{'class': 'Mammalia', 'temperature_regulation': 'endothermic', 'offspring': 'live_birth'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Squid">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Squid</rdfs:label>
-    <merged:sourceA_label>Squid</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Squid</merged:sourceA_uri>
-    <merged:sourceA_definition>Marine cephalopod with ten arms and torpedo-shaped body</merged:sourceA_definition>
-    <merged:sourceB_label>Ten-Armed Squid</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TenArmedSquid</merged:sourceB_uri>
-    <merged:sourceB_definition>Marine cephalopod with elongated body and ten appendages</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9517840147018433</merged:similarity_score>
-    <merged:synonym>Calamari</merged:synonym>
-    <merged:synonym>Flying Squid</merged:synonym>
-    <merged:synonym>Giant Squid</merged:synonym>
-    <merged:synonym>Squid</merged:synonym>
-    <merged:synonym>Teuthida</merged:synonym>
-    <merged:attributesA>order: Teuthida, arms: ten, body_shape: torpedo</merged:attributesA>
-    <merged:attributesB>{'order': 'Teuthida', 'tentacles': 'ten', 'body_type': 'streamlined'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mollusk"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Fish">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Fish</rdfs:label>
-    <merged:sourceA_label>Fish</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Fish</merged:sourceA_uri>
-    <merged:sourceA_definition>Aquatic vertebrate with gills and fins</merged:sourceA_definition>
-    <merged:sourceB_label>Aquatic Vertebrate</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AquaticVertebrate</merged:sourceB_uri>
-    <merged:sourceB_definition>Water-dwelling vertebrate with gills and fins for swimming</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9475889205932617</merged:similarity_score>
-    <merged:synonym>Aquatic Vertebrate</merged:synonym>
-    <merged:synonym>Finned Animal</merged:synonym>
-    <merged:synonym>Fish</merged:synonym>
-    <merged:synonym>Pisces</merged:synonym>
-    <merged:attributesA>habitat: aquatic, respiration: gills, locomotion: fins</merged:attributesA>
-    <merged:attributesB>{'environment': 'water', 'breathing': 'gills', 'movement': 'fins'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Parrot">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Parrot</rdfs:label>
-    <merged:sourceA_label>Parrot</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Parrot</merged:sourceA_uri>
-    <merged:sourceA_definition>Colorful bird with curved beak and ability to mimic sounds</merged:sourceA_definition>
-    <merged:sourceB_label>Talking Parrot</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TalkingParrot</merged:sourceB_uri>
-    <merged:sourceB_definition>Colorful bird capable of vocal mimicry</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9327976107597351</merged:similarity_score>
-    <merged:synonym>Ara</merged:synonym>
-    <merged:synonym>Cockatoo</merged:synonym>
-    <merged:synonym>Macaw</merged:synonym>
-    <merged:synonym>Parrot</merged:synonym>
-    <merged:synonym>Psittaciformes</merged:synonym>
-    <merged:synonym>Psittacus</merged:synonym>
-    <merged:attributesA>order: Psittaciformes, intelligence: high, vocalization: mimicry</merged:attributesA>
-    <merged:attributesB>{'order': 'Psittaciformes', 'cognition': 'advanced', 'vocal_ability': 'imitation'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Bird"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Wolf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Wolf</rdfs:label>
-    <merged:sourceA_label>Wolf</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Wolf</merged:sourceA_uri>
-    <merged:sourceA_definition>Large canine native to wilderness areas</merged:sourceA_definition>
-    <merged:sourceB_label>Domestic Dog</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/DomesticDog</merged:sourceB_uri>
-    <merged:sourceB_definition>Tamed canine descended from wolves, human companion</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8704805374145508</merged:similarity_score>
-    <merged:synonym>Canis familiaris</merged:synonym>
-    <merged:synonym>Canis lupus</merged:synonym>
-    <merged:synonym>Dog</merged:synonym>
-    <merged:synonym>Gray Wolf</merged:synonym>
-    <merged:synonym>Pet Dog</merged:synonym>
-    <merged:synonym>Timber Wolf</merged:synonym>
-    <merged:attributesA>species: Canis lupus, habitat: forest, social: pack animal</merged:attributesA>
-    <merged:attributesB>{'species': 'Canis familiaris', 'environment': 'domestic', 'domestication': 'yes'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Canidae"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/BrownBear">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Brown Bear</rdfs:label>
-    <merged:sourceA_label>Brown Bear</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/BrownBear</merged:sourceA_uri>
-    <merged:sourceA_definition>Large bear species found across North America and Eurasia</merged:sourceA_definition>
-    <merged:sourceB_label>Grizzly Bear</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/GrizzlyBear</merged:sourceB_uri>
-    <merged:sourceB_definition>Large brown bear inhabiting North America and Eurasia</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9503365755081177</merged:similarity_score>
-    <merged:synonym>Brown Bear</merged:synonym>
-    <merged:synonym>Grizzly Bear</merged:synonym>
-    <merged:synonym>Kodiak</merged:synonym>
-    <merged:synonym>Kodiak Bear</merged:synonym>
-    <merged:synonym>Ursus arctos</merged:synonym>
-    <merged:attributesA>species: Ursus arctos, habitat: forest, size: large</merged:attributesA>
-    <merged:attributesB>{'species': 'Ursus arctos', 'environment': 'temperate_forest', 'mass': 'large'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ursidae"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Mollusk">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Mollusk</rdfs:label>
-    <merged:sourceA_label>Mollusk</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Mollusk</merged:sourceA_uri>
-    <merged:sourceA_definition>Soft-bodied invertebrate often with shell</merged:sourceA_definition>
-    <merged:sourceB_label>Soft-Body Mollusk</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SoftBodyMollusk</merged:sourceB_uri>
-    <merged:sourceB_definition>Invertebrate with soft unsegmented body, often with shell</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9675750732421875</merged:similarity_score>
-    <merged:synonym>Mollusca</merged:synonym>
-    <merged:synonym>Mollusk</merged:synonym>
-    <merged:synonym>Shellfish</merged:synonym>
-    <merged:attributesA>phylum: Mollusca, body: soft</merged:attributesA>
-    <merged:attributesB>{'phylum': 'Mollusca', 'body_texture': 'soft'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Invertebrate"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Rat">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Rat</rdfs:label>
-    <merged:sourceA_label>Rat</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Rat</merged:sourceA_uri>
-    <merged:sourceA_definition>Medium-sized rodent with long tail</merged:sourceA_definition>
-    <merged:sourceB_label>Large Rat</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/LargeRat</merged:sourceB_uri>
-    <merged:sourceB_definition>Medium-sized rodent with robust body and scaly tail</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9418372511863708</merged:similarity_score>
-    <merged:synonym>Brown Rat</merged:synonym>
-    <merged:synonym>Norway Rat</merged:synonym>
-    <merged:synonym>Rat</merged:synonym>
-    <merged:synonym>Rattus</merged:synonym>
-    <merged:synonym>Rattus norvegicus</merged:synonym>
-    <merged:synonym>Sewer Rat</merged:synonym>
-    <merged:attributesA>genus: Rattus, size: medium</merged:attributesA>
-    <merged:attributesB>{'species': 'Rattus norvegicus', 'body_size': 'moderate'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Rodent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Squirrel">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Squirrel</rdfs:label>
-    <merged:sourceA_label>Squirrel</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Squirrel</merged:sourceA_uri>
-    <merged:sourceA_definition>Arboreal rodent with bushy tail</merged:sourceA_definition>
-    <merged:sourceB_label>Tree Squirrel</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TreeSquirrel</merged:sourceB_uri>
-    <merged:sourceB_definition>Bushy-tailed arboreal rodent with climbing abilities</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9340881109237671</merged:similarity_score>
-    <merged:synonym>Ground Squirrel</merged:synonym>
-    <merged:synonym>Red Squirrel</merged:synonym>
-    <merged:synonym>Sciurus</merged:synonym>
-    <merged:synonym>Sciurus vulgaris</merged:synonym>
-    <merged:synonym>Squirrel</merged:synonym>
-    <merged:synonym>Tree Squirrel</merged:synonym>
-    <merged:attributesA>family: Sciuridae, habitat: trees</merged:attributesA>
-    <merged:attributesB>{'family': 'Sciuridae', 'lifestyle': 'arboreal'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Rodent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Octopus">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Octopus</rdfs:label>
-    <merged:sourceA_label>Octopus</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Octopus</merged:sourceA_uri>
-    <merged:sourceA_definition>Eight-armed marine mollusk with high intelligence</merged:sourceA_definition>
-    <merged:sourceB_label>Eight-Armed Octopus</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/EightArmedOctopus</merged:sourceB_uri>
-    <merged:sourceB_definition>Marine cephalopod with eight flexible tentacles</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.892403244972229</merged:similarity_score>
-    <merged:synonym>Cuttlefish</merged:synonym>
-    <merged:synonym>Devilfish</merged:synonym>
-    <merged:synonym>Eight-armed Cephalopod</merged:synonym>
-    <merged:synonym>Octopoda</merged:synonym>
-    <merged:synonym>Octopus</merged:synonym>
-    <merged:attributesA>order: Octopoda, arms: eight, intelligence: high</merged:attributesA>
-    <merged:attributesB>{'order': 'Octopoda', 'tentacles': 'eight', 'cognition': 'advanced'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mollusk"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lizard">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Lizard</rdfs:label>
-    <merged:sourceA_label>Lizard</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Lizard</merged:sourceA_uri>
-    <merged:sourceA_definition>Reptile with four legs, external ear openings, and movable eyelids</merged:sourceA_definition>
-    <merged:sourceB_label>Scaled Lizard</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ScaledLizard</merged:sourceB_uri>
-    <merged:sourceB_definition>Four-limbed reptile with movable eyelids</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9302976727485657</merged:similarity_score>
-    <merged:synonym>Lacerta</merged:synonym>
-    <merged:synonym>Lacertilia</merged:synonym>
-    <merged:synonym>Lizard</merged:synonym>
-    <merged:synonym>Saurian</merged:synonym>
-    <merged:attributesA>suborder: Lacertilia, limbs: four</merged:attributesA>
-    <merged:attributesB>{'suborder': 'Lacertilia', 'legs': 'four'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Reptile"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Whale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Whale</rdfs:label>
-    <merged:sourceA_label>Whale</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Whale</merged:sourceA_uri>
-    <merged:sourceA_definition>Large marine mammal with streamlined body</merged:sourceA_definition>
-    <merged:sourceB_label>Marine Mammal</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/MarineMammal</merged:sourceB_uri>
-    <merged:sourceB_definition>Aquatic or semi-aquatic mammals including whales and dolphins</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8819745779037476</merged:similarity_score>
-    <merged:synonym>Balaenopteridae</merged:synonym>
-    <merged:synonym>Blue Whale</merged:synonym>
-    <merged:synonym>Cetacea</merged:synonym>
-    <merged:synonym>Cetacean</merged:synonym>
-    <merged:synonym>Humpback Whale</merged:synonym>
-    <merged:synonym>Sea Mammal</merged:synonym>
-    <merged:attributesA>size: very_large, habitat: ocean</merged:attributesA>
-    <merged:attributesB>{'order': 'Cetacea', 'environment': 'aquatic'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Cetacean"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Primate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Primate</rdfs:label>
-    <merged:sourceA_label>Primate</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Primate</merged:sourceA_uri>
-    <merged:sourceA_definition>Mammal of an order that includes monkeys, apes, and humans</merged:sourceA_definition>
-    <merged:sourceB_label>Primate Order</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/PrimateOrder</merged:sourceB_uri>
-    <merged:sourceB_definition>Mammals including apes, monkeys, lemurs, and humans</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9389787912368774</merged:similarity_score>
-    <merged:synonym>Primate</merged:synonym>
-    <merged:synonym>Primates</merged:synonym>
-    <merged:synonym>Simian</merged:synonym>
-    <merged:synonym>Simians</merged:synonym>
-    <merged:attributesA>order: Primates</merged:attributesA>
-    <merged:attributesB>{'order': 'Primates'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mammal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lion/Leo">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Lion"/>
-    <rdfs:label>Leo</rdfs:label>
-    <rdfs:comment>Male African lion in Kruger National Park</rdfs:comment>
-    <merged:source>B</merged:source>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Felidae">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Felidae</rdfs:label>
-    <merged:sourceA_label>Felidae</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Felidae</merged:sourceA_uri>
-    <merged:sourceA_definition>Family of carnivorous mammals commonly known as cats</merged:sourceA_definition>
-    <merged:sourceB_label>Felid Family</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/FelidFamily</merged:sourceB_uri>
-    <merged:sourceB_definition>Carnivorous mammals of the cat family with retractable claws</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.906105637550354</merged:similarity_score>
-    <merged:synonym>Cat</merged:synonym>
-    <merged:synonym>Cat Family</merged:synonym>
-    <merged:synonym>Cats</merged:synonym>
-    <merged:synonym>Felidae Family</merged:synonym>
-    <merged:synonym>Feline</merged:synonym>
-    <merged:synonym>Felines</merged:synonym>
-    <merged:attributesA>family: Felidae, characteristics: retractable_claws</merged:attributesA>
-    <merged:attributesB>{'family': 'Felidae', 'claw_type': 'retractable'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Carnivore"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Bee">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Bee</rdfs:label>
-    <merged:sourceA_label>Bee</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Bee</merged:sourceA_uri>
-    <merged:sourceA_definition>Flying insect known for pollination and honey production</merged:sourceA_definition>
-    <merged:sourceB_label>Honey Bee</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/HoneyBee</merged:sourceB_uri>
-    <merged:sourceB_definition>Social flying insect that produces honey and pollinates</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9501091241836548</merged:similarity_score>
-    <merged:synonym>Apis</merged:synonym>
-    <merged:synonym>Apis mellifera</merged:synonym>
-    <merged:synonym>Bee</merged:synonym>
-    <merged:synonym>Bumblebee</merged:synonym>
-    <merged:synonym>Honeybee</merged:synonym>
-    <merged:synonym>Worker Bee</merged:synonym>
-    <merged:attributesA>genus: Apis, social: colonial, role: pollinator</merged:attributesA>
-    <merged:attributesB>{'species': 'Apis mellifera', 'organization': 'eusocial', 'function': 'pollination'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Insect"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Python">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Python</rdfs:label>
-    <merged:sourceA_label>Python</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Python</merged:sourceA_uri>
-    <merged:sourceA_definition>Large constricting snake found in Africa, Asia, and Australia</merged:sourceA_definition>
-    <merged:sourceB_label>Constrictor Snake</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ConstrictorSnake</merged:sourceB_uri>
-    <merged:sourceB_definition>Large non-venomous snake that kills by constriction</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8544672727584839</merged:similarity_score>
-    <merged:synonym>Ball Python</merged:synonym>
-    <merged:synonym>Boa</merged:synonym>
-    <merged:synonym>Python</merged:synonym>
-    <merged:synonym>Pythonidae</merged:synonym>
-    <merged:synonym>Reticulated Python</merged:synonym>
-    <merged:attributesA>family: Pythonidae, hunting_method: constriction</merged:attributesA>
-    <merged:attributesB>{'family': 'Pythonidae', 'killing_method': 'constriction'}</merged:attributesB>
     <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Snake"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dog">
@@ -827,175 +42,61 @@
     <merged:attributesB>{'species': 'Canis familiaris', 'environment': 'domestic', 'domestication': 'yes'}</merged:attributesB>
     <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Canidae"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Wolf/Max">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Wolf"/>
-    <rdfs:label>Max</rdfs:label>
-    <rdfs:comment>Labrador Retriever companion dog</rdfs:comment>
-    <merged:source>B</merged:source>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Gorilla">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Ursidae">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Gorilla</rdfs:label>
-    <merged:sourceA_label>Gorilla</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Gorilla</merged:sourceA_uri>
-    <merged:sourceA_definition>Largest living primate native to African forests</merged:sourceA_definition>
-    <merged:sourceB_label>Mountain Gorilla</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/MountainGorilla</merged:sourceB_uri>
-    <merged:sourceB_definition>Largest primate species inhabiting African mountain forests</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9618736505508423</merged:similarity_score>
-    <merged:synonym>Gorilla</merged:synonym>
-    <merged:synonym>Gorilla beringei</merged:synonym>
-    <merged:synonym>Gorilla gorilla</merged:synonym>
-    <merged:synonym>Mountain Gorilla</merged:synonym>
-    <merged:synonym>Silverback</merged:synonym>
-    <merged:synonym>Silverback Gorilla</merged:synonym>
-    <merged:attributesA>genus: Gorilla, habitat: forest, conservation_status: endangered</merged:attributesA>
-    <merged:attributesB>{'species': 'Gorilla beringei', 'environment': 'mountain_forest', 'status': 'endangered'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ape"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dolphin/Flipper">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Dolphin"/>
-    <rdfs:label>Flipper</rdfs:label>
-    <rdfs:comment>Bottlenose dolphin in marine park</rdfs:comment>
-    <merged:source>A</merged:source>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Ant">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Ant</rdfs:label>
-    <merged:sourceA_label>Ant</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Ant</merged:sourceA_uri>
-    <merged:sourceA_definition>Social insect living in organized colonies</merged:sourceA_definition>
-    <merged:sourceB_label>Colony Ant</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ColonyAnt</merged:sourceB_uri>
-    <merged:sourceB_definition>Eusocial insect living in structured colonies</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.919672966003418</merged:similarity_score>
-    <merged:synonym>Ant</merged:synonym>
-    <merged:synonym>Army Ant</merged:synonym>
-    <merged:synonym>Fire Ant</merged:synonym>
-    <merged:synonym>Formicidae</merged:synonym>
-    <merged:synonym>Worker Ant</merged:synonym>
-    <merged:attributesA>family: Formicidae, social: eusocial, colony: organized</merged:attributesA>
-    <merged:attributesB>{'family': 'Formicidae', 'organization': 'colonial', 'structure': 'hierarchical'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Insect"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/SeaTurtle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Sea Turtle</rdfs:label>
-    <merged:sourceA_label>Sea Turtle</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/SeaTurtle</merged:sourceA_uri>
-    <merged:sourceA_definition>Marine turtle with flippers adapted for swimming</merged:sourceA_definition>
-    <merged:sourceB_label>Ocean Turtle</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/OceanTurtle</merged:sourceB_uri>
-    <merged:sourceB_definition>Marine reptile with paddle-like flippers</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9365801215171814</merged:similarity_score>
-    <merged:synonym>Chelonioidea</merged:synonym>
-    <merged:synonym>Green Turtle</merged:synonym>
-    <merged:synonym>Loggerhead</merged:synonym>
-    <merged:synonym>Marine Turtle</merged:synonym>
-    <merged:synonym>Sea Turtle</merged:synonym>
-    <merged:attributesA>superfamily: Chelonioidea, habitat: marine, limbs: flippers</merged:attributesA>
-    <merged:attributesB>{'superfamily': 'Chelonioidea', 'environment': 'oceanic', 'appendages': 'paddle_flippers'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Turtle"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Chameleon">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Chameleon</rdfs:label>
-    <merged:sourceA_label>Chameleon</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Chameleon</merged:sourceA_uri>
-    <merged:sourceA_definition>Lizard with ability to change color and independently moving eyes</merged:sourceA_definition>
-    <merged:sourceB_label>Color-Changing Lizard</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ColorChangingLizard</merged:sourceB_uri>
-    <merged:sourceB_definition>Lizard with color-changing skin and rotating eyes</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9345343708992004</merged:similarity_score>
-    <merged:synonym>Chamaeleo</merged:synonym>
-    <merged:synonym>Chamaeleonidae</merged:synonym>
-    <merged:synonym>Chameleon</merged:synonym>
-    <merged:synonym>Color-changing Lizard</merged:synonym>
-    <merged:synonym>Tree Lizard</merged:synonym>
-    <merged:attributesA>family: Chamaeleonidae, color_change: yes, eyes: independently_mobile</merged:attributesA>
-    <merged:attributesB>{'family': 'Chamaeleonidae', 'camouflage': 'active', 'vision': 'independent_eyes'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Lizard"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Penguin">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Penguin</rdfs:label>
-    <merged:sourceA_label>Penguin</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Penguin</merged:sourceA_uri>
-    <merged:sourceA_definition>Flightless aquatic bird native to Southern Hemisphere</merged:sourceA_definition>
-    <merged:sourceB_label>Flightless Penguin</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/FlightlessPenguin</merged:sourceB_uri>
-    <merged:sourceB_definition>Aquatic bird adapted for swimming in cold waters</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9056763648986816</merged:similarity_score>
-    <merged:synonym>Antarctic Bird</merged:synonym>
-    <merged:synonym>Emperor Penguin</merged:synonym>
-    <merged:synonym>King Penguin</merged:synonym>
-    <merged:synonym>Penguin</merged:synonym>
-    <merged:synonym>Spheniscidae</merged:synonym>
-    <merged:attributesA>family: Spheniscidae, flight: flightless, habitat: antarctic</merged:attributesA>
-    <merged:attributesB>{'family': 'Spheniscidae', 'flying_ability': 'none', 'environment': 'polar'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Bird"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dolphin">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Dolphin</rdfs:label>
-    <merged:sourceA_label>Dolphin</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Dolphin</merged:sourceA_uri>
-    <merged:sourceA_definition>Highly intelligent marine mammal with streamlined body</merged:sourceA_definition>
-    <merged:sourceB_label>Bottlenose Dolphin</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/BottlenoseDolphin</merged:sourceB_uri>
-    <merged:sourceB_definition>Smart marine mammal with distinctive bottle-shaped snout</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.880119800567627</merged:similarity_score>
-    <merged:synonym>Bottlenose Dolphin</merged:synonym>
-    <merged:synonym>Common Dolphin</merged:synonym>
-    <merged:synonym>Delphinidae</merged:synonym>
-    <merged:synonym>Dolphin</merged:synonym>
-    <merged:synonym>Porpoise</merged:synonym>
-    <merged:synonym>Tursiops</merged:synonym>
-    <merged:attributesA>family: Delphinidae, intelligence: high, echolocation: yes</merged:attributesA>
-    <merged:attributesB>{'genus': 'Tursiops', 'cognition': 'advanced', 'sonar': 'present'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Cetacean"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <rdfs:label>Merged Animal Ontology</rdfs:label>
-    <rdfs:comment>Ontologie fusionnée générée à partir de /Users/victormdelabarre/Library/CloudStorage/OneDrive-Personnel/02_ECE-Cours/ING5/PFE/Git/servier-knowledge-graph/data/csv/ontologie_animaux_A.csv</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Snake">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Snake</rdfs:label>
-    <merged:sourceA_label>Snake</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Snake</merged:sourceA_uri>
-    <merged:sourceA_definition>Legless reptile with elongated body</merged:sourceA_definition>
-    <merged:sourceB_label>Serpent</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/Serpent</merged:sourceB_uri>
-    <merged:sourceB_definition>Limbless elongated reptile with flexible body</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9598836898803711</merged:similarity_score>
-    <merged:synonym>Ophidia</merged:synonym>
-    <merged:synonym>Ophidian</merged:synonym>
-    <merged:synonym>Serpent</merged:synonym>
-    <merged:synonym>Serpentes</merged:synonym>
-    <merged:synonym>Snake</merged:synonym>
-    <merged:attributesA>order: Serpentes, limbs: absent, locomotion: serpentine</merged:attributesA>
-    <merged:attributesB>{'order': 'Serpentes', 'legs': 'none', 'movement': 'slithering'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Reptile"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Canidae">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Canidae</rdfs:label>
-    <merged:sourceA_label>Canidae</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Canidae</merged:sourceA_uri>
-    <merged:sourceA_definition>Family of carnivorous mammals including dogs, wolves, and foxes</merged:sourceA_definition>
-    <merged:sourceB_label>Canid Group</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/CanidGroup</merged:sourceB_uri>
-    <merged:sourceB_definition>Family of carnivorous mammals including wolves, dogs, and foxes</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9464084506034851</merged:similarity_score>
-    <merged:synonym>Canidae</merged:synonym>
-    <merged:synonym>Canine Group</merged:synonym>
-    <merged:synonym>Canines</merged:synonym>
-    <merged:synonym>Dog Family</merged:synonym>
-    <merged:attributesA>family: Canidae</merged:attributesA>
-    <merged:attributesB>{'family': 'Canidae'}</merged:attributesB>
+    <rdfs:label>Ursidae</rdfs:label>
+    <merged:sourceA_label>Ursidae</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Ursidae</merged:sourceA_uri>
+    <merged:sourceA_definition>Family of large carnivorous or omnivorous mammals known as bears</merged:sourceA_definition>
+    <merged:sourceB_label>Bear Family</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/BearFamily</merged:sourceB_uri>
+    <merged:sourceB_definition>Large carnivorous or omnivorous mammals with heavy build</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8524945974349976</merged:similarity_score>
+    <merged:synonym>Bear Family</merged:synonym>
+    <merged:synonym>Bears</merged:synonym>
+    <merged:synonym>Ursidae</merged:synonym>
+    <merged:synonym>Ursine</merged:synonym>
+    <merged:attributesA>family: Ursidae</merged:attributesA>
+    <merged:attributesB>{'family': 'Ursidae'}</merged:attributesB>
     <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Carnivore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Cetacean">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cetacean</rdfs:label>
+    <merged:sourceA_label>Cetacean</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Cetacean</merged:sourceA_uri>
+    <merged:sourceA_definition>Aquatic mammal including whales, dolphins, and porpoises</merged:sourceA_definition>
+    <merged:sourceB_label>Marine Mammal</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/MarineMammal</merged:sourceB_uri>
+    <merged:sourceB_definition>Aquatic or semi-aquatic mammals including whales and dolphins</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9161049127578735</merged:similarity_score>
+    <merged:synonym>Cetacea</merged:synonym>
+    <merged:synonym>Cetacean</merged:synonym>
+    <merged:synonym>Marine Mammal</merged:synonym>
+    <merged:synonym>Sea Mammal</merged:synonym>
+    <merged:synonym>Whale</merged:synonym>
+    <merged:attributesA>order: Cetacea, habitat: marine</merged:attributesA>
+    <merged:attributesB>{'order': 'Cetacea', 'environment': 'aquatic'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mammal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Spider">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Spider</rdfs:label>
+    <merged:sourceA_label>Spider</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Spider</merged:sourceA_uri>
+    <merged:sourceA_definition>Arachnid that spins webs to catch prey</merged:sourceA_definition>
+    <merged:sourceB_label>Web Spider</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/WebSpider</merged:sourceB_uri>
+    <merged:sourceB_definition>Arachnid producing silk webs for prey capture</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9241541624069214</merged:similarity_score>
+    <merged:synonym>Araneae</merged:synonym>
+    <merged:synonym>Araneus</merged:synonym>
+    <merged:synonym>Spider</merged:synonym>
+    <merged:synonym>Tarantula</merged:synonym>
+    <merged:synonym>Web-spinner</merged:synonym>
+    <merged:attributesA>order: Araneae, web: silk, venom: yes</merged:attributesA>
+    <merged:attributesB>{'order': 'Araneae', 'silk_production': 'yes', 'toxin': 'present'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Arachnid"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Carnivore">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -1017,127 +118,80 @@
     <merged:attributesB>{'order': 'Carnivora', 'feeding_type': 'carnivorous'}</merged:attributesB>
     <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mammal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Chimpanzee">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Mouse">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Chimpanzee</rdfs:label>
-    <merged:sourceA_label>Chimpanzee</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Chimpanzee</merged:sourceA_uri>
-    <merged:sourceA_definition>Great ape species native to Africa, closely related to humans</merged:sourceA_definition>
-    <merged:sourceB_label>Common Chimpanzee</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/CommonChimpanzee</merged:sourceB_uri>
-    <merged:sourceB_definition>Highly intelligent ape closely related to humans</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9223560094833374</merged:similarity_score>
-    <merged:synonym>Chimp</merged:synonym>
-    <merged:synonym>Chimpanzee</merged:synonym>
-    <merged:synonym>Common Chimp</merged:synonym>
-    <merged:synonym>Pan troglodytes</merged:synonym>
-    <merged:attributesA>species: Pan troglodytes, habitat: forest, intelligence: high</merged:attributesA>
-    <merged:attributesB>{'species': 'Pan troglodytes', 'environment': 'tropical_forest', 'cognition': 'advanced'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ape"/>
+    <rdfs:label>Mouse</rdfs:label>
+    <merged:sourceA_label>Mouse</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Mouse</merged:sourceA_uri>
+    <merged:sourceA_definition>Small rodent with pointed snout and long tail</merged:sourceA_definition>
+    <merged:sourceB_label>Small Mouse</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SmallMouse</merged:sourceB_uri>
+    <merged:sourceB_definition>Tiny rodent with pointed nose and long slender tail</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9717464447021484</merged:similarity_score>
+    <merged:synonym>Common Mouse</merged:synonym>
+    <merged:synonym>Field Mouse</merged:synonym>
+    <merged:synonym>House Mouse</merged:synonym>
+    <merged:synonym>Mouse</merged:synonym>
+    <merged:synonym>Mus</merged:synonym>
+    <merged:synonym>Mus musculus</merged:synonym>
+    <merged:attributesA>genus: Mus, size: small</merged:attributesA>
+    <merged:attributesB>{'species': 'Mus musculus', 'body_size': 'tiny'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Rodent"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Butterfly">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Salamander">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Butterfly</rdfs:label>
-    <merged:sourceA_label>Butterfly</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Butterfly</merged:sourceA_uri>
-    <merged:sourceA_definition>Insect with large colorful wings and slender body</merged:sourceA_definition>
-    <merged:sourceB_label>Winged Butterfly</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/WingedButterfly</merged:sourceB_uri>
-    <merged:sourceB_definition>Flying insect with colorful patterned wings</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9286693334579468</merged:similarity_score>
-    <merged:synonym>Butterfly</merged:synonym>
-    <merged:synonym>Flying Insect</merged:synonym>
-    <merged:synonym>Lepidoptera</merged:synonym>
-    <merged:synonym>Moth</merged:synonym>
-    <merged:synonym>Papillon</merged:synonym>
-    <merged:attributesA>order: Lepidoptera, wings: scaled, lifecycle: complete_metamorphosis</merged:attributesA>
-    <merged:attributesB>{'order': 'Lepidoptera', 'wing_covering': 'scales', 'metamorphosis': 'complete'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Insect"/>
+    <rdfs:label>Salamander</rdfs:label>
+    <merged:sourceA_label>Salamander</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Salamander</merged:sourceA_uri>
+    <merged:sourceA_definition>Amphibian with elongated body and tail</merged:sourceA_definition>
+    <merged:sourceB_label>Tailed Newt</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TailedNewt</merged:sourceB_uri>
+    <merged:sourceB_definition>Amphibian with slender body and permanent tail</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9154001474380493</merged:similarity_score>
+    <merged:synonym>Caudata</merged:synonym>
+    <merged:synonym>Fire Salamander</merged:synonym>
+    <merged:synonym>Newt</merged:synonym>
+    <merged:synonym>Salamander</merged:synonym>
+    <merged:attributesA>order: Caudata, tail: present, body: elongated</merged:attributesA>
+    <merged:attributesB>{'order': 'Caudata', 'tail_adult': 'present', 'form': 'elongate'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Amphibian"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lion/Zara">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Lion"/>
-    <rdfs:label>Zara</rdfs:label>
-    <rdfs:comment>Female African lion in Kruger National Park</rdfs:comment>
-    <merged:source>B</merged:source>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lion/Simba">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Lion"/>
-    <rdfs:label>Simba</rdfs:label>
-    <rdfs:comment>Male lion residing in Serengeti National Park</rdfs:comment>
-    <merged:source>A</merged:source>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Monkey">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Leopard">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Monkey</rdfs:label>
-    <merged:sourceA_label>Monkey</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Monkey</merged:sourceA_uri>
-    <merged:sourceA_definition>Primate with tails, generally smaller than apes</merged:sourceA_definition>
-    <merged:sourceB_label>Tailed Monkey</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TailedMonkey</merged:sourceB_uri>
-    <merged:sourceB_definition>Smaller primates characterized by presence of tail</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9447057247161865</merged:similarity_score>
-    <merged:synonym>Cercopithecoidea</merged:synonym>
-    <merged:synonym>Monkey</merged:synonym>
-    <merged:synonym>Old World Monkey</merged:synonym>
-    <merged:synonym>Simian</merged:synonym>
-    <merged:attributesA>tail: present</merged:attributesA>
-    <merged:attributesB>{'tail_present': 'yes'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Primate"/>
+    <rdfs:label>Leopard</rdfs:label>
+    <merged:sourceA_label>Leopard</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Leopard</merged:sourceA_uri>
+    <merged:sourceA_definition>Large cat with spotted coat found in Africa and Asia</merged:sourceA_definition>
+    <merged:sourceB_label>Spotted Leopard</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SpottedLeopard</merged:sourceB_uri>
+    <merged:sourceB_definition>Solitary big cat with rosette-patterned coat</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9195773601531982</merged:similarity_score>
+    <merged:synonym>Black Panther</merged:synonym>
+    <merged:synonym>Leopard</merged:synonym>
+    <merged:synonym>Panther</merged:synonym>
+    <merged:synonym>Panthera pardus</merged:synonym>
+    <merged:synonym>Spotted Cat</merged:synonym>
+    <merged:attributesA>species: Panthera pardus, habitat: various, conservation_status: vulnerable</merged:attributesA>
+    <merged:attributesB>{'species': 'Panthera pardus', 'environment': 'diverse', 'status': 'vulnerable'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Felidae"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dolphin/Echo">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Dolphin"/>
-    <rdfs:label>Echo</rdfs:label>
-    <rdfs:comment>Bottlenose dolphin in aquarium</rdfs:comment>
-    <merged:source>B</merged:source>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Scorpion">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Rodent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Scorpion</rdfs:label>
-    <merged:sourceA_label>Scorpion</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Scorpion</merged:sourceA_uri>
-    <merged:sourceA_definition>Arachnid with pincers and venomous stinger in tail</merged:sourceA_definition>
-    <merged:sourceB_label>Stinging Scorpion</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/StingingScorpion</merged:sourceB_uri>
-    <merged:sourceB_definition>Arachnid with segmented tail bearing venomous sting</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9386724829673767</merged:similarity_score>
-    <merged:synonym>Desert Scorpion</merged:synonym>
-    <merged:synonym>Scorpion</merged:synonym>
-    <merged:synonym>Scorpiones</merged:synonym>
-    <merged:synonym>Stinger</merged:synonym>
-    <merged:attributesA>order: Scorpiones, tail: venomous_stinger, pincers: present</merged:attributesA>
-    <merged:attributesB>{'order': 'Scorpiones', 'appendage': 'venomous_telson', 'claws': 'yes'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Arachnid"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/DomesticCat/Mittens">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/DomesticCat"/>
-    <rdfs:label>Mittens</rdfs:label>
-    <rdfs:comment>Domestic short-hair cat</rdfs:comment>
-    <merged:source>B</merged:source>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Bird">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Bird</rdfs:label>
-    <merged:sourceA_label>Bird</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Bird</merged:sourceA_uri>
-    <merged:sourceA_definition>Warm-blooded vertebrate with feathers, wings, and beak</merged:sourceA_definition>
-    <merged:sourceB_label>Avian Class</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AvianClass</merged:sourceB_uri>
-    <merged:sourceB_definition>Warm-blooded vertebrates with feathers, beaks, and wings</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9214386940002441</merged:similarity_score>
-    <merged:synonym>Aves</merged:synonym>
-    <merged:synonym>Avian</merged:synonym>
-    <merged:synonym>Bird</merged:synonym>
-    <merged:synonym>Feathered Animal</merged:synonym>
-    <merged:synonym>Flying Vertebrate</merged:synonym>
-    <merged:attributesA>class: Aves, body_covering: feathers, reproduction: oviparous</merged:attributesA>
-    <merged:attributesB>{'class': 'Aves', 'covering': 'feathers', 'egg_laying': 'yes'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Cheetah/Bolt">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Cheetah"/>
-    <rdfs:label>Bolt</rdfs:label>
-    <rdfs:comment>Record-breaking cheetah in Namibian grassland</rdfs:comment>
-    <merged:source>B</merged:source>
+    <rdfs:label>Rodent</rdfs:label>
+    <merged:sourceA_label>Rodent</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Rodent</merged:sourceA_uri>
+    <merged:sourceA_definition>Mammal characterized by continuously growing incisors</merged:sourceA_definition>
+    <merged:sourceB_label>Rodent Order</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/RodentOrder</merged:sourceB_uri>
+    <merged:sourceB_definition>Small mammal with chisel-like incisors that grow continuously</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9344334602355957</merged:similarity_score>
+    <merged:synonym>Gnawer</merged:synonym>
+    <merged:synonym>Gnawing Mammal</merged:synonym>
+    <merged:synonym>Rodent</merged:synonym>
+    <merged:synonym>Rodentia</merged:synonym>
+    <merged:attributesA>order: Rodentia, teeth: continuously_growing_incisors</merged:attributesA>
+    <merged:attributesB>{'order': 'Rodentia', 'dentition': 'ever_growing_incisors'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mammal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Ape">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -1158,49 +212,239 @@
     <merged:attributesB>{'tail_present': 'yes'}</merged:attributesB>
     <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Primate"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Gorilla/Koko">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Gorilla"/>
-    <rdfs:label>Koko</rdfs:label>
-    <rdfs:comment>Mountain gorilla in conservation program</rdfs:comment>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dolphin/Flipper">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Dolphin"/>
+    <rdfs:label>Flipper</rdfs:label>
+    <rdfs:comment>Bottlenose dolphin in marine park</rdfs:comment>
     <merged:source>A</merged:source>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Insect">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Tuna">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Insect</rdfs:label>
-    <merged:sourceA_label>Insect</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Insect</merged:sourceA_uri>
-    <merged:sourceA_definition>Arthropod with three body segments and six legs</merged:sourceA_definition>
-    <merged:sourceB_label>Six-Legged Arthropod</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SixLeggedArthropod</merged:sourceB_uri>
-    <merged:sourceB_definition>Arthropod with segmented body and six legs</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9122280478477478</merged:similarity_score>
-    <merged:synonym>Bug</merged:synonym>
-    <merged:synonym>Hexapod</merged:synonym>
-    <merged:synonym>Insect</merged:synonym>
-    <merged:synonym>Insecta</merged:synonym>
-    <merged:attributesA>class: Insecta, body_segments: three, legs: six</merged:attributesA>
-    <merged:attributesB>{'class': 'Insecta', 'body_parts': 'three_segments', 'leg_count': 'six'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Invertebrate"/>
+    <rdfs:label>Tuna</rdfs:label>
+    <merged:sourceA_label>Tuna</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Tuna</merged:sourceA_uri>
+    <merged:sourceA_definition>Large fast-swimming marine fish</merged:sourceA_definition>
+    <merged:sourceB_label>Swift Tuna</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SwiftTuna</merged:sourceB_uri>
+    <merged:sourceB_definition>Large pelagic fish known for speed and endurance</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9171943068504333</merged:similarity_score>
+    <merged:synonym>Bluefin</merged:synonym>
+    <merged:synonym>Bluefin Tuna</merged:synonym>
+    <merged:synonym>Thunnus</merged:synonym>
+    <merged:synonym>Tuna</merged:synonym>
+    <merged:synonym>Yellowfin Tuna</merged:synonym>
+    <merged:attributesA>genus: Thunnus, speed: fast, habitat: pelagic</merged:attributesA>
+    <merged:attributesB>{'genus': 'Thunnus', 'velocity': 'rapid', 'zone': 'open_ocean'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Fish"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Goose">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Cheetah">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Goose</rdfs:label>
-    <merged:sourceA_label>Goose</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Goose</merged:sourceA_uri>
-    <merged:sourceA_definition>Large waterfowl with long neck, intermediate between duck and swan</merged:sourceA_definition>
-    <merged:sourceB_label>Graceful Swan</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/GracefulSwan</merged:sourceB_uri>
-    <merged:sourceB_definition>Large waterfowl known for elegant long neck</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9126898050308228</merged:similarity_score>
-    <merged:synonym>Anser</merged:synonym>
-    <merged:synonym>Canada Goose</merged:synonym>
-    <merged:synonym>Cygnus olor</merged:synonym>
-    <merged:synonym>Greylag Goose</merged:synonym>
-    <merged:synonym>Swan</merged:synonym>
-    <merged:synonym>Whooper Swan</merged:synonym>
-    <merged:attributesA>genus: Anser, size: large</merged:attributesA>
-    <merged:attributesB>{'genus': 'Cygnus', 'body_size': 'large', 'neck_length': 'extended'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Waterfowl"/>
+    <rdfs:label>Cheetah</rdfs:label>
+    <merged:sourceA_label>Cheetah</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Cheetah</merged:sourceA_uri>
+    <merged:sourceA_definition>Fastest land animal with distinctive black tear marks</merged:sourceA_definition>
+    <merged:sourceB_label>Fast Cheetah</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/FastCheetah</merged:sourceB_uri>
+    <merged:sourceB_definition>Speediest terrestrial animal with characteristic tear streaks</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9231740236282349</merged:similarity_score>
+    <merged:synonym>Acinonyx jubatus</merged:synonym>
+    <merged:synonym>Cheetah</merged:synonym>
+    <merged:synonym>Hunting Leopard</merged:synonym>
+    <merged:synonym>Speed Cat</merged:synonym>
+    <merged:synonym>Sprint Cat</merged:synonym>
+    <merged:attributesA>species: Acinonyx jubatus, habitat: grassland, max_speed: 120 km/h</merged:attributesA>
+    <merged:attributesB>{'species': 'Acinonyx jubatus', 'environment': 'open_plains', 'velocity': '120 km/h'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Felidae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Turtle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Turtle</rdfs:label>
+    <merged:sourceA_label>Turtle</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Turtle</merged:sourceA_uri>
+    <merged:sourceA_definition>Reptile with body enclosed in bony shell</merged:sourceA_definition>
+    <merged:sourceB_label>Shelled Reptile</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ShelledReptile</merged:sourceB_uri>
+    <merged:sourceB_definition>Reptile protected by hard bony carapace</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8758537173271179</merged:similarity_score>
+    <merged:synonym>Chelonian</merged:synonym>
+    <merged:synonym>Terrapin</merged:synonym>
+    <merged:synonym>Testudines</merged:synonym>
+    <merged:synonym>Tortoise</merged:synonym>
+    <merged:synonym>Turtle</merged:synonym>
+    <merged:attributesA>order: Testudines, shell: present</merged:attributesA>
+    <merged:attributesB>{'order': 'Testudines', 'protective_shell': 'yes'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Reptile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Parrot">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Parrot</rdfs:label>
+    <merged:sourceA_label>Parrot</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Parrot</merged:sourceA_uri>
+    <merged:sourceA_definition>Colorful bird with curved beak and ability to mimic sounds</merged:sourceA_definition>
+    <merged:sourceB_label>Talking Parrot</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TalkingParrot</merged:sourceB_uri>
+    <merged:sourceB_definition>Colorful bird capable of vocal mimicry</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9327976107597351</merged:similarity_score>
+    <merged:synonym>Ara</merged:synonym>
+    <merged:synonym>Cockatoo</merged:synonym>
+    <merged:synonym>Macaw</merged:synonym>
+    <merged:synonym>Parrot</merged:synonym>
+    <merged:synonym>Psittaciformes</merged:synonym>
+    <merged:synonym>Psittacus</merged:synonym>
+    <merged:attributesA>order: Psittaciformes, intelligence: high, vocalization: mimicry</merged:attributesA>
+    <merged:attributesB>{'order': 'Psittaciformes', 'cognition': 'advanced', 'vocal_ability': 'imitation'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Bird"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Invertebrate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Invertebrate</rdfs:label>
+    <merged:sourceA_label>Invertebrate</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Invertebrate</merged:sourceA_uri>
+    <merged:sourceA_definition>Animal without backbone or vertebral column</merged:sourceA_definition>
+    <merged:sourceB_label>Spineless</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/Spineless</merged:sourceB_uri>
+    <merged:sourceB_definition>Animal lacking vertebral column or internal skeleton</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8972427845001221</merged:similarity_score>
+    <merged:synonym>Backboneless</merged:synonym>
+    <merged:synonym>Invertebrate</merged:synonym>
+    <merged:synonym>Non-vertebrate</merged:synonym>
+    <merged:synonym>Spineless Animal</merged:synonym>
+    <merged:attributesA>vertebral_column: absent</merged:attributesA>
+    <merged:attributesB>{'backbone': 'none'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Bird">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bird</rdfs:label>
+    <merged:sourceA_label>Bird</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Bird</merged:sourceA_uri>
+    <merged:sourceA_definition>Warm-blooded vertebrate with feathers, wings, and beak</merged:sourceA_definition>
+    <merged:sourceB_label>Avian Class</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AvianClass</merged:sourceB_uri>
+    <merged:sourceB_definition>Warm-blooded vertebrates with feathers, beaks, and wings</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9214386940002441</merged:similarity_score>
+    <merged:synonym>Aves</merged:synonym>
+    <merged:synonym>Avian</merged:synonym>
+    <merged:synonym>Bird</merged:synonym>
+    <merged:synonym>Feathered Animal</merged:synonym>
+    <merged:synonym>Flying Vertebrate</merged:synonym>
+    <merged:attributesA>class: Aves, body_covering: feathers, reproduction: oviparous</merged:attributesA>
+    <merged:attributesB>{'class': 'Aves', 'covering': 'feathers', 'egg_laying': 'yes'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Penguin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Penguin</rdfs:label>
+    <merged:sourceA_label>Penguin</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Penguin</merged:sourceA_uri>
+    <merged:sourceA_definition>Flightless aquatic bird native to Southern Hemisphere</merged:sourceA_definition>
+    <merged:sourceB_label>Flightless Penguin</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/FlightlessPenguin</merged:sourceB_uri>
+    <merged:sourceB_definition>Aquatic bird adapted for swimming in cold waters</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9056763648986816</merged:similarity_score>
+    <merged:synonym>Antarctic Bird</merged:synonym>
+    <merged:synonym>Emperor Penguin</merged:synonym>
+    <merged:synonym>King Penguin</merged:synonym>
+    <merged:synonym>Penguin</merged:synonym>
+    <merged:synonym>Spheniscidae</merged:synonym>
+    <merged:attributesA>family: Spheniscidae, flight: flightless, habitat: antarctic</merged:attributesA>
+    <merged:attributesB>{'family': 'Spheniscidae', 'flying_ability': 'none', 'environment': 'polar'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Bird"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Ray">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Ray</rdfs:label>
+    <merged:sourceA_label>Ray</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Ray</merged:sourceA_uri>
+    <merged:sourceA_definition>Cartilaginous fish with flattened body</merged:sourceA_definition>
+    <merged:sourceB_label>Flat Ray</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/FlatRay</merged:sourceB_uri>
+    <merged:sourceB_definition>Cartilaginous fish with dorsoventrally flattened body</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9779236316680908</merged:similarity_score>
+    <merged:synonym>Batoidea</merged:synonym>
+    <merged:synonym>Manta Ray</merged:synonym>
+    <merged:synonym>Rajiformes</merged:synonym>
+    <merged:synonym>Ray</merged:synonym>
+    <merged:synonym>Skate</merged:synonym>
+    <merged:synonym>Stingray</merged:synonym>
+    <merged:attributesA>order: Rajiformes, body_shape: flattened</merged:attributesA>
+    <merged:attributesB>{'superorder': 'Batoidea', 'morphology': 'dorsoventrally_flat'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Fish"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Chameleon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Chameleon</rdfs:label>
+    <merged:sourceA_label>Chameleon</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Chameleon</merged:sourceA_uri>
+    <merged:sourceA_definition>Lizard with ability to change color and independently moving eyes</merged:sourceA_definition>
+    <merged:sourceB_label>Color-Changing Lizard</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ColorChangingLizard</merged:sourceB_uri>
+    <merged:sourceB_definition>Lizard with color-changing skin and rotating eyes</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9345343708992004</merged:similarity_score>
+    <merged:synonym>Chamaeleo</merged:synonym>
+    <merged:synonym>Chamaeleonidae</merged:synonym>
+    <merged:synonym>Chameleon</merged:synonym>
+    <merged:synonym>Color-changing Lizard</merged:synonym>
+    <merged:synonym>Tree Lizard</merged:synonym>
+    <merged:attributesA>family: Chamaeleonidae, color_change: yes, eyes: independently_mobile</merged:attributesA>
+    <merged:attributesB>{'family': 'Chamaeleonidae', 'camouflage': 'active', 'vision': 'independent_eyes'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Lizard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Snake">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Snake</rdfs:label>
+    <merged:sourceA_label>Snake</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Snake</merged:sourceA_uri>
+    <merged:sourceA_definition>Legless reptile with elongated body</merged:sourceA_definition>
+    <merged:sourceB_label>Serpent</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/Serpent</merged:sourceB_uri>
+    <merged:sourceB_definition>Limbless elongated reptile with flexible body</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9598836898803711</merged:similarity_score>
+    <merged:synonym>Ophidia</merged:synonym>
+    <merged:synonym>Ophidian</merged:synonym>
+    <merged:synonym>Serpent</merged:synonym>
+    <merged:synonym>Serpentes</merged:synonym>
+    <merged:synonym>Snake</merged:synonym>
+    <merged:attributesA>order: Serpentes, limbs: absent, locomotion: serpentine</merged:attributesA>
+    <merged:attributesB>{'order': 'Serpentes', 'legs': 'none', 'movement': 'slithering'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Reptile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dolphin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Dolphin</rdfs:label>
+    <merged:sourceA_label>Dolphin</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Dolphin</merged:sourceA_uri>
+    <merged:sourceA_definition>Highly intelligent marine mammal with streamlined body</merged:sourceA_definition>
+    <merged:sourceB_label>Bottlenose Dolphin</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/BottlenoseDolphin</merged:sourceB_uri>
+    <merged:sourceB_definition>Smart marine mammal with distinctive bottle-shaped snout</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.880119800567627</merged:similarity_score>
+    <merged:synonym>Bottlenose Dolphin</merged:synonym>
+    <merged:synonym>Common Dolphin</merged:synonym>
+    <merged:synonym>Delphinidae</merged:synonym>
+    <merged:synonym>Dolphin</merged:synonym>
+    <merged:synonym>Porpoise</merged:synonym>
+    <merged:synonym>Tursiops</merged:synonym>
+    <merged:attributesA>family: Delphinidae, intelligence: high, echolocation: yes</merged:attributesA>
+    <merged:attributesB>{'genus': 'Tursiops', 'cognition': 'advanced', 'sonar': 'present'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Cetacean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Mollusk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mollusk</rdfs:label>
+    <merged:sourceA_label>Mollusk</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Mollusk</merged:sourceA_uri>
+    <merged:sourceA_definition>Soft-bodied invertebrate often with shell</merged:sourceA_definition>
+    <merged:sourceB_label>Soft-Body Mollusk</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SoftBodyMollusk</merged:sourceB_uri>
+    <merged:sourceB_definition>Invertebrate with soft unsegmented body, often with shell</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9675750732421875</merged:similarity_score>
+    <merged:synonym>Mollusca</merged:synonym>
+    <merged:synonym>Mollusk</merged:synonym>
+    <merged:synonym>Shellfish</merged:synonym>
+    <merged:attributesA>phylum: Mollusca, body: soft</merged:attributesA>
+    <merged:attributesB>{'phylum': 'Mollusca', 'body_texture': 'soft'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Invertebrate"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Iguana">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -1222,17 +466,375 @@
     <merged:attributesB>{'family': 'Iguanidae', 'feeding': 'herbivorous', 'climate': 'tropical'}</merged:attributesB>
     <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Lizard"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dog/Buddy">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Dog"/>
-    <rdfs:label>Buddy</rdfs:label>
-    <rdfs:comment>Golden Retriever pet dog</rdfs:comment>
-    <merged:source>A</merged:source>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Python">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Python</rdfs:label>
+    <merged:sourceA_label>Python</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Python</merged:sourceA_uri>
+    <merged:sourceA_definition>Large constricting snake found in Africa, Asia, and Australia</merged:sourceA_definition>
+    <merged:sourceB_label>Constrictor Snake</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ConstrictorSnake</merged:sourceB_uri>
+    <merged:sourceB_definition>Large non-venomous snake that kills by constriction</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8544672727584839</merged:similarity_score>
+    <merged:synonym>Ball Python</merged:synonym>
+    <merged:synonym>Boa</merged:synonym>
+    <merged:synonym>Python</merged:synonym>
+    <merged:synonym>Pythonidae</merged:synonym>
+    <merged:synonym>Reticulated Python</merged:synonym>
+    <merged:attributesA>family: Pythonidae, hunting_method: constriction</merged:attributesA>
+    <merged:attributesB>{'family': 'Pythonidae', 'killing_method': 'constriction'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Snake"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dog/Max">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Dog"/>
-    <rdfs:label>Max</rdfs:label>
-    <rdfs:comment>Labrador Retriever companion dog</rdfs:comment>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Waterfowl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Waterfowl</rdfs:label>
+    <merged:sourceA_label>Waterfowl</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Waterfowl</merged:sourceA_uri>
+    <merged:sourceA_definition>Bird that lives on or near water</merged:sourceA_definition>
+    <merged:sourceB_label>Aquatic Bird</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AquaticBird</merged:sourceB_uri>
+    <merged:sourceB_definition>Bird species living in or near water environments</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9093246459960938</merged:similarity_score>
+    <merged:synonym>Anseriformes</merged:synonym>
+    <merged:synonym>Aquatic Bird</merged:synonym>
+    <merged:synonym>Swimming Bird</merged:synonym>
+    <merged:synonym>Water Bird</merged:synonym>
+    <merged:synonym>Waterfowl</merged:synonym>
+    <merged:attributesA>habitat: aquatic</merged:attributesA>
+    <merged:attributesB>{'environment': 'water'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Bird"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Tiger/Raja">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Tiger"/>
+    <rdfs:label>Raja</rdfs:label>
+    <rdfs:comment>Bengal tiger in Indian reserve</rdfs:comment>
     <merged:source>B</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Bee">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Bee</rdfs:label>
+    <merged:sourceA_label>Bee</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Bee</merged:sourceA_uri>
+    <merged:sourceA_definition>Flying insect known for pollination and honey production</merged:sourceA_definition>
+    <merged:sourceB_label>Honey Bee</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/HoneyBee</merged:sourceB_uri>
+    <merged:sourceB_definition>Social flying insect that produces honey and pollinates</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9501091241836548</merged:similarity_score>
+    <merged:synonym>Apis</merged:synonym>
+    <merged:synonym>Apis mellifera</merged:synonym>
+    <merged:synonym>Bee</merged:synonym>
+    <merged:synonym>Bumblebee</merged:synonym>
+    <merged:synonym>Honeybee</merged:synonym>
+    <merged:synonym>Worker Bee</merged:synonym>
+    <merged:attributesA>genus: Apis, social: colonial, role: pollinator</merged:attributesA>
+    <merged:attributesB>{'species': 'Apis mellifera', 'organization': 'eusocial', 'function': 'pollination'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Insect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Snail">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Snail</rdfs:label>
+    <merged:sourceA_label>Snail</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Snail</merged:sourceA_uri>
+    <merged:sourceA_definition>Gastropod mollusk with coiled shell</merged:sourceA_definition>
+    <merged:sourceB_label>Spiral Snail</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SpiralSnail</merged:sourceB_uri>
+    <merged:sourceB_definition>Gastropod with spiral coiled protective shell</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9473739862442017</merged:similarity_score>
+    <merged:synonym>Escargot</merged:synonym>
+    <merged:synonym>Garden Snail</merged:synonym>
+    <merged:synonym>Gastropoda</merged:synonym>
+    <merged:synonym>Land Snail</merged:synonym>
+    <merged:synonym>Snail</merged:synonym>
+    <merged:attributesA>class: Gastropoda, shell: coiled, locomotion: muscular_foot</merged:attributesA>
+    <merged:attributesB>{'class': 'Gastropoda', 'shell_form': 'spiral', 'movement': 'gliding'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mollusk"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Beetle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Beetle</rdfs:label>
+    <merged:sourceA_label>Beetle</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Beetle</merged:sourceA_uri>
+    <merged:sourceA_definition>Insect with hardened front wings forming protective cover</merged:sourceA_definition>
+    <merged:sourceB_label>Hardwing Beetle</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/HardwingBeetle</merged:sourceB_uri>
+    <merged:sourceB_definition>Insect with hardened forewings protecting membranous hindwings</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.855646014213562</merged:similarity_score>
+    <merged:synonym>Beetle</merged:synonym>
+    <merged:synonym>Bug</merged:synonym>
+    <merged:synonym>Coleoptera</merged:synonym>
+    <merged:synonym>Ladybug</merged:synonym>
+    <merged:synonym>Scarab</merged:synonym>
+    <merged:attributesA>order: Coleoptera, wings: hardened_front</merged:attributesA>
+    <merged:attributesB>{'order': 'Coleoptera', 'forewing': 'sclerotized'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Insect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Arachnid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Arachnid</rdfs:label>
+    <merged:sourceA_label>Arachnid</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Arachnid</merged:sourceA_uri>
+    <merged:sourceA_definition>Arthropod with eight legs including spiders and scorpions</merged:sourceA_definition>
+    <merged:sourceB_label>Eight-Legged Arthropod</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/EightLeggedArthropod</merged:sourceB_uri>
+    <merged:sourceB_definition>Arthropod with four pairs of legs</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8862981796264648</merged:similarity_score>
+    <merged:synonym>Arachnid</merged:synonym>
+    <merged:synonym>Arachnida</merged:synonym>
+    <merged:synonym>Eight-legged Arthropod</merged:synonym>
+    <merged:synonym>Spider-like</merged:synonym>
+    <merged:attributesA>class: Arachnida, legs: eight</merged:attributesA>
+    <merged:attributesB>{'class': 'Arachnida', 'leg_count': 'eight'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Invertebrate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Scorpion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Scorpion</rdfs:label>
+    <merged:sourceA_label>Scorpion</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Scorpion</merged:sourceA_uri>
+    <merged:sourceA_definition>Arachnid with pincers and venomous stinger in tail</merged:sourceA_definition>
+    <merged:sourceB_label>Stinging Scorpion</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/StingingScorpion</merged:sourceB_uri>
+    <merged:sourceB_definition>Arachnid with segmented tail bearing venomous sting</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9386724829673767</merged:similarity_score>
+    <merged:synonym>Desert Scorpion</merged:synonym>
+    <merged:synonym>Scorpion</merged:synonym>
+    <merged:synonym>Scorpiones</merged:synonym>
+    <merged:synonym>Stinger</merged:synonym>
+    <merged:attributesA>order: Scorpiones, tail: venomous_stinger, pincers: present</merged:attributesA>
+    <merged:attributesB>{'order': 'Scorpiones', 'appendage': 'venomous_telson', 'claws': 'yes'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Arachnid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Frog">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Frog</rdfs:label>
+    <merged:sourceA_label>Frog</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Frog</merged:sourceA_uri>
+    <merged:sourceA_definition>Tailless amphibian with long hind legs for jumping</merged:sourceA_definition>
+    <merged:sourceB_label>Leaping Frog</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/LeapingFrog</merged:sourceB_uri>
+    <merged:sourceB_definition>Tailless amphibian with powerful jumping legs</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9726971387863159</merged:similarity_score>
+    <merged:synonym>Anura</merged:synonym>
+    <merged:synonym>Frog</merged:synonym>
+    <merged:synonym>Ranidae</merged:synonym>
+    <merged:synonym>Toad</merged:synonym>
+    <merged:synonym>Tree Frog</merged:synonym>
+    <merged:attributesA>order: Anura, tail: absent, locomotion: jumping</merged:attributesA>
+    <merged:attributesB>{'order': 'Anura', 'tail_adult': 'none', 'movement': 'leaping'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Amphibian"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Fish">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Fish</rdfs:label>
+    <merged:sourceA_label>Fish</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Fish</merged:sourceA_uri>
+    <merged:sourceA_definition>Aquatic vertebrate with gills and fins</merged:sourceA_definition>
+    <merged:sourceB_label>Aquatic Vertebrate</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AquaticVertebrate</merged:sourceB_uri>
+    <merged:sourceB_definition>Water-dwelling vertebrate with gills and fins for swimming</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9475889205932617</merged:similarity_score>
+    <merged:synonym>Aquatic Vertebrate</merged:synonym>
+    <merged:synonym>Finned Animal</merged:synonym>
+    <merged:synonym>Fish</merged:synonym>
+    <merged:synonym>Pisces</merged:synonym>
+    <merged:attributesA>habitat: aquatic, respiration: gills, locomotion: fins</merged:attributesA>
+    <merged:attributesB>{'environment': 'water', 'breathing': 'gills', 'movement': 'fins'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Crocodile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Crocodile</rdfs:label>
+    <merged:sourceA_label>Crocodile</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Crocodile</merged:sourceA_uri>
+    <merged:sourceA_definition>Large aquatic reptile with powerful jaws and armored skin</merged:sourceA_definition>
+    <merged:sourceB_label>Large Crocodile</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/LargeCrocodile</merged:sourceB_uri>
+    <merged:sourceB_definition>Massive semi-aquatic reptile with powerful bite</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9409694075584412</merged:similarity_score>
+    <merged:synonym>Croc</merged:synonym>
+    <merged:synonym>Crocodile</merged:synonym>
+    <merged:synonym>Crocodylus</merged:synonym>
+    <merged:synonym>Nile Crocodile</merged:synonym>
+    <merged:synonym>Saltwater Crocodile</merged:synonym>
+    <merged:attributesA>genus: Crocodylus, habitat: aquatic, size: large</merged:attributesA>
+    <merged:attributesB>{'genus': 'Crocodylus', 'lifestyle': 'semi_aquatic', 'body_size': 'massive'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Reptile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/SeaTurtle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Sea Turtle</rdfs:label>
+    <merged:sourceA_label>Sea Turtle</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/SeaTurtle</merged:sourceA_uri>
+    <merged:sourceA_definition>Marine turtle with flippers adapted for swimming</merged:sourceA_definition>
+    <merged:sourceB_label>Ocean Turtle</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/OceanTurtle</merged:sourceB_uri>
+    <merged:sourceB_definition>Marine reptile with paddle-like flippers</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9365801215171814</merged:similarity_score>
+    <merged:synonym>Chelonioidea</merged:synonym>
+    <merged:synonym>Green Turtle</merged:synonym>
+    <merged:synonym>Loggerhead</merged:synonym>
+    <merged:synonym>Marine Turtle</merged:synonym>
+    <merged:synonym>Sea Turtle</merged:synonym>
+    <merged:attributesA>superfamily: Chelonioidea, habitat: marine, limbs: flippers</merged:attributesA>
+    <merged:attributesB>{'superfamily': 'Chelonioidea', 'environment': 'oceanic', 'appendages': 'paddle_flippers'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Turtle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Shark">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Shark</rdfs:label>
+    <merged:sourceA_label>Shark</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Shark</merged:sourceA_uri>
+    <merged:sourceA_definition>Cartilaginous fish with multiple gill slits</merged:sourceA_definition>
+    <merged:sourceB_label>Predatory Shark</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/PredatoryShark</merged:sourceB_uri>
+    <merged:sourceB_definition>Cartilaginous fish with multiple rows of teeth</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9053242206573486</merged:similarity_score>
+    <merged:synonym>Apex Predator</merged:synonym>
+    <merged:synonym>Great White</merged:synonym>
+    <merged:synonym>Predatory Fish</merged:synonym>
+    <merged:synonym>Selachimorpha</merged:synonym>
+    <merged:synonym>Shark</merged:synonym>
+    <merged:attributesA>superorder: Selachimorpha, skeleton: cartilaginous, teeth: multiple_rows</merged:attributesA>
+    <merged:attributesB>{'superorder': 'Selachimorpha', 'skeleton_type': 'cartilage', 'dentition': 'replaceable_teeth'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Fish"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Amphibian">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Amphibian</rdfs:label>
+    <merged:sourceA_label>Amphibian</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Amphibian</merged:sourceA_uri>
+    <merged:sourceA_definition>Cold-blooded vertebrate with aquatic larvae and terrestrial adult</merged:sourceA_definition>
+    <merged:sourceB_label>Amphibious Animal</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AmphibiousAnimal</merged:sourceB_uri>
+    <merged:sourceB_definition>Cold-blooded vertebrate living both in water and on land</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8741782903671265</merged:similarity_score>
+    <merged:synonym>Amphibia</merged:synonym>
+    <merged:synonym>Amphibian</merged:synonym>
+    <merged:synonym>Amphibious Animal</merged:synonym>
+    <merged:synonym>Dual-habitat Animal</merged:synonym>
+    <merged:attributesA>class: Amphibia, lifecycle: metamorphosis, skin: permeable</merged:attributesA>
+    <merged:attributesB>{'class': 'Amphibia', 'development': 'metamorphic', 'skin_type': 'moist'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Salmon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Salmon</rdfs:label>
+    <merged:sourceA_label>Salmon</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Salmon</merged:sourceA_uri>
+    <merged:sourceA_definition>Migratory fish that spawns in freshwater</merged:sourceA_definition>
+    <merged:sourceB_label>Migrating Salmon</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/MigratingSalmon</merged:sourceB_uri>
+    <merged:sourceB_definition>Anadromous fish that returns to freshwater to reproduce</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9346178770065308</merged:similarity_score>
+    <merged:synonym>Atlantic Salmon</merged:synonym>
+    <merged:synonym>Pacific Salmon</merged:synonym>
+    <merged:synonym>Salmo</merged:synonym>
+    <merged:synonym>Salmo salar</merged:synonym>
+    <merged:synonym>Salmon</merged:synonym>
+    <merged:attributesA>genus: Salmo, migration: anadromous, habitat: freshwater_marine</merged:attributesA>
+    <merged:attributesB>{'species': 'Salmo salar', 'life_cycle': 'anadromous', 'spawning': 'freshwater'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Fish"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>Merged Animal Ontology</rdfs:label>
+    <rdfs:comment>Ontologie fusionnée générée à partir de /Users/victormdelabarre/Library/CloudStorage/OneDrive-Personnel/02_ECE-Cours/ING5/PFE/Git/servier-knowledge-graph/data/csv/ontologie_animaux_A.csv</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Mammal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mammal</rdfs:label>
+    <merged:sourceA_label>Mammal</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Mammal</merged:sourceA_uri>
+    <merged:sourceA_definition>Warm-blooded vertebrate animal characterized by hair or fur and mammary glands</merged:sourceA_definition>
+    <merged:sourceB_label>Mammalian</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/Mammalian</merged:sourceB_uri>
+    <merged:sourceB_definition>Endothermic vertebrate distinguished by fur, mammary glands, and live birth</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8766601085662842</merged:similarity_score>
+    <merged:synonym>Mammal Class</merged:synonym>
+    <merged:synonym>Mammalia</merged:synonym>
+    <merged:synonym>Mammalian</merged:synonym>
+    <merged:synonym>Warm-blooded Animal</merged:synonym>
+    <merged:attributesA>class: Mammalia, body_temperature: warm-blooded, reproduction: viviparous</merged:attributesA>
+    <merged:attributesB>{'class': 'Mammalia', 'temperature_regulation': 'endothermic', 'offspring': 'live_birth'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Squirrel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Squirrel</rdfs:label>
+    <merged:sourceA_label>Squirrel</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Squirrel</merged:sourceA_uri>
+    <merged:sourceA_definition>Arboreal rodent with bushy tail</merged:sourceA_definition>
+    <merged:sourceB_label>Tree Squirrel</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TreeSquirrel</merged:sourceB_uri>
+    <merged:sourceB_definition>Bushy-tailed arboreal rodent with climbing abilities</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9340881109237671</merged:similarity_score>
+    <merged:synonym>Ground Squirrel</merged:synonym>
+    <merged:synonym>Red Squirrel</merged:synonym>
+    <merged:synonym>Sciurus</merged:synonym>
+    <merged:synonym>Sciurus vulgaris</merged:synonym>
+    <merged:synonym>Squirrel</merged:synonym>
+    <merged:synonym>Tree Squirrel</merged:synonym>
+    <merged:attributesA>family: Sciuridae, habitat: trees</merged:attributesA>
+    <merged:attributesB>{'family': 'Sciuridae', 'lifestyle': 'arboreal'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Rodent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Goose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Goose</rdfs:label>
+    <merged:sourceA_label>Goose</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Goose</merged:sourceA_uri>
+    <merged:sourceA_definition>Large waterfowl with long neck, intermediate between duck and swan</merged:sourceA_definition>
+    <merged:sourceB_label>Graceful Swan</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/GracefulSwan</merged:sourceB_uri>
+    <merged:sourceB_definition>Large waterfowl known for elegant long neck</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9126898050308228</merged:similarity_score>
+    <merged:synonym>Anser</merged:synonym>
+    <merged:synonym>Canada Goose</merged:synonym>
+    <merged:synonym>Cygnus olor</merged:synonym>
+    <merged:synonym>Greylag Goose</merged:synonym>
+    <merged:synonym>Swan</merged:synonym>
+    <merged:synonym>Whooper Swan</merged:synonym>
+    <merged:attributesA>genus: Anser, size: large</merged:attributesA>
+    <merged:attributesB>{'genus': 'Cygnus', 'body_size': 'large', 'neck_length': 'extended'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Waterfowl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Canidae">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Canidae</rdfs:label>
+    <merged:sourceA_label>Canidae</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Canidae</merged:sourceA_uri>
+    <merged:sourceA_definition>Family of carnivorous mammals including dogs, wolves, and foxes</merged:sourceA_definition>
+    <merged:sourceB_label>Canid Group</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/CanidGroup</merged:sourceB_uri>
+    <merged:sourceB_definition>Family of carnivorous mammals including wolves, dogs, and foxes</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9464084506034851</merged:similarity_score>
+    <merged:synonym>Canidae</merged:synonym>
+    <merged:synonym>Canine Group</merged:synonym>
+    <merged:synonym>Canines</merged:synonym>
+    <merged:synonym>Dog Family</merged:synonym>
+    <merged:attributesA>family: Canidae</merged:attributesA>
+    <merged:attributesB>{'family': 'Canidae'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Carnivore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Orangutan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Orangutan</rdfs:label>
+    <merged:sourceA_label>Orangutan</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Orangutan</merged:sourceA_uri>
+    <merged:sourceA_definition>Large arboreal ape with reddish-brown hair native to Indonesia</merged:sourceA_definition>
+    <merged:sourceB_label>Bornean Orangutan</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/BorneanOrangutan</merged:sourceB_uri>
+    <merged:sourceB_definition>Large reddish arboreal ape from Southeast Asia</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9379526972770691</merged:similarity_score>
+    <merged:synonym>Forest Man</merged:synonym>
+    <merged:synonym>Man of the Forest</merged:synonym>
+    <merged:synonym>Orangutan</merged:synonym>
+    <merged:synonym>Pongo</merged:synonym>
+    <merged:synonym>Pongo pygmaeus</merged:synonym>
+    <merged:synonym>Red Ape</merged:synonym>
+    <merged:attributesA>genus: Pongo, habitat: rainforest, conservation_status: critically_endangered</merged:attributesA>
+    <merged:attributesB>{'species': 'Pongo pygmaeus', 'environment': 'tropical_rainforest', 'status': 'critically_endangered'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ape"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Fox">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -1254,99 +856,81 @@
     <merged:attributesB>{'species': 'Vulpes vulpes', 'environment': 'adaptable', 'feeding': 'omnivorous'}</merged:attributesB>
     <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Canidae"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Turtle">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Squid">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Turtle</rdfs:label>
-    <merged:sourceA_label>Turtle</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Turtle</merged:sourceA_uri>
-    <merged:sourceA_definition>Reptile with body enclosed in bony shell</merged:sourceA_definition>
-    <merged:sourceB_label>Shelled Reptile</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ShelledReptile</merged:sourceB_uri>
-    <merged:sourceB_definition>Reptile protected by hard bony carapace</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8758537173271179</merged:similarity_score>
-    <merged:synonym>Chelonian</merged:synonym>
-    <merged:synonym>Terrapin</merged:synonym>
-    <merged:synonym>Testudines</merged:synonym>
-    <merged:synonym>Tortoise</merged:synonym>
-    <merged:synonym>Turtle</merged:synonym>
-    <merged:attributesA>order: Testudines, shell: present</merged:attributesA>
-    <merged:attributesB>{'order': 'Testudines', 'protective_shell': 'yes'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Reptile"/>
+    <rdfs:label>Squid</rdfs:label>
+    <merged:sourceA_label>Squid</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Squid</merged:sourceA_uri>
+    <merged:sourceA_definition>Marine cephalopod with ten arms and torpedo-shaped body</merged:sourceA_definition>
+    <merged:sourceB_label>Ten-Armed Squid</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TenArmedSquid</merged:sourceB_uri>
+    <merged:sourceB_definition>Marine cephalopod with elongated body and ten appendages</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9517840147018433</merged:similarity_score>
+    <merged:synonym>Calamari</merged:synonym>
+    <merged:synonym>Flying Squid</merged:synonym>
+    <merged:synonym>Giant Squid</merged:synonym>
+    <merged:synonym>Squid</merged:synonym>
+    <merged:synonym>Teuthida</merged:synonym>
+    <merged:attributesA>order: Teuthida, arms: ten, body_shape: torpedo</merged:attributesA>
+    <merged:attributesB>{'order': 'Teuthida', 'tentacles': 'ten', 'body_type': 'streamlined'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mollusk"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Arachnid">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Rat">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Arachnid</rdfs:label>
-    <merged:sourceA_label>Arachnid</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Arachnid</merged:sourceA_uri>
-    <merged:sourceA_definition>Arthropod with eight legs including spiders and scorpions</merged:sourceA_definition>
-    <merged:sourceB_label>Eight-Legged Arthropod</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/EightLeggedArthropod</merged:sourceB_uri>
-    <merged:sourceB_definition>Arthropod with four pairs of legs</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8862981796264648</merged:similarity_score>
-    <merged:synonym>Arachnid</merged:synonym>
-    <merged:synonym>Arachnida</merged:synonym>
-    <merged:synonym>Eight-legged Arthropod</merged:synonym>
-    <merged:synonym>Spider-like</merged:synonym>
-    <merged:attributesA>class: Arachnida, legs: eight</merged:attributesA>
-    <merged:attributesB>{'class': 'Arachnida', 'leg_count': 'eight'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Invertebrate"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Mouse">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Mouse</rdfs:label>
-    <merged:sourceA_label>Mouse</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Mouse</merged:sourceA_uri>
-    <merged:sourceA_definition>Small rodent with pointed snout and long tail</merged:sourceA_definition>
-    <merged:sourceB_label>Small Mouse</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SmallMouse</merged:sourceB_uri>
-    <merged:sourceB_definition>Tiny rodent with pointed nose and long slender tail</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9717464447021484</merged:similarity_score>
-    <merged:synonym>Common Mouse</merged:synonym>
-    <merged:synonym>Field Mouse</merged:synonym>
-    <merged:synonym>House Mouse</merged:synonym>
-    <merged:synonym>Mouse</merged:synonym>
-    <merged:synonym>Mus</merged:synonym>
-    <merged:synonym>Mus musculus</merged:synonym>
-    <merged:attributesA>genus: Mus, size: small</merged:attributesA>
-    <merged:attributesB>{'species': 'Mus musculus', 'body_size': 'tiny'}</merged:attributesB>
+    <rdfs:label>Rat</rdfs:label>
+    <merged:sourceA_label>Rat</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Rat</merged:sourceA_uri>
+    <merged:sourceA_definition>Medium-sized rodent with long tail</merged:sourceA_definition>
+    <merged:sourceB_label>Large Rat</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/LargeRat</merged:sourceB_uri>
+    <merged:sourceB_definition>Medium-sized rodent with robust body and scaly tail</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9418372511863708</merged:similarity_score>
+    <merged:synonym>Brown Rat</merged:synonym>
+    <merged:synonym>Norway Rat</merged:synonym>
+    <merged:synonym>Rat</merged:synonym>
+    <merged:synonym>Rattus</merged:synonym>
+    <merged:synonym>Rattus norvegicus</merged:synonym>
+    <merged:synonym>Sewer Rat</merged:synonym>
+    <merged:attributesA>genus: Rattus, size: medium</merged:attributesA>
+    <merged:attributesB>{'species': 'Rattus norvegicus', 'body_size': 'moderate'}</merged:attributesB>
     <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Rodent"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Rodent">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Reptile">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Rodent</rdfs:label>
-    <merged:sourceA_label>Rodent</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Rodent</merged:sourceA_uri>
-    <merged:sourceA_definition>Mammal characterized by continuously growing incisors</merged:sourceA_definition>
-    <merged:sourceB_label>Rodent Order</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/RodentOrder</merged:sourceB_uri>
-    <merged:sourceB_definition>Small mammal with chisel-like incisors that grow continuously</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9344334602355957</merged:similarity_score>
-    <merged:synonym>Gnawer</merged:synonym>
-    <merged:synonym>Gnawing Mammal</merged:synonym>
-    <merged:synonym>Rodent</merged:synonym>
-    <merged:synonym>Rodentia</merged:synonym>
-    <merged:attributesA>order: Rodentia, teeth: continuously_growing_incisors</merged:attributesA>
-    <merged:attributesB>{'order': 'Rodentia', 'dentition': 'ever_growing_incisors'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mammal"/>
+    <rdfs:label>Reptile</rdfs:label>
+    <merged:sourceA_label>Reptile</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Reptile</merged:sourceA_uri>
+    <merged:sourceA_definition>Cold-blooded vertebrate with scales or scutes</merged:sourceA_definition>
+    <merged:sourceB_label>Reptilian Class</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ReptilianClass</merged:sourceB_uri>
+    <merged:sourceB_definition>Cold-blooded vertebrate covered with scales or plates</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9020708203315735</merged:similarity_score>
+    <merged:synonym>Reptile</merged:synonym>
+    <merged:synonym>Reptilia</merged:synonym>
+    <merged:synonym>Reptilian</merged:synonym>
+    <merged:synonym>Scaled Vertebrate</merged:synonym>
+    <merged:attributesA>class: Reptilia, body_temperature: cold-blooded, body_covering: scales</merged:attributesA>
+    <merged:attributesB>{'class': 'Reptilia', 'thermoregulation': 'ectothermic', 'skin': 'scaly'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Animal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Snail">
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Butterfly">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Snail</rdfs:label>
-    <merged:sourceA_label>Snail</merged:sourceA_label>
-    <merged:sourceA_uri>http://example.org/animal-ontology-A/Snail</merged:sourceA_uri>
-    <merged:sourceA_definition>Gastropod mollusk with coiled shell</merged:sourceA_definition>
-    <merged:sourceB_label>Spiral Snail</merged:sourceB_label>
-    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SpiralSnail</merged:sourceB_uri>
-    <merged:sourceB_definition>Gastropod with spiral coiled protective shell</merged:sourceB_definition>
-    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9473739862442017</merged:similarity_score>
-    <merged:synonym>Escargot</merged:synonym>
-    <merged:synonym>Garden Snail</merged:synonym>
-    <merged:synonym>Gastropoda</merged:synonym>
-    <merged:synonym>Land Snail</merged:synonym>
-    <merged:synonym>Snail</merged:synonym>
-    <merged:attributesA>class: Gastropoda, shell: coiled, locomotion: muscular_foot</merged:attributesA>
-    <merged:attributesB>{'class': 'Gastropoda', 'shell_form': 'spiral', 'movement': 'gliding'}</merged:attributesB>
-    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mollusk"/>
+    <rdfs:label>Butterfly</rdfs:label>
+    <merged:sourceA_label>Butterfly</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Butterfly</merged:sourceA_uri>
+    <merged:sourceA_definition>Insect with large colorful wings and slender body</merged:sourceA_definition>
+    <merged:sourceB_label>Winged Butterfly</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/WingedButterfly</merged:sourceB_uri>
+    <merged:sourceB_definition>Flying insect with colorful patterned wings</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9286693334579468</merged:similarity_score>
+    <merged:synonym>Butterfly</merged:synonym>
+    <merged:synonym>Flying Insect</merged:synonym>
+    <merged:synonym>Lepidoptera</merged:synonym>
+    <merged:synonym>Moth</merged:synonym>
+    <merged:synonym>Papillon</merged:synonym>
+    <merged:attributesA>order: Lepidoptera, wings: scaled, lifecycle: complete_metamorphosis</merged:attributesA>
+    <merged:attributesB>{'order': 'Lepidoptera', 'wing_covering': 'scales', 'metamorphosis': 'complete'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Insect"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Tiger/Stripe">
     <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Tiger"/>
@@ -1354,23 +938,101 @@
     <rdfs:comment>Bengal tiger in wildlife sanctuary</rdfs:comment>
     <merged:source>A</merged:source>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lion/Nala">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Lion"/>
-    <rdfs:label>Nala</rdfs:label>
-    <rdfs:comment>Female lion residing in Serengeti National Park</rdfs:comment>
-    <merged:source>A</merged:source>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Whale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Whale</rdfs:label>
+    <merged:sourceA_label>Whale</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Whale</merged:sourceA_uri>
+    <merged:sourceA_definition>Large marine mammal with streamlined body</merged:sourceA_definition>
+    <merged:sourceB_label>Marine Mammal</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/MarineMammal</merged:sourceB_uri>
+    <merged:sourceB_definition>Aquatic or semi-aquatic mammals including whales and dolphins</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8819745779037476</merged:similarity_score>
+    <merged:synonym>Balaenopteridae</merged:synonym>
+    <merged:synonym>Blue Whale</merged:synonym>
+    <merged:synonym>Cetacea</merged:synonym>
+    <merged:synonym>Cetacean</merged:synonym>
+    <merged:synonym>Humpback Whale</merged:synonym>
+    <merged:synonym>Sea Mammal</merged:synonym>
+    <merged:attributesA>size: very_large, habitat: ocean</merged:attributesA>
+    <merged:attributesB>{'order': 'Cetacea', 'environment': 'aquatic'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Cetacean"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Tiger/Raja">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Tiger"/>
-    <rdfs:label>Raja</rdfs:label>
-    <rdfs:comment>Bengal tiger in Indian reserve</rdfs:comment>
-    <merged:source>B</merged:source>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lizard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Lizard</rdfs:label>
+    <merged:sourceA_label>Lizard</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Lizard</merged:sourceA_uri>
+    <merged:sourceA_definition>Reptile with four legs, external ear openings, and movable eyelids</merged:sourceA_definition>
+    <merged:sourceB_label>Scaled Lizard</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ScaledLizard</merged:sourceB_uri>
+    <merged:sourceB_definition>Four-limbed reptile with movable eyelids</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9302976727485657</merged:similarity_score>
+    <merged:synonym>Lacerta</merged:synonym>
+    <merged:synonym>Lacertilia</merged:synonym>
+    <merged:synonym>Lizard</merged:synonym>
+    <merged:synonym>Saurian</merged:synonym>
+    <merged:attributesA>suborder: Lacertilia, limbs: four</merged:attributesA>
+    <merged:attributesB>{'suborder': 'Lacertilia', 'legs': 'four'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Reptile"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Cheetah/Flash">
-    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Cheetah"/>
-    <rdfs:label>Flash</rdfs:label>
-    <rdfs:comment>Fastest recorded cheetah in Namibia</rdfs:comment>
-    <merged:source>A</merged:source>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/PolarBear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Polar Bear</rdfs:label>
+    <merged:sourceA_label>Polar Bear</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/PolarBear</merged:sourceA_uri>
+    <merged:sourceA_definition>Large white bear native to Arctic regions</merged:sourceA_definition>
+    <merged:sourceB_label>Arctic Bear</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ArcticBear</merged:sourceB_uri>
+    <merged:sourceB_definition>Large white-furred bear adapted to polar environment</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9362232685089111</merged:similarity_score>
+    <merged:synonym>Arctic Bear</merged:synonym>
+    <merged:synonym>Ice Bear</merged:synonym>
+    <merged:synonym>Polar Bear</merged:synonym>
+    <merged:synonym>Ursus maritimus</merged:synonym>
+    <merged:synonym>White Bear</merged:synonym>
+    <merged:attributesA>species: Ursus maritimus, habitat: arctic, conservation_status: vulnerable</merged:attributesA>
+    <merged:attributesB>{'species': 'Ursus maritimus', 'environment': 'polar', 'status': 'vulnerable'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ursidae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/RaptorBird">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Raptor</rdfs:label>
+    <merged:sourceA_label>Raptor</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/RaptorBird</merged:sourceA_uri>
+    <merged:sourceA_definition>Bird of prey with strong talons and keen eyesight</merged:sourceA_definition>
+    <merged:sourceB_label>Bird of Prey</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/BirdOfPrey</merged:sourceB_uri>
+    <merged:sourceB_definition>Predatory bird with sharp talons and hooked beak</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9030573964118958</merged:similarity_score>
+    <merged:synonym>Bird of Prey</merged:synonym>
+    <merged:synonym>Hunter Bird</merged:synonym>
+    <merged:synonym>Predatory Avian</merged:synonym>
+    <merged:synonym>Predatory Bird</merged:synonym>
+    <merged:synonym>Raptor</merged:synonym>
+    <merged:attributesA>diet: carnivorous, vision: excellent</merged:attributesA>
+    <merged:attributesB>{'feeding': 'carnivorous', 'eyesight': 'exceptional'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Bird"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Swan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Swan</rdfs:label>
+    <merged:sourceA_label>Swan</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Swan</merged:sourceA_uri>
+    <merged:sourceA_definition>Large waterfowl with long neck and elegant appearance</merged:sourceA_definition>
+    <merged:sourceB_label>Graceful Swan</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/GracefulSwan</merged:sourceB_uri>
+    <merged:sourceB_definition>Large waterfowl known for elegant long neck</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9677115678787231</merged:similarity_score>
+    <merged:synonym>Black Swan</merged:synonym>
+    <merged:synonym>Cygnus</merged:synonym>
+    <merged:synonym>Cygnus olor</merged:synonym>
+    <merged:synonym>Mute Swan</merged:synonym>
+    <merged:synonym>Swan</merged:synonym>
+    <merged:synonym>Whooper Swan</merged:synonym>
+    <merged:attributesA>genus: Cygnus, size: large, neck: long</merged:attributesA>
+    <merged:attributesB>{'genus': 'Cygnus', 'body_size': 'large', 'neck_length': 'extended'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Waterfowl"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lion">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -1391,11 +1053,300 @@
     <merged:attributesB>{'species': 'Panthera leo', 'environment': 'grassland', 'status': 'vulnerable'}</merged:attributesB>
     <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Felidae"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Octopus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Octopus</rdfs:label>
+    <merged:sourceA_label>Octopus</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Octopus</merged:sourceA_uri>
+    <merged:sourceA_definition>Eight-armed marine mollusk with high intelligence</merged:sourceA_definition>
+    <merged:sourceB_label>Eight-Armed Octopus</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/EightArmedOctopus</merged:sourceB_uri>
+    <merged:sourceB_definition>Marine cephalopod with eight flexible tentacles</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.892403244972229</merged:similarity_score>
+    <merged:synonym>Cuttlefish</merged:synonym>
+    <merged:synonym>Devilfish</merged:synonym>
+    <merged:synonym>Eight-armed Cephalopod</merged:synonym>
+    <merged:synonym>Octopoda</merged:synonym>
+    <merged:synonym>Octopus</merged:synonym>
+    <merged:attributesA>order: Octopoda, arms: eight, intelligence: high</merged:attributesA>
+    <merged:attributesB>{'order': 'Octopoda', 'tentacles': 'eight', 'cognition': 'advanced'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mollusk"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Animal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Animal</rdfs:label>
+    <merged:sourceA_label>Animal</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Animal</merged:sourceA_uri>
+    <merged:sourceA_definition>A living organism that feeds on organic matter, typically having specialized sense organs and nervous system</merged:sourceA_definition>
+    <merged:sourceB_label>Animal Organism</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/AnimalOrganism</merged:sourceB_uri>
+    <merged:sourceB_definition>Living creature that consumes organic material and typically has mobility and sensory capabilities</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8988699913024902</merged:similarity_score>
+    <merged:synonym>Animalia</merged:synonym>
+    <merged:synonym>Beast</merged:synonym>
+    <merged:synonym>Creature</merged:synonym>
+    <merged:synonym>Fauna</merged:synonym>
+    <merged:synonym>Living Animal</merged:synonym>
+    <merged:synonym>Metazoa</merged:synonym>
+    <merged:attributesA>kingdom: Animalia, type: root_class</merged:attributesA>
+    <merged:attributesB>{'kingdom': 'Animalia', 'type': 'base_class'}</merged:attributesB>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Insect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Insect</rdfs:label>
+    <merged:sourceA_label>Insect</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Insect</merged:sourceA_uri>
+    <merged:sourceA_definition>Arthropod with three body segments and six legs</merged:sourceA_definition>
+    <merged:sourceB_label>Six-Legged Arthropod</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/SixLeggedArthropod</merged:sourceB_uri>
+    <merged:sourceB_definition>Arthropod with segmented body and six legs</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9122280478477478</merged:similarity_score>
+    <merged:synonym>Bug</merged:synonym>
+    <merged:synonym>Hexapod</merged:synonym>
+    <merged:synonym>Insect</merged:synonym>
+    <merged:synonym>Insecta</merged:synonym>
+    <merged:attributesA>class: Insecta, body_segments: three, legs: six</merged:attributesA>
+    <merged:attributesB>{'class': 'Insecta', 'body_parts': 'three_segments', 'leg_count': 'six'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Invertebrate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Monkey">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Monkey</rdfs:label>
+    <merged:sourceA_label>Monkey</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Monkey</merged:sourceA_uri>
+    <merged:sourceA_definition>Primate with tails, generally smaller than apes</merged:sourceA_definition>
+    <merged:sourceB_label>Tailed Monkey</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TailedMonkey</merged:sourceB_uri>
+    <merged:sourceB_definition>Smaller primates characterized by presence of tail</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9447057247161865</merged:similarity_score>
+    <merged:synonym>Cercopithecoidea</merged:synonym>
+    <merged:synonym>Monkey</merged:synonym>
+    <merged:synonym>Old World Monkey</merged:synonym>
+    <merged:synonym>Simian</merged:synonym>
+    <merged:attributesA>tail: present</merged:attributesA>
+    <merged:attributesB>{'tail_present': 'yes'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Primate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Chimpanzee">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Chimpanzee</rdfs:label>
+    <merged:sourceA_label>Chimpanzee</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Chimpanzee</merged:sourceA_uri>
+    <merged:sourceA_definition>Great ape species native to Africa, closely related to humans</merged:sourceA_definition>
+    <merged:sourceB_label>Common Chimpanzee</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/CommonChimpanzee</merged:sourceB_uri>
+    <merged:sourceB_definition>Highly intelligent ape closely related to humans</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9223560094833374</merged:similarity_score>
+    <merged:synonym>Chimp</merged:synonym>
+    <merged:synonym>Chimpanzee</merged:synonym>
+    <merged:synonym>Common Chimp</merged:synonym>
+    <merged:synonym>Pan troglodytes</merged:synonym>
+    <merged:attributesA>species: Pan troglodytes, habitat: forest, intelligence: high</merged:attributesA>
+    <merged:attributesB>{'species': 'Pan troglodytes', 'environment': 'tropical_forest', 'cognition': 'advanced'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ape"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Primate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Primate</rdfs:label>
+    <merged:sourceA_label>Primate</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Primate</merged:sourceA_uri>
+    <merged:sourceA_definition>Mammal of an order that includes monkeys, apes, and humans</merged:sourceA_definition>
+    <merged:sourceB_label>Primate Order</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/PrimateOrder</merged:sourceB_uri>
+    <merged:sourceB_definition>Mammals including apes, monkeys, lemurs, and humans</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9389787912368774</merged:similarity_score>
+    <merged:synonym>Primate</merged:synonym>
+    <merged:synonym>Primates</merged:synonym>
+    <merged:synonym>Simian</merged:synonym>
+    <merged:synonym>Simians</merged:synonym>
+    <merged:attributesA>order: Primates</merged:attributesA>
+    <merged:attributesB>{'order': 'Primates'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Mammal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lion/Simba">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Lion"/>
+    <rdfs:label>Simba</rdfs:label>
+    <rdfs:comment>Male lion residing in Serengeti National Park</rdfs:comment>
+    <merged:source>A</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Wolf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Wolf</rdfs:label>
+    <merged:sourceA_label>Wolf</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Wolf</merged:sourceA_uri>
+    <merged:sourceA_definition>Large canine native to wilderness areas</merged:sourceA_definition>
+    <merged:sourceB_label>Domestic Dog</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/DomesticDog</merged:sourceB_uri>
+    <merged:sourceB_definition>Tamed canine descended from wolves, human companion</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8704805374145508</merged:similarity_score>
+    <merged:synonym>Canis familiaris</merged:synonym>
+    <merged:synonym>Canis lupus</merged:synonym>
+    <merged:synonym>Dog</merged:synonym>
+    <merged:synonym>Gray Wolf</merged:synonym>
+    <merged:synonym>Pet Dog</merged:synonym>
+    <merged:synonym>Timber Wolf</merged:synonym>
+    <merged:attributesA>species: Canis lupus, habitat: forest, social: pack animal</merged:attributesA>
+    <merged:attributesB>{'species': 'Canis familiaris', 'environment': 'domestic', 'domestication': 'yes'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Canidae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/DomesticCat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Domestic Cat</rdfs:label>
+    <merged:sourceA_label>Domestic Cat</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/DomesticCat</merged:sourceA_uri>
+    <merged:sourceA_definition>Small domesticated carnivorous mammal kept as pet</merged:sourceA_definition>
+    <merged:sourceB_label>House Cat</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/HouseCat</merged:sourceB_uri>
+    <merged:sourceB_definition>Small tamed feline commonly kept as companion animal</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9076837301254272</merged:similarity_score>
+    <merged:synonym>Domestic Cat</merged:synonym>
+    <merged:synonym>Felis catus</merged:synonym>
+    <merged:synonym>House Cat</merged:synonym>
+    <merged:synonym>Pet Cat</merged:synonym>
+    <merged:synonym>Pet Feline</merged:synonym>
+    <merged:attributesA>species: Felis catus, habitat: domestic, status: domesticated</merged:attributesA>
+    <merged:attributesB>{'species': 'Felis catus', 'environment': 'human_dwelling', 'domestication': 'yes'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Felidae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lion/Nala">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Lion"/>
+    <rdfs:label>Nala</rdfs:label>
+    <rdfs:comment>Female lion residing in Serengeti National Park</rdfs:comment>
+    <merged:source>A</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Gorilla">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Gorilla</rdfs:label>
+    <merged:sourceA_label>Gorilla</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Gorilla</merged:sourceA_uri>
+    <merged:sourceA_definition>Largest living primate native to African forests</merged:sourceA_definition>
+    <merged:sourceB_label>Mountain Gorilla</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/MountainGorilla</merged:sourceB_uri>
+    <merged:sourceB_definition>Largest primate species inhabiting African mountain forests</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9618736505508423</merged:similarity_score>
+    <merged:synonym>Gorilla</merged:synonym>
+    <merged:synonym>Gorilla beringei</merged:synonym>
+    <merged:synonym>Gorilla gorilla</merged:synonym>
+    <merged:synonym>Mountain Gorilla</merged:synonym>
+    <merged:synonym>Silverback</merged:synonym>
+    <merged:synonym>Silverback Gorilla</merged:synonym>
+    <merged:attributesA>genus: Gorilla, habitat: forest, conservation_status: endangered</merged:attributesA>
+    <merged:attributesB>{'species': 'Gorilla beringei', 'environment': 'mountain_forest', 'status': 'endangered'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ape"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Wolf/Grey">
     <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Wolf"/>
     <rdfs:label>Grey</rdfs:label>
     <rdfs:comment>Alpha male wolf in Yellowstone pack</rdfs:comment>
     <merged:source>A</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Tiger">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Tiger</rdfs:label>
+    <merged:sourceA_label>Tiger</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Tiger</merged:sourceA_uri>
+    <merged:sourceA_definition>Largest cat species with distinctive orange coat and black stripes</merged:sourceA_definition>
+    <merged:sourceB_label>Tiger Species</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/TigerSpecies</merged:sourceB_uri>
+    <merged:sourceB_definition>Largest feline with orange fur and black striping pattern</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9519696235656738</merged:similarity_score>
+    <merged:synonym>Bengal Tiger</merged:synonym>
+    <merged:synonym>Panthera tigris</merged:synonym>
+    <merged:synonym>Striped Cat</merged:synonym>
+    <merged:synonym>Striped Predator</merged:synonym>
+    <merged:synonym>Tiger</merged:synonym>
+    <merged:attributesA>species: Panthera tigris, habitat: forest, conservation_status: endangered</merged:attributesA>
+    <merged:attributesB>{'species': 'Panthera tigris', 'environment': 'jungle', 'status': 'endangered'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Felidae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Duck">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Duck</rdfs:label>
+    <merged:sourceA_label>Duck</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Duck</merged:sourceA_uri>
+    <merged:sourceA_definition>Waterfowl with webbed feet and broad flat beak</merged:sourceA_definition>
+    <merged:sourceB_label>Wild Duck</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/WildDuck</merged:sourceB_uri>
+    <merged:sourceB_definition>Waterfowl with webbed feet and waterproof plumage</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9440187215805054</merged:similarity_score>
+    <merged:synonym>Anas</merged:synonym>
+    <merged:synonym>Anas platyrhynchos</merged:synonym>
+    <merged:synonym>Domestic Duck</merged:synonym>
+    <merged:synonym>Duck</merged:synonym>
+    <merged:synonym>Mallard</merged:synonym>
+    <merged:synonym>Mallard Duck</merged:synonym>
+    <merged:attributesA>family: Anatidae, feet: webbed</merged:attributesA>
+    <merged:attributesB>{'family': 'Anatidae', 'foot_structure': 'webbed'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Waterfowl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dog/Buddy">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Dog"/>
+    <rdfs:label>Buddy</rdfs:label>
+    <rdfs:comment>Golden Retriever pet dog</rdfs:comment>
+    <merged:source>A</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Cheetah/Flash">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Cheetah"/>
+    <rdfs:label>Flash</rdfs:label>
+    <rdfs:comment>Fastest recorded cheetah in Namibia</rdfs:comment>
+    <merged:source>A</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Felidae">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Felidae</rdfs:label>
+    <merged:sourceA_label>Felidae</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Felidae</merged:sourceA_uri>
+    <merged:sourceA_definition>Family of carnivorous mammals commonly known as cats</merged:sourceA_definition>
+    <merged:sourceB_label>Felid Family</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/FelidFamily</merged:sourceB_uri>
+    <merged:sourceB_definition>Carnivorous mammals of the cat family with retractable claws</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.906105637550354</merged:similarity_score>
+    <merged:synonym>Cat</merged:synonym>
+    <merged:synonym>Cat Family</merged:synonym>
+    <merged:synonym>Cats</merged:synonym>
+    <merged:synonym>Felidae Family</merged:synonym>
+    <merged:synonym>Feline</merged:synonym>
+    <merged:synonym>Felines</merged:synonym>
+    <merged:attributesA>family: Felidae, characteristics: retractable_claws</merged:attributesA>
+    <merged:attributesB>{'family': 'Felidae', 'claw_type': 'retractable'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Carnivore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dolphin/Echo">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Dolphin"/>
+    <rdfs:label>Echo</rdfs:label>
+    <rdfs:comment>Bottlenose dolphin in aquarium</rdfs:comment>
+    <merged:source>B</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/BrownBear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Brown Bear</rdfs:label>
+    <merged:sourceA_label>Brown Bear</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/BrownBear</merged:sourceA_uri>
+    <merged:sourceA_definition>Large bear species found across North America and Eurasia</merged:sourceA_definition>
+    <merged:sourceB_label>Grizzly Bear</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/GrizzlyBear</merged:sourceB_uri>
+    <merged:sourceB_definition>Large brown bear inhabiting North America and Eurasia</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9503365755081177</merged:similarity_score>
+    <merged:synonym>Brown Bear</merged:synonym>
+    <merged:synonym>Grizzly Bear</merged:synonym>
+    <merged:synonym>Kodiak</merged:synonym>
+    <merged:synonym>Kodiak Bear</merged:synonym>
+    <merged:synonym>Ursus arctos</merged:synonym>
+    <merged:attributesA>species: Ursus arctos, habitat: forest, size: large</merged:attributesA>
+    <merged:attributesB>{'species': 'Ursus arctos', 'environment': 'temperate_forest', 'mass': 'large'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Ursidae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lion/Leo">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Lion"/>
+    <rdfs:label>Leo</rdfs:label>
+    <rdfs:comment>Male African lion in Kruger National Park</rdfs:comment>
+    <merged:source>B</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Dog/Max">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Dog"/>
+    <rdfs:label>Max</rdfs:label>
+    <rdfs:comment>Labrador Retriever companion dog</rdfs:comment>
+    <merged:source>B</merged:source>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/DomesticCat/Whiskers">
     <rdf:type rdf:resource="http://example.org/merged-animal-ontology/DomesticCat"/>
@@ -1403,10 +1354,59 @@
     <rdfs:comment>Domestic tabby cat</rdfs:comment>
     <merged:source>A</merged:source>
   </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Gorilla/Koko">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Gorilla"/>
+    <rdfs:label>Koko</rdfs:label>
+    <rdfs:comment>Mountain gorilla in conservation program</rdfs:comment>
+    <merged:source>A</merged:source>
+  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Gorilla/Digit">
     <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Gorilla"/>
     <rdfs:label>Digit</rdfs:label>
     <rdfs:comment>Mountain gorilla in conservation project</rdfs:comment>
+    <merged:source>B</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Ant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Ant</rdfs:label>
+    <merged:sourceA_label>Ant</merged:sourceA_label>
+    <merged:sourceA_uri>http://example.org/animal-ontology-A/Ant</merged:sourceA_uri>
+    <merged:sourceA_definition>Social insect living in organized colonies</merged:sourceA_definition>
+    <merged:sourceB_label>Colony Ant</merged:sourceB_label>
+    <merged:sourceB_uri>http://example.org/animal-taxonomy-B/ColonyAnt</merged:sourceB_uri>
+    <merged:sourceB_definition>Eusocial insect living in structured colonies</merged:sourceB_definition>
+    <merged:similarity_score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.919672966003418</merged:similarity_score>
+    <merged:synonym>Ant</merged:synonym>
+    <merged:synonym>Army Ant</merged:synonym>
+    <merged:synonym>Fire Ant</merged:synonym>
+    <merged:synonym>Formicidae</merged:synonym>
+    <merged:synonym>Worker Ant</merged:synonym>
+    <merged:attributesA>family: Formicidae, social: eusocial, colony: organized</merged:attributesA>
+    <merged:attributesB>{'family': 'Formicidae', 'organization': 'colonial', 'structure': 'hierarchical'}</merged:attributesB>
+    <rdfs:subClassOf rdf:resource="http://example.org/merged-animal-ontology/Insect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Cheetah/Bolt">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Cheetah"/>
+    <rdfs:label>Bolt</rdfs:label>
+    <rdfs:comment>Record-breaking cheetah in Namibian grassland</rdfs:comment>
+    <merged:source>B</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Lion/Zara">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Lion"/>
+    <rdfs:label>Zara</rdfs:label>
+    <rdfs:comment>Female African lion in Kruger National Park</rdfs:comment>
+    <merged:source>B</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/DomesticCat/Mittens">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/DomesticCat"/>
+    <rdfs:label>Mittens</rdfs:label>
+    <rdfs:comment>Domestic short-hair cat</rdfs:comment>
+    <merged:source>B</merged:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/merged-animal-ontology/Wolf/Max">
+    <rdf:type rdf:resource="http://example.org/merged-animal-ontology/Wolf"/>
+    <rdfs:label>Max</rdfs:label>
+    <rdfs:comment>Labrador Retriever companion dog</rdfs:comment>
     <merged:source>B</merged:source>
   </rdf:Description>
 </rdf:RDF>
