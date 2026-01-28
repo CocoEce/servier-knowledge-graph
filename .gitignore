@@ -224,3 +224,5 @@ Exploration/Bertmap/**/*.owl
 Exploration/Bertmap/**/*.npy
 Exploration/Bertmap/**/*.nt.gz
 Exploration/Bertmap/**/*.rdf
+
+.vscode/
