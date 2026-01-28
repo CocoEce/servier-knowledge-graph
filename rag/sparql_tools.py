@@ -236,7 +236,14 @@ class SPARQLTools:
         WHERE {{
             ?concept rdf:type owl:Class .
             ?concept rdfs:label ?label .
-            FILTER(CONTAINS(LCASE(STR(?label)), LCASE("{concept_name}")))
+            
+            # Correspondance EXACTE sur le label OU dans merged:synonym (uniquement après alignement)
+            {{
+                FILTER(LCASE(STR(?label)) = LCASE("{concept_name}"))
+            }} UNION {{
+                ?concept merged:synonym ?syn .
+                FILTER(LCASE(STR(?syn)) = LCASE("{concept_name}"))
+            }}
             
             OPTIONAL {{
                 ?concept ?property ?value .

@@ -18,8 +18,8 @@ st.set_page_config(
 
 # Initialiser l'agent RAG
 @st.cache_resource
-def get_rag_agent():
-    return KnowledgeGraphRAG()
+def get_rag_agent(use_llm=True):
+    return KnowledgeGraphRAG(use_llm=use_llm)
 
 # Charger la configuration pour les questions de démo
 @st.cache_data
@@ -59,8 +59,12 @@ st.markdown("""
 st.markdown('<div class="main-header">🧠 Knowledge Graph RAG</div>', unsafe_allow_html=True)
 st.markdown("### Système de questions-réponses sur le knowledge graph d'ontologies alignées")
 
+# Mode sans LLM (fallback si quota dépassé)
+use_llm = st.sidebar.checkbox("🤖 Utiliser Gemini (décocher si quota dépassé)", value=True, 
+                               help="Si décochée, retourne les résultats SPARQL bruts sans génération de texte")
+
 # Initialisation
-rag = get_rag_agent()
+rag = get_rag_agent(use_llm=use_llm)
 config = load_config()
 
 # Initialiser l'historique
@@ -78,6 +82,10 @@ with st.sidebar:
             st.session_state.current_question = q
     
     st.divider()
+    
+    if st.button("🔄 Recharger l'agent", use_container_width=True, help="Force le rechargement avec la nouvelle configuration"):
+        st.cache_resource.clear()
+        st.rerun()
     
     if st.button("🗑️ Effacer l'historique", use_container_width=True):
         st.session_state.history = []

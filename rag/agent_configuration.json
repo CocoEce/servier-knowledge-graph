@@ -2,7 +2,7 @@
   "agent": {
     "name": "Knowledge Graph RAG Agent",
     "description": "Agent RAG pour interroger le knowledge graph d'ontologies alignées",
-    "model": "models/gemini-2.5-flash-preview-09-2025",
+    "model": "models/gemma-3-27b-it",
     "temperature": 0.7
   },
   "graphdb": {

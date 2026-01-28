@@ -21,15 +21,20 @@ class KnowledgeGraphRAG:
     d'ontologies alignées et Gemini pour générer des réponses en langage naturel.
     """
     
-    def __init__(self, config_file="agent_configuration.json"):
+    def __init__(self, config_file="agent_configuration.json", use_llm=True):
         # Charger la configuration
         config_path = Path(__file__).parent / config_file
         with open(config_path, 'r', encoding='utf-8') as f:
             self.config = json.load(f)
         
         self.tools = SPARQLTools()
-        model_name = self.config['agent']['model']
-        self.model = genai.GenerativeModel(model_name)
+        self.use_llm = use_llm
+        
+        if use_llm:
+            model_name = self.config['agent']['model']
+            self.model = genai.GenerativeModel(model_name)
+        else:
+            self.model = None
         
         # Créer le mapping des tools depuis la configuration
         self.tool_mapping = {
@@ -72,7 +77,14 @@ class KnowledgeGraphRAG:
     
     def extract_concepts(self, question):
         """Extrait les concepts mentionnés dans la question"""
-        # Simple extraction basée sur des mots-clés
+        # Mots interrogatifs français à ignorer
+        stopwords = {
+            'quel', 'quels', 'quelle', 'quelles', 'qui', 'que', 'quoi', 
+            'où', 'comment', 'pourquoi', 'combien', 'trouve', 'cherche',
+            'donne', 'liste', 'montre', 'affiche', 'sont', 'est', 'les',
+            'le', 'la', 'un', 'une', 'des', 'tous', 'toutes', 'tout'
+        }
+        
         words = question.split()
         concepts = []
         
@@ -87,6 +99,13 @@ class KnowledgeGraphRAG:
             if '"' in word or "'" in word:
                 in_quotes = not in_quotes
                 word_clean = word_clean.strip('"\'')
+            
+            # Ignorer les stopwords même s'ils commencent par une majuscule
+            if word_clean.lower() in stopwords:
+                if current_concept:
+                    concepts.append(' '.join(current_concept))
+                    current_concept = []
+                continue
             
             # Capturer les mots en majuscule ou entre guillemets
             if in_quotes or (word_clean and word_clean[0].isupper() and len(word_clean) > 1):
@@ -147,11 +166,19 @@ Instructions:
 
 Réponse:"""
         
+        # Retourner directement les résultats SPARQL si mode sans LLM
+        if not self.use_llm:
+            return sparql_results
+        
         # Générer la réponse avec Gemini
         print("\n🤖 Génération de la réponse...")
-        response = self.model.generate_content(prompt)
-        
-        return response.text
+        try:
+            response = self.model.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            print(f"\n⚠️  Erreur Gemini : {str(e)}")
+            print("📋 Retour des résultats SPARQL bruts à la place...")
+            return sparql_results
 
 
 def main():
