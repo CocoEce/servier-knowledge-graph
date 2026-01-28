@@ -1,0 +1,1032 @@
+{
+  "ontology": {
+    "iri": "http://example.org/animal-taxonomy-B",
+    "version": "1.0",
+    "name": "Zoological Classification System B",
+    "description": "A comprehensive taxonomy for animal kingdom classification and study"
+  },
+  "classes": [
+    {
+      "id": "ANIMAL_B:0000001",
+      "uri": "http://example.org/animal-taxonomy-B/AnimalOrganism",
+      "label": "Animal Organism",
+      "definition": "Living creature that consumes organic material and typically has mobility and sensory capabilities",
+      "synonyms": ["Creature", "Beast", "Living Animal"],
+      "parent": null,
+      "attributes": {
+        "kingdom": "Animalia",
+        "type": "base_class"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000010",
+      "uri": "http://example.org/animal-taxonomy-B/Mammalian",
+      "label": "Mammalian",
+      "definition": "Endothermic vertebrate distinguished by fur, mammary glands, and live birth",
+      "synonyms": ["Mammal Class", "Mammalia", "Warm-blooded Animal"],
+      "parent": "ANIMAL_B:0000001",
+      "attributes": {
+        "class": "Mammalia",
+        "temperature_regulation": "endothermic",
+        "offspring": "live_birth"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000011",
+      "uri": "http://example.org/animal-taxonomy-B/CarnivorousMammal",
+      "label": "Carnivorous Mammal",
+      "definition": "Flesh-eating mammal with adaptations for hunting",
+      "synonyms": ["Predator", "Carnivora Order", "Hunter"],
+      "parent": "ANIMAL_B:0000010",
+      "attributes": {
+        "order": "Carnivora",
+        "feeding_type": "carnivorous"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000012",
+      "uri": "http://example.org/animal-taxonomy-B/FelidFamily",
+      "label": "Felid Family",
+      "definition": "Carnivorous mammals of the cat family with retractable claws",
+      "synonyms": ["Cat", "Feline", "Felidae Family"],
+      "parent": "ANIMAL_B:0000011",
+      "attributes": {
+        "family": "Felidae",
+        "claw_type": "retractable"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000013",
+      "uri": "http://example.org/animal-taxonomy-B/AfricanLion",
+      "label": "African Lion",
+      "definition": "Large social cat with distinctive mane in males",
+      "synonyms": ["Lion", "Panthera leo", "Savanna Lion"],
+      "parent": "ANIMAL_B:0000012",
+      "attributes": {
+        "species": "Panthera leo",
+        "environment": "grassland",
+        "status": "vulnerable"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000014",
+      "uri": "http://example.org/animal-taxonomy-B/TigerSpecies",
+      "label": "Tiger Species",
+      "definition": "Largest feline with orange fur and black striping pattern",
+      "synonyms": ["Tiger", "Panthera tigris", "Striped Predator"],
+      "parent": "ANIMAL_B:0000012",
+      "attributes": {
+        "species": "Panthera tigris",
+        "environment": "jungle",
+        "status": "endangered"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000015",
+      "uri": "http://example.org/animal-taxonomy-B/SpottedLeopard",
+      "label": "Spotted Leopard",
+      "definition": "Solitary big cat with rosette-patterned coat",
+      "synonyms": ["Leopard", "Panthera pardus", "Black Panther"],
+      "parent": "ANIMAL_B:0000012",
+      "attributes": {
+        "species": "Panthera pardus",
+        "environment": "diverse",
+        "status": "vulnerable"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000016",
+      "uri": "http://example.org/animal-taxonomy-B/FastCheetah",
+      "label": "Fast Cheetah",
+      "definition": "Speediest terrestrial animal with characteristic tear streaks",
+      "synonyms": ["Cheetah", "Acinonyx jubatus", "Sprint Cat"],
+      "parent": "ANIMAL_B:0000012",
+      "attributes": {
+        "species": "Acinonyx jubatus",
+        "environment": "open_plains",
+        "velocity": "120 km/h"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000017",
+      "uri": "http://example.org/animal-taxonomy-B/HouseCat",
+      "label": "House Cat",
+      "definition": "Small tamed feline commonly kept as companion animal",
+      "synonyms": ["Domestic Cat", "Felis catus", "Pet Feline"],
+      "parent": "ANIMAL_B:0000012",
+      "attributes": {
+        "species": "Felis catus",
+        "environment": "human_dwelling",
+        "domestication": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000018",
+      "uri": "http://example.org/animal-taxonomy-B/CanidGroup",
+      "label": "Canid Group",
+      "definition": "Family of carnivorous mammals including wolves, dogs, and foxes",
+      "synonyms": ["Dog Family", "Canidae", "Canine Group"],
+      "parent": "ANIMAL_B:0000011",
+      "attributes": {
+        "family": "Canidae"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000019",
+      "uri": "http://example.org/animal-taxonomy-B/GreyWolf",
+      "label": "Grey Wolf",
+      "definition": "Large wild canid living in hierarchical packs",
+      "synonyms": ["Wolf", "Canis lupus", "Timber Wolf"],
+      "parent": "ANIMAL_B:0000018",
+      "attributes": {
+        "species": "Canis lupus",
+        "environment": "wilderness",
+        "behavior": "pack_hunter"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000020",
+      "uri": "http://example.org/animal-taxonomy-B/DomesticDog",
+      "label": "Domestic Dog",
+      "definition": "Tamed canine descended from wolves, human companion",
+      "synonyms": ["Dog", "Canis familiaris", "Pet Dog"],
+      "parent": "ANIMAL_B:0000018",
+      "attributes": {
+        "species": "Canis familiaris",
+        "environment": "domestic",
+        "domestication": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000021",
+      "uri": "http://example.org/animal-taxonomy-B/RedFox",
+      "label": "Red Fox",
+      "definition": "Small omnivorous canid with characteristic bushy tail",
+      "synonyms": ["Fox", "Vulpes vulpes", "Common Fox"],
+      "parent": "ANIMAL_B:0000018",
+      "attributes": {
+        "species": "Vulpes vulpes",
+        "environment": "adaptable",
+        "feeding": "omnivorous"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000022",
+      "uri": "http://example.org/animal-taxonomy-B/BearFamily",
+      "label": "Bear Family",
+      "definition": "Large carnivorous or omnivorous mammals with heavy build",
+      "synonyms": ["Ursidae", "Bears", "Ursine"],
+      "parent": "ANIMAL_B:0000011",
+      "attributes": {
+        "family": "Ursidae"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000023",
+      "uri": "http://example.org/animal-taxonomy-B/GrizzlyBear",
+      "label": "Grizzly Bear",
+      "definition": "Large brown bear inhabiting North America and Eurasia",
+      "synonyms": ["Brown Bear", "Ursus arctos", "Kodiak"],
+      "parent": "ANIMAL_B:0000022",
+      "attributes": {
+        "species": "Ursus arctos",
+        "environment": "temperate_forest",
+        "mass": "large"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000024",
+      "uri": "http://example.org/animal-taxonomy-B/ArcticBear",
+      "label": "Arctic Bear",
+      "definition": "Large white-furred bear adapted to polar environment",
+      "synonyms": ["Polar Bear", "Ursus maritimus", "White Bear"],
+      "parent": "ANIMAL_B:0000022",
+      "attributes": {
+        "species": "Ursus maritimus",
+        "environment": "polar",
+        "status": "vulnerable"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000030",
+      "uri": "http://example.org/animal-taxonomy-B/PrimateOrder",
+      "label": "Primate Order",
+      "definition": "Mammals including apes, monkeys, lemurs, and humans",
+      "synonyms": ["Primate", "Primates", "Simians"],
+      "parent": "ANIMAL_B:0000010",
+      "attributes": {
+        "order": "Primates"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000031",
+      "uri": "http://example.org/animal-taxonomy-B/GreatApe",
+      "label": "Great Ape",
+      "definition": "Large tailless primates with advanced cognitive abilities",
+      "synonyms": ["Ape", "Hominoid", "Large Primate"],
+      "parent": "ANIMAL_B:0000030",
+      "attributes": {
+        "superfamily": "Hominoidea",
+        "tail_present": "no"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000032",
+      "uri": "http://example.org/animal-taxonomy-B/MountainGorilla",
+      "label": "Mountain Gorilla",
+      "definition": "Largest primate species inhabiting African mountain forests",
+      "synonyms": ["Gorilla", "Gorilla beringei", "Silverback Gorilla"],
+      "parent": "ANIMAL_B:0000031",
+      "attributes": {
+        "species": "Gorilla beringei",
+        "environment": "mountain_forest",
+        "status": "endangered"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000033",
+      "uri": "http://example.org/animal-taxonomy-B/CommonChimpanzee",
+      "label": "Common Chimpanzee",
+      "definition": "Highly intelligent ape closely related to humans",
+      "synonyms": ["Chimpanzee", "Pan troglodytes", "Chimp"],
+      "parent": "ANIMAL_B:0000031",
+      "attributes": {
+        "species": "Pan troglodytes",
+        "environment": "tropical_forest",
+        "cognition": "advanced"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000034",
+      "uri": "http://example.org/animal-taxonomy-B/BorneanOrangutan",
+      "label": "Bornean Orangutan",
+      "definition": "Large reddish arboreal ape from Southeast Asia",
+      "synonyms": ["Orangutan", "Pongo pygmaeus", "Forest Man"],
+      "parent": "ANIMAL_B:0000031",
+      "attributes": {
+        "species": "Pongo pygmaeus",
+        "environment": "tropical_rainforest",
+        "status": "critically_endangered"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000035",
+      "uri": "http://example.org/animal-taxonomy-B/TailedMonkey",
+      "label": "Tailed Monkey",
+      "definition": "Smaller primates characterized by presence of tail",
+      "synonyms": ["Monkey", "Simian", "Old World Monkey"],
+      "parent": "ANIMAL_B:0000030",
+      "attributes": {
+        "tail_present": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000040",
+      "uri": "http://example.org/animal-taxonomy-B/RodentOrder",
+      "label": "Rodent Order",
+      "definition": "Small mammal with chisel-like incisors that grow continuously",
+      "synonyms": ["Rodent", "Rodentia", "Gnawer"],
+      "parent": "ANIMAL_B:0000010",
+      "attributes": {
+        "order": "Rodentia",
+        "dentition": "ever_growing_incisors"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000041",
+      "uri": "http://example.org/animal-taxonomy-B/SmallMouse",
+      "label": "Small Mouse",
+      "definition": "Tiny rodent with pointed nose and long slender tail",
+      "synonyms": ["Mouse", "Mus musculus", "Common Mouse"],
+      "parent": "ANIMAL_B:0000040",
+      "attributes": {
+        "species": "Mus musculus",
+        "body_size": "tiny"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000042",
+      "uri": "http://example.org/animal-taxonomy-B/LargeRat",
+      "label": "Large Rat",
+      "definition": "Medium-sized rodent with robust body and scaly tail",
+      "synonyms": ["Rat", "Rattus norvegicus", "Sewer Rat"],
+      "parent": "ANIMAL_B:0000040",
+      "attributes": {
+        "species": "Rattus norvegicus",
+        "body_size": "moderate"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000043",
+      "uri": "http://example.org/animal-taxonomy-B/TreeSquirrel",
+      "label": "Tree Squirrel",
+      "definition": "Bushy-tailed arboreal rodent with climbing abilities",
+      "synonyms": ["Squirrel", "Sciurus vulgaris", "Red Squirrel"],
+      "parent": "ANIMAL_B:0000040",
+      "attributes": {
+        "family": "Sciuridae",
+        "lifestyle": "arboreal"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000050",
+      "uri": "http://example.org/animal-taxonomy-B/MarineMammal",
+      "label": "Marine Mammal",
+      "definition": "Aquatic or semi-aquatic mammals including whales and dolphins",
+      "synonyms": ["Cetacean", "Cetacea", "Sea Mammal"],
+      "parent": "ANIMAL_B:0000010",
+      "attributes": {
+        "order": "Cetacea",
+        "environment": "aquatic"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000051",
+      "uri": "http://example.org/animal-taxonomy-B/BottlenoseDolphin",
+      "label": "Bottlenose Dolphin",
+      "definition": "Smart marine mammal with distinctive bottle-shaped snout",
+      "synonyms": ["Dolphin", "Tursiops", "Common Dolphin"],
+      "parent": "ANIMAL_B:0000050",
+      "attributes": {
+        "genus": "Tursiops",
+        "cognition": "advanced",
+        "sonar": "present"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000052",
+      "uri": "http://example.org/animal-taxonomy-B/GiantWhale",
+      "label": "Giant Whale",
+      "definition": "Enormous marine mammal, largest animals on Earth",
+      "synonyms": ["Whale", "Cetacean", "Baleen Whale"],
+      "parent": "ANIMAL_B:0000050",
+      "attributes": {
+        "body_size": "enormous",
+        "environment": "pelagic"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000100",
+      "uri": "http://example.org/animal-taxonomy-B/AvianClass",
+      "label": "Avian Class",
+      "definition": "Warm-blooded vertebrates with feathers, beaks, and wings",
+      "synonyms": ["Bird", "Aves", "Flying Vertebrate"],
+      "parent": "ANIMAL_B:0000001",
+      "attributes": {
+        "class": "Aves",
+        "covering": "feathers",
+        "egg_laying": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000101",
+      "uri": "http://example.org/animal-taxonomy-B/BirdOfPrey",
+      "label": "Bird of Prey",
+      "definition": "Predatory bird with sharp talons and hooked beak",
+      "synonyms": ["Raptor", "Predatory Avian", "Hunter Bird"],
+      "parent": "ANIMAL_B:0000100",
+      "attributes": {
+        "feeding": "carnivorous",
+        "eyesight": "exceptional"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000102",
+      "uri": "http://example.org/animal-taxonomy-B/MajesticEagle",
+      "label": "Majestic Eagle",
+      "definition": "Large raptor with powerful build and impressive wingspan",
+      "synonyms": ["Eagle", "Aquila chrysaetos", "Golden Eagle"],
+      "parent": "ANIMAL_B:0000101",
+      "attributes": {
+        "species": "Aquila chrysaetos",
+        "wing_span": "extensive",
+        "environment": "alpine"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000103",
+      "uri": "http://example.org/animal-taxonomy-B/HuntingHawk",
+      "label": "Hunting Hawk",
+      "definition": "Medium raptor with broad wings for soaring",
+      "synonyms": ["Hawk", "Buteo", "Buzzard"],
+      "parent": "ANIMAL_B:0000101",
+      "attributes": {
+        "family": "Accipitridae",
+        "body_size": "moderate"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000104",
+      "uri": "http://example.org/animal-taxonomy-B/NightOwl",
+      "label": "Night Owl",
+      "definition": "Nocturnal raptor with forward-facing eyes and silent flight",
+      "synonyms": ["Owl", "Strix", "Barn Owl"],
+      "parent": "ANIMAL_B:0000101",
+      "attributes": {
+        "order": "Strigiformes",
+        "hunting_time": "night",
+        "audition": "exceptional"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000110",
+      "uri": "http://example.org/animal-taxonomy-B/AquaticBird",
+      "label": "Aquatic Bird",
+      "definition": "Bird species living in or near water environments",
+      "synonyms": ["Waterfowl", "Water Bird", "Swimming Bird"],
+      "parent": "ANIMAL_B:0000100",
+      "attributes": {
+        "environment": "water"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000111",
+      "uri": "http://example.org/animal-taxonomy-B/WildDuck",
+      "label": "Wild Duck",
+      "definition": "Waterfowl with webbed feet and waterproof plumage",
+      "synonyms": ["Duck", "Anas platyrhynchos", "Mallard Duck"],
+      "parent": "ANIMAL_B:0000110",
+      "attributes": {
+        "family": "Anatidae",
+        "foot_structure": "webbed"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000112",
+      "uri": "http://example.org/animal-taxonomy-B/GracefulSwan",
+      "label": "Graceful Swan",
+      "definition": "Large waterfowl known for elegant long neck",
+      "synonyms": ["Swan", "Cygnus olor", "Whooper Swan"],
+      "parent": "ANIMAL_B:0000110",
+      "attributes": {
+        "genus": "Cygnus",
+        "body_size": "large",
+        "neck_length": "extended"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000113",
+      "uri": "http://example.org/animal-taxonomy-B/MigratoryGoose",
+      "label": "Migratory Goose",
+      "definition": "Large waterfowl known for seasonal migration patterns",
+      "synonyms": ["Goose", "Branta", "Wild Goose"],
+      "parent": "ANIMAL_B:0000110",
+      "attributes": {
+        "genus": "Branta",
+        "body_size": "large"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000120",
+      "uri": "http://example.org/animal-taxonomy-B/FlightlessPenguin",
+      "label": "Flightless Penguin",
+      "definition": "Aquatic bird adapted for swimming in cold waters",
+      "synonyms": ["Penguin", "Spheniscidae", "Antarctic Bird"],
+      "parent": "ANIMAL_B:0000100",
+      "attributes": {
+        "family": "Spheniscidae",
+        "flying_ability": "none",
+        "environment": "polar"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000121",
+      "uri": "http://example.org/animal-taxonomy-B/TalkingParrot",
+      "label": "Talking Parrot",
+      "definition": "Colorful bird capable of vocal mimicry",
+      "synonyms": ["Parrot", "Psittacus", "Ara"],
+      "parent": "ANIMAL_B:0000100",
+      "attributes": {
+        "order": "Psittaciformes",
+        "cognition": "advanced",
+        "vocal_ability": "imitation"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000200",
+      "uri": "http://example.org/animal-taxonomy-B/ReptilianClass",
+      "label": "Reptilian Class",
+      "definition": "Cold-blooded vertebrate covered with scales or plates",
+      "synonyms": ["Reptile", "Reptilia", "Scaled Vertebrate"],
+      "parent": "ANIMAL_B:0000001",
+      "attributes": {
+        "class": "Reptilia",
+        "thermoregulation": "ectothermic",
+        "skin": "scaly"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000201",
+      "uri": "http://example.org/animal-taxonomy-B/Serpent",
+      "label": "Serpent",
+      "definition": "Limbless elongated reptile with flexible body",
+      "synonyms": ["Snake", "Serpentes", "Ophidia"],
+      "parent": "ANIMAL_B:0000200",
+      "attributes": {
+        "order": "Serpentes",
+        "legs": "none",
+        "movement": "slithering"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000202",
+      "uri": "http://example.org/animal-taxonomy-B/ConstrictorSnake",
+      "label": "Constrictor Snake",
+      "definition": "Large non-venomous snake that kills by constriction",
+      "synonyms": ["Python", "Pythonidae", "Boa"],
+      "parent": "ANIMAL_B:0000201",
+      "attributes": {
+        "family": "Pythonidae",
+        "killing_method": "constriction"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000203",
+      "uri": "http://example.org/animal-taxonomy-B/HoodedSnake",
+      "label": "Hooded Snake",
+      "definition": "Venomous snake capable of expanding neck hood",
+      "synonyms": ["Cobra", "Naja naja", "King Cobra"],
+      "parent": "ANIMAL_B:0000201",
+      "attributes": {
+        "genus": "Naja",
+        "toxin": "present",
+        "threat_display": "hood_expansion"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000210",
+      "uri": "http://example.org/animal-taxonomy-B/ScaledLizard",
+      "label": "Scaled Lizard",
+      "definition": "Four-limbed reptile with movable eyelids",
+      "synonyms": ["Lizard", "Lacertilia", "Lacerta"],
+      "parent": "ANIMAL_B:0000200",
+      "attributes": {
+        "suborder": "Lacertilia",
+        "legs": "four"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000211",
+      "uri": "http://example.org/animal-taxonomy-B/GreenIguana",
+      "label": "Green Iguana",
+      "definition": "Large plant-eating lizard from tropical regions",
+      "synonyms": ["Iguana", "Iguana iguana", "Common Iguana"],
+      "parent": "ANIMAL_B:0000210",
+      "attributes": {
+        "family": "Iguanidae",
+        "feeding": "herbivorous",
+        "climate": "tropical"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000212",
+      "uri": "http://example.org/animal-taxonomy-B/ColorChangingLizard",
+      "label": "Color-Changing Lizard",
+      "definition": "Lizard with color-changing skin and rotating eyes",
+      "synonyms": ["Chameleon", "Chamaeleo", "Tree Lizard"],
+      "parent": "ANIMAL_B:0000210",
+      "attributes": {
+        "family": "Chamaeleonidae",
+        "camouflage": "active",
+        "vision": "independent_eyes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000220",
+      "uri": "http://example.org/animal-taxonomy-B/ShelledReptile",
+      "label": "Shelled Reptile",
+      "definition": "Reptile protected by hard bony carapace",
+      "synonyms": ["Turtle", "Testudines", "Chelonian"],
+      "parent": "ANIMAL_B:0000200",
+      "attributes": {
+        "order": "Testudines",
+        "protective_shell": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000221",
+      "uri": "http://example.org/animal-taxonomy-B/OceanTurtle",
+      "label": "Ocean Turtle",
+      "definition": "Marine reptile with paddle-like flippers",
+      "synonyms": ["Sea Turtle", "Chelonioidea", "Marine Turtle"],
+      "parent": "ANIMAL_B:0000220",
+      "attributes": {
+        "superfamily": "Chelonioidea",
+        "environment": "oceanic",
+        "appendages": "paddle_flippers"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000222",
+      "uri": "http://example.org/animal-taxonomy-B/LargeCrocodile",
+      "label": "Large Crocodile",
+      "definition": "Massive semi-aquatic reptile with powerful bite",
+      "synonyms": ["Crocodile", "Crocodylus", "Croc"],
+      "parent": "ANIMAL_B:0000200",
+      "attributes": {
+        "genus": "Crocodylus",
+        "lifestyle": "semi_aquatic",
+        "body_size": "massive"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000300",
+      "uri": "http://example.org/animal-taxonomy-B/AquaticVertebrate",
+      "label": "Aquatic Vertebrate",
+      "definition": "Water-dwelling vertebrate with gills and fins for swimming",
+      "synonyms": ["Fish", "Pisces", "Finned Animal"],
+      "parent": "ANIMAL_B:0000001",
+      "attributes": {
+        "environment": "water",
+        "breathing": "gills",
+        "movement": "fins"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000301",
+      "uri": "http://example.org/animal-taxonomy-B/PredatoryShark",
+      "label": "Predatory Shark",
+      "definition": "Cartilaginous fish with multiple rows of teeth",
+      "synonyms": ["Shark", "Selachimorpha", "Apex Predator"],
+      "parent": "ANIMAL_B:0000300",
+      "attributes": {
+        "superorder": "Selachimorpha",
+        "skeleton_type": "cartilage",
+        "dentition": "replaceable_teeth"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000302",
+      "uri": "http://example.org/animal-taxonomy-B/FlatRay",
+      "label": "Flat Ray",
+      "definition": "Cartilaginous fish with dorsoventrally flattened body",
+      "synonyms": ["Ray", "Batoidea", "Skate"],
+      "parent": "ANIMAL_B:0000300",
+      "attributes": {
+        "superorder": "Batoidea",
+        "morphology": "dorsoventrally_flat"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000303",
+      "uri": "http://example.org/animal-taxonomy-B/MigratingSalmon",
+      "label": "Migrating Salmon",
+      "definition": "Anadromous fish that returns to freshwater to reproduce",
+      "synonyms": ["Salmon", "Salmo salar", "Atlantic Salmon"],
+      "parent": "ANIMAL_B:0000300",
+      "attributes": {
+        "species": "Salmo salar",
+        "life_cycle": "anadromous",
+        "spawning": "freshwater"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000304",
+      "uri": "http://example.org/animal-taxonomy-B/SwiftTuna",
+      "label": "Swift Tuna",
+      "definition": "Large pelagic fish known for speed and endurance",
+      "synonyms": ["Tuna", "Thunnus", "Bluefin"],
+      "parent": "ANIMAL_B:0000300",
+      "attributes": {
+        "genus": "Thunnus",
+        "velocity": "rapid",
+        "zone": "open_ocean"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000400",
+      "uri": "http://example.org/animal-taxonomy-B/AmphibiousAnimal",
+      "label": "Amphibious Animal",
+      "definition": "Cold-blooded vertebrate living both in water and on land",
+      "synonyms": ["Amphibian", "Amphibia", "Dual-habitat Animal"],
+      "parent": "ANIMAL_B:0000001",
+      "attributes": {
+        "class": "Amphibia",
+        "development": "metamorphic",
+        "skin_type": "moist"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000401",
+      "uri": "http://example.org/animal-taxonomy-B/LeapingFrog",
+      "label": "Leaping Frog",
+      "definition": "Tailless amphibian with powerful jumping legs",
+      "synonyms": ["Frog", "Anura", "Ranidae"],
+      "parent": "ANIMAL_B:0000400",
+      "attributes": {
+        "order": "Anura",
+        "tail_adult": "none",
+        "movement": "leaping"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000402",
+      "uri": "http://example.org/animal-taxonomy-B/TailedNewt",
+      "label": "Tailed Newt",
+      "definition": "Amphibian with slender body and permanent tail",
+      "synonyms": ["Salamander", "Caudata", "Newt"],
+      "parent": "ANIMAL_B:0000400",
+      "attributes": {
+        "order": "Caudata",
+        "tail_adult": "present",
+        "form": "elongate"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000500",
+      "uri": "http://example.org/animal-taxonomy-B/Spineless",
+      "label": "Spineless",
+      "definition": "Animal lacking vertebral column or internal skeleton",
+      "synonyms": ["Invertebrate", "Backboneless", "Non-vertebrate"],
+      "parent": "ANIMAL_B:0000001",
+      "attributes": {
+        "backbone": "none"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000501",
+      "uri": "http://example.org/animal-taxonomy-B/SixLeggedArthropod",
+      "label": "Six-Legged Arthropod",
+      "definition": "Arthropod with segmented body and six legs",
+      "synonyms": ["Insect", "Insecta", "Bug"],
+      "parent": "ANIMAL_B:0000500",
+      "attributes": {
+        "class": "Insecta",
+        "body_parts": "three_segments",
+        "leg_count": "six"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000502",
+      "uri": "http://example.org/animal-taxonomy-B/WingedButterfly",
+      "label": "Winged Butterfly",
+      "definition": "Flying insect with colorful patterned wings",
+      "synonyms": ["Butterfly", "Lepidoptera", "Moth"],
+      "parent": "ANIMAL_B:0000501",
+      "attributes": {
+        "order": "Lepidoptera",
+        "wing_covering": "scales",
+        "metamorphosis": "complete"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000503",
+      "uri": "http://example.org/animal-taxonomy-B/HoneyBee",
+      "label": "Honey Bee",
+      "definition": "Social flying insect that produces honey and pollinates",
+      "synonyms": ["Bee", "Apis mellifera", "Worker Bee"],
+      "parent": "ANIMAL_B:0000501",
+      "attributes": {
+        "species": "Apis mellifera",
+        "organization": "eusocial",
+        "function": "pollination"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000504",
+      "uri": "http://example.org/animal-taxonomy-B/ColonyAnt",
+      "label": "Colony Ant",
+      "definition": "Eusocial insect living in structured colonies",
+      "synonyms": ["Ant", "Formicidae", "Army Ant"],
+      "parent": "ANIMAL_B:0000501",
+      "attributes": {
+        "family": "Formicidae",
+        "organization": "colonial",
+        "structure": "hierarchical"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000505",
+      "uri": "http://example.org/animal-taxonomy-B/HardwingBeetle",
+      "label": "Hardwing Beetle",
+      "definition": "Insect with hardened forewings protecting membranous hindwings",
+      "synonyms": ["Beetle", "Coleoptera", "Bug"],
+      "parent": "ANIMAL_B:0000501",
+      "attributes": {
+        "order": "Coleoptera",
+        "forewing": "sclerotized"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000510",
+      "uri": "http://example.org/animal-taxonomy-B/EightLeggedArthropod",
+      "label": "Eight-Legged Arthropod",
+      "definition": "Arthropod with four pairs of legs",
+      "synonyms": ["Arachnid", "Arachnida", "Spider-like"],
+      "parent": "ANIMAL_B:0000500",
+      "attributes": {
+        "class": "Arachnida",
+        "leg_count": "eight"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000511",
+      "uri": "http://example.org/animal-taxonomy-B/WebSpider",
+      "label": "Web Spider",
+      "definition": "Arachnid producing silk webs for prey capture",
+      "synonyms": ["Spider", "Araneae", "Araneus"],
+      "parent": "ANIMAL_B:0000510",
+      "attributes": {
+        "order": "Araneae",
+        "silk_production": "yes",
+        "toxin": "present"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000512",
+      "uri": "http://example.org/animal-taxonomy-B/StingingScorpion",
+      "label": "Stinging Scorpion",
+      "definition": "Arachnid with segmented tail bearing venomous sting",
+      "synonyms": ["Scorpion", "Scorpiones", "Desert Scorpion"],
+      "parent": "ANIMAL_B:0000510",
+      "attributes": {
+        "order": "Scorpiones",
+        "appendage": "venomous_telson",
+        "claws": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000520",
+      "uri": "http://example.org/animal-taxonomy-B/SoftBodyMollusk",
+      "label": "Soft-Body Mollusk",
+      "definition": "Invertebrate with soft unsegmented body, often with shell",
+      "synonyms": ["Mollusk", "Mollusca", "Shellfish"],
+      "parent": "ANIMAL_B:0000500",
+      "attributes": {
+        "phylum": "Mollusca",
+        "body_texture": "soft"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000521",
+      "uri": "http://example.org/animal-taxonomy-B/EightArmedOctopus",
+      "label": "Eight-Armed Octopus",
+      "definition": "Marine cephalopod with eight flexible tentacles",
+      "synonyms": ["Octopus", "Octopoda", "Cuttlefish"],
+      "parent": "ANIMAL_B:0000520",
+      "attributes": {
+        "order": "Octopoda",
+        "tentacles": "eight",
+        "cognition": "advanced"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000522",
+      "uri": "http://example.org/animal-taxonomy-B/TenArmedSquid",
+      "label": "Ten-Armed Squid",
+      "definition": "Marine cephalopod with elongated body and ten appendages",
+      "synonyms": ["Squid", "Teuthida", "Flying Squid"],
+      "parent": "ANIMAL_B:0000520",
+      "attributes": {
+        "order": "Teuthida",
+        "tentacles": "ten",
+        "body_type": "streamlined"
+      }
+    },
+    {
+      "id": "ANIMAL_B:0000523",
+      "uri": "http://example.org/animal-taxonomy-B/SpiralSnail",
+      "label": "Spiral Snail",
+      "definition": "Gastropod with spiral coiled protective shell",
+      "synonyms": ["Snail", "Gastropoda", "Escargot"],
+      "parent": "ANIMAL_B:0000520",
+      "attributes": {
+        "class": "Gastropoda",
+        "shell_form": "spiral",
+        "movement": "gliding"
+      }
+    }
+  ],
+  "individuals": [
+    {
+      "id": "ANIMAL_B:IND_001",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Leo",
+      "label": "Leo",
+      "type": "ANIMAL_B:0000013",
+      "definition": "Male African lion in Kruger National Park",
+      "attributes": {
+        "age": "9 years",
+        "sex": "male",
+        "mass": "185 kg",
+        "territory": "Kruger"
+      }
+    },
+    {
+      "id": "ANIMAL_B:IND_002",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Zara",
+      "label": "Zara",
+      "type": "ANIMAL_B:0000013",
+      "definition": "Female African lion in Kruger National Park",
+      "attributes": {
+        "age": "6 years",
+        "sex": "female",
+        "mass": "125 kg",
+        "territory": "Kruger"
+      }
+    },
+    {
+      "id": "ANIMAL_B:IND_003",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Raja",
+      "label": "Raja",
+      "type": "ANIMAL_B:0000014",
+      "definition": "Bengal tiger in Indian reserve",
+      "attributes": {
+        "age": "6 years",
+        "sex": "male",
+        "variant": "Bengal",
+        "territory": "India"
+      }
+    },
+    {
+      "id": "ANIMAL_B:IND_004",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Bolt",
+      "label": "Bolt",
+      "type": "ANIMAL_B:0000016",
+      "definition": "Record-breaking cheetah in Namibian grassland",
+      "attributes": {
+        "age": "5 years",
+        "sex": "male",
+        "max_velocity": "115 km/h",
+        "territory": "Namibia"
+      }
+    },
+    {
+      "id": "ANIMAL_B:IND_005",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Mittens",
+      "label": "Mittens",
+      "type": "ANIMAL_B:0000017",
+      "definition": "Domestic short-hair cat",
+      "attributes": {
+        "age": "4 years",
+        "sex": "female",
+        "variety": "Shorthair",
+        "fur_color": "grey"
+      }
+    },
+    {
+      "id": "ANIMAL_B:IND_006",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Shadow",
+      "label": "Shadow",
+      "type": "ANIMAL_B:0000019",
+      "definition": "Alpha wolf in Canadian pack",
+      "attributes": {
+        "age": "7 years",
+        "sex": "male",
+        "group": "Canadian_pack",
+        "rank": "alpha"
+      }
+    },
+    {
+      "id": "ANIMAL_B:IND_007",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Max",
+      "label": "Max",
+      "type": "ANIMAL_B:0000020",
+      "definition": "Labrador Retriever companion dog",
+      "attributes": {
+        "age": "5 years",
+        "sex": "male",
+        "variety": "Labrador",
+        "obedience_trained": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:IND_008",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Digit",
+      "label": "Digit",
+      "type": "ANIMAL_B:0000032",
+      "definition": "Mountain gorilla in conservation project",
+      "attributes": {
+        "age": "18 years",
+        "sex": "female",
+        "variant": "Mountain",
+        "protected": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:IND_009",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Echo",
+      "label": "Echo",
+      "type": "ANIMAL_B:0000051",
+      "definition": "Bottlenose dolphin in aquarium",
+      "attributes": {
+        "age": "10 years",
+        "sex": "male",
+        "variant": "Bottlenose",
+        "performance_trained": "yes"
+      }
+    },
+    {
+      "id": "ANIMAL_B:IND_010",
+      "uri": "http://example.org/animal-taxonomy-B/individual/Freedom",
+      "label": "Freedom",
+      "type": "ANIMAL_B:0000102",
+      "definition": "Bald eagle in Alaskan territory",
+      "attributes": {
+        "age": "11 years",
+        "sex": "female",
+        "variant": "Bald Eagle",
+        "territory": "Alaska"
+      }
+    }
+  ]
+}

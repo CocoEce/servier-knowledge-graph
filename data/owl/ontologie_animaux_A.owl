@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://example.org/animal-ontology-A#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://example.org/animal-ontology-A">
+  <owl:Ontology rdf:about="http://example.org/animal-ontology-A">
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <dc:title>Animal Taxonomy Ontology A</dc:title>
+    <dc:description>A comprehensive ontology of animal species with hierarchical classification</dc:description>
+    <dc:created>2026-01-22T11:47:52.901160</dc:created>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Animal">
+    <rdfs:label xml:lang="en">Animal</rdfs:label>
+    <rdfs:comment xml:lang="en">A living organism that feeds on organic matter, typically having specialized sense organs and nervous system</rdfs:comment>
+    <skos:altLabel xml:lang="en">Animalia</skos:altLabel>
+    <skos:altLabel xml:lang="en">Metazoa</skos:altLabel>
+    <skos:altLabel xml:lang="en">Fauna</skos:altLabel>
+    <rdfs:comment>kingdom: Animalia</rdfs:comment>
+    <rdfs:comment>type: root_class</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Mammal">
+    <rdfs:label xml:lang="en">Mammal</rdfs:label>
+    <rdfs:comment xml:lang="en">Warm-blooded vertebrate animal characterized by hair or fur and mammary glands</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Animal"/>
+    <skos:altLabel xml:lang="en">Mammalia</skos:altLabel>
+    <skos:altLabel xml:lang="en">Mammalian</skos:altLabel>
+    <rdfs:comment>class: Mammalia</rdfs:comment>
+    <rdfs:comment>body_temperature: warm-blooded</rdfs:comment>
+    <rdfs:comment>reproduction: viviparous</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Carnivore">
+    <rdfs:label xml:lang="en">Carnivore</rdfs:label>
+    <rdfs:comment xml:lang="en">Mammal that primarily feeds on flesh</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Mammal"/>
+    <skos:altLabel xml:lang="en">Carnivora</skos:altLabel>
+    <skos:altLabel xml:lang="en">Meat-eater</skos:altLabel>
+    <skos:altLabel xml:lang="en">Predatory Mammal</skos:altLabel>
+    <rdfs:comment>order: Carnivora</rdfs:comment>
+    <rdfs:comment>diet: carnivorous</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Felidae">
+    <rdfs:label xml:lang="en">Felidae</rdfs:label>
+    <rdfs:comment xml:lang="en">Family of carnivorous mammals commonly known as cats</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Carnivore"/>
+    <skos:altLabel xml:lang="en">Cat Family</skos:altLabel>
+    <skos:altLabel xml:lang="en">Felines</skos:altLabel>
+    <skos:altLabel xml:lang="en">Cats</skos:altLabel>
+    <rdfs:comment>family: Felidae</rdfs:comment>
+    <rdfs:comment>characteristics: retractable_claws</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Lion">
+    <rdfs:label xml:lang="en">Lion</rdfs:label>
+    <rdfs:comment xml:lang="en">Large tawny-colored cat that lives in prides</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Felidae"/>
+    <skos:altLabel xml:lang="en">Panthera leo</skos:altLabel>
+    <skos:altLabel xml:lang="en">King of the Jungle</skos:altLabel>
+    <skos:altLabel xml:lang="en">African Lion</skos:altLabel>
+    <rdfs:comment>species: Panthera leo</rdfs:comment>
+    <rdfs:comment>habitat: savanna</rdfs:comment>
+    <rdfs:comment>conservation_status: vulnerable</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Tiger">
+    <rdfs:label xml:lang="en">Tiger</rdfs:label>
+    <rdfs:comment xml:lang="en">Largest cat species with distinctive orange coat and black stripes</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Felidae"/>
+    <skos:altLabel xml:lang="en">Panthera tigris</skos:altLabel>
+    <skos:altLabel xml:lang="en">Bengal Tiger</skos:altLabel>
+    <skos:altLabel xml:lang="en">Striped Cat</skos:altLabel>
+    <rdfs:comment>species: Panthera tigris</rdfs:comment>
+    <rdfs:comment>habitat: forest</rdfs:comment>
+    <rdfs:comment>conservation_status: endangered</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Leopard">
+    <rdfs:label xml:lang="en">Leopard</rdfs:label>
+    <rdfs:comment xml:lang="en">Large cat with spotted coat found in Africa and Asia</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Felidae"/>
+    <skos:altLabel xml:lang="en">Panthera pardus</skos:altLabel>
+    <skos:altLabel xml:lang="en">Spotted Cat</skos:altLabel>
+    <skos:altLabel xml:lang="en">Panther</skos:altLabel>
+    <rdfs:comment>species: Panthera pardus</rdfs:comment>
+    <rdfs:comment>habitat: various</rdfs:comment>
+    <rdfs:comment>conservation_status: vulnerable</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Cheetah">
+    <rdfs:label xml:lang="en">Cheetah</rdfs:label>
+    <rdfs:comment xml:lang="en">Fastest land animal with distinctive black tear marks</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Felidae"/>
+    <skos:altLabel xml:lang="en">Acinonyx jubatus</skos:altLabel>
+    <skos:altLabel xml:lang="en">Hunting Leopard</skos:altLabel>
+    <skos:altLabel xml:lang="en">Speed Cat</skos:altLabel>
+    <rdfs:comment>species: Acinonyx jubatus</rdfs:comment>
+    <rdfs:comment>habitat: grassland</rdfs:comment>
+    <rdfs:comment>max_speed: 120 km/h</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/DomesticCat">
+    <rdfs:label xml:lang="en">Domestic Cat</rdfs:label>
+    <rdfs:comment xml:lang="en">Small domesticated carnivorous mammal kept as pet</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Felidae"/>
+    <skos:altLabel xml:lang="en">Felis catus</skos:altLabel>
+    <skos:altLabel xml:lang="en">House Cat</skos:altLabel>
+    <skos:altLabel xml:lang="en">Pet Cat</skos:altLabel>
+    <rdfs:comment>species: Felis catus</rdfs:comment>
+    <rdfs:comment>habitat: domestic</rdfs:comment>
+    <rdfs:comment>status: domesticated</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Canidae">
+    <rdfs:label xml:lang="en">Canidae</rdfs:label>
+    <rdfs:comment xml:lang="en">Family of carnivorous mammals including dogs, wolves, and foxes</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Carnivore"/>
+    <skos:altLabel xml:lang="en">Dog Family</skos:altLabel>
+    <skos:altLabel xml:lang="en">Canines</skos:altLabel>
+    <rdfs:comment>family: Canidae</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Wolf">
+    <rdfs:label xml:lang="en">Wolf</rdfs:label>
+    <rdfs:comment xml:lang="en">Large canine native to wilderness areas</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Canidae"/>
+    <skos:altLabel xml:lang="en">Canis lupus</skos:altLabel>
+    <skos:altLabel xml:lang="en">Gray Wolf</skos:altLabel>
+    <skos:altLabel xml:lang="en">Timber Wolf</skos:altLabel>
+    <rdfs:comment>species: Canis lupus</rdfs:comment>
+    <rdfs:comment>habitat: forest</rdfs:comment>
+    <rdfs:comment>social: pack animal</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Dog">
+    <rdfs:label xml:lang="en">Dog</rdfs:label>
+    <rdfs:comment xml:lang="en">Domesticated carnivorous mammal descended from wolves</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Canidae"/>
+    <skos:altLabel xml:lang="en">Canis familiaris</skos:altLabel>
+    <skos:altLabel xml:lang="en">Domestic Dog</skos:altLabel>
+    <skos:altLabel xml:lang="en">Canine</skos:altLabel>
+    <rdfs:comment>species: Canis familiaris</rdfs:comment>
+    <rdfs:comment>habitat: domestic</rdfs:comment>
+    <rdfs:comment>status: domesticated</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Fox">
+    <rdfs:label xml:lang="en">Fox</rdfs:label>
+    <rdfs:comment xml:lang="en">Small to medium-sized omnivorous mammal with bushy tail</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Canidae"/>
+    <skos:altLabel xml:lang="en">Vulpes</skos:altLabel>
+    <skos:altLabel xml:lang="en">Red Fox</skos:altLabel>
+    <skos:altLabel xml:lang="en">Kit Fox</skos:altLabel>
+    <rdfs:comment>genus: Vulpes</rdfs:comment>
+    <rdfs:comment>habitat: various</rdfs:comment>
+    <rdfs:comment>diet: omnivorous</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Ursidae">
+    <rdfs:label xml:lang="en">Ursidae</rdfs:label>
+    <rdfs:comment xml:lang="en">Family of large carnivorous or omnivorous mammals known as bears</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Carnivore"/>
+    <skos:altLabel xml:lang="en">Bear Family</skos:altLabel>
+    <skos:altLabel xml:lang="en">Bears</skos:altLabel>
+    <rdfs:comment>family: Ursidae</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/BrownBear">
+    <rdfs:label xml:lang="en">Brown Bear</rdfs:label>
+    <rdfs:comment xml:lang="en">Large bear species found across North America and Eurasia</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Ursidae"/>
+    <skos:altLabel xml:lang="en">Ursus arctos</skos:altLabel>
+    <skos:altLabel xml:lang="en">Grizzly Bear</skos:altLabel>
+    <skos:altLabel xml:lang="en">Kodiak Bear</skos:altLabel>
+    <rdfs:comment>species: Ursus arctos</rdfs:comment>
+    <rdfs:comment>habitat: forest</rdfs:comment>
+    <rdfs:comment>size: large</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/PolarBear">
+    <rdfs:label xml:lang="en">Polar Bear</rdfs:label>
+    <rdfs:comment xml:lang="en">Large white bear native to Arctic regions</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Ursidae"/>
+    <skos:altLabel xml:lang="en">Ursus maritimus</skos:altLabel>
+    <skos:altLabel xml:lang="en">Ice Bear</skos:altLabel>
+    <skos:altLabel xml:lang="en">Arctic Bear</skos:altLabel>
+    <rdfs:comment>species: Ursus maritimus</rdfs:comment>
+    <rdfs:comment>habitat: arctic</rdfs:comment>
+    <rdfs:comment>conservation_status: vulnerable</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Primate">
+    <rdfs:label xml:lang="en">Primate</rdfs:label>
+    <rdfs:comment xml:lang="en">Mammal of an order that includes monkeys, apes, and humans</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Mammal"/>
+    <skos:altLabel xml:lang="en">Primates</skos:altLabel>
+    <skos:altLabel xml:lang="en">Simian</skos:altLabel>
+    <rdfs:comment>order: Primates</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Ape">
+    <rdfs:label xml:lang="en">Ape</rdfs:label>
+    <rdfs:comment xml:lang="en">Large tailless primate including gorillas, chimpanzees, and orangutans</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Primate"/>
+    <skos:altLabel xml:lang="en">Great Ape</skos:altLabel>
+    <skos:altLabel xml:lang="en">Hominoidea</skos:altLabel>
+    <rdfs:comment>superfamily: Hominoidea</rdfs:comment>
+    <rdfs:comment>tail: absent</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Gorilla">
+    <rdfs:label xml:lang="en">Gorilla</rdfs:label>
+    <rdfs:comment xml:lang="en">Largest living primate native to African forests</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Ape"/>
+    <skos:altLabel xml:lang="en">Gorilla gorilla</skos:altLabel>
+    <skos:altLabel xml:lang="en">Mountain Gorilla</skos:altLabel>
+    <skos:altLabel xml:lang="en">Silverback</skos:altLabel>
+    <rdfs:comment>genus: Gorilla</rdfs:comment>
+    <rdfs:comment>habitat: forest</rdfs:comment>
+    <rdfs:comment>conservation_status: endangered</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Chimpanzee">
+    <rdfs:label xml:lang="en">Chimpanzee</rdfs:label>
+    <rdfs:comment xml:lang="en">Great ape species native to Africa, closely related to humans</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Ape"/>
+    <skos:altLabel xml:lang="en">Pan troglodytes</skos:altLabel>
+    <skos:altLabel xml:lang="en">Common Chimp</skos:altLabel>
+    <skos:altLabel xml:lang="en">Chimp</skos:altLabel>
+    <rdfs:comment>species: Pan troglodytes</rdfs:comment>
+    <rdfs:comment>habitat: forest</rdfs:comment>
+    <rdfs:comment>intelligence: high</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Orangutan">
+    <rdfs:label xml:lang="en">Orangutan</rdfs:label>
+    <rdfs:comment xml:lang="en">Large arboreal ape with reddish-brown hair native to Indonesia</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Ape"/>
+    <skos:altLabel xml:lang="en">Pongo</skos:altLabel>
+    <skos:altLabel xml:lang="en">Red Ape</skos:altLabel>
+    <skos:altLabel xml:lang="en">Man of the Forest</skos:altLabel>
+    <rdfs:comment>genus: Pongo</rdfs:comment>
+    <rdfs:comment>habitat: rainforest</rdfs:comment>
+    <rdfs:comment>conservation_status: critically_endangered</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Monkey">
+    <rdfs:label xml:lang="en">Monkey</rdfs:label>
+    <rdfs:comment xml:lang="en">Primate with tails, generally smaller than apes</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Primate"/>
+    <skos:altLabel xml:lang="en">Simian</skos:altLabel>
+    <skos:altLabel xml:lang="en">Cercopithecoidea</skos:altLabel>
+    <rdfs:comment>tail: present</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Rodent">
+    <rdfs:label xml:lang="en">Rodent</rdfs:label>
+    <rdfs:comment xml:lang="en">Mammal characterized by continuously growing incisors</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Mammal"/>
+    <skos:altLabel xml:lang="en">Rodentia</skos:altLabel>
+    <skos:altLabel xml:lang="en">Gnawing Mammal</skos:altLabel>
+    <rdfs:comment>order: Rodentia</rdfs:comment>
+    <rdfs:comment>teeth: continuously_growing_incisors</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Mouse">
+    <rdfs:label xml:lang="en">Mouse</rdfs:label>
+    <rdfs:comment xml:lang="en">Small rodent with pointed snout and long tail</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Rodent"/>
+    <skos:altLabel xml:lang="en">Mus</skos:altLabel>
+    <skos:altLabel xml:lang="en">House Mouse</skos:altLabel>
+    <skos:altLabel xml:lang="en">Field Mouse</skos:altLabel>
+    <rdfs:comment>genus: Mus</rdfs:comment>
+    <rdfs:comment>size: small</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Rat">
+    <rdfs:label xml:lang="en">Rat</rdfs:label>
+    <rdfs:comment xml:lang="en">Medium-sized rodent with long tail</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Rodent"/>
+    <skos:altLabel xml:lang="en">Rattus</skos:altLabel>
+    <skos:altLabel xml:lang="en">Brown Rat</skos:altLabel>
+    <skos:altLabel xml:lang="en">Norway Rat</skos:altLabel>
+    <rdfs:comment>genus: Rattus</rdfs:comment>
+    <rdfs:comment>size: medium</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Squirrel">
+    <rdfs:label xml:lang="en">Squirrel</rdfs:label>
+    <rdfs:comment xml:lang="en">Arboreal rodent with bushy tail</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Rodent"/>
+    <skos:altLabel xml:lang="en">Sciurus</skos:altLabel>
+    <skos:altLabel xml:lang="en">Tree Squirrel</skos:altLabel>
+    <skos:altLabel xml:lang="en">Ground Squirrel</skos:altLabel>
+    <rdfs:comment>family: Sciuridae</rdfs:comment>
+    <rdfs:comment>habitat: trees</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Cetacean">
+    <rdfs:label xml:lang="en">Cetacean</rdfs:label>
+    <rdfs:comment xml:lang="en">Aquatic mammal including whales, dolphins, and porpoises</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Mammal"/>
+    <skos:altLabel xml:lang="en">Cetacea</skos:altLabel>
+    <skos:altLabel xml:lang="en">Marine Mammal</skos:altLabel>
+    <skos:altLabel xml:lang="en">Whale</skos:altLabel>
+    <rdfs:comment>order: Cetacea</rdfs:comment>
+    <rdfs:comment>habitat: marine</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Dolphin">
+    <rdfs:label xml:lang="en">Dolphin</rdfs:label>
+    <rdfs:comment xml:lang="en">Highly intelligent marine mammal with streamlined body</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Cetacean"/>
+    <skos:altLabel xml:lang="en">Delphinidae</skos:altLabel>
+    <skos:altLabel xml:lang="en">Bottlenose Dolphin</skos:altLabel>
+    <skos:altLabel xml:lang="en">Porpoise</skos:altLabel>
+    <rdfs:comment>family: Delphinidae</rdfs:comment>
+    <rdfs:comment>intelligence: high</rdfs:comment>
+    <rdfs:comment>echolocation: yes</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Whale">
+    <rdfs:label xml:lang="en">Whale</rdfs:label>
+    <rdfs:comment xml:lang="en">Large marine mammal with streamlined body</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Cetacean"/>
+    <skos:altLabel xml:lang="en">Balaenopteridae</skos:altLabel>
+    <skos:altLabel xml:lang="en">Blue Whale</skos:altLabel>
+    <skos:altLabel xml:lang="en">Humpback Whale</skos:altLabel>
+    <rdfs:comment>size: very_large</rdfs:comment>
+    <rdfs:comment>habitat: ocean</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Bird">
+    <rdfs:label xml:lang="en">Bird</rdfs:label>
+    <rdfs:comment xml:lang="en">Warm-blooded vertebrate with feathers, wings, and beak</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Animal"/>
+    <skos:altLabel xml:lang="en">Aves</skos:altLabel>
+    <skos:altLabel xml:lang="en">Avian</skos:altLabel>
+    <skos:altLabel xml:lang="en">Feathered Animal</skos:altLabel>
+    <rdfs:comment>class: Aves</rdfs:comment>
+    <rdfs:comment>body_covering: feathers</rdfs:comment>
+    <rdfs:comment>reproduction: oviparous</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/RaptorBird">
+    <rdfs:label xml:lang="en">Raptor</rdfs:label>
+    <rdfs:comment xml:lang="en">Bird of prey with strong talons and keen eyesight</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Bird"/>
+    <skos:altLabel xml:lang="en">Bird of Prey</skos:altLabel>
+    <skos:altLabel xml:lang="en">Predatory Bird</skos:altLabel>
+    <skos:altLabel xml:lang="en">Raptor</skos:altLabel>
+    <rdfs:comment>diet: carnivorous</rdfs:comment>
+    <rdfs:comment>vision: excellent</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Eagle">
+    <rdfs:label xml:lang="en">Eagle</rdfs:label>
+    <rdfs:comment xml:lang="en">Large bird of prey with powerful build and heavy beak</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/RaptorBird"/>
+    <skos:altLabel xml:lang="en">Aquila</skos:altLabel>
+    <skos:altLabel xml:lang="en">Bald Eagle</skos:altLabel>
+    <skos:altLabel xml:lang="en">Golden Eagle</skos:altLabel>
+    <rdfs:comment>genus: Aquila</rdfs:comment>
+    <rdfs:comment>wingspan: large</rdfs:comment>
+    <rdfs:comment>habitat: mountains</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Hawk">
+    <rdfs:label xml:lang="en">Hawk</rdfs:label>
+    <rdfs:comment xml:lang="en">Medium-sized bird of prey with broad wings</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/RaptorBird"/>
+    <skos:altLabel xml:lang="en">Accipiter</skos:altLabel>
+    <skos:altLabel xml:lang="en">Red-tailed Hawk</skos:altLabel>
+    <skos:altLabel xml:lang="en">Cooper's Hawk</skos:altLabel>
+    <rdfs:comment>family: Accipitridae</rdfs:comment>
+    <rdfs:comment>size: medium</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Owl">
+    <rdfs:label xml:lang="en">Owl</rdfs:label>
+    <rdfs:comment xml:lang="en">Nocturnal bird of prey with forward-facing eyes</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/RaptorBird"/>
+    <skos:altLabel xml:lang="en">Strigiformes</skos:altLabel>
+    <skos:altLabel xml:lang="en">Barn Owl</skos:altLabel>
+    <skos:altLabel xml:lang="en">Screech Owl</skos:altLabel>
+    <rdfs:comment>order: Strigiformes</rdfs:comment>
+    <rdfs:comment>activity: nocturnal</rdfs:comment>
+    <rdfs:comment>hearing: excellent</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Waterfowl">
+    <rdfs:label xml:lang="en">Waterfowl</rdfs:label>
+    <rdfs:comment xml:lang="en">Bird that lives on or near water</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Bird"/>
+    <skos:altLabel xml:lang="en">Aquatic Bird</skos:altLabel>
+    <skos:altLabel xml:lang="en">Water Bird</skos:altLabel>
+    <skos:altLabel xml:lang="en">Anseriformes</skos:altLabel>
+    <rdfs:comment>habitat: aquatic</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Duck">
+    <rdfs:label xml:lang="en">Duck</rdfs:label>
+    <rdfs:comment xml:lang="en">Waterfowl with webbed feet and broad flat beak</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Waterfowl"/>
+    <skos:altLabel xml:lang="en">Anas</skos:altLabel>
+    <skos:altLabel xml:lang="en">Mallard</skos:altLabel>
+    <skos:altLabel xml:lang="en">Domestic Duck</skos:altLabel>
+    <rdfs:comment>family: Anatidae</rdfs:comment>
+    <rdfs:comment>feet: webbed</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Swan">
+    <rdfs:label xml:lang="en">Swan</rdfs:label>
+    <rdfs:comment xml:lang="en">Large waterfowl with long neck and elegant appearance</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Waterfowl"/>
+    <skos:altLabel xml:lang="en">Cygnus</skos:altLabel>
+    <skos:altLabel xml:lang="en">Mute Swan</skos:altLabel>
+    <skos:altLabel xml:lang="en">Black Swan</skos:altLabel>
+    <rdfs:comment>genus: Cygnus</rdfs:comment>
+    <rdfs:comment>size: large</rdfs:comment>
+    <rdfs:comment>neck: long</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Goose">
+    <rdfs:label xml:lang="en">Goose</rdfs:label>
+    <rdfs:comment xml:lang="en">Large waterfowl with long neck, intermediate between duck and swan</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Waterfowl"/>
+    <skos:altLabel xml:lang="en">Anser</skos:altLabel>
+    <skos:altLabel xml:lang="en">Canada Goose</skos:altLabel>
+    <skos:altLabel xml:lang="en">Greylag Goose</skos:altLabel>
+    <rdfs:comment>genus: Anser</rdfs:comment>
+    <rdfs:comment>size: large</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Penguin">
+    <rdfs:label xml:lang="en">Penguin</rdfs:label>
+    <rdfs:comment xml:lang="en">Flightless aquatic bird native to Southern Hemisphere</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Bird"/>
+    <skos:altLabel xml:lang="en">Spheniscidae</skos:altLabel>
+    <skos:altLabel xml:lang="en">Emperor Penguin</skos:altLabel>
+    <skos:altLabel xml:lang="en">King Penguin</skos:altLabel>
+    <rdfs:comment>family: Spheniscidae</rdfs:comment>
+    <rdfs:comment>flight: flightless</rdfs:comment>
+    <rdfs:comment>habitat: antarctic</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Parrot">
+    <rdfs:label xml:lang="en">Parrot</rdfs:label>
+    <rdfs:comment xml:lang="en">Colorful bird with curved beak and ability to mimic sounds</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Bird"/>
+    <skos:altLabel xml:lang="en">Psittaciformes</skos:altLabel>
+    <skos:altLabel xml:lang="en">Macaw</skos:altLabel>
+    <skos:altLabel xml:lang="en">Cockatoo</skos:altLabel>
+    <rdfs:comment>order: Psittaciformes</rdfs:comment>
+    <rdfs:comment>intelligence: high</rdfs:comment>
+    <rdfs:comment>vocalization: mimicry</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Reptile">
+    <rdfs:label xml:lang="en">Reptile</rdfs:label>
+    <rdfs:comment xml:lang="en">Cold-blooded vertebrate with scales or scutes</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Animal"/>
+    <skos:altLabel xml:lang="en">Reptilia</skos:altLabel>
+    <skos:altLabel xml:lang="en">Reptilian</skos:altLabel>
+    <rdfs:comment>class: Reptilia</rdfs:comment>
+    <rdfs:comment>body_temperature: cold-blooded</rdfs:comment>
+    <rdfs:comment>body_covering: scales</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Snake">
+    <rdfs:label xml:lang="en">Snake</rdfs:label>
+    <rdfs:comment xml:lang="en">Legless reptile with elongated body</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Reptile"/>
+    <skos:altLabel xml:lang="en">Serpentes</skos:altLabel>
+    <skos:altLabel xml:lang="en">Serpent</skos:altLabel>
+    <skos:altLabel xml:lang="en">Ophidian</skos:altLabel>
+    <rdfs:comment>order: Serpentes</rdfs:comment>
+    <rdfs:comment>limbs: absent</rdfs:comment>
+    <rdfs:comment>locomotion: serpentine</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Python">
+    <rdfs:label xml:lang="en">Python</rdfs:label>
+    <rdfs:comment xml:lang="en">Large constricting snake found in Africa, Asia, and Australia</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Snake"/>
+    <skos:altLabel xml:lang="en">Pythonidae</skos:altLabel>
+    <skos:altLabel xml:lang="en">Ball Python</skos:altLabel>
+    <skos:altLabel xml:lang="en">Reticulated Python</skos:altLabel>
+    <rdfs:comment>family: Pythonidae</rdfs:comment>
+    <rdfs:comment>hunting_method: constriction</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Cobra">
+    <rdfs:label xml:lang="en">Cobra</rdfs:label>
+    <rdfs:comment xml:lang="en">Venomous snake with ability to expand neck ribs into hood</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Snake"/>
+    <skos:altLabel xml:lang="en">Naja</skos:altLabel>
+    <skos:altLabel xml:lang="en">King Cobra</skos:altLabel>
+    <skos:altLabel xml:lang="en">Hooded Snake</skos:altLabel>
+    <rdfs:comment>genus: Naja</rdfs:comment>
+    <rdfs:comment>venom: yes</rdfs:comment>
+    <rdfs:comment>defensive_display: hood</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Lizard">
+    <rdfs:label xml:lang="en">Lizard</rdfs:label>
+    <rdfs:comment xml:lang="en">Reptile with four legs, external ear openings, and movable eyelids</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Reptile"/>
+    <skos:altLabel xml:lang="en">Lacertilia</skos:altLabel>
+    <skos:altLabel xml:lang="en">Saurian</skos:altLabel>
+    <rdfs:comment>suborder: Lacertilia</rdfs:comment>
+    <rdfs:comment>limbs: four</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Iguana">
+    <rdfs:label xml:lang="en">Iguana</rdfs:label>
+    <rdfs:comment xml:lang="en">Large herbivorous lizard native to tropical areas</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Lizard"/>
+    <skos:altLabel xml:lang="en">Iguanidae</skos:altLabel>
+    <skos:altLabel xml:lang="en">Green Iguana</skos:altLabel>
+    <skos:altLabel xml:lang="en">Rock Iguana</skos:altLabel>
+    <rdfs:comment>family: Iguanidae</rdfs:comment>
+    <rdfs:comment>diet: herbivorous</rdfs:comment>
+    <rdfs:comment>habitat: tropical</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Chameleon">
+    <rdfs:label xml:lang="en">Chameleon</rdfs:label>
+    <rdfs:comment xml:lang="en">Lizard with ability to change color and independently moving eyes</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Lizard"/>
+    <skos:altLabel xml:lang="en">Chamaeleonidae</skos:altLabel>
+    <skos:altLabel xml:lang="en">Color-changing Lizard</skos:altLabel>
+    <rdfs:comment>family: Chamaeleonidae</rdfs:comment>
+    <rdfs:comment>color_change: yes</rdfs:comment>
+    <rdfs:comment>eyes: independently_mobile</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Turtle">
+    <rdfs:label xml:lang="en">Turtle</rdfs:label>
+    <rdfs:comment xml:lang="en">Reptile with body enclosed in bony shell</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Reptile"/>
+    <skos:altLabel xml:lang="en">Testudines</skos:altLabel>
+    <skos:altLabel xml:lang="en">Tortoise</skos:altLabel>
+    <skos:altLabel xml:lang="en">Terrapin</skos:altLabel>
+    <rdfs:comment>order: Testudines</rdfs:comment>
+    <rdfs:comment>shell: present</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/SeaTurtle">
+    <rdfs:label xml:lang="en">Sea Turtle</rdfs:label>
+    <rdfs:comment xml:lang="en">Marine turtle with flippers adapted for swimming</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Turtle"/>
+    <skos:altLabel xml:lang="en">Chelonioidea</skos:altLabel>
+    <skos:altLabel xml:lang="en">Green Turtle</skos:altLabel>
+    <skos:altLabel xml:lang="en">Loggerhead</skos:altLabel>
+    <rdfs:comment>superfamily: Chelonioidea</rdfs:comment>
+    <rdfs:comment>habitat: marine</rdfs:comment>
+    <rdfs:comment>limbs: flippers</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Crocodile">
+    <rdfs:label xml:lang="en">Crocodile</rdfs:label>
+    <rdfs:comment xml:lang="en">Large aquatic reptile with powerful jaws and armored skin</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Reptile"/>
+    <skos:altLabel xml:lang="en">Crocodylus</skos:altLabel>
+    <skos:altLabel xml:lang="en">Nile Crocodile</skos:altLabel>
+    <skos:altLabel xml:lang="en">Saltwater Crocodile</skos:altLabel>
+    <rdfs:comment>genus: Crocodylus</rdfs:comment>
+    <rdfs:comment>habitat: aquatic</rdfs:comment>
+    <rdfs:comment>size: large</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Fish">
+    <rdfs:label xml:lang="en">Fish</rdfs:label>
+    <rdfs:comment xml:lang="en">Aquatic vertebrate with gills and fins</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Animal"/>
+    <skos:altLabel xml:lang="en">Pisces</skos:altLabel>
+    <skos:altLabel xml:lang="en">Aquatic Vertebrate</skos:altLabel>
+    <rdfs:comment>habitat: aquatic</rdfs:comment>
+    <rdfs:comment>respiration: gills</rdfs:comment>
+    <rdfs:comment>locomotion: fins</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Shark">
+    <rdfs:label xml:lang="en">Shark</rdfs:label>
+    <rdfs:comment xml:lang="en">Cartilaginous fish with multiple gill slits</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Fish"/>
+    <skos:altLabel xml:lang="en">Selachimorpha</skos:altLabel>
+    <skos:altLabel xml:lang="en">Predatory Fish</skos:altLabel>
+    <skos:altLabel xml:lang="en">Great White</skos:altLabel>
+    <rdfs:comment>superorder: Selachimorpha</rdfs:comment>
+    <rdfs:comment>skeleton: cartilaginous</rdfs:comment>
+    <rdfs:comment>teeth: multiple_rows</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Ray">
+    <rdfs:label xml:lang="en">Ray</rdfs:label>
+    <rdfs:comment xml:lang="en">Cartilaginous fish with flattened body</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Fish"/>
+    <skos:altLabel xml:lang="en">Rajiformes</skos:altLabel>
+    <skos:altLabel xml:lang="en">Stingray</skos:altLabel>
+    <skos:altLabel xml:lang="en">Manta Ray</skos:altLabel>
+    <rdfs:comment>order: Rajiformes</rdfs:comment>
+    <rdfs:comment>body_shape: flattened</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Salmon">
+    <rdfs:label xml:lang="en">Salmon</rdfs:label>
+    <rdfs:comment xml:lang="en">Migratory fish that spawns in freshwater</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Fish"/>
+    <skos:altLabel xml:lang="en">Salmo</skos:altLabel>
+    <skos:altLabel xml:lang="en">Atlantic Salmon</skos:altLabel>
+    <skos:altLabel xml:lang="en">Pacific Salmon</skos:altLabel>
+    <rdfs:comment>genus: Salmo</rdfs:comment>
+    <rdfs:comment>migration: anadromous</rdfs:comment>
+    <rdfs:comment>habitat: freshwater_marine</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Tuna">
+    <rdfs:label xml:lang="en">Tuna</rdfs:label>
+    <rdfs:comment xml:lang="en">Large fast-swimming marine fish</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Fish"/>
+    <skos:altLabel xml:lang="en">Thunnus</skos:altLabel>
+    <skos:altLabel xml:lang="en">Bluefin Tuna</skos:altLabel>
+    <skos:altLabel xml:lang="en">Yellowfin Tuna</skos:altLabel>
+    <rdfs:comment>genus: Thunnus</rdfs:comment>
+    <rdfs:comment>speed: fast</rdfs:comment>
+    <rdfs:comment>habitat: pelagic</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Amphibian">
+    <rdfs:label xml:lang="en">Amphibian</rdfs:label>
+    <rdfs:comment xml:lang="en">Cold-blooded vertebrate with aquatic larvae and terrestrial adult</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Animal"/>
+    <skos:altLabel xml:lang="en">Amphibia</skos:altLabel>
+    <skos:altLabel xml:lang="en">Amphibious Animal</skos:altLabel>
+    <rdfs:comment>class: Amphibia</rdfs:comment>
+    <rdfs:comment>lifecycle: metamorphosis</rdfs:comment>
+    <rdfs:comment>skin: permeable</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Frog">
+    <rdfs:label xml:lang="en">Frog</rdfs:label>
+    <rdfs:comment xml:lang="en">Tailless amphibian with long hind legs for jumping</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Amphibian"/>
+    <skos:altLabel xml:lang="en">Anura</skos:altLabel>
+    <skos:altLabel xml:lang="en">Toad</skos:altLabel>
+    <skos:altLabel xml:lang="en">Tree Frog</skos:altLabel>
+    <rdfs:comment>order: Anura</rdfs:comment>
+    <rdfs:comment>tail: absent</rdfs:comment>
+    <rdfs:comment>locomotion: jumping</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Salamander">
+    <rdfs:label xml:lang="en">Salamander</rdfs:label>
+    <rdfs:comment xml:lang="en">Amphibian with elongated body and tail</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Amphibian"/>
+    <skos:altLabel xml:lang="en">Caudata</skos:altLabel>
+    <skos:altLabel xml:lang="en">Newt</skos:altLabel>
+    <skos:altLabel xml:lang="en">Fire Salamander</skos:altLabel>
+    <rdfs:comment>order: Caudata</rdfs:comment>
+    <rdfs:comment>tail: present</rdfs:comment>
+    <rdfs:comment>body: elongated</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Invertebrate">
+    <rdfs:label xml:lang="en">Invertebrate</rdfs:label>
+    <rdfs:comment xml:lang="en">Animal without backbone or vertebral column</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Animal"/>
+    <skos:altLabel xml:lang="en">Non-vertebrate</skos:altLabel>
+    <skos:altLabel xml:lang="en">Spineless Animal</skos:altLabel>
+    <rdfs:comment>vertebral_column: absent</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Insect">
+    <rdfs:label xml:lang="en">Insect</rdfs:label>
+    <rdfs:comment xml:lang="en">Arthropod with three body segments and six legs</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Invertebrate"/>
+    <skos:altLabel xml:lang="en">Insecta</skos:altLabel>
+    <skos:altLabel xml:lang="en">Hexapod</skos:altLabel>
+    <skos:altLabel xml:lang="en">Bug</skos:altLabel>
+    <rdfs:comment>class: Insecta</rdfs:comment>
+    <rdfs:comment>body_segments: three</rdfs:comment>
+    <rdfs:comment>legs: six</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Butterfly">
+    <rdfs:label xml:lang="en">Butterfly</rdfs:label>
+    <rdfs:comment xml:lang="en">Insect with large colorful wings and slender body</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Insect"/>
+    <skos:altLabel xml:lang="en">Lepidoptera</skos:altLabel>
+    <skos:altLabel xml:lang="en">Papillon</skos:altLabel>
+    <skos:altLabel xml:lang="en">Flying Insect</skos:altLabel>
+    <rdfs:comment>order: Lepidoptera</rdfs:comment>
+    <rdfs:comment>wings: scaled</rdfs:comment>
+    <rdfs:comment>lifecycle: complete_metamorphosis</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Bee">
+    <rdfs:label xml:lang="en">Bee</rdfs:label>
+    <rdfs:comment xml:lang="en">Flying insect known for pollination and honey production</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Insect"/>
+    <skos:altLabel xml:lang="en">Apis</skos:altLabel>
+    <skos:altLabel xml:lang="en">Honeybee</skos:altLabel>
+    <skos:altLabel xml:lang="en">Bumblebee</skos:altLabel>
+    <rdfs:comment>genus: Apis</rdfs:comment>
+    <rdfs:comment>social: colonial</rdfs:comment>
+    <rdfs:comment>role: pollinator</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Ant">
+    <rdfs:label xml:lang="en">Ant</rdfs:label>
+    <rdfs:comment xml:lang="en">Social insect living in organized colonies</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Insect"/>
+    <skos:altLabel xml:lang="en">Formicidae</skos:altLabel>
+    <skos:altLabel xml:lang="en">Worker Ant</skos:altLabel>
+    <skos:altLabel xml:lang="en">Fire Ant</skos:altLabel>
+    <rdfs:comment>family: Formicidae</rdfs:comment>
+    <rdfs:comment>social: eusocial</rdfs:comment>
+    <rdfs:comment>colony: organized</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Beetle">
+    <rdfs:label xml:lang="en">Beetle</rdfs:label>
+    <rdfs:comment xml:lang="en">Insect with hardened front wings forming protective cover</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Insect"/>
+    <skos:altLabel xml:lang="en">Coleoptera</skos:altLabel>
+    <skos:altLabel xml:lang="en">Ladybug</skos:altLabel>
+    <skos:altLabel xml:lang="en">Scarab</skos:altLabel>
+    <rdfs:comment>order: Coleoptera</rdfs:comment>
+    <rdfs:comment>wings: hardened_front</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Arachnid">
+    <rdfs:label xml:lang="en">Arachnid</rdfs:label>
+    <rdfs:comment xml:lang="en">Arthropod with eight legs including spiders and scorpions</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Invertebrate"/>
+    <skos:altLabel xml:lang="en">Arachnida</skos:altLabel>
+    <skos:altLabel xml:lang="en">Eight-legged Arthropod</skos:altLabel>
+    <rdfs:comment>class: Arachnida</rdfs:comment>
+    <rdfs:comment>legs: eight</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Spider">
+    <rdfs:label xml:lang="en">Spider</rdfs:label>
+    <rdfs:comment xml:lang="en">Arachnid that spins webs to catch prey</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Arachnid"/>
+    <skos:altLabel xml:lang="en">Araneae</skos:altLabel>
+    <skos:altLabel xml:lang="en">Web-spinner</skos:altLabel>
+    <skos:altLabel xml:lang="en">Tarantula</skos:altLabel>
+    <rdfs:comment>order: Araneae</rdfs:comment>
+    <rdfs:comment>web: silk</rdfs:comment>
+    <rdfs:comment>venom: yes</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Scorpion">
+    <rdfs:label xml:lang="en">Scorpion</rdfs:label>
+    <rdfs:comment xml:lang="en">Arachnid with pincers and venomous stinger in tail</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Arachnid"/>
+    <skos:altLabel xml:lang="en">Scorpiones</skos:altLabel>
+    <skos:altLabel xml:lang="en">Stinger</skos:altLabel>
+    <skos:altLabel xml:lang="en">Desert Scorpion</skos:altLabel>
+    <rdfs:comment>order: Scorpiones</rdfs:comment>
+    <rdfs:comment>tail: venomous_stinger</rdfs:comment>
+    <rdfs:comment>pincers: present</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Mollusk">
+    <rdfs:label xml:lang="en">Mollusk</rdfs:label>
+    <rdfs:comment xml:lang="en">Soft-bodied invertebrate often with shell</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Invertebrate"/>
+    <skos:altLabel xml:lang="en">Mollusca</skos:altLabel>
+    <skos:altLabel xml:lang="en">Shellfish</skos:altLabel>
+    <rdfs:comment>phylum: Mollusca</rdfs:comment>
+    <rdfs:comment>body: soft</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Octopus">
+    <rdfs:label xml:lang="en">Octopus</rdfs:label>
+    <rdfs:comment xml:lang="en">Eight-armed marine mollusk with high intelligence</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Mollusk"/>
+    <skos:altLabel xml:lang="en">Octopoda</skos:altLabel>
+    <skos:altLabel xml:lang="en">Eight-armed Cephalopod</skos:altLabel>
+    <skos:altLabel xml:lang="en">Devilfish</skos:altLabel>
+    <rdfs:comment>order: Octopoda</rdfs:comment>
+    <rdfs:comment>arms: eight</rdfs:comment>
+    <rdfs:comment>intelligence: high</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Squid">
+    <rdfs:label xml:lang="en">Squid</rdfs:label>
+    <rdfs:comment xml:lang="en">Marine cephalopod with ten arms and torpedo-shaped body</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Mollusk"/>
+    <skos:altLabel xml:lang="en">Teuthida</skos:altLabel>
+    <skos:altLabel xml:lang="en">Calamari</skos:altLabel>
+    <skos:altLabel xml:lang="en">Giant Squid</skos:altLabel>
+    <rdfs:comment>order: Teuthida</rdfs:comment>
+    <rdfs:comment>arms: ten</rdfs:comment>
+    <rdfs:comment>body_shape: torpedo</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/animal-ontology-A/Snail">
+    <rdfs:label xml:lang="en">Snail</rdfs:label>
+    <rdfs:comment xml:lang="en">Gastropod mollusk with coiled shell</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://example.org/animal-ontology-A/Mollusk"/>
+    <skos:altLabel xml:lang="en">Gastropoda</skos:altLabel>
+    <skos:altLabel xml:lang="en">Garden Snail</skos:altLabel>
+    <skos:altLabel xml:lang="en">Land Snail</skos:altLabel>
+    <rdfs:comment>class: Gastropoda</rdfs:comment>
+    <rdfs:comment>shell: coiled</rdfs:comment>
+    <rdfs:comment>locomotion: muscular_foot</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Simba">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/Lion"/>
+    <rdfs:label xml:lang="en">Simba</rdfs:label>
+    <rdfs:comment xml:lang="en">Male lion residing in Serengeti National Park</rdfs:comment>
+    <rdfs:comment>age: 8 years</rdfs:comment>
+    <rdfs:comment>gender: male</rdfs:comment>
+    <rdfs:comment>weight: 190 kg</rdfs:comment>
+    <rdfs:comment>location: Serengeti</rdfs:comment>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Nala">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/Lion"/>
+    <rdfs:label xml:lang="en">Nala</rdfs:label>
+    <rdfs:comment xml:lang="en">Female lion residing in Serengeti National Park</rdfs:comment>
+    <rdfs:comment>age: 7 years</rdfs:comment>
+    <rdfs:comment>gender: female</rdfs:comment>
+    <rdfs:comment>weight: 130 kg</rdfs:comment>
+    <rdfs:comment>location: Serengeti</rdfs:comment>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Stripe">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/Tiger"/>
+    <rdfs:label xml:lang="en">Stripe</rdfs:label>
+    <rdfs:comment xml:lang="en">Bengal tiger in wildlife sanctuary</rdfs:comment>
+    <rdfs:comment>age: 5 years</rdfs:comment>
+    <rdfs:comment>gender: male</rdfs:comment>
+    <rdfs:comment>subspecies: Bengal</rdfs:comment>
+    <rdfs:comment>location: India</rdfs:comment>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Flash">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/Cheetah"/>
+    <rdfs:label xml:lang="en">Flash</rdfs:label>
+    <rdfs:comment xml:lang="en">Fastest recorded cheetah in Namibia</rdfs:comment>
+    <rdfs:comment>age: 4 years</rdfs:comment>
+    <rdfs:comment>gender: male</rdfs:comment>
+    <rdfs:comment>top_speed: 118 km/h</rdfs:comment>
+    <rdfs:comment>location: Namibia</rdfs:comment>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Whiskers">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/DomesticCat"/>
+    <rdfs:label xml:lang="en">Whiskers</rdfs:label>
+    <rdfs:comment xml:lang="en">Domestic tabby cat</rdfs:comment>
+    <rdfs:comment>age: 3 years</rdfs:comment>
+    <rdfs:comment>gender: female</rdfs:comment>
+    <rdfs:comment>breed: Tabby</rdfs:comment>
+    <rdfs:comment>color: orange</rdfs:comment>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Grey">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/Wolf"/>
+    <rdfs:label xml:lang="en">Grey</rdfs:label>
+    <rdfs:comment xml:lang="en">Alpha male wolf in Yellowstone pack</rdfs:comment>
+    <rdfs:comment>age: 6 years</rdfs:comment>
+    <rdfs:comment>gender: male</rdfs:comment>
+    <rdfs:comment>pack: Yellowstone</rdfs:comment>
+    <rdfs:comment>role: alpha</rdfs:comment>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Buddy">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/Dog"/>
+    <rdfs:label xml:lang="en">Buddy</rdfs:label>
+    <rdfs:comment xml:lang="en">Golden Retriever pet dog</rdfs:comment>
+    <rdfs:comment>age: 4 years</rdfs:comment>
+    <rdfs:comment>gender: male</rdfs:comment>
+    <rdfs:comment>breed: Golden Retriever</rdfs:comment>
+    <rdfs:comment>trained: yes</rdfs:comment>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Koko">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/Gorilla"/>
+    <rdfs:label xml:lang="en">Koko</rdfs:label>
+    <rdfs:comment xml:lang="en">Mountain gorilla in conservation program</rdfs:comment>
+    <rdfs:comment>age: 15 years</rdfs:comment>
+    <rdfs:comment>gender: female</rdfs:comment>
+    <rdfs:comment>subspecies: Mountain</rdfs:comment>
+    <rdfs:comment>conservation_program: yes</rdfs:comment>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Flipper">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/Dolphin"/>
+    <rdfs:label xml:lang="en">Flipper</rdfs:label>
+    <rdfs:comment xml:lang="en">Bottlenose dolphin in marine park</rdfs:comment>
+    <rdfs:comment>age: 12 years</rdfs:comment>
+    <rdfs:comment>gender: male</rdfs:comment>
+    <rdfs:comment>species: Bottlenose</rdfs:comment>
+    <rdfs:comment>trained: yes</rdfs:comment>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/animal-ontology-A/individual/Skye">
+    <rdf:type rdf:resource="http://example.org/animal-ontology-A/Eagle"/>
+    <rdfs:label xml:lang="en">Skye</rdfs:label>
+    <rdfs:comment xml:lang="en">Bald eagle in Alaska</rdfs:comment>
+    <rdfs:comment>age: 9 years</rdfs:comment>
+    <rdfs:comment>gender: female</rdfs:comment>
+    <rdfs:comment>species: Bald Eagle</rdfs:comment>
+    <rdfs:comment>location: Alaska</rdfs:comment>
+  </owl:NamedIndividual>
+</rdf:RDF>
