@@ -78,41 +78,20 @@ class SPARQLTools:
             if concept_uri not in concepts_data:
                 concepts_data[concept_uri] = {
                     'label': binding.get('label', {}).get('value', 'N/A'),
-                    'properties': {}
+                    'properties': []
                 }
             
-            # Ajouter toutes les propriétés
+            # Ajouter TOUTES les propriétés sans filtrer
             if 'property' in binding and 'value' in binding:
-                prop = binding['property']['value']
+                prop_full = binding['property']['value']
                 val = binding['value']['value']
                 
-                # Obtenir un nom court pour la propriété
-                prop_name = prop.split('/')[-1].split('#')[-1]
+                # Extraire le nom court de la propriété
+                prop_name = prop_full.split('/')[-1].split('#')[-1]
                 
-                # Regrouper par type de propriété (utiliser les propriétés merged:)
-                if prop_name == 'label':
-                    continue  # Déjà dans le label principal
-                elif prop_name == 'synonym':
-                    if 'synonyms' not in concepts_data[concept_uri]:
-                        concepts_data[concept_uri]['synonyms'] = set()
-                    concepts_data[concept_uri]['synonyms'].add(val)
-                elif 'definition' in prop_name.lower():
-                    if 'definitions' not in concepts_data[concept_uri]:
-                        concepts_data[concept_uri]['definitions'] = []
-                    source = 'A' if 'sourceA' in prop_name else ('B' if 'sourceB' in prop_name else '')
-                    concepts_data[concept_uri]['definitions'].append((source, val))
-                elif 'attributes' in prop_name.lower():
-                    source = 'Source A' if 'attributesA' in prop_name else 'Source B'
-                    if 'attributes' not in concepts_data[concept_uri]:
-                        concepts_data[concept_uri]['attributes'] = {}
-                    concepts_data[concept_uri]['attributes'][source] = val
-                elif 'similarity_score' in prop_name:
-                    concepts_data[concept_uri]['similarity_score'] = float(val)
-                elif prop_name not in ['subClassOf', 'type']:
-                    # Autres propriétés (sourceA_label, sourceA_uri, etc.)
-                    if 'other_properties' not in concepts_data[concept_uri]:
-                        concepts_data[concept_uri]['other_properties'] = {}
-                    concepts_data[concept_uri]['other_properties'][prop_name] = val
+                # Ignorer seulement rdf:type et rdfs:label (déjà affiché)
+                if prop_name not in ['type', 'label']:
+                    concepts_data[concept_uri]['properties'].append((prop_name, val, prop_full))
         
         # Formater en texte
         formatted = []
@@ -122,37 +101,18 @@ class SPARQLTools:
             formatted.append(f"{'='*60}")
             formatted.append(f"URI: {uri}")
             
-            if data.get('similarity_score'):
-                formatted.append(f"Score de similarité: {data['similarity_score']:.4f}")
-            
-            if data.get('definitions'):
-                formatted.append(f"\n📖 Définitions:")
-                for source, defn in data['definitions']:
-                    if source:
-                        formatted.append(f"  [Source {source}] {defn}")
-                    else:
-                        formatted.append(f"  {defn}")
-            
-            if data.get('synonyms'):
-                formatted.append(f"\n🏷️  Synonymes:")
-                formatted.append(f"  {', '.join(sorted(data['synonyms']))}")
-            
-            if data.get('attributes'):
-                formatted.append(f"\n⚙️  Attributs:")
-                for source, attrs in data['attributes'].items():
-                    formatted.append(f"  [{source}]")
-                    formatted.append(f"    {attrs}")
-            
-            if data.get('other_properties'):
-                formatted.append(f"\n📊 Autres propriétés:")
-                for prop_name, val in sorted(data['other_properties'].items()):
-                    # Formater joliment les noms de propriétés
-                    display_name = prop_name.replace('_', ' ').replace('source', 'Source').title()
-                    # Limiter la longueur des URIs
-                    if len(val) > 80 and val.startswith('http'):
-                        val_display = val.split('/')[-1]
+            if data['properties']:
+                formatted.append(f"\n📋 Propriétés:")
+                for prop_name, val, prop_full in data['properties']:
+                    # Formater joliment le nom
+                    display_name = prop_name.replace('_', ' ').title()
+                    
+                    # Si c'est une URI longue, afficher juste la fin
+                    if len(val) > 100 and val.startswith('http'):
+                        val_display = f".../{val.split('/')[-1]}"
                     else:
                         val_display = val
+                    
                     formatted.append(f"  • {display_name}: {val_display}")
         
         return "\n".join(formatted) if formatted else "Aucune donnée trouvée."
@@ -224,33 +184,38 @@ class SPARQLTools:
         return self.format_results(results)
     
     def search_concept(self, concept_name):
-        """Recherche un concept spécifique et récupère TOUTES ses informations (définitions, synonymes, attributs)"""
+        """Recherche un concept spécifique et récupère TOUTES ses informations de manière dynamique"""
         query = f"""
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX owl: <http://www.w3.org/2002/07/owl#>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX merged: <http://example.org/merged-animal-ontology/>
         
         SELECT DISTINCT ?concept ?label ?property ?value
         FROM <{self.graph_uri}>
         WHERE {{
             ?concept rdf:type owl:Class .
+            
+            # Récupérer d'abord le label principal
             ?concept rdfs:label ?label .
             
-            # Correspondance EXACTE sur le label OU dans merged:synonym (uniquement après alignement)
+            # Chercher le concept par son label OU par n'importe quelle propriété textuelle
             {{
-                FILTER(LCASE(STR(?label)) = LCASE("{concept_name}"))
+                # Option 1: Match direct sur le label
+                FILTER(REGEX(STR(?label), "^{concept_name}$", "i"))
             }} UNION {{
-                ?concept merged:synonym ?syn .
-                FILTER(LCASE(STR(?syn)) = LCASE("{concept_name}"))
+                # Option 2: Match sur n'importe quelle propriété textuelle du concept
+                ?concept ?anyProp ?textValue .
+                FILTER(isLiteral(?textValue))
+                FILTER(REGEX(STR(?textValue), "^{concept_name}$", "i"))
             }}
             
+            # Récupérer TOUTES les propriétés du concept trouvé
             OPTIONAL {{
                 ?concept ?property ?value .
                 FILTER(?property != rdf:type)
             }}
         }}
-        LIMIT 200
+        LIMIT 500
         """
         results = self.query_sparql(query)
         return self._format_concept_details(results)

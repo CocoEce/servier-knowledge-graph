@@ -3,22 +3,22 @@ import sys
 import json
 from pathlib import Path
 from dotenv import load_dotenv
-import google.generativeai as genai
+from openai import OpenAI
 from sparql_tools import SPARQLTools
 
 # Charger les variables d'environnement
 env_path = Path(__file__).parent.parent / '.env'
 load_dotenv(env_path)
 
-# Configuration
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key=GEMINI_API_KEY)
+# Configuration OpenAI
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 class KnowledgeGraphRAG:
     """
     Agent RAG qui utilise des tools SPARQL pour interroger le knowledge graph
-    d'ontologies alignées et Gemini pour générer des réponses en langage naturel.
+    d'ontologies alignées et OpenAI pour générer des réponses en langage naturel.
+    Utilise le function calling natif d'OpenAI pour sélectionner les tools et extraire les paramètres.
     """
     
     def __init__(self, config_file="agent_configuration.json", use_llm=True):
@@ -30,13 +30,7 @@ class KnowledgeGraphRAG:
         self.tools = SPARQLTools()
         self.use_llm = use_llm
         
-        if use_llm:
-            model_name = self.config['agent']['model']
-            self.model = genai.GenerativeModel(model_name)
-        else:
-            self.model = None
-        
-        # Créer le mapping des tools depuis la configuration
+        # Créer le mapping des tools
         self.tool_mapping = {
             "get_all_classes": self.tools.get_all_classes,
             "search_concept": self.tools.search_concept,
@@ -46,139 +40,233 @@ class KnowledgeGraphRAG:
             "get_graph_stats": self.tools.get_graph_stats,
             "search_by_parent": self.tools.search_by_parent
         }
+        
+        if use_llm:
+            self.client = OpenAI(api_key=OPENAI_API_KEY)
+            self.model_name = self.config['agent']['model']
+            self.tools_definitions = self._create_tools_definitions()
+        else:
+            self.client = None
     
-    def select_tool(self, question):
-        """Sélectionne le tool approprié basé sur les patterns de la configuration"""
-        question_lower = question.lower()
-        
-        # Parcourir les patterns de questions et calculer les scores
-        pattern_scores = []
-        
-        for pattern_name, pattern_config in self.config['question_patterns'].items():
-            score = 0
-            matches = 0
-            
-            for keyword in pattern_config['keywords']:
-                if keyword in question_lower:
-                    matches += 1
-                    score += pattern_config.get('priority', 5)
-            
-            if matches > 0:
-                pattern_scores.append((score, pattern_config['tool'], pattern_config['requires_concepts']))
-        
-        # Si on a des matches, prendre celui avec le meilleur score
-        if pattern_scores:
-            pattern_scores.sort(reverse=True)
-            _, tool, required = pattern_scores[0]
-            return tool, required
-        
-        # Par défaut, recherche
-        return "search_concept", 1
-    
-    def extract_concepts(self, question):
-        """Extrait les concepts mentionnés dans la question"""
-        # Mots interrogatifs français à ignorer
-        stopwords = {
-            'quel', 'quels', 'quelle', 'quelles', 'qui', 'que', 'quoi', 
-            'où', 'comment', 'pourquoi', 'combien', 'trouve', 'cherche',
-            'donne', 'liste', 'montre', 'affiche', 'sont', 'est', 'les',
-            'le', 'la', 'un', 'une', 'des', 'tous', 'toutes', 'tout'
-        }
-        
-        words = question.split()
-        concepts = []
-        
-        # Chercher les mots entre guillemets ou majuscules
-        in_quotes = False
-        current_concept = []
-        
-        for word in words:
-            word_clean = word.strip('.,!?')
-            
-            # Gérer les guillemets
-            if '"' in word or "'" in word:
-                in_quotes = not in_quotes
-                word_clean = word_clean.strip('"\'')
-            
-            # Ignorer les stopwords même s'ils commencent par une majuscule
-            if word_clean.lower() in stopwords:
-                if current_concept:
-                    concepts.append(' '.join(current_concept))
-                    current_concept = []
-                continue
-            
-            # Capturer les mots en majuscule ou entre guillemets
-            if in_quotes or (word_clean and word_clean[0].isupper() and len(word_clean) > 1):
-                current_concept.append(word_clean)
-            elif current_concept:
-                concepts.append(' '.join(current_concept))
-                current_concept = []
-        
-        if current_concept:
-            concepts.append(' '.join(current_concept))
-        
-        return concepts if concepts else [question]
+    def _create_tools_definitions(self):
+        """Crée les définitions de tools pour OpenAI function calling"""
+        tools = [
+            {
+                "type": "function",
+                "function": {
+                    "name": "search_concept",
+                    "description": "Recherche un concept spécifique par son nom (ex: Lion, Tiger, Carnivore). Utilise ce tool pour obtenir toutes les informations disponibles sur un concept : synonymes, définitions, attributs, propriétés.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "concept_name": {
+                                "type": "string",
+                                "description": "Le nom du concept à rechercher (ex: 'Lion', 'Tiger', 'Carnivore')"
+                            }
+                        },
+                        "required": ["concept_name"]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "find_equivalences",
+                    "description": "Trouve les concepts équivalents ou similaires à un concept donné. Utilise pour trouver les alignements entre ontologies (sourceA vs sourceB).",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "concept_name": {
+                                "type": "string",
+                                "description": "Le nom du concept pour lequel trouver des équivalences"
+                            }
+                        },
+                        "required": ["concept_name"]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "get_relationships",
+                    "description": "Trouve les relations entre deux concepts spécifiques (hiérarchie, liens sémantiques).",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "concept1": {
+                                "type": "string",
+                                "description": "Le premier concept"
+                            },
+                            "concept2": {
+                                "type": "string",
+                                "description": "Le second concept"
+                            }
+                        },
+                        "required": ["concept1", "concept2"]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "search_by_parent",
+                    "description": "Trouve tous les sous-concepts (enfants, descendants) d'un concept parent donné.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "parent_name": {
+                                "type": "string",
+                                "description": "Le nom du concept parent"
+                            }
+                        },
+                        "required": ["parent_name"]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "get_all_classes",
+                    "description": "Récupère la liste de toutes les classes disponibles dans le knowledge graph.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "get_graph_stats",
+                    "description": "Récupère des statistiques sur le knowledge graph (nombre de classes, alignements, enrichissement).",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                }
+            }
+        ]
+        return tools
     
     def query(self, question):
         """Interroge le knowledge graph et génère une réponse"""
         print(f"\n🔍 Question: {question}")
         print("=" * 70)
         
-        # Sélectionner le tool approprié
-        tool_name, required_concepts = self.select_tool(question)
-        print(f"📊 Tool sélectionné: {tool_name} (requiert {required_concepts} concept(s))")
+        if not self.use_llm:
+            # Mode sans LLM - utiliser l'ancien système de pattern matching
+            return self._query_without_llm(question)
         
-        # Extraire les concepts
-        concepts = self.extract_concepts(question)
-        print(f"🎯 Concepts détectés: {concepts}")
-        
-        # Exécuter le tool approprié
-        tool_func = self.tool_mapping[tool_name]
-        
-        try:
-            if required_concepts == 2 and len(concepts) >= 2:
-                sparql_results = tool_func(concepts[0], concepts[1])
-            elif required_concepts == 1 and concepts:
-                sparql_results = tool_func(concepts[0])
-            else:
-                sparql_results = tool_func()
-            
-            print(f"\n📋 Résultats SPARQL:")
-            print(sparql_results[:500] + "..." if len(sparql_results) > 500 else sparql_results)
-            
-        except Exception as e:
-            sparql_results = f"Erreur lors de l'exécution du tool: {str(e)}"
-            print(f"\n❌ {sparql_results}")
-        
-        # Construire le prompt pour Gemini depuis la configuration
-        system_prompt = self.config['prompts']['system_prompt']
+        # Construire le prompt système
+        system_instruction = self.config['prompts']['system_prompt']
         instructions = '\n- '.join(self.config['prompts']['instructions'])
         
-        prompt = f"""{system_prompt}
-
-Question de l'utilisateur: {question}
-
-Données récupérées du knowledge graph:
-{sparql_results}
-
-Instructions:
-- {instructions}
-
-Réponse:"""
+        system_message = f"{system_instruction}\n\nInstructions:\n- {instructions}"
         
-        # Retourner directement les résultats SPARQL si mode sans LLM
-        if not self.use_llm:
-            return sparql_results
+        # Première phase : laisser OpenAI choisir les tools
+        print("🤖 OpenAI analyse la question et sélectionne les tools...")
         
-        # Générer la réponse avec Gemini
-        print("\n🤖 Génération de la réponse...")
+        messages = [
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": question}
+        ]
+        
+        response = self.client.chat.completions.create(
+            model=self.model_name,
+            messages=messages,
+            tools=self.tools_definitions,
+            tool_choice="auto"
+        )
+        
+        response_message = response.choices[0].message
+        tool_calls = response_message.tool_calls
+        
+        if not tool_calls:
+            # Pas de tool call - réponse directe
+            return response_message.content
+        
+        # Exécuter les tool calls
+        print(f"📊 Tools sélectionnés par OpenAI: {[tc.function.name for tc in tool_calls]}")
+        
+        # Ajouter le message de l'assistant avec les tool calls
+        messages.append(response_message)
+        
+        for tool_call in tool_calls:
+            tool_name = tool_call.function.name
+            args = json.loads(tool_call.function.arguments)
+            
+            print(f"🎯 Exécution de {tool_name} avec paramètres: {args}")
+            
+            # Exécuter le tool
+            try:
+                tool_func = self.tool_mapping[tool_name]
+                
+                # Appeler avec les bons arguments
+                if tool_name == "get_relationships":
+                    result = tool_func(args.get('concept1'), args.get('concept2'))
+                elif tool_name in ["search_concept", "find_equivalences"]:
+                    result = tool_func(args.get('concept_name'))
+                elif tool_name == "search_by_parent":
+                    result = tool_func(args.get('parent_name'))
+                else:
+                    result = tool_func()
+                
+                print(f"\n📋 Résultat de {tool_name}:")
+                print(result[:500] + "..." if len(result) > 500 else result)
+                
+                # Ajouter le résultat du tool à la conversation
+                messages.append({
+                    "role": "tool",
+                    "tool_call_id": tool_call.id,
+                    "name": tool_name,
+                    "content": result
+                })
+                
+            except Exception as e:
+                error_msg = f"Erreur lors de l'exécution de {tool_name}: {str(e)}"
+                print(f"❌ {error_msg}")
+                messages.append({
+                    "role": "tool",
+                    "tool_call_id": tool_call.id,
+                    "name": tool_name,
+                    "content": error_msg
+                })
+        
+        # Envoyer les résultats à OpenAI pour générer la réponse finale
+        print("\n🤖 Génération de la réponse finale...")
+        
         try:
-            response = self.model.generate_content(prompt)
-            return response.text
+            final_response = self.client.chat.completions.create(
+                model=self.model_name,
+                messages=messages
+            )
+            
+            return final_response.choices[0].message.content
+            
         except Exception as e:
-            print(f"\n⚠️  Erreur Gemini : {str(e)}")
-            print("📋 Retour des résultats SPARQL bruts à la place...")
-            return sparql_results
+            print(f"\n⚠️  Erreur OpenAI : {str(e)}")
+            # Retourner les résultats bruts
+            tool_results = [msg['content'] for msg in messages if msg.get('role') == 'tool']
+            return "\n\n".join(tool_results)
+    
+    def _query_without_llm(self, question):
+        """Version sans LLM - utilise le pattern matching basique"""
+        # Code de l'ancien système
+        question_lower = question.lower()
+        
+        # Pattern matching simple
+        if any(kw in question_lower for kw in ['statistique', 'combien', 'nombre']):
+            return self.tools.get_graph_stats()
+        elif any(kw in question_lower for kw in ['liste', 'toutes les classes', 'tous les concepts']):
+            return self.tools.get_all_classes()
+        else:
+            # Par défaut : recherche de concept
+            # Extraire un mot significatif (> 3 lettres, pas un stopword)
+            stopwords = {'quel', 'quels', 'quelle', 'donne', 'info', 'sur', 'pour', 'dans', 'toutes', 'tous'}
+            words = [w.strip('.,!?') for w in question.split() if len(w) > 3 and w.lower() not in stopwords]
+            if words:
+                return self.tools.search_concept(words[0])
+            return "Aucun concept détecté dans la question."
 
 
 def main():

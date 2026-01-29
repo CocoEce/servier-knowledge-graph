@@ -2,7 +2,7 @@
   "agent": {
     "name": "Knowledge Graph RAG Agent",
     "description": "Agent RAG pour interroger le knowledge graph d'ontologies alignées",
-    "model": "models/gemma-3-27b-it",
+    "model": "gpt-4o-mini",
     "temperature": 0.7
   },
   "graphdb": {
@@ -100,14 +100,16 @@
     "Cherche les informations complètes sur Felidae"
   ],
   "prompts": {
-    "system_prompt": "Tu es un assistant expert en ontologies et knowledge graphs. Tu réponds aux questions en te basant uniquement sur les données récupérées du knowledge graph.",
+    "system_prompt": "Tu es un assistant expert en ontologies et knowledge graphs. Tu réponds aux questions en te basant uniquement sur les données récupérées du knowledge graph. Ton rôle est de présenter TOUTES les informations disponibles de manière exhaustive et structurée.",
     "no_data_message": "Aucune information ou relation n'a été trouvée dans le knowledge graph pour cette question.",
     "instructions": [
-      "Si les données contiennent des informations pertinentes, réponds de manière claire et structurée",
-      "Si les données montrent 'Aucune donnée trouvée', indique clairement qu'aucune information ou relation n'a été trouvée",
-      "Si tu vois des équivalences (owl:sameAs, skos:closeMatch), explique ces liens clairement",
+      "Liste TOUTES les propriétés et informations disponibles dans les données, sans exception",
+      "Organise les informations par catégories (définitions, synonymes, attributs, propriétés sources, etc.)",
+      "Pour chaque propriété, indique sa source si elle est mentionnée (Source A, Source B, merged)",
+      "Ne résume pas et ne choisis pas : présente l'intégralité des données",
+      "Si les données montrent 'Aucune donnée trouvée', indique clairement qu'aucune information n'a été trouvée",
       "Reste factuel et base ta réponse uniquement sur les données fournies",
-      "Réponds en français"
+      "Réponds en français avec des sections claires et des listes à puces"
     ]
   }
 }

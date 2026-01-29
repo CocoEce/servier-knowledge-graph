@@ -60,7 +60,7 @@ st.markdown('<div class="main-header">🧠 Knowledge Graph RAG</div>', unsafe_al
 st.markdown("### Système de questions-réponses sur le knowledge graph d'ontologies alignées")
 
 # Mode sans LLM (fallback si quota dépassé)
-use_llm = st.sidebar.checkbox("🤖 Utiliser Gemini (décocher si quota dépassé)", value=True, 
+use_llm = st.sidebar.checkbox("🤖 Utiliser LLM (décocher si quota dépassé)", value=True, 
                                help="Si décochée, retourne les résultats SPARQL bruts sans génération de texte")
 
 # Initialisation
