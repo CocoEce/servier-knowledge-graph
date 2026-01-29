@@ -100,11 +100,11 @@ class DemoGUI(tk.Tk):
         self.step_labels = {}
         
         steps = [
-            (1, "Mapping OWL → CSV", "Extraction des classes et propriétés", "#3498db"),
-            (2, "Vectorisation", "Génération des embeddings BERT", "#27ae60"),
-            (3, "Alignement Sémantique", "Recherche de correspondances", "#e67e22"),
-            (4, "Validation Interactive", "Fusion des ontologies", "#e74c3c"),
-            (5, "Chargement GraphDB", "Import dans le knowledge graph", "#9b59b6")
+            (1, "MAPPING OWL → CSV", "Extraction des classes et propriétés", "#3498db"),
+            (2, "VECTORISATION", "Génération des embeddings BERT", "#27ae60"),
+            (3, "ALIGNEMENT SÉMANTIQUE", "Recherche de correspondances", "#e67e22"),
+            (4, "VALIDATION INTERACTIVE", "Fusion des ontologies", "#e74c3c"),
+            (5, "CHARGEMENT GRAPHDB", "Import dans le knowledge graph", "#9b59b6")
         ]
         
         for step_num, title, desc, color in steps:
@@ -262,8 +262,8 @@ class DemoGUI(tk.Tk):
             
             # Délai spécial après la vectorisation pour l'indexation MongoDB
             if step_num == 2:
-                self.log("⏳ Attente de 60 secondes pour l'indexation MongoDB...", "WARNING")
-                time.sleep(60)
+                self.log("⏳ Attente de 30 secondes pour l'indexation MongoDB...", "WARNING")
+                time.sleep(30)
                 self.log("✓ Indexation terminée", "SUCCESS")
             else:
                 # Petite pause entre les autres étapes
@@ -283,11 +283,11 @@ class DemoGUI(tk.Tk):
         self.step_buttons[step_num].config(state=tk.DISABLED)
         
         steps_config = {
-            1: ("Étape 1: Mapping OWL → CSV", self._run_mapping),
-            2: ("Étape 2: Vectorisation", self._run_vectorize),
-            3: ("Étape 3: Alignement sémantique", self._run_matching),
-            4: ("Étape 4: Validation interactive", self._run_interactive),
-            5: ("Étape 5: Chargement GraphDB", self._run_graphdb_load)
+            1: ("Étape 1: MAPPING OWL → CSV", self._run_mapping),
+            2: ("Étape 2: VECTORISATION", self._run_vectorize),
+            3: ("Étape 3: ALIGNEMENT SÉMANTIQUE", self._run_matching),
+            4: ("Étape 4: VALIDATION INTERACTIVE", self._run_interactive),
+            5: ("Étape 5: CHARGEMENT GRAPHDB", self._run_graphdb_load)
         }
         
         step_name, step_func = steps_config[step_num]

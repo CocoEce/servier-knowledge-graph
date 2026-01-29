@@ -116,7 +116,7 @@ def parse_document(doc):
 
 def read_csv(csv_file):
     """Lit le fichier CSV et retourne la liste des documents"""
-    print(f"Lecture du fichier {csv_file}...")
+    print(f"Lecture du fichier {Path(csv_file).name}...")
     
     documents = []
     with open(csv_file, 'r', encoding='utf-8') as f:
@@ -181,13 +181,13 @@ def main():
     
     # Vérifier que le fichier existe
     if not Path(csv_file).exists():
-        print(f"Erreur : Le fichier {csv_file} n'existe pas")
+        print(f"Erreur : Le fichier {Path(csv_file).name} n'existe pas")
         sys.exit(1)
     
     print("="*60)
     print("Vectorisation de l'ontologie et insertion dans MongoDB")
     print("="*60)
-    print(f"Fichier source : {csv_file}")
+    print(f"Fichier source : {Path(csv_file).name}")
     print()
     
     try:

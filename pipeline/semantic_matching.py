@@ -287,12 +287,12 @@ class OntologyMatcher:
         output_path = Path(output_dir) / 'alignment_results.json'
         output_path.parent.mkdir(parents=True, exist_ok=True)
         
-        print(f"💾 Sauvegarde des résultats dans {output_path}...")
+        print(f"💾 Sauvegarde des résultats dans {output_path.name}...")
         
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
         
-        print(f"✅ Résultats sauvegardés : {output_path}")
+        print(f"✅ Résultats sauvegardés : {output_path.name}")
         print(f"\n📊 Statistiques :")
         print(f"   • Classes traitées : {results['metadata']['statistics']['classes_processed']}")
         print(f"   • Correspondances trouvées : {results['metadata']['statistics']['total_matches_found']}")
@@ -312,7 +312,7 @@ def main():
     csv_path = sys.argv[1]
     
     if not Path(csv_path).exists():
-        print(f"❌ Erreur : Fichier non trouvé : {csv_path}")
+        print(f"❌ Erreur : Fichier non trouvé : {Path(csv_path).name}")
         sys.exit(1)
     
     print("=" * 70)

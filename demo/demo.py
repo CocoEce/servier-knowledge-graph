@@ -67,7 +67,7 @@ def run_step(description, func, *args, **kwargs):
 
 def step_mapping():
     """Étape 1: Mapping OWL vers CSV"""
-    print_step(1, 4, "MAPPING OWL → CSV")
+    print_step(1, 5, "MAPPING OWL → CSV")
     
     from pipeline.mapping_ontologie import main as mapping_main
     
@@ -85,13 +85,13 @@ def step_mapping():
         raise FileNotFoundError("Les fichiers CSV n'ont pas été créés correctement")
     
     print(f"\n✓ Fichiers créés:")
-    print(f"  • {csv_a.relative_to(project_root)}")
-    print(f"  • {csv_b.relative_to(project_root)}")
+    print(f"  • {csv_a.name}")
+    print(f"  • {csv_b.name}")
 
 
 def step_vectorize():
     """Étape 2: Vectorisation de l'ontologie B"""
-    print_step(2, 4, "VECTORISATION DE L'ONTOLOGIE B")
+    print_step(2, 5, "VECTORISATION DE L'ONTOLOGIE B")
     
     csv_dir = project_root / "data" / "csv"
     csv_b = csv_dir / "ontologie_animaux_B.csv"
@@ -116,7 +116,7 @@ def step_vectorize():
 
 def step_matching():
     """Étape 3: Alignement sémantique"""
-    print_step(3, 4, "ALIGNEMENT SÉMANTIQUE")
+    print_step(3, 5, "ALIGNEMENT SÉMANTIQUE")
     
     csv_dir = project_root / "data" / "csv"
     csv_a = csv_dir / "ontologie_animaux_A.csv"
@@ -139,12 +139,12 @@ def step_matching():
     if not results_file.exists():
         raise FileNotFoundError("Le fichier de résultats d'alignement n'a pas été créé")
     
-    print(f"\n✓ Résultats sauvegardés: {results_file.relative_to(project_root)}")
+    print(f"\n✓ Résultats sauvegardés: {results_file.name}")
 
 
 def step_interactive_alignment():
     """Étape 4: Validation interactive et fusion"""
-    print_step(4, 4, "VALIDATION INTERACTIVE & FUSION")
+    print_step(4, 5, "VALIDATION INTERACTIVE & FUSION")
     
     results_file = project_root / "alignement" / "results" / "alignment_results.json"
     
@@ -167,8 +167,8 @@ def step_interactive_alignment():
     
     if merged_owl.exists() and merged_json.exists():
         print(f"\n✓ Ontologie fusionnée créée:")
-        print(f"  • {merged_owl.relative_to(project_root)}")
-        print(f"  • {merged_json.relative_to(project_root)}")
+        print(f"  • {merged_owl.name}")
+        print(f"  • {merged_json.name}")
 
 
 def main():
@@ -221,8 +221,8 @@ Exemples:
             run_step("Vectorisation", step_vectorize)
             
             # Attendre que MongoDB indexe les documents
-            print("\n⏳ Attente de 60 secondes pour l'indexation MongoDB...")
-            time.sleep(60)
+            print("\n⏳ Attente de 30 secondes pour l'indexation MongoDB...")
+            time.sleep(30)
             print("✓ Indexation terminée\n")
         else:
             print("\n⏭️  Étape 2 (Vectorisation) ignorée")
@@ -255,7 +255,7 @@ Exemples:
             print("⚠️  Ontologie merged non trouvée. Étape de chargement ignorée.")
         else:
             print("Chargement de l'ontologie merged dans GraphDB...")
-            print(f"→ Fichier: {merged_owl.relative_to(project_root)}\n")
+            print(f"→ Fichier: {merged_owl.name}\n")
             
             subprocess.run([
                 sys.executable,
@@ -270,9 +270,9 @@ Exemples:
         print_header("✅ DÉMONSTRATION TERMINÉE AVEC SUCCÈS")
         
         print("Tous les fichiers ont été générés:")
-        print(f"  • CSV: {project_root / 'data' / 'csv'}")
-        print(f"  • Résultats d'alignement: {project_root / 'alignement' / 'results'}")
-        print(f"  • Ontologie fusionnée: {project_root / 'alignement' / 'merged'}")
+        print(f"  • CSV: data/csv")
+        print(f"  • Résultats d'alignement: alignement/results")
+        print(f"  • Ontologie fusionnée: alignement/merged")
         print(f"  • GraphDB: http://localhost:7200 (Repository: PFE-GraphDB)")
         
         print("\n🚀 Étapes suivantes suggérées:")

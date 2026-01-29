@@ -16,7 +16,7 @@ from collections import defaultdict
 
 def load_ontology(owl_file):
     """Charge une ontologie OWL avec rdflib"""
-    print(f"Chargement de {owl_file}...")
+    print(f"Chargement de {Path(owl_file).name}...")
     g = Graph()
     g.parse(owl_file, format='xml')
     return g
@@ -190,7 +190,7 @@ def extract_classes_from_ontology(owl_file):
 def save_to_csv(classes_data, output_file):
     """Sauvegarde les données des classes dans un fichier CSV"""
     if not classes_data:
-        print(f"Aucune donnée à sauvegarder dans {output_file}")
+        print(f"Aucune donnée à sauvegarder dans {Path(output_file).name}")
         return
     
     fieldnames = ['id', 'uri', 'label', 'definition', 'synonyms', 'parent', 
@@ -201,7 +201,7 @@ def save_to_csv(classes_data, output_file):
         writer.writeheader()
         writer.writerows(classes_data)
     
-    print(f"✓ CSV créé : {output_file}")
+    print(f"✓ CSV créé : {Path(output_file).name}")
     print(f"  → {len(classes_data)} lignes écrites")
 
 
@@ -243,9 +243,6 @@ def main():
     print("\n" + "="*60)
     print("✓ Conversion terminée avec succès !")
     print("="*60)
-    print(f"\nFichiers générés :")
-    print(f"  - {csv_a}")
-    print(f"  - {csv_b}")
 
 
 if __name__ == '__main__':
